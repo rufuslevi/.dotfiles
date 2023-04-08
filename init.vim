@@ -47,6 +47,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'romgrk/barbar.nvim'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'jiangmiao/auto-pairs'
 
 " LSP Support
 Plug 'neovim/nvim-lspconfig'                           
