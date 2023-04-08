@@ -5,6 +5,7 @@ tree.setup({
     update_focused_file = {
         enable = true,
         update_cwd = true,
+        update_root = true,
     },
     sort_by = "case_sensitive",
     git = {
@@ -18,5 +19,6 @@ tree.setup({
         group_empty = true,
     }
 })
+vim.g.nvim_tree_respect_buf_cwd = 1
 
 vim.keymap.set('n', '<leader>tt', api.tree.toggle)
