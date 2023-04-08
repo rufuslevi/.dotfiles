@@ -3,7 +3,6 @@ set clipboard=unnamed " Enables the clipboard between Vim/Neovim and other appli
 set completeopt=noinsert,menuone,noselect " Modifies the auto-complete menu to behave more like an IDE.
 " set cursorline " Highlights the current line in the editor
 " set hidden " Hide unused buffers
-set autoindent " Indent a new line
 filetype plugin indent on   " Allow auto-indenting depending on file type
 set inccommand=split " Show replacements in a split screen
 set mouse=a " Allow to use the mouse in the editor
@@ -57,6 +56,7 @@ Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'hrsh7th/nvim-cmp'     " Required
 Plug 'hrsh7th/cmp-nvim-lsp' " Required
 Plug 'L3MON4D3/LuaSnip'     " Required
+Plug 'folke/neodev.nvim'
 
 Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v2.x'}
 Plug 'SmiteshP/nvim-navic'

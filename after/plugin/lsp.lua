@@ -1,12 +1,12 @@
+require('neodev').setup({})
+
 local lsp = require('lsp-zero').preset({})
+require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.on_attach(function(client, bufnr)
     lsp.default_keymaps({ buffer = bufnr })
     lsp.buffer_autoformat()
 end)
-
--- (Optional) Configure lua language server for neovim
-require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.preset("recommended")
 
@@ -21,11 +21,11 @@ lsp.ensure_installed({
 })
 
 lsp.format_on_save({
-  servers = {
-    ['lua_ls'] = {'lua'},
-    ['rust_analyzer'] = {'rust'},
-    ['tsserver'] = {'ts'},
-  }
+    servers = {
+        ['lua_ls'] = { 'lua' },
+        ['rust_analyzer'] = { 'rust' },
+        ['tsserver'] = { 'ts' },
+    }
 })
 
 local cmp = require('cmp')
@@ -39,6 +39,10 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 
 local cmp_action = require('lsp-zero').cmp_action()
 cmp.setup({
+    sources = {
+        { name = 'nvim_lsp' },
+        { name = 'nvim_lua' },
+    },
     mapping = {
         ['<Tab>'] = cmp_action.luasnip_supertab(),
         ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
