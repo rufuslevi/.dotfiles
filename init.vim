@@ -9,16 +9,22 @@ set splitbelow splitright " Change the split screen behavior
 set title " Show file title
 set wildmenu " Show a more advance menu
 set cc=80,120 " Show at 80 column a border for good code style
+set nowrap
+
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+
 set number 
 set relativenumber
+
 set nospell
 set autoindent " Indent a new line
 syntax on
 filetype plugin indent on   " Allow auto-indenting depending on file type
+
+lua require('set')
 
  " Editor variables "
 if has('termguicolors')
@@ -71,3 +77,12 @@ call plug#end()
  " lua plugins to load on startup "
 lua require('dark-mode')
 lua require('tree')
+
+if exists("g:neovide")
+" g:neovide_transparency should be 0 if you want to unify transparency of content and title bar.
+" let g:neovide_transparency = 0.0
+" let g:transparency = 0.01
+" let g:neovide_background_color = '#0f1117'.printf('%x', float2nr(255 * g:transparency))
+" let g:neovide_floating_blur_amount_x = 8.0
+" let g:neovide_floating_blur_amount_y = 8.0
+endif
