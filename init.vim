@@ -3,7 +3,6 @@ set clipboard=unnamed " Enables the clipboard between Vim/Neovim and other appli
 set completeopt=noinsert,menuone,noselect " Modifies the auto-complete menu to behave more like an IDE.
 " set cursorline " Highlights the current line in the editor
 " set hidden " Hide unused buffers
-filetype plugin indent on   " Allow auto-indenting depending on file type
 set inccommand=split " Show replacements in a split screen
 set mouse=a " Allow to use the mouse in the editor
 set splitbelow splitright " Change the split screen behavior
@@ -18,7 +17,9 @@ set ttyfast " Speed up scrolling in Vim
 set number 
 set relativenumber
 set nospell
+set autoindent " Indent a new line
 syntax on
+filetype plugin indent on   " Allow auto-indenting depending on file type
 
  " Editor variables "
 if has('termguicolors')

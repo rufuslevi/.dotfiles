@@ -1,4 +1,7 @@
-require("nvim-tree").setup({
+local tree = require("nvim-tree")
+local api = require("nvim-tree.api")
+
+tree.setup({
     update_focused_file = {
         enable = true,
         update_cwd = true,
@@ -15,3 +18,5 @@ require("nvim-tree").setup({
         group_empty = true,
     }
 })
+
+vim.keymap.set('n', '<leader>tt', api.tree.toggle)
