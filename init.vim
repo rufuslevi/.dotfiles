@@ -46,6 +46,7 @@ Plug 'ThePrimeagen/harpoon'
 Plug 'tpope/vim-fugitive'
 Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'nvim-tree/nvim-tree.lua'
+Plug 'romgrk/barbar.nvim'
 
 " LSP Support
 Plug 'neovim/nvim-lspconfig'                           
