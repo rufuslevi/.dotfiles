@@ -44,7 +44,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'ThePrimeagen/harpoon'
 Plug 'tpope/vim-fugitive'
-Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'romgrk/barbar.nvim'
 
@@ -52,6 +51,10 @@ Plug 'romgrk/barbar.nvim'
 Plug 'neovim/nvim-lspconfig'                           
 Plug 'williamboman/mason.nvim', {'do': ':MasonUpdate'}
 Plug 'williamboman/mason-lspconfig.nvim'    
+
+" Comments
+Plug 'numToStr/Comment.nvim'
+Plug 'JoosepAlviste/nvim-ts-context-commentstring'
 
 " Autocompletion
 Plug 'hrsh7th/nvim-cmp'     " Required
