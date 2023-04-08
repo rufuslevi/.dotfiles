@@ -13,7 +13,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-set ttyfast " Speed up scrolling in Vim
 set number 
 set relativenumber
 set nospell
@@ -63,6 +62,7 @@ Plug 'hrsh7th/nvim-cmp'     " Required
 Plug 'hrsh7th/cmp-nvim-lsp' " Required
 Plug 'L3MON4D3/LuaSnip'     " Required
 Plug 'folke/neodev.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v2.x'}
 Plug 'SmiteshP/nvim-navic'
