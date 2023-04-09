@@ -8,7 +8,7 @@ status_bar.setup {
         section_separators = { left = '', right = '' },
         disabled_filetypes = {
             statusline = {},
-            winbar = {},
+            winbar = {}
         },
         ignore_focus = {},
         always_divide_middle = true,

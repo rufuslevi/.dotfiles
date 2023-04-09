@@ -4,11 +4,13 @@ set completeopt=noinsert,menuone,noselect " Modifies the auto-complete menu to b
 " set cursorline " Highlights the current line in the editor
 " set hidden " Hide unused buffers
 set inccommand=split " Show replacements in a split screen
+
 set mouse=a " Allow to use the mouse in the editor
+set mousemoveevent
+
 set splitbelow splitright " Change the split screen behavior
-set title " Show file title
 set wildmenu " Show a more advance menu
-set cc=80,120 " Show at 80 column a border for good code style
+set cc=80 " Show at 80 column a border for good code style
 set nowrap
 
 set tabstop=4
@@ -50,9 +52,10 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'ThePrimeagen/harpoon'
 Plug 'tpope/vim-fugitive'
 Plug 'nvim-tree/nvim-tree.lua'
-Plug 'romgrk/barbar.nvim'
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'karb94/neoscroll.nvim'
 
 " LSP Support
 Plug 'neovim/nvim-lspconfig'                           
@@ -86,3 +89,5 @@ if exists("g:neovide")
 " let g:neovide_floating_blur_amount_x = 8.0
 " let g:neovide_floating_blur_amount_y = 8.0
 endif
+
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
