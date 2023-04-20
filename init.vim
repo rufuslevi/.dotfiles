@@ -26,6 +26,7 @@ set autoindent " Indent a new line
 syntax on
 filetype plugin indent on   " Allow auto-indenting depending on file type
 
+" Fix for the Enter key with pairs and lsp completion
 augroup insertMatch
     au!
     au BufReadPost * NoMatchParen
@@ -88,7 +89,6 @@ Plug 'hrsh7th/nvim-cmp'     " Required
 Plug 'hrsh7th/cmp-nvim-lsp' " Required
 Plug 'L3MON4D3/LuaSnip'     " Required
 Plug 'folke/neodev.nvim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v2.x'}
 Plug 'SmiteshP/nvim-navic'
@@ -98,13 +98,3 @@ call plug#end()
 lua require('dark-mode')
 lua require('tree')
 
-if exists("g:neovide")
-" g:neovide_transparency should be 0 if you want to unify transparency of content and title bar.
-" let g:neovide_transparency = 0.0
-" let g:transparency = 0.01
-" let g:neovide_background_color = '#0f1117'.printf('%x', float2nr(255 * g:transparency))
-" let g:neovide_floating_blur_amount_x = 8.0
-" let g:neovide_floating_blur_amount_y = 8.0
-endif
-
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
