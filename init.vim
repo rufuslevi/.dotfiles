@@ -29,9 +29,7 @@ filetype plugin indent on   " Allow auto-indenting depending on file type
 lua require('set')
 
  " Editor variables "
-if has('termguicolors')
-    set termguicolors
-endif
+set termguicolors
 let mapleader=" "
 let g:sonokai_better_performance = 1
 let g:sonokai_style = 'maia'
