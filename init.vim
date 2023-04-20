@@ -71,7 +71,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'jiangmiao/auto-pairs'
+Plug 'windwp/nvim-autopairs'
 Plug 'karb94/neoscroll.nvim'
 
 " LSP Support
