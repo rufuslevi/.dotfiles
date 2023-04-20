@@ -107,4 +107,4 @@ if exists("g:neovide")
 " let g:neovide_floating_blur_amount_y = 8.0
 endif
 
-inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
