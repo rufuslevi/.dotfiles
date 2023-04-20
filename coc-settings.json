@@ -1,3 +1,5 @@
 {
-  "coc.preferences.formatOnSave": true
+  "coc.preferences.formatOnSave": true,
+  "coc.preferences.floatActions": false,
+  "suggest.autoTrigger": "none"
 }
