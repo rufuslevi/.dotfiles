@@ -60,7 +60,6 @@ Plug 'xiyaowong/transparent.nvim'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'fannheyward/telescope-coc.nvim'
 Plug 'LinArcX/telescope-changes.nvim'
 Plug 'nvim-telescope/telescope-ui-select.nvim'
 Plug 'stevearc/dressing.nvim'
