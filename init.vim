@@ -26,6 +26,21 @@ set autoindent " Indent a new line
 syntax on
 filetype plugin indent on   " Allow auto-indenting depending on file type
 
+augroup insertMatch
+    au!
+    au BufReadPost * NoMatchParen
+    au InsertEnter * NoMatchParen
+    au InsertLeave * DoMatchParen
+augroup END
+
+if has('nvim') && exists('&winblend') && has('termguicolors')
+  set winblend=10
+
+  if exists('g:fzf_colors.bg')
+    call remove(g:fzf_colors, 'bg')
+  endif
+endif
+
 lua require('set')
 
  " Editor variables "
