@@ -73,6 +73,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'windwp/nvim-autopairs'
 Plug 'karb94/neoscroll.nvim'
+Plug 'lewis6991/hover.nvim'
 
 " LSP Support
 Plug 'neovim/nvim-lspconfig'                           
