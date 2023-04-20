@@ -7,7 +7,7 @@ tabbar.setup({
         offsets = {
             {
                 filetype = "NvimTree",
-                text = "File Explorer",
+                text = "Nvim Tree",
                 text_align = "center",
                 separator = true
             }
@@ -21,3 +21,7 @@ tabbar.setup({
         },
     }
 })
+
+vim.keymap.set('n', '<leader>bd', vim.cmd.bd)
+vim.keymap.set('n', '<leader>bn', vim.cmd.bnext)
+vim.keymap.set('n', '<leader>bp', vim.cmd.bprevious)
