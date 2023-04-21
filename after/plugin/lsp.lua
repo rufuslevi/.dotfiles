@@ -1,11 +1,15 @@
 require('neodev').setup({})
 
 local lsp = require('lsp-zero').preset({})
-require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+local lsp_config = require('lspconfig')
+local virtual_types = require('virtualtypes')
+
+lsp_config.lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.on_attach(function(client, bufnr)
     lsp.default_keymaps({ buffer = bufnr })
     lsp.buffer_autoformat()
+    virtual_types.on_attach()
 end)
 
 lsp.preset("recommended")
@@ -72,3 +76,38 @@ end)
 -- vim.keymap.set("n vim. keymap.set("j" end)
 
 lsp.setup()
+
+-- Null-ls configs for missing languages
+local null_ls = require('null-ls')
+
+null_ls.setup({
+    border = nil,
+    cmd = { "nvim" },
+    debounce = 250,
+    debug = false,
+    default_timeout = 5000,
+    diagnostic_config = {},
+    diagnostics_format = "#{m}",
+    fallback_severity = vim.diagnostic.severity.ERROR,
+    log_level = "warn",
+    notify_format = "[null-ls] %s",
+    on_attach = nil,
+    on_init = nil,
+    on_exit = nil,
+    root_dir = require("null-ls.utils").root_pattern(".null-ls-root", "Makefile", ".git"),
+    should_attach = nil,
+    sources = {
+        null_ls.builtins.formatting.stylua,
+        null_ls.builtins.diagnostics.ltrs
+        -- null_ls.builtins.completion.spell
+    },
+    temp_dir = nil,
+    update_in_insert = false,
+})
+
+require('mason').setup()
+require('mason-null-ls').setup({
+    ensure_installed = nil,
+    automatic_installation = true,
+    automatic_setup = false,
+})

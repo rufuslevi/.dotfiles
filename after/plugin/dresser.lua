@@ -1,1 +1,1 @@
--- require('dresser').setup()
+-- require('dressing').setup()
