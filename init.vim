@@ -56,6 +56,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'windwp/nvim-autopairs'
 Plug 'karb94/neoscroll.nvim'
+Plug 'folke/todo-comments.nvim'
 
 " Themes
 Plug 'f-person/auto-dark-mode.nvim'
