@@ -1,19 +1,20 @@
 require("catppuccin").setup({
     flavour = "mocha", -- latte, frappe, macchiato, mocha
-    background = { -- :h background
+    background = {
+        -- :h background
         light = "latte",
         dark = "mocha",
     },
     transparent_background = true,
     show_end_of_buffer = false, -- show the '~' characters after the end of buffers
-    term_colors = false,
+    term_colors = true,
     dim_inactive = {
         enabled = true,
         shade = "dark",
         percentage = 0.15,
     },
     no_italic = false, -- Force no italic
-    no_bold = false, -- Force no bold
+    no_bold = false,   -- Force no bold
     styles = {
         comments = { "italic" },
         conditionals = {},
@@ -37,6 +38,9 @@ require("catppuccin").setup({
         telescope = true,
         notify = false,
         mini = false,
+        mason = true,
+        treesitter = true,
+        treesitter_context = true,
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
 })
