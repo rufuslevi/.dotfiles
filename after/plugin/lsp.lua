@@ -5,13 +5,10 @@ local lsp_config = require('lspconfig')
 local ih = require('inlay-hints')
 local virtual_types = require('virtualtypes')
 
-lsp_config.lua_ls.setup(lsp.nvim_lua_ls())
-
 lsp.on_attach(function(client, bufnr)
     lsp.default_keymaps({ buffer = bufnr })
     lsp.buffer_autoformat()
     virtual_types.on_attach()
-    ih.on_attach(client, bufnr)
 end)
 
 lsp.preset("recommended")
@@ -33,6 +30,51 @@ lsp.format_on_save({
         ['tsserver'] = { 'ts' },
     }
 })
+
+lsp_config.lua_ls.setup({
+    on_attach = function(client, bufnr)
+        ih.on_attach(client, bufnr)
+    end,
+    settings = {
+        Lua = {
+            hint = {
+                enable = true,
+            },
+        },
+    },
+})
+
+lsp_config.tsserver.setup({
+    on_attach = function(c, b)
+        ih.on_attach(c, b)
+    end,
+    settings = {
+        javascript = {
+            inlayHints = {
+                includeInlayEnumMemberValueHints = true,
+                includeInlayFunctionLikeReturnTypeHints = true,
+                includeInlayFunctionParameterTypeHints = true,
+                includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';
+                includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+                includeInlayPropertyDeclarationTypeHints = true,
+                includeInlayVariableTypeHints = true,
+            },
+        },
+        typescript = {
+            inlayHints = {
+                includeInlayEnumMemberValueHints = true,
+                includeInlayFunctionLikeReturnTypeHints = true,
+                includeInlayFunctionParameterTypeHints = true,
+                includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';
+                includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+                includeInlayPropertyDeclarationTypeHints = true,
+                includeInlayVariableTypeHints = true,
+            },
+        },
+    },
+})
+
+lsp.skip_server_setup({ 'rust_analyzer' })
 
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
@@ -63,13 +105,24 @@ cmp.setup({
     }
 })
 
-lsp.on_attach(function(client, bufnr)
-    local opts = { buffer = bufnr, remap = false }
-    vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
-    vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
-end)
-
 lsp.setup()
+
+local rust_tools = require('rust-tools')
+rust_tools.setup({
+    tools = {
+        on_initialized = function()
+            ih.set_all()
+        end,
+        inlay_hints = {
+            auto = false,
+        },
+    },
+    server = {
+        on_attach = function(c, b)
+            ih.on_attach(c, b)
+        end,
+    },
+})
 
 -- Null-ls configs for missing languages
 local null_ls = require('null-ls')
