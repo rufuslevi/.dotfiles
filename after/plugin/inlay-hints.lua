@@ -1,4 +1,1 @@
-require("inlay-hints").setup({
-	renderer = "inlay-hints/render/virtline",
-	only_current_line = false,
-})
+require("inlay-hints").setup()
