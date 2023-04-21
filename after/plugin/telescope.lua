@@ -16,7 +16,6 @@ vim.keymap.set('n', '<leader>pb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action)
 vim.keymap.set('n', '<leader>cr', vim.lsp.buf.implementation)
 vim.keymap.set('n', '<leader>cs', vim.lsp.buf.document_symbol)
-vim.keymap.set('n', '<leader>ci', vim.lsp.buf.hover)
 
 vim.keymap.set('n', '<leader>pr', function()
     builtin.grep_string({ search = vim.fn.input("Grep > ") });
