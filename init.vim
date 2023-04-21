@@ -12,6 +12,7 @@ set splitbelow splitright " Change the split screen behavior
 set wildmenu " Show a more advance menu
 set cc=80 " Show at 80 column a border for good code style
 set nowrap
+set hlsearch
 
 set tabstop=4
 set shiftwidth=4
