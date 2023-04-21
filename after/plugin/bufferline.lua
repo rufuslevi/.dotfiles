@@ -16,7 +16,7 @@ tabbar.setup({
         separator_style = "thin",
         hover = {
             enabled = true,
-            delay = 50,
+            delay = 0,
             reveal = { 'close' }
         },
     }
