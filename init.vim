@@ -79,6 +79,7 @@ Plug 'williamboman/mason.nvim', {'do': ':MasonUpdate'}
 Plug 'williamboman/mason-lspconfig.nvim'  
 Plug 'jubnzv/virtual-types.nvim'
 Plug 'Fildo7525/pretty_hover'
+Plug 'simrat39/inlay-hints.nvim'
 
 " Linter
 Plug 'jose-elias-alvarez/null-ls.nvim'

@@ -2,6 +2,7 @@ require('neodev').setup({})
 
 local lsp = require('lsp-zero').preset({})
 local lsp_config = require('lspconfig')
+local ih = require('inlay-hints')
 local virtual_types = require('virtualtypes')
 
 lsp_config.lua_ls.setup(lsp.nvim_lua_ls())
@@ -10,6 +11,7 @@ lsp.on_attach(function(client, bufnr)
     lsp.default_keymaps({ buffer = bufnr })
     lsp.buffer_autoformat()
     virtual_types.on_attach()
+    ih.on_attach(client, bufnr)
 end)
 
 lsp.preset("recommended")
@@ -54,10 +56,7 @@ cmp.setup({
     mapping = {
         ['<Tab>'] = cmp_action.luasnip_supertab(),
         ['<S-Tab>'] = cmp_action.luasnip_shift_supertab(),
-    }
-})
-
-cmp.setup({
+    },
     window = {
         completion = cmp.config.window.bordered(),
         documentation = cmp.config.window.bordered(),
@@ -69,11 +68,6 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
 end)
-
--- vim.keymap.set("n",
--- vim.keymap.set("n vim. keymap. set ( "n
--- vim.keymap.set( "n vim. keymap. set ("n'
--- vim.keymap.set("n vim. keymap.set("j" end)
 
 lsp.setup()
 
