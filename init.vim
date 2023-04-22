@@ -42,6 +42,7 @@ set termguicolors
 let mapleader=" "
 let g:sonokai_better_performance = 1
 let g:sonokai_style = 'maia'
+let g:nvim_tree_auto_close=1
 
  " Init different plugins "
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
@@ -58,6 +59,7 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'windwp/nvim-autopairs'
 Plug 'karb94/neoscroll.nvim'
 Plug 'folke/todo-comments.nvim'
+Plug 'famiu/bufdelete.nvim'
 
 " Themes
 Plug 'f-person/auto-dark-mode.nvim'
