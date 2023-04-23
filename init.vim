@@ -71,6 +71,7 @@ Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 " Telescope
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'LinArcX/telescope-changes.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
 
 " Treesitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
