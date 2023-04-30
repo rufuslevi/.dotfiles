@@ -2,3 +2,5 @@
 *.DS_Store
 
 # Directories
+mason/
+plugged/
