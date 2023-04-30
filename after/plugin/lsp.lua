@@ -14,13 +14,14 @@ end)
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-    "lua_ls",
-    "tsserver",
-    "eslint",
     "angularls",
-    "jsonls",
+    "eslint",
     "html",
+    "jsonls",
+    "lua_ls",
+    "pyright",
     "rust_analyzer",
+    "tsserver",
 })
 
 lsp.format_on_save({
@@ -129,7 +130,7 @@ local function format(_, item)
     return item
 end
 
-lsp.skip_server_setup({ "rust_analyzer" })
+lsp.skip_server_setup({ "rust_analyzer", "pylsp", "jedi_language_server" })
 
 local cmp = require("cmp")
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
@@ -144,7 +145,6 @@ lsp.setup_nvim_cmp({
     mapping = cmp_mappings,
 })
 
-local border_chars_inner_thin = { " ", "▁", " ", "▏", " ", "▔", " ", "▕" }
 local cmp_action = require("lsp-zero").cmp_action()
 cmp.setup({
     formatting = {
@@ -163,14 +163,12 @@ cmp.setup({
         completion = cmp.config.window.bordered({
             winhighlight = "Normal:Pmenu,FloatBorder:PmenuBorder,CursorLine:PmenuSel,Search:None",
             scrollbar = true,
-            border = border_chars_inner_thin,
             col_offset = -1,
             side_padding = 0,
         }),
         documentation = cmp.config.window.bordered({
             winhighlight = "Normal:Pmenu,FloatBorder:PmenuDocBorder,CursorLine:PmenuSel,Search:None",
             scrollbar = true,
-            border = border_chars_inner_thin,
             side_padding = 1, -- Not working?
         }),
     },
