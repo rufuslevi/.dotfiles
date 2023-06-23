@@ -23,7 +23,17 @@ vim.keymap.set("n", "<leader>pb", builtin.buffers, {})
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
 vim.keymap.set("n", "<leader>cr", vim.lsp.buf.implementation)
 vim.keymap.set("n", "<leader>cs", vim.lsp.buf.document_symbol)
+vim.keymap.set("n", "<leader>ce", vim.diagnostic.open_float)
 
 vim.keymap.set("n", "<leader>pr", function()
 	builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
+
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+	virtual_text = false,
+})
+
+return {
+	'nvim-telescope/telescope.nvim',
+	tag = '0.1.1',
+}
