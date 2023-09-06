@@ -7,22 +7,76 @@ local function tableMerge(result, ...)
 end
 
 local plugins = {
+	-- Themes Plugins
+	"dylanaraps/wal.vim",
+	{
+		"f-person/auto-dark-mode.nvim",
+		config = function()
+			require("auto-dark-mode").setup({
+				update_interval = 1000,
+				set_dark_mode = function()
+					vim.api.nvim_set_option("background", "dark")
+					vim.cmd("colorscheme catppuccin-mocha")
+				end,
+				set_light_mode = function()
+					vim.api.nvim_set_option("background", "light")
+					-- vim.cmd("colorscheme solarized-high")
+					-- vim.g.solarized_diffmode = "high"
+					-- To enable transparency
+					-- vim.g.solarized_termtrans = 1
+					vim.cmd("colorscheme catppuccin-frappe")
+				end,
+			})
+			require("auto-dark-mode").init()
+		end,
+	},
+	"gummesson/stereokai.vim",
+	"sainnhe/sonokai",
+	"kajamite/vim-monokai2",
+	"ishan9299/nvim-solarized-lua",
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		config = function()
+			require("config.catppuccin")
+		end,
+	},
+
 	-- Generic Plugins
 	"xiyaowong/transparent.nvim",
-	"nvim-lualine/lualine.nvim",
-	"andweeb/presence.nvim",
-	"tpope/vim-fugitive",
+	{
+		"andweeb/presence.nvim",
+		config = function()
+			require("config.presence")
+		end,
+	},
+	{
+		"tpope/vim-fugitive",
+		config = function()
+			require("config.fugitive")
+		end,
+	},
 	"famiu/bufdelete.nvim",
+	{
+		"nvim-lualine/lualine.nvim",
+		config = function()
+			require("config.lualine")
+		end,
+		dependencies = {
+			{ "nvim-tree/nvim-web-devicons" },
+			{ "catppuccin" },
+		},
+	},
 	{
 		"numToStr/Comment.nvim",
 		config = function()
-			require("Comment").setup()
+			require("config.comment")
 		end,
 	},
 	{
 		"windwp/nvim-autopairs",
 		config = function()
-			require("nvim-autopairs").setup({})
+			require("config.autopair")
 		end,
 	},
 	{
@@ -38,10 +92,24 @@ local plugins = {
 	{
 		"stevearc/dressing.nvim",
 		opts = {},
+		config = function()
+			require("config.dresser")
+		end,
+	},
+	{
+		"mbbill/undotree",
+		config = function()
+			require("config.undotree")
+		end,
 	},
 
 	-- LSP Plugins
-	"simrat39/inlay-hints.nvim",
+	{
+		"simrat39/inlay-hints.nvim",
+		config = function()
+			require("config.inlay-hints")
+		end,
+	},
 	"simrat39/rust-tools.nvim",
 	"jose-elias-alvarez/null-ls.nvim",
 	"jay-babu/mason-null-ls.nvim",
@@ -74,7 +142,12 @@ local plugins = {
 	},
 
 	-- Linting Plugins
-	"MunifTanjim/prettier.nvim",
+	{
+		"MunifTanjim/prettier.nvim",
+		config = function()
+			require("config.prettier")
+		end,
+	},
 
 	-- Autocompletion Plugins
 	"neovim/nvim-lspconfig",
@@ -86,6 +159,9 @@ local plugins = {
 	{
 		"folke/neodev.nvim",
 		opts = {},
+		config = function()
+			require("config.lsp")
+		end,
 	},
 	{
 		"SmiteshP/nvim-navic",
@@ -127,6 +203,9 @@ local plugins = {
 	{
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.1",
+		config = function()
+			require("config.telescope")
+		end,
 	},
 	{
 		"nvim-telescope/telescope-fzf-native.nvim",
@@ -141,29 +220,46 @@ local plugins = {
 		dependencies = {
 			"JoosepAlviste/nvim-ts-context-commentstring",
 		},
+		config = function()
+			require("config.treesitter")
+		end,
 	},
 
 	-- UI Plugins
-	"nvim-tree/nvim-web-devicons",
-	"karb94/neoscroll.nvim",
+	{
+		"nvim-tree/nvim-web-devicons",
+		config = function()
+			require("config.devicons")
+		end,
+	},
+	{
+		"karb94/neoscroll.nvim",
+		config = function()
+			require("config.scroll")
+		end,
+	},
 	{
 		"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
-		opts = {
-			-- your configuration comes here
-			-- or leave it empty to use the default settings
-			-- refer to the configuration section below
-		},
+		config = function()
+			require("config.todo-comments")
+		end,
 	},
 	{
 		"Fildo7525/pretty_hover",
 		event = "LspAttach",
 		opts = {},
+		config = function()
+			require("config.pretty_hover")
+		end,
 	},
 	{
 		"akinsho/bufferline.nvim",
 		version = "*",
 		dependencies = "nvim-tree/nvim-web-devicons",
+		config = function()
+			require("config.bufferline")
+		end,
 	},
 	{
 		"nvim-tree/nvim-tree.lua",
@@ -172,24 +268,12 @@ local plugins = {
 			"nvim-tree/nvim-web-devicons",
 		},
 		config = function()
-			require("nvim-tree").setup({})
+			require("config.tree")
 		end,
 	},
 	{
 		"ray-x/guihua.lua",
 		run = "cd lua/fzy && make",
-	},
-
-	-- Themes Plugins
-	"dylanaraps/wal.vim",
-	"f-person/auto-dark-mode.nvim",
-	"gummesson/stereokai.vim",
-	"sainnhe/sonokai",
-	"kajamite/vim-monokai2",
-	"ishan9299/nvim-solarized-lua",
-	{
-		"catppuccin/nvim",
-		name = "catppuccin",
 	},
 }
 
