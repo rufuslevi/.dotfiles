@@ -1,9 +1,7 @@
-local status_bar = require('lualine')
-
-status_bar.setup {
+require("lualine").setup {
     options = {
         icons_enabled = true,
-        theme = 'catppuccin',
+        theme = 'monokai-nightasty',
         component_separators = { left = '', right = '' },
         section_separators = { left = '', right = '' },
         disabled_filetypes = {

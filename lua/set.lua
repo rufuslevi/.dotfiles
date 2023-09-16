@@ -35,7 +35,7 @@ vim.opt.updatetime = 50
 vim.opt.spell = false
 vim.opt.hlsearch = true
 vim.opt.wrap = false
-vim.opt.autoindent = true
+vim.opt.smartindent = true
 
 -- UI settings
 vim.opt.splitbelow = true
@@ -53,16 +53,16 @@ vim.g.nvim_tree_auto_close = 1
 
 local insertMatchGroup = vim.api.nvim_create_augroup("insertMatch", {})
 vim.api.nvim_create_autocmd({ "BufReadPost", "InsertEnter" }, {
-	pattern = "*",
-	callback = function()
-		vim.g.loaded_matchparen = 1
-	end,
-	group = insertMatchGroup,
+    pattern = "*",
+    callback = function()
+        vim.g.loaded_matchparen = 1
+    end,
+    group = insertMatchGroup,
 })
 vim.api.nvim_create_autocmd({ "InsertLeave" }, {
-	pattern = "*",
-	callback = function()
-		vim.g.loaded_matchparen = 0
-	end,
-	group = insertMatchGroup,
+    pattern = "*",
+    callback = function()
+        vim.g.loaded_matchparen = 0
+    end,
+    group = insertMatchGroup,
 })

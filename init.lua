@@ -18,5 +18,7 @@ else
 
 	require("lazy").setup("loading")
 
+	vim.keymap.set("n", "<leader>noh", vim.cmd.noh)
+
 	-- lua plugins to load on startup
 end
