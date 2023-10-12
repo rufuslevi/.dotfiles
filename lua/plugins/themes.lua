@@ -13,6 +13,11 @@ return {
     priority = 1000,
   },
   {
+    "Tsuzat/NeoSolarized.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
     "loctvl842/monokai-pro.nvim",
     priority = 1000,
   },
@@ -129,6 +134,10 @@ return {
           -- Settings for solarized
           vim.cmd("colorscheme solarized")
           require("lualine").setup({ options = { theme = "solarized" } })
+
+          -- Settings for NeoSolarized
+          -- vim.cmd("colorscheme NeoSolarized")
+          -- require("lualine").setup({ options = { theme = "NeoSolarized" } })
         end,
       })
       require("auto-dark-mode").init()

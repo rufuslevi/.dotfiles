@@ -2,3 +2,4 @@
 
 require("config.keymaps.ui")
 require("config.keymaps.telescope")
+require("config.keymaps.addons")
