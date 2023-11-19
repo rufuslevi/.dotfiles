@@ -11,9 +11,12 @@ return {
       padding = true,
       sticky = true,
       toggler = {
-        line = "<leader>cl",
-        block = "<leader>cb",
+        line = "gcc",
+        block = "gbc",
       },
+      config = function()
+        require("Comment").setup()
+      end,
     },
   },
   {
