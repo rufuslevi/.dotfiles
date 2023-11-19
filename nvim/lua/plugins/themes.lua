@@ -22,8 +22,13 @@ return {
     priority = 1000,
   },
   {
+    "sainnhe/sonokai",
+    priority = 1000,
+  },
+  {
     "catppuccin/nvim",
     name = "catppuccin",
+    enabled = false,
     priority = 1000,
     config = function()
       require("catppuccin").setup({
@@ -95,21 +100,27 @@ return {
   },
   {
     "f-person/auto-dark-mode.nvim",
+    enabled = true,
     config = function()
       require("auto-dark-mode").setup({
         update_interval = 1000,
         set_dark_mode = function()
           vim.api.nvim_set_option("background", "dark")
 
-          vim.cmd("colorscheme catppuccin-mocha")
+          ----- Settings for sonokai -----
+          vim.cmd("colorscheme sonokai")
+          require("lualine").setup({ options = { theme = "sonokai" } })
 
-          vim.cmd("colorscheme monokai-pro-ristretto")
-          require("lualine").setup({ options = { theme = "monokai-pro" } })
+          ----- Settings for others -----
+          -- vim.cmd("colorscheme catppuccin-mocha")
+          -- vim.cmd("colorscheme monokai-pro-ristretto")
+
+          -- require("lualine").setup({ options = { theme = "monokai-pro" } })
         end,
         set_light_mode = function()
           vim.api.nvim_set_option("background", "light")
 
-          -- Settings for solarized theme
+          ----- Settings for solarized theme -----
           -- vim.cmd("colorscheme solarized-high")
           -- vim.g.solarized_diffmode = "high"
           -- To enable transparency
@@ -117,27 +128,31 @@ return {
 
           -- vim.cmd("colorscheme ayu")
 
-          -- Settings for catppuccin
+          --- -- Settings for catppuccin -----
           -- vim.cmd("colorscheme catppuccin-latte")
           -- vim.cmd("colorscheme catppuccin-frappe")
           -- vim.cmd("colorscheme catppuccin-macchiato")
           -- require("lualine").setup({ options = { theme = "catppuccin" } })
 
-          -- Settings for vim-one light
+          ----- Settings for vim-one light -----
           -- vim.cmd("colorscheme one")
           -- require("lualine").setup({ options = { theme = "onelight" } })
 
-          -- Settings for onelight
+          ----- Settings for onelight -----
           -- vim.cmd("colorscheme onelight")
           -- require("lualine").setup({ options = { theme = "onelight" } })
 
-          -- Settings for solarized
-          vim.cmd("colorscheme solarized")
-          require("lualine").setup({ options = { theme = "solarized" } })
+          ----- Settings for solarized -----
+          -- vim.cmd("colorscheme solarized")
+          -- require("lualine").setup({ options = { theme = "solarized" } })
 
-          -- Settings for NeoSolarized
+          ----- Settings for NeoSolarized -----
           -- vim.cmd("colorscheme NeoSolarized")
           -- require("lualine").setup({ options = { theme = "NeoSolarized" } })
+
+          ----- Settings for Sonokai -----
+          vim.cmd("colorscheme sonokai")
+          require("lualine").setup({ options = { theme = "sonokai" } })
         end,
       })
       require("auto-dark-mode").init()

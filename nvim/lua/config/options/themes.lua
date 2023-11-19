@@ -1,8 +1,11 @@
 -- This is where the settings for the themes plugins are to be put
 
+-- Theme --
+-- vim.g.colorscheme = "sonokai"
+
 -- Sonokai --
 vim.g.sonokai_better_performance = 1
-vim.g.sonokai_style = "maia"
+vim.g.sonokai_style = "shusia"
 
 vim.g.one_allow_italics = 1
 
