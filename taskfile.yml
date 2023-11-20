@@ -23,19 +23,19 @@ tasks:
       - task: zsh
   kitty:
     cmds:
-      - mkdir ~/.config/kitty
+      - mkdir -p ~/.config/kitty
       - stow -v -t ~/.config/kitty kitty
   nvim:
     cmds:
-      - mkdir ~/.config/nvim
+      - mkdir -p ~/.config/nvim
       - stow -v -t ~/.config/nvim nvim
   tmux:
     cmds:
-      - mkdir ~/.config/tmux
+      - mkdir -p ~/.config/tmux
       - stow -v -t ~/.config/tmux tmux
   yabai:
     cmds:
-      - mkdir ~/.config/yabai
+      - mkdir -p ~/.config/yabai
       - stow -v -t ~/.config/yabai yabai
   zsh:
     cmds:
