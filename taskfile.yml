@@ -1,0 +1,38 @@
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task: kitty
+      - task: nvim
+      - task: tmux
+      - task: yabai
+      - task: zsh
+  linux:
+    cmds:
+      - task: kitty
+      - task: nvim
+      - task: tmux
+      - task: zsh
+  macos:
+    cmds:
+      - task: kitty
+      - task: nvim
+      - task: tmux
+      - task: yabai
+      - task: zsh
+  kitty:
+    cmds:
+      - mkdir ~/.config/kitty
+      - stow -v -t ~/.config/kitty kitty
+  nvim:
+    cmds:
+      - mkdir ~/.config/nvim
+      - stow -v -t ~/.config/nvim nvim
+  yabai:
+    cmds:
+      - mkdir ~/.config/yabai
+      - stow -v -t ~/.config/yabai yabai
+  zsh:
+    cmds:
+      - stow -v zsh
