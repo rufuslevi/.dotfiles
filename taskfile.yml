@@ -29,6 +29,10 @@ tasks:
     cmds:
       - mkdir ~/.config/nvim
       - stow -v -t ~/.config/nvim nvim
+  tmux:
+    cmds:
+      - mkdir ~/.config/tmux
+      - stow -v -t ~/.config/tmux tmux
   yabai:
     cmds:
       - mkdir ~/.config/yabai
