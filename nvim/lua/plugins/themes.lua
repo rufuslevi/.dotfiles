@@ -135,8 +135,8 @@ return {
           -- require("lualine").setup({ options = { theme = "catppuccin" } })
 
           ----- Settings for vim-one light -----
-          vim.cmd("colorscheme one")
-          require("lualine").setup({ options = { theme = "onelight" } })
+          -- vim.cmd("colorscheme one")
+          -- require("lualine").setup({ options = { theme = "onelight" } })
 
           ----- Settings for onelight -----
           -- vim.cmd("colorscheme onelight")
@@ -153,6 +153,10 @@ return {
           ----- Settings for Sonokai -----
           -- vim.cmd("colorscheme sonokai")
           -- require("lualine").setup({ options = { theme = "sonokai" } })
+
+          ----- Settings for Sonokai -----
+          vim.cmd("colorscheme gruvbox")
+          require("lualine").setup({ options = { theme = "gruvbox" } })
         end,
       })
       require("auto-dark-mode").init()

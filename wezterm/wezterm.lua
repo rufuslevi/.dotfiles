@@ -55,7 +55,11 @@ local function scheme_for_appearance(appearance)
 		return "Monokai Pro (Gogh)"
 	else
 		-- return "Ayu Light (Gogh)"
-		return "Mocha (light) (terminal.sexy)"
+		-- return "Mocha (light) (terminal.sexy)"
+		-- return "Solarized (light) (terminal.sexy)"
+		-- return "Builtin Solarized Light"
+		-- return "Solarized Light (Gogh)"
+		return "Gruvbox light, soft (base16)"
 	end
 end
 
