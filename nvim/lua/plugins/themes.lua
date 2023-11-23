@@ -28,7 +28,7 @@ return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    enabled = false,
+    enabled = true,
     priority = 1000,
     config = function()
       require("catppuccin").setup({
@@ -121,7 +121,7 @@ return {
           vim.api.nvim_set_option("background", "light")
 
           ----- Settings for solarized theme -----
-          -- vim.cmd("colorscheme solarized-high")
+          -- vim.cmd("colorscheme
           -- vim.g.solarized_diffmode = "high"
           -- To enable transparency
           -- vim.g.solarized_termtrans = 1
@@ -135,8 +135,8 @@ return {
           -- require("lualine").setup({ options = { theme = "catppuccin" } })
 
           ----- Settings for vim-one light -----
-          -- vim.cmd("colorscheme one")
-          -- require("lualine").setup({ options = { theme = "onelight" } })
+          vim.cmd("colorscheme one")
+          require("lualine").setup({ options = { theme = "onelight" } })
 
           ----- Settings for onelight -----
           -- vim.cmd("colorscheme onelight")
@@ -151,8 +151,8 @@ return {
           -- require("lualine").setup({ options = { theme = "NeoSolarized" } })
 
           ----- Settings for Sonokai -----
-          vim.cmd("colorscheme sonokai")
-          require("lualine").setup({ options = { theme = "sonokai" } })
+          -- vim.cmd("colorscheme sonokai")
+          -- require("lualine").setup({ options = { theme = "sonokai" } })
         end,
       })
       require("auto-dark-mode").init()
