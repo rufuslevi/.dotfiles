@@ -37,6 +37,10 @@ tasks:
     cmds:
       - mkdir -p ~/.config/yabai
       - stow -v -t ~/.config/yabai yabai
+  wezterm:
+    cmds:
+      - mkdir -p ~/.config/wezterm
+      - stow -v -t ~/.config/wezterm wezterm
   zsh:
     cmds:
       - stow -v zsh
