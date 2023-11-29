@@ -3,17 +3,51 @@ local wezterm = require("wezterm")
 
 -- This table will hold the configuration.
 local config = {}
-
--- In newer versions of wezterm, use the config_builder which will
--- help provide clearer error messages
 if wezterm.config_builder then
 	config = wezterm.config_builder()
 end
 
--- This is where you actually apply your config choices
+-- Constants
+local FONT_SIZE = 14
+local WINDOW_DECORATIONS = "INTEGRATED_BUTTONS"
+local LIGHT_THEME = "Catppuccin Frappe"
+local DARK_THEME = "Monokai Pro (Gogh)"
 
--- For example, changing the color scheme:
-config.color_scheme = "Sonokai (Gogh)"
+-- Functions to hot-reload on dark mode switch from the OS
+-- Source : https://github.com/wez/wezterm/issues/806#issuecomment-882110170
+local function scheme_for_appearance(appearance)
+	if appearance:find("Dark") then
+		return DARK_THEME
+	else
+		return LIGHT_THEME
+	end
+end
+
+wezterm.on("window-config-reloaded", function(window, pane)
+	local overrides = window:get_config_overrides() or {}
+	local appearance = window:get_appearance()
+	local scheme = scheme_for_appearance(appearance)
+	if overrides.color_scheme ~= scheme then
+		overrides.color_scheme = scheme
+		window:set_config_overrides(overrides)
+	end
+end)
+
+-- Changing constants based on the host OS
+if os.execute("cd C:/WINDOWS") then
+	wezterm.log_info("Running on Windows!")
+
+	FONT_SIZE = 10
+	config.window_decorations = "TITLE"
+elseif not os.execute("cd /Applications") then
+	wezterm.log_info("Running on Linux!")
+
+	FONT_SIZE = 10
+	config.window_decorations = "TITLE"
+else
+	wezterm.log_info("MacOS!")
+end
+
 config.window_background_opacity = 0.95
 config.macos_window_background_blur = 20
 config.use_fancy_tab_bar = true
@@ -33,7 +67,7 @@ config.font = wezterm.font({
 		"ss09=1",
 	},
 })
-config.font_size = 14
+config.font_size = FONT_SIZE
 config.window_padding = {
 	left = 0,
 	right = 0,
@@ -45,95 +79,9 @@ config.window_frame = {
 		family = "Monaspace Radon",
 		weight = "DemiBold",
 	}),
-	font_size = 14,
+	font_size = FONT_SIZE,
 }
 config.hide_tab_bar_if_only_one_tab = false
-config.window_decorations = "INTEGRATED_BUTTONS"
+config.window_decorations = WINDOW_DECORATIONS
 
-local function scheme_for_appearance(appearance)
-	if appearance:find("Dark") then
-		return "Monokai Pro (Gogh)"
-	else
-		-- return "Ayu Light (Gogh)"
-		-- return "Mocha (light) (terminal.sexy)"
-		-- return "Solarized (light) (terminal.sexy)"
-		-- return "Builtin Solarized Light
-		-- return "Solarized Light (Gogh)"
-		-- return "Gruvbox light, soft (base16)"
-		-- return "Catppuccin Latte"
-		return "Catppuccin Frappe"
-	end
-end
-
-wezterm.on("window-config-reloaded", function(window, pane)
-	local overrides = window:get_config_overrides() or {}
-	local appearance = window:get_appearance()
-	local scheme = scheme_for_appearance(appearance)
-	if overrides.color_scheme ~= scheme then
-		overrides.color_scheme = scheme
-		window:set_config_overrides(overrides)
-	end
-end)
-
-local BinaryFormat = package.cpath:match("%p[\\|/]?%p(%a+)")
-if BinaryFormat == "dll" then
-	wezterm.log_info("Windows!")
-	config.font = wezterm.font({
-		family = "Monaspace Neon",
-		weight = "Regular",
-		stretch = "Normal",
-		harfbuzz_features = {
-			"ss01=1",
-			"ss02=1",
-			"ss03=1",
-			"ss04=1",
-			"ss05=1",
-			"ss06=1",
-			"ss07=1",
-			"ss08=1",
-			"ss09=1",
-		},
-	})
-	config.font_size = 10
-	config.window_frame = {
-		font = wezterm.font({
-			family = "Monaspace Radon",
-			weight = "DemiBold",
-		}),
-		font_size = 10,
-	}
-elseif BinaryFormat == "so" then
-	wezterm.log_info("Linux!")
-	config.font = wezterm.font({
-		family = "Monaspace Neon",
-		weight = "Regular",
-		stretch = "Normal",
-		harfbuzz_features = {
-			"ss01=1",
-			"ss02=1",
-			"ss03=1",
-			"ss04=1",
-			"ss05=1",
-			"ss06=1",
-			"ss07=1",
-			"ss08=1",
-			"ss09=1",
-		},
-	})
-	config.font_size = 10
-	config.window_frame = {
-		font = wezterm.font({
-			family = "Monaspace Radon",
-			weight = "DemiBold",
-		}),
-		font_size = 10,
-	}
-elseif BinaryFormat == "dylib" then
-	wezterm.log_info("MacOS!")
-else
-	wezterm.log_info("None!")
-end
-BinaryFormat = nil
-
--- and finally, return the configuration to wezterm
 return config
