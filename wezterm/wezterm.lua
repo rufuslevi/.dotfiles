@@ -59,7 +59,9 @@ local function scheme_for_appearance(appearance)
 		-- return "Solarized (light) (terminal.sexy)"
 		-- return "Builtin Solarized Light"
 		-- return "Solarized Light (Gogh)"
-		return "Gruvbox light, soft (base16)"
+		-- return "Gruvbox light, soft (base16)"
+		-- return "Catppuccin Latte"
+		return "Catppuccin Frappe"
 	end
 end
 

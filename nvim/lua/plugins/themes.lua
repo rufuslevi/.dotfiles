@@ -130,9 +130,9 @@ return {
 
           --- -- Settings for catppuccin -----
           -- vim.cmd("colorscheme catppuccin-latte")
-          -- vim.cmd("colorscheme catppuccin-frappe")
+          vim.cmd("colorscheme catppuccin-frappe")
           -- vim.cmd("colorscheme catppuccin-macchiato")
-          -- require("lualine").setup({ options = { theme = "catppuccin" } })
+          require("lualine").setup({ options = { theme = "catppuccin" } })
 
           ----- Settings for vim-one light -----
           -- vim.cmd("colorscheme one")
@@ -155,8 +155,8 @@ return {
           -- require("lualine").setup({ options = { theme = "sonokai" } })
 
           ----- Settings for Sonokai -----
-          vim.cmd("colorscheme gruvbox")
-          require("lualine").setup({ options = { theme = "gruvbox" } })
+          -- vim.cmd("colorscheme gruvbox")
+          -- require("lualine").setup({ options = { theme = "gruvbox" } })
         end,
       })
       require("auto-dark-mode").init()
