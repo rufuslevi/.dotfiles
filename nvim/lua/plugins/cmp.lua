@@ -27,7 +27,9 @@ return {
 
       -- local luasnip = require("luasnip")
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
-        ["<CR>"] = cmp.mapping.confirm({ select = true }),
+        -- ["<CR>"] = cmp.mapping.confirm({ select = true }),
+        ["<CR>"] = cmp.config.disable,
+        ["<Right>"] = cmp.mapping.confirm({ select = true }),
         -- ["<Tab>"] = cmp.mapping(function(fallback)
         --   if cmp.visible() then
         --     cmp.select_next_item()
@@ -67,5 +69,9 @@ return {
         },
       }
     end,
+  },
+  {
+    "hrsh7th/cmp-emoji",
+    enabled = false,
   },
 }
