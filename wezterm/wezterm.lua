@@ -57,7 +57,7 @@ local function scheme_for_appearance(appearance)
 		-- return "Ayu Light (Gogh)"
 		-- return "Mocha (light) (terminal.sexy)"
 		-- return "Solarized (light) (terminal.sexy)"
-		-- return "Builtin Solarized Light"
+		-- return "Builtin Solarized Light
 		-- return "Solarized Light (Gogh)"
 		-- return "Gruvbox light, soft (base16)"
 		-- return "Catppuccin Latte"
@@ -74,6 +74,66 @@ wezterm.on("window-config-reloaded", function(window, pane)
 		window:set_config_overrides(overrides)
 	end
 end)
+
+local BinaryFormat = package.cpath:match("%p[\\|/]?%p(%a+)")
+if BinaryFormat == "dll" then
+	wezterm.log_info("Windows!")
+	config.font = wezterm.font({
+		family = "Monaspace Neon",
+		weight = "Regular",
+		stretch = "Normal",
+		harfbuzz_features = {
+			"ss01=1",
+			"ss02=1",
+			"ss03=1",
+			"ss04=1",
+			"ss05=1",
+			"ss06=1",
+			"ss07=1",
+			"ss08=1",
+			"ss09=1",
+		},
+	})
+	config.font_size = 10
+	config.window_frame = {
+		font = wezterm.font({
+			family = "Monaspace Radon",
+			weight = "DemiBold",
+		}),
+		font_size = 10,
+	}
+elseif BinaryFormat == "so" then
+	wezterm.log_info("Linux!")
+	config.font = wezterm.font({
+		family = "Monaspace Neon",
+		weight = "Regular",
+		stretch = "Normal",
+		harfbuzz_features = {
+			"ss01=1",
+			"ss02=1",
+			"ss03=1",
+			"ss04=1",
+			"ss05=1",
+			"ss06=1",
+			"ss07=1",
+			"ss08=1",
+			"ss09=1",
+		},
+	})
+	config.font_size = 10
+	config.window_frame = {
+		font = wezterm.font({
+			family = "Monaspace Radon",
+			weight = "DemiBold",
+		}),
+		font_size = 10,
+	}
+elseif BinaryFormat == "dylib" then
+	wezterm.log_info("MacOS!")
+else
+	wezterm.log_info("None!")
+end
+BinaryFormat = nil
 
 -- and finally, return the configuration to wezterm
 return config
