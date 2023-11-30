@@ -5,3 +5,4 @@
 mason/
 plugged/
 nvim/lazy-lock.json
+nushell/config/history.txt
