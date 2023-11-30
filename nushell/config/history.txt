@@ -1,0 +1,229 @@
+cd .dotfiles/nvim/lua
+ls
+cat
+bat
+cargo install bat
+bat
+bat .
+whereis bat
+bat
+exit
+bat
+.dotfiles/nvim/
+ls
+bat init.lua
+bat README.md
+bat ./lua/plugins/themes.lua
+speedtest-rs 
+nu -h
+nvim ..
+ls
+la
+exa
+exa -h
+exa -a
+exa -l
+exa --help
+exa -L
+exa -L 2
+exa -L 3
+exa -l
+exa -l -i
+exa -l -
+exa -l
+exa -l- h
+exa -T
+exa -T -L 2
+exa -T -L 3
+exa -T -L 2
+exa -T
+..
+exa -T
+exit
+bat
+ls
+Developer/scripts/
+bat keymapping.sh
+btop
+exit
+$nu.env-path
+open
+open `Applications/Google Maps.app/`
+wezterm
+brew
+cargo
+rust
+fzf
+eixt
+exit
+nvim `/Users/rufuslevi/Library/Application Support/nushell/`
+code
+codium
+codium .
+codium `/Users/rufuslevi/Library/Application Support/nushell/`
+test
+ls
+Developer/scripts/
+./keymapping.sh
+..
+.
+cd 
+Developer/poly/INF2610
+cd Developer/poly/INF2610
+cat lab6/GestionMemoire.c
+bat
+bat --list-themes
+ls
+bat test1.c
+bat lab6/GestionMemoire.c
+bat test1.c
+exit
+nu
+which nu
+php
+brew
+brew install php
+/bin/zsh
+$nu.env-path
+zsh
+nvim $nu.env-path
+$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
+nvim
+nvim $nu.env-path
+$nu.env-path
+cd .dotfiles/
+task btop
+task
+brew
+task
+brew
+task
+cargo add nu_plugin_net
+chsh
+cargo
+cargo add nu_plugin_net
+cargo install nu_plugin_net
+ls
+net
+cargo-binstall
+cargo install cargo-binstall
+cargo-binstall nu_plugin_net
+cargo-binstall
+cargo remove cargo-binstall
+cargo 
+cargo uninstall cargo-binstall
+curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
+cargo binstall
+cargo binstall nu_plugin_net
+net
+$env.PATH
+$env
+.dotfiles/
+task os:nu
+task os:nusehll
+task os:nushell
+$env
+.dotfiles/
+task os:nushell
+net
+man stow
+help stow
+task os:nushell
+net
+man stow
+brew install starship<\n>
+asd
+test
+asd
+ls
+Developer/poly/INF2610
+cd Developer/poly/INF2610
+nvim .
+la
+asd
+date format -l
+format date -l
+cd 
+.dotfiles/
+starship prompt
+starship prompt -l
+starship prompt --l
+starship prompt --help
+starship prompt --right
+starship prompt -s
+starship prompt -h
+starship prompt -p
+task starship
+test
+net
+ls
+.dotfil;es
+.dotfiles
+ls
+nvim
+cd nvim
+:q
+cd 
+path
+$env.path
+$env.PATH
+/usr/local/bin
+/usr/local/bin/pokemon-colorscripts
+lg
+$env.EDITOR
+$env.editor
+.dotfiles
+task nushell
+task os:nushell
+lg
+lazygit
+ls
+lg
+lazygit
+lg
+scope aliases
+help aliases
+lg
+lq:w
+code
+ll
+lg
+ll
+lg
+:w
+exa
+exa l
+exa -h
+exa --help
+exa -a
+exa -t
+cargo uninstall exa
+eza
+cargo install eza
+nvim .zshrc
+lg
+ls
+eza
+cargo install eza
+cargo binstall eza
+eza
+ls
+bat .zshrc
+lg
+Developer/poly/INF2610
+cd Developer/poly/INF2610
+cd ~/.dotfiles/ 
+ls
+nvim .
+task --list-all
+bat .zshrc
+cd 
+bat .zshrc
+btop
+nvim .
+nvim
+exa
+eza
+.dotfiles/
+.dotfikes
+.dotfiles
