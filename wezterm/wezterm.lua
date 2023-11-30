@@ -9,24 +9,23 @@ end
 
 -- Constants
 local FONT_SIZE = 14
-local WINDOW_DECORATIONS = "INTEGRATED_BUTTONS"
-local LIGHT_THEME = "Catppuccin Frappe"
-local DARK_THEME = "Monokai Pro (Gogh)"
+local WINDOW_DECORATIONS = "INTEGRATED_BUTTONS|MACOS_FORCE_ENABLE_SHADOW"
+local LIGHT_THEME = "rose-pine-dawn"
+local DARK_THEME = "Sonokai (Gogh)"
+local SHELL = "/bin/zsh"
 
--- Functions to hot-reload on dark mode switch from the OS
+-- Function to hot-reload on dark mode switch from the OS
 -- Source : https://github.com/wez/wezterm/issues/806#issuecomment-882110170
-local function scheme_for_appearance(appearance)
-	if appearance:find("Dark") then
-		return DARK_THEME
-	else
-		return LIGHT_THEME
-	end
-end
-
 wezterm.on("window-config-reloaded", function(window, pane)
 	local overrides = window:get_config_overrides() or {}
 	local appearance = window:get_appearance()
-	local scheme = scheme_for_appearance(appearance)
+	local scheme = ""
+	if appearance:find("Dark") then
+		scheme = DARK_THEME
+	else
+		scheme = LIGHT_THEME
+	end
+
 	if overrides.color_scheme ~= scheme then
 		overrides.color_scheme = scheme
 		window:set_config_overrides(overrides)
@@ -46,7 +45,10 @@ elseif not os.execute("cd /Applications") then
 	config.window_decorations = "TITLE"
 else
 	wezterm.log_info("MacOS!")
+	SHELL = "/Users/rufuslevi/.cargo/bin/nu"
 end
+
+config.default_prog = { SHELL }
 
 config.window_background_opacity = 0.95
 config.macos_window_background_blur = 20
