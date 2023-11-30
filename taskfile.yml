@@ -1,5 +1,8 @@
 version: "3"
 
+includes:
+  os: ./task/Taskfile_{{OS}}.yml
+
 tasks:
   default:
     cmds:
@@ -8,19 +11,10 @@ tasks:
       - task: tmux
       - task: yabai
       - task: zsh
-  linux:
+  btop:
     cmds:
-      - task: kitty
-      - task: nvim
-      - task: tmux
-      - task: zsh
-  macos:
-    cmds:
-      - task: kitty
-      - task: nvim
-      - task: tmux
-      - task: yabai
-      - task: zsh
+      - mkdir -p ~/.config/btop
+      - stow -v -t ~/.config/btop btop
   kitty:
     cmds:
       - mkdir -p ~/.config/kitty
@@ -29,18 +23,17 @@ tasks:
     cmds:
       - mkdir -p ~/.config/nvim
       - stow -v -t ~/.config/nvim nvim
-  tmux:
+  starship:
     cmds:
-      - mkdir -p ~/.config/tmux
-      - stow -v -t ~/.config/tmux tmux
-  yabai:
-    cmds:
-      - mkdir -p ~/.config/yabai
-      - stow -v -t ~/.config/yabai yabai
+      - stow -v -t ~/.config starship
   wezterm:
     cmds:
       - mkdir -p ~/.config/wezterm
       - stow -v -t ~/.config/wezterm wezterm
+  tmux:
+    cmds:
+      - mkdir -p ~/.config/tmux
+      - stow -v -t ~/.config/tmux tmux
   zsh:
     cmds:
       - stow -v zsh

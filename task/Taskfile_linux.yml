@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  tmux:
+    cmds:
+      - mkdir -p ~/.config/tmux
+      - stow -v -t ~/.config/tmux tmux

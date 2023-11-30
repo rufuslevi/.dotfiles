@@ -1,0 +1,13 @@
+version: '3'
+
+tasks:
+  yabai:
+    cmds:
+      - mkdir -p ~/.config/yabai
+      - stow -v -t ~/.config/yabai yabai
+  nushell:
+    cmds:
+      - mkdir -p ~/Library/"Application Support"/nushell
+      - stow -v -t ~/Library/"Application Support"/nushell -d nushell config
+      - mkdir -p ~/.config/nushell
+      - stow -v -t ~/.config/nushell -d nushell dot-config
