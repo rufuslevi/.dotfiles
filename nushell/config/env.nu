@@ -71,7 +71,9 @@ $env.NU_PLUGIN_DIRS = [
     ($nu.default-config-dir | path join 'plugins') # add <nushell-config-dir>/plugins
 ]
 
-# Adding support for brew on MacOS
+# PATH
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '~/.cargo/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/usr/local/bin')
+$env.PATH = ($env.PATH | split row (char esep) | prepend '~/Library/Python/3.11/bin')
+$env.PATH = ($env.PATH | split row (char esep) | prepend '~/Library/Python/3.11/lib/python/site-packages')
