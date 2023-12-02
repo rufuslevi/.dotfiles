@@ -8,6 +8,7 @@ vim.keymap.set("n", "<leader>pc", builtin.current_buffer_fuzzy_find, { desc = "C
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
 vim.keymap.set("n", "<leader>cr", vim.lsp.buf.implementation)
 vim.keymap.set("n", "<leader>cs", vim.lsp.buf.document_symbol, { desc = "Code symbol" })
+vim.keymap.set("n", "<leader>ch", vim.lsp.buf.hover, { desc = "Code definition" })
 vim.keymap.set("n", "<leader>ce", vim.diagnostic.open_float, { desc = "Code error" })
 
 vim.keymap.set("n", "<leader>mp", function()
