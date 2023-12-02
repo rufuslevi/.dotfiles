@@ -1,0 +1,6025 @@
+{
+	"file_history":
+	[
+		"/Users/rufuslevi/.dotfiles/taskfile.yml",
+		"/Users/rufuslevi/.dotfiles/README.md",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/Preferences.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/Default/Preferences.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/Guna/themes/Guna.sublime-color-scheme",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/Guna.sublime-color-scheme",
+		"/Users/rufuslevi/Developer/dotfiles/tmux/tmux.conf",
+		"/Users/rufuslevi/Developer/configs/com.googlecode.iterm2.plist",
+		"/Users/rufuslevi/.config/tmux/plugins/tmux/catppuccin.tmux",
+		"/Users/rufuslevi/.config/tmux/tmux.conf",
+		"/Users/rufuslevi/Developer/INF2610/lab1/Lab.c",
+		"/Users/rufuslevi/.config/nvim/lua/loading.lua",
+		"/Users/rufuslevi/Developer/INF2610/lab1/Makefile",
+		"/Users/rufuslevi/Downloads/myk.conf",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/interapi/README.md",
+		"/Users/rufuslevi/.fleet/themes/jetbrains-fleet-main/.catppuccin.yml",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/interapi/cmd/jira/create.go",
+		"/Users/rufuslevi/Downloads/authorize",
+		"/Users/rufuslevi/Developer/scripts/work_desktop.sh",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/main.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/salesforce.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/grpcclient.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/models/event-payloads.go",
+		"/Users/rufuslevi/go/pkg/mod/github.com/linkedin/goavro/v2@v2.12.0/codec.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/api/pubsub_api.pb.go",
+		"/Users/rufuslevi/go/pkg/mod/github.com/mitchellh/mapstructure@v1.5.0/mapstructure.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/go-object/go-object.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/salesforce-object.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/zendesk/zendesk.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/api/pubsub_api_grpc.pb.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/common.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/utils/errorHandler.go",
+		"/Users/rufuslevi/go/pkg/mod/google.golang.org/grpc@v1.55.0/stream.go",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/Catppuccin/Catppuccin Macchiato.sublime-color-scheme",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/Catppuccin Macchiato.sublime-color-scheme",
+		"/Users/rufuslevi/.config/nvim/lua/plug.lua",
+		"/Users/rufuslevi/.config/nvim/after/plugin/telescope.lua",
+		"/Users/rufuslevi/.config/nvim/init.lua",
+		"/Users/rufuslevi/.config/nvim/lua/plugins.lua",
+		"/Users/rufuslevi/Developer/solotech/lightning-workspaces/sandbox-pmt/.prettierrc",
+		"/Users/rufuslevi/Developer/solotech/lightning-workspaces/sandbox-b2b2c/.prettierrc",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/credentials/credentials.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/zendesk/enums/ticket.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-object/zendesk-object.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-object/zendesk-ticket.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-ticket/zendesk-ticket.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-ticket.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/go-object.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/oauth.go",
+		"/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/request.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/record-info.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/records-result.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/go-object.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/examples/publishStream/main.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/go.mod",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/pubsub_api_grpc.pb.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/pubsub_api.pb.go",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/client.go",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/Guna.sublime-theme",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/Guna/themes/Guna.sublime-theme",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/Guna.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/Guna/Guna.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/Guna/themes/preset/Guna-light.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/Guna-light.sublime-settings",
+		"/Users/rufuslevi/Library/CloudStorage/OneDrive-Solotech.com/Documents/Projet#2-Salesforce/Meeting KPI's Léo",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/assets/Test.json",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/LSP/LSP.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/LSP.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/LSP/Default.sublime-keymap",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/Terminal/Terminal.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/Terminal.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/Terminal/iTerm.sh",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/Package Control.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/LSP-gopls.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/LSP-gopls/LSP-gopls.sublime-settings",
+		"/Users/rufuslevi/Developer/solotech/troubleshoot-lwc-1/README.md",
+		"/Users/rufuslevi/Library/Application Support/iTerm2/Scripts/iterm2_dark_mode.py",
+		"/Users/rufuslevi/.config/alacritty/alacritty.yml",
+		"/Users/rufuslevi/.config/kitty/kitty.conf",
+		"/Users/rufuslevi/Downloads/icns.sh",
+		"/Volumes/diska2/Backup Gen/Downloads/Materialize_1.78/settings.txt",
+		"/Users/rufuslevi/.config/nvim/init.vim",
+		"/Users/rufuslevi/.config/nvim/lua/init.lua",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/game-client.service.ts",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/communication/client-socket.service.ts",
+		"/Users/rufuslevi/Developer/log3900/server/app/services/socket/socket-manager.service.ts",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/main-page/main-page.component.html",
+		"/Users/rufuslevi/Developer/log3900/server/app/services/games-management/games-handler.service.ts",
+		"/Users/rufuslevi/Developer/log3900/server/app/services/database/user-stats-storage.service.ts",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/game-configuration.service.ts",
+		"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/src/main.rs",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/user.service.ts",
+		"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/Cargo.lock",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/communication/http-handler.service.ts",
+		"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/Cargo.toml",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/player-rack/player-rack.component.html",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/player-rack/player-rack.component.ts",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/letter-placement.service.ts",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/settings-page/settings-page.component.ts",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/dialog-box-avatar-selector/dialog-box-avatar-selector.component.ts",
+		"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.14/src/lib.rs",
+		"/Users/rufuslevi/Developer/log3900/server/app/controllers/profile-picture.controller.ts",
+		"/Users/rufuslevi/Developer/log3900/common/interfaces/avatar-data.ts",
+		"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.14/src/async_impl/client.rs",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/classes/test-classes/socket-test-emulator.ts",
+		"/Users/rufuslevi/Developer/log3900/.git/refs/remotes/origin/feature/server-observer",
+		"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/.gitignore",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/connection-page/connection-page.component.ts",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/connection-page/connection-page.component.html",
+		"/Users/rufuslevi/Developer/log3900/server/app/controllers/authentification.controller.ts",
+		"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie_store-0.14.1/src/cookie_store.rs",
+		"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie_store-0.14.1/src/lib.rs",
+		"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/main-page/main-page.component.scss",
+		"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/tauri-1.2.4/src/lib.rs",
+		"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/tauri-1.2.4/src/state.rs",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/RustFmt/RustFmt.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/RustFmt.sublime-settings",
+		"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/rustfmt.toml",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/RustEnhanced.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/Rust Enhanced/RustEnhanced.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/LSP-json.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/LSP-json/LSP-json.sublime-settings",
+		"/Users/rufuslevi/Library/Application Support/Sublime Text/Packages/User/JSON (Sublime).sublime-settings",
+		"/Users/rufuslevi/Developer/certs/myCA.pem"
+	],
+	"folder_history":
+	[
+		"/Users/rufuslevi/.config/nvim",
+		"/Users/rufuslevi/Developer/INF2610",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/interapi",
+		"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector",
+		"/Users/rufuslevi/.config",
+		"/Users/rufuslevi/Library/CloudStorage/OneDrive-polymtl.ca/LOG3430/TP/TP4",
+		"/Users/rufuslevi/Developer/log3430/tp4",
+		"/Users/rufuslevi/Developer/log3430/tp3",
+		"/Users/rufuslevi/Developer/log2990",
+		"/Users/rufuslevi/Developer/LOG2990-202",
+		"/Users/rufuslevi/Library/CloudStorage/OneDrive-polymtl.ca/LOG3430/TP/TP3",
+		"/Users/rufuslevi/Developer/log3900/server",
+		"/Users/rufuslevi/Developer/log3900/common",
+		"/Users/rufuslevi/Developer/log3900/desktop",
+		"/Users/rufuslevi/Developer/log3900",
+		"/Users/rufuslevi/Developer/piot/optimizing_refactoring/m2m_simulator",
+		"/Users/rufuslevi/Developer/inf2705",
+		"/Users/rufuslevi/Library/CloudStorage/OneDrive-polymtl.ca/INF2705/Examens",
+		"/Users/rufuslevi/Developer/inf2705/tp4/src",
+		"/Users/rufuslevi/Library/CloudStorage/OneDrive-polymtl.ca/INF2705/inf2705-exemples/11-RetroactionC-vbo/src",
+		"/Users/rufuslevi/Developer/inf2705/tp3/src",
+		"/Users/rufuslevi",
+		"/Users/rufuslevi/Developer/inf3405"
+	],
+	"last_version": 4152,
+	"last_window_id": 659,
+	"log_indexing": false,
+	"next_update_check": 1701621203,
+	"settings":
+	{
+		"new_window_full_screen": false,
+		"new_window_height": 862.0,
+		"new_window_maximized": false,
+		"new_window_position":
+		[
+			550.0,
+			-1208.0
+		],
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"create",
+						"createWheels"
+					],
+					[
+						"plane",
+						"planeType"
+					],
+					[
+						"iden",
+						"identifierStr"
+					],
+					[
+						"identif",
+						"identifierStr"
+					],
+					[
+						"size",
+						"sizeOfIdentifier"
+					],
+					[
+						"identi",
+						"identifierStr"
+					],
+					[
+						"siz",
+						"sizeOfIdentifier"
+					],
+					[
+						"idn",
+						"identifierFactory"
+					],
+					[
+						"ia",
+						"isRearWheel"
+					],
+					[
+						"in",
+						"int"
+					],
+					[
+						"Chan",
+						"ChangeType"
+					],
+					[
+						"json",
+						"jsonBody"
+					],
+					[
+						"print",
+						"Println"
+					],
+					[
+						"even",
+						"eventPayload"
+					],
+					[
+						"Mar",
+						"MarshalIndent"
+					],
+					[
+						"pr",
+						"Println"
+					],
+					[
+						"Get",
+						"GetPayload"
+					],
+					[
+						"prin",
+						"Println"
+					],
+					[
+						"Las",
+						"LastModifiedDate"
+					],
+					[
+						"Creade",
+						"CreatedById"
+					],
+					[
+						"event",
+						"eventPayload"
+					],
+					[
+						"sf",
+						"sfGrpcModels.EventPayload"
+					],
+					[
+						"pack",
+						"package models"
+					],
+					[
+						"Dele",
+						"DeleteWithFilter"
+					],
+					[
+						"bas",
+						"baseQuery"
+					],
+					[
+						"base",
+						"baseQuery"
+					],
+					[
+						"fmt",
+						"fmt.Sprint"
+					],
+					[
+						"sprint",
+						"Sprintf"
+					],
+					[
+						"pubsub",
+						"pubsub"
+					],
+					[
+						"Crea",
+						"CreateObjectCopies"
+					],
+					[
+						"plugin",
+						"pluginsList"
+					],
+					[
+						"go",
+						"goObjects"
+					],
+					[
+						"zendesk",
+						"zendesk/"
+					],
+					[
+						"New",
+						"New"
+					],
+					[
+						"sales",
+						"salesforce"
+					],
+					[
+						"Statu",
+						"Status__c"
+					],
+					[
+						"Pro",
+						"Priority__c"
+					],
+					[
+						"Typ",
+						"Type__c"
+					],
+					[
+						"Stat",
+						"Status__c"
+					],
+					[
+						"Prio",
+						"Priority__c"
+					],
+					[
+						"Zendes",
+						"zendeskTicket"
+					],
+					[
+						"ob",
+						"objectName"
+					],
+					[
+						"ReplayPreset_",
+						"ReplayPreset_LATEST"
+					],
+					[
+						"client",
+						"client"
+					],
+					[
+						"bo",
+						"Body"
+					],
+					[
+						"io",
+						"ioutil"
+					],
+					[
+						"sp",
+						"Sprintf"
+					],
+					[
+						"get",
+						"GetTopic"
+					],
+					[
+						"connect",
+						"connectGRPC"
+					],
+					[
+						"user",
+						"UserInfoEndpoint"
+					],
+					[
+						"Replay",
+						"ReplayPreset_EARLIEST"
+					],
+					[
+						"priority",
+						"ConditionFieldPriority"
+					],
+					[
+						"dele",
+						"DeleteTicket"
+					],
+					[
+						"getTicket",
+						"GetTickets"
+					],
+					[
+						"Http",
+						"HttpResponse"
+					],
+					[
+						"req",
+						"reqwest"
+					],
+					[
+						"to",
+						"to_owned() (as ToOwned)"
+					],
+					[
+						"Cookie",
+						"CookieStore (use reqwest::cookie::CookieStore)"
+					],
+					[
+						"from_",
+						"from_str(…)"
+					],
+					[
+						"ser",
+						"serde_json"
+					],
+					[
+						"Jon",
+						"serde_json"
+					],
+					[
+						"cl",
+						"clone() (as Clone)"
+					],
+					[
+						"E",
+						"Error"
+					],
+					[
+						"CONTENT_",
+						"CONTENT_TYPE (use reqwest::header::CONTENT_TYPE)"
+					],
+					[
+						"hea",
+						"headers(…)"
+					],
+					[
+						"http",
+						"httpPost"
+					],
+					[
+						"Ht",
+						"HttpResponse"
+					],
+					[
+						"res",
+						"response"
+					],
+					[
+						"Ok",
+						"Ok()"
+					],
+					[
+						"App",
+						"AppHandle"
+					],
+					[
+						"dan",
+						"danger_accept_invalid_certs(…)"
+					],
+					[
+						"han",
+						"handle()"
+					],
+					[
+						"gam",
+						"gameRoom"
+					],
+					[
+						"matS",
+						"matSuffix"
+					],
+					[
+						"mat-fab",
+						"mat-flat-button"
+					],
+					[
+						"mat-butt",
+						"mat-raised-button"
+					],
+					[
+						"game",
+						"gameRoom"
+					],
+					[
+						"MI",
+						"MIN_PASSWORD_LENGTH"
+					],
+					[
+						"min",
+						"minLength"
+					],
+					[
+						"Gam",
+						"GameVisibility"
+					],
+					[
+						"isGame",
+						"isGamePublic"
+					],
+					[
+						"Game",
+						"isGameLocked"
+					],
+					[
+						"passw",
+						"isPasswordFieldEnabled"
+					],
+					[
+						"pass",
+						"passwordEnableForm"
+					],
+					[
+						"is",
+						"isPasswordFieldEnabled"
+					],
+					[
+						"re",
+						"removeValidators"
+					],
+					[
+						"has",
+						"hasValidator"
+					],
+					[
+						"pa",
+						"passwordEnableForm"
+					],
+					[
+						"value",
+						"valueChanges"
+					],
+					[
+						"Val",
+						"Validators"
+					],
+					[
+						"ta",
+						"@tauri-apps/api"
+					],
+					[
+						"set",
+						"setValue"
+					],
+					[
+						"con",
+						"console"
+					],
+					[
+						"new",
+						"newValue"
+					],
+					[
+						"on",
+						"registerOnChange"
+					],
+					[
+						"games",
+						"gamesToJoin"
+					],
+					[
+						"Form",
+						"FormControl"
+					],
+					[
+						"mat-slide",
+						"mat-slide-toggle"
+					],
+					[
+						"formGroup",
+						"[formGroup]"
+					],
+					[
+						"pla",
+						"playerElement"
+					],
+					[
+						"User",
+						"UserService"
+					],
+					[
+						"padding",
+						"padding-bottom"
+					],
+					[
+						"Total",
+						"TOTAL_ROWS"
+					],
+					[
+						"Pla",
+						"PlayDirection"
+					],
+					[
+						"Sock",
+						"SocketEvents"
+					],
+					[
+						"isTile",
+						"isTileOutOfRow"
+					],
+					[
+						"Plac",
+						"PlacingState"
+					],
+					[
+						"direction",
+						"PlayDirection"
+					],
+					[
+						"com",
+						"computeNewPosition"
+					],
+					[
+						"login",
+						"loginRes"
+					],
+					[
+						"getD",
+						"getDefaultImages"
+					],
+					[
+						"logi",
+						"loginRes"
+					],
+					[
+						"ima",
+						"imageKeyFile"
+					],
+					[
+						"file",
+						"fileValidationError?"
+					],
+					[
+						"File",
+						"FileReader"
+					],
+					[
+						"catch",
+						"catchError"
+					],
+					[
+						"Valida",
+						"Validators"
+					],
+					[
+						"Image",
+						"ImageInfo"
+					],
+					[
+						"ca",
+						"catchError"
+					],
+					[
+						"profile",
+						"profilePicture"
+					],
+					[
+						"MAX",
+						"MAX_EMAIL_LENGTH"
+					],
+					[
+						"image",
+						"imageSources"
+					],
+					[
+						"HttpHandel",
+						"HttpHandlerService"
+					],
+					[
+						"cat",
+						"catchError"
+					],
+					[
+						"val",
+						"value"
+					],
+					[
+						"Ima",
+						"ImageType"
+					],
+					[
+						"va",
+						"value"
+					],
+					[
+						"fol",
+						"folders"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						"settings",
+						"Preferences: Settings"
+					],
+					[
+						"select colo",
+						"UI: Select Color Scheme"
+					],
+					[
+						"packag",
+						"Package Control: Install Package"
+					],
+					[
+						"color sel",
+						"UI: Select Color Scheme"
+					],
+					[
+						"color",
+						"UI: Customize Color Scheme"
+					],
+					[
+						"theme",
+						"UI: Select Theme"
+					],
+					[
+						"guna",
+						"Guna"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"git comm",
+						"Git: Commit"
+					],
+					[
+						"git add",
+						"Git: Add All"
+					],
+					[
+						"pakca install",
+						"Package Control: Install Package"
+					],
+					[
+						"color scheme",
+						"UI: Select Color Scheme"
+					],
+					[
+						":",
+						":$ - EOF"
+					],
+					[
+						"colors",
+						"UI: Select Color Scheme"
+					],
+					[
+						"packa",
+						"Package Control: Install Package"
+					],
+					[
+						"package",
+						"Package Control: Install Package"
+					],
+					[
+						"format",
+						"ESLint Formatter: Format this file"
+					],
+					[
+						"origami",
+						"Origami: Create Pane on the Right"
+					],
+					[
+						"split",
+						"File: Split View"
+					],
+					[
+						"popup",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"lsp:",
+						"LSP: Toggle Inlay Hints"
+					],
+					[
+						"code lens",
+						"LSP: Run Code Lens"
+					],
+					[
+						"lsp",
+						"LSP: Run Code Lens"
+					],
+					[
+						"lsp ",
+						"LSP: Expand Selection"
+					],
+					[
+						"package di",
+						"Package Control: Disable Package"
+					],
+					[
+						"forma",
+						"ESLint Formatter: Format this file"
+					],
+					[
+						"FORMAT",
+						"LSP: Format File"
+					],
+					[
+						"pack",
+						"Package Control: Install Package"
+					],
+					[
+						"setting",
+						"Preferences: Settings"
+					],
+					[
+						"spli",
+						"File: Split View"
+					],
+					[
+						"key",
+						"Preferences: Key Bindings"
+					],
+					[
+						"lsp code ",
+						"LSP: Run Code Lens"
+					],
+					[
+						"lsp code",
+						"LSP: Code Action…"
+					],
+					[
+						"keybin",
+						"Preferences: Key Bindings"
+					],
+					[
+						"terminal",
+						"Preferences: Terminal Settings"
+					],
+					[
+						"package br",
+						"Preferences: Browse Packages"
+					],
+					[
+						"package disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"package settings",
+						"Preferences: Package Control Settings"
+					],
+					[
+						"rename",
+						"LSP: Rename"
+					],
+					[
+						"preferences goi",
+						"Preferences: LSP-gopls Settings"
+					],
+					[
+						"pacage disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"pacakge",
+						"Package Control: Install Package"
+					],
+					[
+						"gofmt",
+						"Gofmt: Format this file"
+					],
+					[
+						"preferences packa",
+						"Preferences: Package Control Settings"
+					],
+					[
+						"preferen",
+						"Preferences: Browse Packages"
+					],
+					[
+						"go build",
+						"Build With: Go"
+					],
+					[
+						"dark",
+						"Toggle Dark Mode"
+					],
+					[
+						"browse",
+						"Preferences: Browse Packages"
+					],
+					[
+						":W",
+						":w - Save"
+					],
+					[
+						":q",
+						"ST: Save Query"
+					],
+					[
+						":cp ",
+						":cp - Close pane"
+					],
+					[
+						"mini",
+						"View: Toggle Minimap"
+					],
+					[
+						":pr",
+						":pr - Travel right pane"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"toml",
+						"Set Syntax: TOML"
+					],
+					[
+						"rust enhan",
+						"Preferences: Rust Enhanced Settings"
+					],
+					[
+						"rust sett",
+						"Preferences: Rust Enhanced Settings"
+					],
+					[
+						"instlal",
+						"Package Control: Install Package"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"colo",
+						"UI: Select Color Scheme"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"font",
+						"Origami: Focus on Pane on the Left"
+					],
+					[
+						":cp",
+						"Origami: Create Pane Above"
+					],
+					[
+						":sl",
+						":sl - Send to left pane"
+					],
+					[
+						"setttings",
+						"ST: Settings"
+					],
+					[
+						"settin",
+						"Preferences: Settings"
+					],
+					[
+						"lsp sett",
+						"Preferences: LSP Settings"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"lens ",
+						"LSP: Run Code Lens"
+					],
+					[
+						"toggle inl",
+						"LSP: Toggle Inlay Hints"
+					],
+					[
+						"project ed",
+						"Project: Edit Project"
+					],
+					[
+						"brow",
+						"CommandsBrowser: Browse available Plugin/Package commands."
+					],
+					[
+						":close pa",
+						":cp - Close pane"
+					],
+					[
+						":sr",
+						":sr - Send to right pane"
+					],
+					[
+						"origami sett",
+						"Preferences: Origami Settings"
+					],
+					[
+						"brows",
+						"CommandsBrowser: Browse available Plugin/Package commands."
+					],
+					[
+						":pl",
+						":pl - Travel left pane"
+					],
+					[
+						"origami move ",
+						"Origami: Move File to Pane on the Right"
+					],
+					[
+						"disable",
+						"Package Control: Disable Package"
+					],
+					[
+						"eslin",
+						"Preferences: LSP-eslint Settings"
+					],
+					[
+						"jsprett",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"eslint",
+						"Preferences: LSP-eslint Settings"
+					],
+					[
+						"lsp settin",
+						"Preferences: LSP Settings"
+					],
+					[
+						"syntax settings",
+						"Preferences: Settings – Syntax Specific"
+					],
+					[
+						"angular",
+						"Preferences: LSP-angular Settings"
+					],
+					[
+						":rp ",
+						":pr - Travel right pane"
+					],
+					[
+						":cp - ",
+						":cp - Close pane"
+					],
+					[
+						"pakcage file",
+						"View Package File"
+					],
+					[
+						"pane right",
+						"Origami: Move File to Pane on the Right"
+					],
+					[
+						":pt -",
+						":pt - Previous tab"
+					],
+					[
+						":lt",
+						":pl - Travel left pane"
+					],
+					[
+						"left pane",
+						"Origami: Move File to Pane on the Left"
+					],
+					[
+						"destro",
+						"Origami: Destroy Current Pane"
+					],
+					[
+						":plr",
+						":plr - Travel right pane"
+					],
+					[
+						"next",
+						"Next tab"
+					],
+					[
+						"prev",
+						"Previous tab"
+					],
+					[
+						"destroy p",
+						"Origami: Destroy Current Pane"
+					],
+					[
+						"commands",
+						"Preferences: CommandsBrowser Settings."
+					],
+					[
+						"origami above",
+						"Origami: Focus on Pane Above"
+					],
+					[
+						":sp",
+						"Git: Stash Pop"
+					],
+					[
+						"typescript",
+						"Set Syntax: TypeScript"
+					],
+					[
+						"typescr",
+						"Preferences: LSP-typescript Settings"
+					],
+					[
+						"imports ",
+						"LSP-typescript: Organize Imports"
+					],
+					[
+						"jspr",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"typescri",
+						"Preferences: LSP-typescript Settings"
+					],
+					[
+						"projet",
+						"Project: Refresh Folders"
+					],
+					[
+						":e",
+						":e - Revert"
+					],
+					[
+						":g",
+						"Git: Gitk"
+					],
+					[
+						":full",
+						"View: Toggle Full Screen"
+					],
+					[
+						":fullsc",
+						"View: Toggle Full Screen"
+					],
+					[
+						"enab",
+						"Package Control: Enable Package"
+					],
+					[
+						"rainbo",
+						"RainbowBrackets: Setup Plugin"
+					],
+					[
+						"terminus",
+						"Terminus: Open Default Shell in Tab (View)"
+					],
+					[
+						"keyb",
+						"Preferences: Key Bindings"
+					],
+					[
+						"docbl",
+						"DocBlockr: Decorate line comment"
+					],
+					[
+						"lsp-rust",
+						"Preferences: LSP-angular Settings"
+					],
+					[
+						"termin",
+						"Terminus: Open Default Shell in Tab (View)"
+					],
+					[
+						"jsp",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"js",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"jspretter",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"lsp typ",
+						"Preferences: LSP-typescript Settings"
+					],
+					[
+						"pro",
+						"Project: Edit Project"
+					],
+					[
+						"project ",
+						"Project: Edit Project"
+					],
+					[
+						"lsp-es",
+						"Preferences: LSP-eslint Settings"
+					],
+					[
+						"enable",
+						"Package Control: Enable Package"
+					],
+					[
+						"list pack",
+						"Package Control: List Packages"
+					],
+					[
+						"ngx settin",
+						"Preferences: Settings – Syntax Specific"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 263.0,
+				"history":
+				[
+					"exit",
+					"invisi.screen",
+					"view.run_command('example')",
+					"view.run_command('example_command')",
+					"view.run('example_command')",
+					"q()",
+					"q",
+					"exit()",
+					"print(a)",
+					"a = 1",
+					"help",
+					"h",
+					"exit()",
+					"exit",
+					"ls",
+					"exit()",
+					"print(\"test\")",
+					"System.out.println(\"hello World\")",
+					"bonjour",
+					"test"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/Users/rufuslevi/.dotfiles/taskfile.yml",
+				"/Users/rufuslevi/.config/btop/btop.conf",
+				"/Users/rufuslevi/Developer/dotfiles/tmux/tmux.conf",
+				"/Users/rufuslevi/Developer/configs/com.googlecode.iterm2.plist",
+				"/Users/rufuslevi/.config/tmux/plugins/tmux/catppuccin.tmux",
+				"/Users/rufuslevi/.config/tmux/tmux.conf",
+				"/Users/rufuslevi/Developer/INF2610/lab1/Lab.c",
+				"/Users/rufuslevi/Developer/INF2610/lab1/Makefile",
+				"/Users/rufuslevi/Downloads/myk.conf",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/interapi/README.md",
+				"/Users/rufuslevi/Developer/scripts/work_desktop.sh",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/main.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/salesforce.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/grpcclient.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/models/event-payloads.go",
+				"/Users/rufuslevi/go/pkg/mod/github.com/linkedin/goavro/v2@v2.12.0/codec.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/api/pubsub_api.pb.go",
+				"/Users/rufuslevi/go/pkg/mod/github.com/mitchellh/mapstructure@v1.5.0/mapstructure.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/go-object/go-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/salesforce-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/zendesk/zendesk.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/api/pubsub_api_grpc.pb.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/common.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/utils/errorHandler.go",
+				"/Users/rufuslevi/go/pkg/mod/google.golang.org/grpc@v1.55.0/stream.go",
+				"/Users/rufuslevi/.config/nvim/after/plugin/telescope.lua",
+				"/Users/rufuslevi/.config/nvim/init.lua",
+				"/Users/rufuslevi/.config/nvim/lua/plugins.lua",
+				"/Users/rufuslevi/.config/nvim/lua/plug.lua",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/zendesk/enums/ticket.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-object/zendesk-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-object/zendesk-ticket.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-ticket/zendesk-ticket.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-ticket.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/go-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/credentials/credentials.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/oauth.go",
+				"/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/request.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/record-info.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/records-result.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/go-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/examples/publishStream/main.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/go.mod",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/pubsub_api_grpc.pb.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/pubsub_api.pb.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/client.go",
+				"/Users/rufuslevi/Library/CloudStorage/OneDrive-Solotech.com/Documents/Projet#2-Salesforce/Meeting KPI's Léo",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/assets/Test.json",
+				"/Users/rufuslevi/Developer/solotech/troubleshoot-lwc-1/README.md",
+				"/Users/rufuslevi/Library/Application Support/iTerm2/Scripts/iterm2_dark_mode.py",
+				"/Users/rufuslevi/.config/alacritty/alacritty.yml",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/main-page/main-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/socket/socket-manager.service.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/games-management/games-handler.service.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/database/user-stats-storage.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/user.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/Cargo.lock",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/player-rack/player-rack.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/game-client.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/player-rack/player-rack.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/Cargo.toml",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/letter-placement.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/src/main.rs",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/settings-page/settings-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/dialog-box-avatar-selector/dialog-box-avatar-selector.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/communication/http-handler.service.ts",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.14/src/lib.rs",
+				"/Users/rufuslevi/Developer/log3900/server/app/controllers/profile-picture.controller.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/avatar-data.ts",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.14/src/async_impl/client.rs",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/classes/test-classes/socket-test-emulator.ts",
+				"/Users/rufuslevi/Developer/log3900/.git/refs/remotes/origin/feature/server-observer",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/.gitignore",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/connection-page/connection-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/connection-page/connection-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/server/app/controllers/authentification.controller.ts",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie_store-0.14.1/src/cookie_store.rs",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie_store-0.14.1/src/lib.rs",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/main-page/main-page.component.scss",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/tauri-1.2.4/src/lib.rs",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/tauri-1.2.4/src/state.rs",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/rustfmt.toml",
+				"/Users/rufuslevi/Developer/log3900/server/app/interfaces/dictionary-container.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/games-management/games-state.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/communication/client-socket.service.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/client-utilities/game-sessions.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/dialog-box-password/dialog-box-password.component.spec.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/dialog-box-password/dialog-box-password.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/interfaces/game-room-client.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/interfaces/game-room.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.spec.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-create-page/game-creation-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/user-creation-page/user-creation-page.component.scss",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-create-page/game-creation-page.component.scss",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/assets/i18n/en.json",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/assets/i18n/fr.json",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.scss",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/game-configuration.service.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/room-player.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/player-room-info.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/user.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/join-game-room-parameters.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-create-page/game-creation-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/constants/user.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/settings-page/settings-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/package.json",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/settings-page/settings-page.component.scss",
+				"/Users/rufuslevi/Developer/log3900/common/constants/players.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/header/header.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/theme.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/header/header.component.html",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/game-parameters.ts",
+				"/Users/rufuslevi/Developer/log3900/common/models/game-visibility.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/client-utilities/game-sessions.service.spec.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/header/header.component.scss",
+				"/Users/rufuslevi/Developer/log3900/server/app/interfaces/game-parameters.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/interfaces/game-parameters.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/player-rack/player-rack.component.scss",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/styles.scss",
+				"/Users/rufuslevi/Developer/log3900/server/app/app.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/node_modules/@angular/forms/index.d.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-create-page/game-creation-page.component.spec.ts",
+				"/Users/rufuslevi/Developer/log3900/common/constants/socket-events.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/middlewares/token-verification-middleware.ts"
+			],
+			"find":
+			{
+				"height": 49.0
+			},
+			"find_in_files":
+			{
+				"height": 134.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 31.0
+			},
+			"input":
+			{
+				"height": 50.0
+			},
+			"menu_visible": true,
+			"output.CommandsBrowser":
+			{
+				"height": 318.0
+			},
+			"output.LSP Log Panel":
+			{
+				"height": 0.0
+			},
+			"output.SublimeLinter":
+			{
+				"height": 126.0
+			},
+			"output.Terminus":
+			{
+				"height": 220.0
+			},
+			"output.diagnostics":
+			{
+				"height": 0.0
+			},
+			"output.doc":
+			{
+				"height": 0.0
+			},
+			"output.exec":
+			{
+				"height": 308.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.git":
+			{
+				"height": 127.0
+			},
+			"output.hd_output_panel":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"output.references":
+			{
+				"height": 426.0
+			},
+			"output.zsh":
+			{
+				"height": 339.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 58.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"zedn",
+						"src/salesforce/models/zendesk-ticket.go"
+					],
+					[
+						"common",
+						"src/salesforce/grpc/common.go"
+					],
+					[
+						"grpc",
+						"src/salesforce/grpc/grpcclient.go"
+					],
+					[
+						"socket-man",
+						"~ Serveur ~/app/services/socket/socket-manager.service.ts"
+					],
+					[
+						"client-so",
+						"~ Client lourd ~/src/app/services/communication/client-socket.service.ts"
+					],
+					[
+						"game-cle",
+						"~ Client lourd ~/src/app/services/game-client.service.ts"
+					],
+					[
+						"socket-manage",
+						"~ Serveur ~/app/services/socket/socket-manager.service.ts"
+					],
+					[
+						"games-han",
+						"~ Serveur ~/app/services/games-management/games-handler.service.ts"
+					],
+					[
+						"user-",
+						"~ Serveur ~/app/services/database/user-stats-storage.service.ts"
+					],
+					[
+						"main-pa",
+						"~ Client lourd ~/src/app/pages/main-page/main-page.component.html"
+					],
+					[
+						"cargo",
+						"~ Client lourd ~/src-tauri/Cargo.lock"
+					],
+					[
+						"player-rac",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.ts"
+					],
+					[
+						"player-rack",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.html"
+					],
+					[
+						"rack",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.html"
+					],
+					[
+						"rack.com",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.html"
+					],
+					[
+						"game-client",
+						"~ Client lourd ~/src/app/services/game-client.service.ts"
+					],
+					[
+						"proti",
+						"~ Serveur ~/app/controllers/profile-picture.controller.ts"
+					],
+					[
+						"http-",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"main.rs",
+						"~ Client lourd ~/src-tauri/src/main.rs"
+					],
+					[
+						"remove",
+						"~ Racine ~/.git/refs/remotes/origin/feature/server-observer"
+					],
+					[
+						"ignore",
+						"~ Client lourd ~/src-tauri/.gitignore"
+					],
+					[
+						"auth",
+						"~ Serveur ~/app/controllers/authentification.controller.ts"
+					],
+					[
+						"conect",
+						"~ Client lourd ~/src/app/pages/connection-page/connection-page.component.html"
+					],
+					[
+						"handler",
+						"~ Serveur ~/app/services/games-management/games-handler.service.ts"
+					],
+					[
+						"authen",
+						"~ Serveur ~/app/controllers/authentification.controller.ts"
+					],
+					[
+						"user.ser",
+						"~ Client lourd ~/src/app/services/user.service.ts"
+					],
+					[
+						"carg",
+						"~ Client lourd ~/src-tauri/Cargo.toml"
+					],
+					[
+						"http",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"main",
+						"~ Client lourd ~/src-tauri/src/main.rs"
+					],
+					[
+						"http-cl",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"dictionaryC",
+						"~ Serveur ~/app/interfaces/dictionaryContainer.ts"
+					],
+					[
+						"game-state",
+						"~ Serveur ~/app/services/games-management/games-state.service.ts"
+					],
+					[
+						"socket",
+						"~ Serveur ~/app/services/socket/socket-manager.service.ts"
+					],
+					[
+						"client",
+						"~ Client lourd ~/src/app/services/communication/client-socket.service.ts"
+					],
+					[
+						"game-ses",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"join-",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.ts"
+					],
+					[
+						"dialgo",
+						"~ Client lourd ~/src/app/components/dialog-box-password/dialog-box-password.component.html"
+					],
+					[
+						"join",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html"
+					],
+					[
+						"game-",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"create",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"creat",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"player",
+						"~ Common ~/interfaces/player-room-info.ts"
+					],
+					[
+						"user.",
+						"~ Common ~/interfaces/user.ts"
+					],
+					[
+						"user",
+						"~ Client lourd ~/src/app/services/user.service.ts"
+					],
+					[
+						"en",
+						"~ Client lourd ~/src/assets/i18n/en.json"
+					],
+					[
+						"fr",
+						"~ Client lourd ~/src/assets/i18n/fr.json"
+					],
+					[
+						"waitin",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.ts"
+					],
+					[
+						"wiaitn",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.html"
+					],
+					[
+						"game-create",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"sett",
+						"~ Client lourd ~/src/app/pages/settings-page/settings-page.component.html"
+					],
+					[
+						"game-se",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"letter",
+						"~ Client lourd ~/src/app/services/letter-placement.service.ts"
+					],
+					[
+						"game-ser",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"game-creat",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.ts"
+					],
+					[
+						"game-confi",
+						"~ Client lourd ~/src/app/services/game-configuration.service.ts"
+					],
+					[
+						"game-crea",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"settings",
+						"~ Client lourd ~/src/app/pages/settings-page/settings-page.component.html"
+					],
+					[
+						"multi",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html"
+					],
+					[
+						"game-conf",
+						"~ Client lourd ~/src/app/services/game-configuration.service.ts"
+					],
+					[
+						"theme",
+						"~ Client lourd ~/src/app/services/theme.service.ts"
+					],
+					[
+						"header",
+						"~ Client lourd ~/src/app/components/header/header.component.ts"
+					],
+					[
+						"cliet",
+						"~ Client lourd ~/src/app/services/communication/client-socket.service.ts"
+					],
+					[
+						"game-cea",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"player-room",
+						"~ Common ~/interfaces/player-room-info.ts"
+					],
+					[
+						"user.ts",
+						"~ Common ~/interfaces/user.ts"
+					],
+					[
+						"game crea",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"rakc",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.scss"
+					],
+					[
+						"http-han",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"game-con",
+						"~ Client lourd ~/src/app/services/game-configuration.service.ts"
+					],
+					[
+						"wiating",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.ts"
+					],
+					[
+						"connec",
+						"~ Client lourd ~/src/app/pages/connection-page/connection-page.component.html"
+					],
+					[
+						"material",
+						"~ Client lourd ~/src/app/modules/material.module.ts"
+					],
+					[
+						"module",
+						"~ Client lourd ~/src/app/app.module.ts"
+					],
+					[
+						"mater",
+						"~ Client lourd ~/src/app/modules/material.module.ts"
+					],
+					[
+						"",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.ts"
+					],
+					[
+						"en.",
+						"~ Client lourd ~/src/assets/i18n/en.json"
+					],
+					[
+						"fr.json",
+						"~ Client lourd ~/src/assets/i18n/fr.json"
+					],
+					[
+						"en.js",
+						"~ Racine ~/mobile/assets/flutter_i18n/en.json"
+					],
+					[
+						"fr.j",
+						"~ Racine ~/mobile/assets/flutter_i18n/fr.json"
+					],
+					[
+						"profi",
+						"~ Serveur ~/app/controllers/profile-picture.controller.ts"
+					],
+					[
+						"profile",
+						"~ Serveur ~/app/controllers/profile-picture.controller.ts"
+					],
+					[
+						"iuser",
+						"~ Common ~/interfaces/user.ts"
+					],
+					[
+						"user.se",
+						"~ Client lourd ~/src/app/services/user.service.ts"
+					],
+					[
+						"game-sess",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"game-sett",
+						"~ Serveur ~/app/interfaces/game-scrabble-information.ts"
+					],
+					[
+						"game",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"client-",
+						"~ Client lourd ~/src/app/services/communication/client-socket.service.ts"
+					],
+					[
+						"waiting",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.ts"
+					],
+					[
+						"play-area",
+						"~ Client lourd ~/src/app/components/play-area/play-area.component.ts"
+					],
+					[
+						"game-cl",
+						"~ Client lourd ~/src/app/services/game-client.service.ts"
+					],
+					[
+						"player.ts",
+						"~ Serveur ~/app/constants/players.ts"
+					],
+					[
+						"letter-pla",
+						"~ Client lourd ~/src/app/services/letter-placement.service.ts"
+					],
+					[
+						"letter-lpla",
+						"~ Serveur ~/app/classes/letter-placement.class.ts"
+					],
+					[
+						"game-boar",
+						"~ Client lourd ~/src/app/components/game-board/game-board.component.ts"
+					],
+					[
+						"witing",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.html"
+					],
+					[
+						"letter-",
+						"~ Client lourd ~/src/app/services/letter-placement.service.ts"
+					],
+					[
+						"eslint",
+						"~ Racine ~/.eslintrc.json"
+					],
+					[
+						"game-board",
+						"~ Client lourd ~/src/app/components/game-board/game-board.component.ts"
+					],
+					[
+						"grid",
+						"~ Client lourd ~/src/app/services/grid.service.ts"
+					],
+					[
+						"open",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.html"
+					],
+					[
+						"game-bot",
+						"~ Client lourd ~/src/app/components/game-board/game-board.component.ts"
+					],
+					[
+						"picture",
+						"~ Serveur ~/app/controllers/profile-picture.controller.ts"
+					],
+					[
+						"dial",
+						"~ Client lourd ~/src/app/components/dialog-box-avatar-selector/dialog-box-avatar-selector.component.ts"
+					],
+					[
+						"dialog",
+						"~ Client lourd ~/src/app/components/dialog-box-avatar-selector/dialog-box-avatar-selector.component.ts"
+					],
+					[
+						"authe",
+						"~ Serveur ~/app/services/authentication/authentication.service.ts"
+					],
+					[
+						"heade",
+						"~ Client lourd ~/src/app/components/header/header.component.html"
+					],
+					[
+						"app.ts",
+						"~ Serveur ~/app/app.ts"
+					],
+					[
+						"foot",
+						"~ Client lourd ~/src/app/components/footer/footer.component.scss"
+					],
+					[
+						"footer",
+						"~ Client lourd ~/src/app/components/footer/footer.component.html"
+					],
+					[
+						"game service",
+						"~ Client lourd ~/src/app/services/game-client.service.ts"
+					],
+					[
+						"multiplayer-",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html"
+					],
+					[
+						"multipla",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html"
+					],
+					[
+						"main-page",
+						"~ Client lourd ~/src/app/pages/main-page/main-page.component.html"
+					],
+					[
+						"creation",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.ts"
+					],
+					[
+						"connection",
+						"~ Client lourd ~/src/app/pages/connection-page/connection-page.component.ts"
+					],
+					[
+						"http-handler",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"connect",
+						"~ Client lourd ~/src/app/pages/connection-page/connection-page.component.ts"
+					],
+					[
+						"header.com",
+						"~ Client lourd ~/src/app/components/header/header.component.html"
+					],
+					[
+						"user-crea",
+						"~ Client lourd ~/src/app/pages/user-creation-page/user-creation-page.component.ts"
+					],
+					[
+						"user.serv",
+						"~ Client lourd ~/src/app/services/user.service.ts"
+					],
+					[
+						"image-in",
+						"~ Common ~/interfaces/image-info.ts"
+					],
+					[
+						"app-cookie",
+						"~ Client lourd ~/src/app/services/communication/app-cookie.service.ts"
+					],
+					[
+						"information",
+						"~ Client lourd ~/src/app/components/information-panel/information-panel.component.html"
+					],
+					[
+						"routin",
+						"~ Client lourd ~/src/app/modules/app-routing.module.ts"
+					],
+					[
+						"chat",
+						"~ Client lourd ~/src/app/components/chatbox/chatbox.component.spec.ts"
+					],
+					[
+						"chatbox-hand",
+						"~ Client lourd ~/src/app/services/chat/chatbox-handler.service.ts"
+					],
+					[
+						"chatbox-han",
+						"~ Serveur ~/app/services/client-utilities/chatbox-handler.service.ts"
+					],
+					[
+						"user-ce",
+						"~ Client lourd ~/src/app/pages/user-creation-page/user-creation-page.component.spec.ts"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"~/Developer/log3900.sublime-project"
+					]
+				],
+				"width": 380.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": false,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 235.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 1207.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"create",
+						"createWheels"
+					],
+					[
+						"plane",
+						"planeType"
+					],
+					[
+						"iden",
+						"identifierStr"
+					],
+					[
+						"identif",
+						"identifierStr"
+					],
+					[
+						"size",
+						"sizeOfIdentifier"
+					],
+					[
+						"identi",
+						"identifierStr"
+					],
+					[
+						"siz",
+						"sizeOfIdentifier"
+					],
+					[
+						"idn",
+						"identifierFactory"
+					],
+					[
+						"ia",
+						"isRearWheel"
+					],
+					[
+						"in",
+						"int"
+					],
+					[
+						"Chan",
+						"ChangeType"
+					],
+					[
+						"json",
+						"jsonBody"
+					],
+					[
+						"print",
+						"Println"
+					],
+					[
+						"even",
+						"eventPayload"
+					],
+					[
+						"Mar",
+						"MarshalIndent"
+					],
+					[
+						"pr",
+						"Println"
+					],
+					[
+						"Get",
+						"GetPayload"
+					],
+					[
+						"prin",
+						"Println"
+					],
+					[
+						"Las",
+						"LastModifiedDate"
+					],
+					[
+						"Creade",
+						"CreatedById"
+					],
+					[
+						"event",
+						"eventPayload"
+					],
+					[
+						"sf",
+						"sfGrpcModels.EventPayload"
+					],
+					[
+						"pack",
+						"package models"
+					],
+					[
+						"Dele",
+						"DeleteWithFilter"
+					],
+					[
+						"bas",
+						"baseQuery"
+					],
+					[
+						"base",
+						"baseQuery"
+					],
+					[
+						"fmt",
+						"fmt.Sprint"
+					],
+					[
+						"sprint",
+						"Sprintf"
+					],
+					[
+						"pubsub",
+						"pubsub"
+					],
+					[
+						"Crea",
+						"CreateObjectCopies"
+					],
+					[
+						"plugin",
+						"pluginsList"
+					],
+					[
+						"go",
+						"goObjects"
+					],
+					[
+						"zendesk",
+						"zendesk/"
+					],
+					[
+						"New",
+						"New"
+					],
+					[
+						"sales",
+						"salesforce"
+					],
+					[
+						"Statu",
+						"Status__c"
+					],
+					[
+						"Pro",
+						"Priority__c"
+					],
+					[
+						"Typ",
+						"Type__c"
+					],
+					[
+						"Stat",
+						"Status__c"
+					],
+					[
+						"Prio",
+						"Priority__c"
+					],
+					[
+						"Zendes",
+						"zendeskTicket"
+					],
+					[
+						"ob",
+						"objectName"
+					],
+					[
+						"ReplayPreset_",
+						"ReplayPreset_LATEST"
+					],
+					[
+						"client",
+						"client"
+					],
+					[
+						"bo",
+						"Body"
+					],
+					[
+						"io",
+						"ioutil"
+					],
+					[
+						"sp",
+						"Sprintf"
+					],
+					[
+						"get",
+						"GetTopic"
+					],
+					[
+						"connect",
+						"connectGRPC"
+					],
+					[
+						"user",
+						"UserInfoEndpoint"
+					],
+					[
+						"Replay",
+						"ReplayPreset_EARLIEST"
+					],
+					[
+						"priority",
+						"ConditionFieldPriority"
+					],
+					[
+						"dele",
+						"DeleteTicket"
+					],
+					[
+						"getTicket",
+						"GetTickets"
+					],
+					[
+						"Http",
+						"HttpResponse"
+					],
+					[
+						"req",
+						"reqwest"
+					],
+					[
+						"to",
+						"to_owned() (as ToOwned)"
+					],
+					[
+						"Cookie",
+						"CookieStore (use reqwest::cookie::CookieStore)"
+					],
+					[
+						"from_",
+						"from_str(…)"
+					],
+					[
+						"ser",
+						"serde_json"
+					],
+					[
+						"Jon",
+						"serde_json"
+					],
+					[
+						"cl",
+						"clone() (as Clone)"
+					],
+					[
+						"E",
+						"Error"
+					],
+					[
+						"CONTENT_",
+						"CONTENT_TYPE (use reqwest::header::CONTENT_TYPE)"
+					],
+					[
+						"hea",
+						"headers(…)"
+					],
+					[
+						"http",
+						"httpPost"
+					],
+					[
+						"Ht",
+						"HttpResponse"
+					],
+					[
+						"res",
+						"response"
+					],
+					[
+						"Ok",
+						"Ok()"
+					],
+					[
+						"App",
+						"AppHandle"
+					],
+					[
+						"dan",
+						"danger_accept_invalid_certs(…)"
+					],
+					[
+						"han",
+						"handle()"
+					],
+					[
+						"gam",
+						"gameRoom"
+					],
+					[
+						"matS",
+						"matSuffix"
+					],
+					[
+						"mat-fab",
+						"mat-flat-button"
+					],
+					[
+						"mat-butt",
+						"mat-raised-button"
+					],
+					[
+						"game",
+						"gameRoom"
+					],
+					[
+						"MI",
+						"MIN_PASSWORD_LENGTH"
+					],
+					[
+						"min",
+						"minLength"
+					],
+					[
+						"Gam",
+						"GameVisibility"
+					],
+					[
+						"isGame",
+						"isGamePublic"
+					],
+					[
+						"Game",
+						"isGameLocked"
+					],
+					[
+						"passw",
+						"isPasswordFieldEnabled"
+					],
+					[
+						"pass",
+						"passwordEnableForm"
+					],
+					[
+						"is",
+						"isPasswordFieldEnabled"
+					],
+					[
+						"re",
+						"removeValidators"
+					],
+					[
+						"has",
+						"hasValidator"
+					],
+					[
+						"pa",
+						"passwordEnableForm"
+					],
+					[
+						"value",
+						"valueChanges"
+					],
+					[
+						"Val",
+						"Validators"
+					],
+					[
+						"ta",
+						"@tauri-apps/api"
+					],
+					[
+						"set",
+						"setValue"
+					],
+					[
+						"con",
+						"console"
+					],
+					[
+						"new",
+						"newValue"
+					],
+					[
+						"on",
+						"registerOnChange"
+					],
+					[
+						"games",
+						"gamesToJoin"
+					],
+					[
+						"Form",
+						"FormControl"
+					],
+					[
+						"mat-slide",
+						"mat-slide-toggle"
+					],
+					[
+						"formGroup",
+						"[formGroup]"
+					],
+					[
+						"pla",
+						"playerElement"
+					],
+					[
+						"User",
+						"UserService"
+					],
+					[
+						"padding",
+						"padding-bottom"
+					],
+					[
+						"Total",
+						"TOTAL_ROWS"
+					],
+					[
+						"Pla",
+						"PlayDirection"
+					],
+					[
+						"Sock",
+						"SocketEvents"
+					],
+					[
+						"isTile",
+						"isTileOutOfRow"
+					],
+					[
+						"Plac",
+						"PlacingState"
+					],
+					[
+						"direction",
+						"PlayDirection"
+					],
+					[
+						"com",
+						"computeNewPosition"
+					],
+					[
+						"login",
+						"loginRes"
+					],
+					[
+						"getD",
+						"getDefaultImages"
+					],
+					[
+						"logi",
+						"loginRes"
+					],
+					[
+						"ima",
+						"imageKeyFile"
+					],
+					[
+						"file",
+						"fileValidationError?"
+					],
+					[
+						"File",
+						"FileReader"
+					],
+					[
+						"catch",
+						"catchError"
+					],
+					[
+						"Valida",
+						"Validators"
+					],
+					[
+						"Image",
+						"ImageInfo"
+					],
+					[
+						"ca",
+						"catchError"
+					],
+					[
+						"profile",
+						"profilePicture"
+					],
+					[
+						"MAX",
+						"MAX_EMAIL_LENGTH"
+					],
+					[
+						"image",
+						"imageSources"
+					],
+					[
+						"HttpHandel",
+						"HttpHandlerService"
+					],
+					[
+						"cat",
+						"catchError"
+					],
+					[
+						"val",
+						"value"
+					],
+					[
+						"Ima",
+						"ImageType"
+					],
+					[
+						"va",
+						"value"
+					],
+					[
+						"fol",
+						"folders"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/Users/rufuslevi/.config/btop/btop.conf",
+					"settings":
+					{
+						"buffer_size": 8268,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						"settings",
+						"Preferences: Settings"
+					],
+					[
+						"select colo",
+						"UI: Select Color Scheme"
+					],
+					[
+						"packag",
+						"Package Control: Install Package"
+					],
+					[
+						"color sel",
+						"UI: Select Color Scheme"
+					],
+					[
+						"color",
+						"UI: Customize Color Scheme"
+					],
+					[
+						"theme",
+						"UI: Select Theme"
+					],
+					[
+						"guna",
+						"Guna"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"git comm",
+						"Git: Commit"
+					],
+					[
+						"git add",
+						"Git: Add All"
+					],
+					[
+						"pakca install",
+						"Package Control: Install Package"
+					],
+					[
+						"color scheme",
+						"UI: Select Color Scheme"
+					],
+					[
+						":",
+						":$ - EOF"
+					],
+					[
+						"colors",
+						"UI: Select Color Scheme"
+					],
+					[
+						"packa",
+						"Package Control: Install Package"
+					],
+					[
+						"package",
+						"Package Control: Install Package"
+					],
+					[
+						"format",
+						"ESLint Formatter: Format this file"
+					],
+					[
+						"origami",
+						"Origami: Create Pane on the Right"
+					],
+					[
+						"split",
+						"File: Split View"
+					],
+					[
+						"popup",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"lsp:",
+						"LSP: Toggle Inlay Hints"
+					],
+					[
+						"code lens",
+						"LSP: Run Code Lens"
+					],
+					[
+						"lsp",
+						"LSP: Run Code Lens"
+					],
+					[
+						"lsp ",
+						"LSP: Expand Selection"
+					],
+					[
+						"package di",
+						"Package Control: Disable Package"
+					],
+					[
+						"forma",
+						"ESLint Formatter: Format this file"
+					],
+					[
+						"FORMAT",
+						"LSP: Format File"
+					],
+					[
+						"pack",
+						"Package Control: Install Package"
+					],
+					[
+						"setting",
+						"Preferences: Settings"
+					],
+					[
+						"spli",
+						"File: Split View"
+					],
+					[
+						"key",
+						"Preferences: Key Bindings"
+					],
+					[
+						"lsp code ",
+						"LSP: Run Code Lens"
+					],
+					[
+						"lsp code",
+						"LSP: Code Action…"
+					],
+					[
+						"keybin",
+						"Preferences: Key Bindings"
+					],
+					[
+						"terminal",
+						"Preferences: Terminal Settings"
+					],
+					[
+						"package br",
+						"Preferences: Browse Packages"
+					],
+					[
+						"package disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"package settings",
+						"Preferences: Package Control Settings"
+					],
+					[
+						"rename",
+						"LSP: Rename"
+					],
+					[
+						"preferences goi",
+						"Preferences: LSP-gopls Settings"
+					],
+					[
+						"pacage disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"pacakge",
+						"Package Control: Install Package"
+					],
+					[
+						"gofmt",
+						"Gofmt: Format this file"
+					],
+					[
+						"preferences packa",
+						"Preferences: Package Control Settings"
+					],
+					[
+						"preferen",
+						"Preferences: Browse Packages"
+					],
+					[
+						"go build",
+						"Build With: Go"
+					],
+					[
+						"dark",
+						"Toggle Dark Mode"
+					],
+					[
+						"browse",
+						"Preferences: Browse Packages"
+					],
+					[
+						":W",
+						":w - Save"
+					],
+					[
+						":q",
+						"ST: Save Query"
+					],
+					[
+						":cp ",
+						":cp - Close pane"
+					],
+					[
+						"mini",
+						"View: Toggle Minimap"
+					],
+					[
+						":pr",
+						":pr - Travel right pane"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"toml",
+						"Set Syntax: TOML"
+					],
+					[
+						"rust enhan",
+						"Preferences: Rust Enhanced Settings"
+					],
+					[
+						"rust sett",
+						"Preferences: Rust Enhanced Settings"
+					],
+					[
+						"instlal",
+						"Package Control: Install Package"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"colo",
+						"UI: Select Color Scheme"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"font",
+						"Origami: Focus on Pane on the Left"
+					],
+					[
+						":cp",
+						"Origami: Create Pane Above"
+					],
+					[
+						":sl",
+						":sl - Send to left pane"
+					],
+					[
+						"setttings",
+						"ST: Settings"
+					],
+					[
+						"settin",
+						"Preferences: Settings"
+					],
+					[
+						"lsp sett",
+						"Preferences: LSP Settings"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"lens ",
+						"LSP: Run Code Lens"
+					],
+					[
+						"toggle inl",
+						"LSP: Toggle Inlay Hints"
+					],
+					[
+						"project ed",
+						"Project: Edit Project"
+					],
+					[
+						"brow",
+						"CommandsBrowser: Browse available Plugin/Package commands."
+					],
+					[
+						":close pa",
+						":cp - Close pane"
+					],
+					[
+						":sr",
+						":sr - Send to right pane"
+					],
+					[
+						"origami sett",
+						"Preferences: Origami Settings"
+					],
+					[
+						"brows",
+						"CommandsBrowser: Browse available Plugin/Package commands."
+					],
+					[
+						":pl",
+						":pl - Travel left pane"
+					],
+					[
+						"origami move ",
+						"Origami: Move File to Pane on the Right"
+					],
+					[
+						"disable",
+						"Package Control: Disable Package"
+					],
+					[
+						"eslin",
+						"Preferences: LSP-eslint Settings"
+					],
+					[
+						"jsprett",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"eslint",
+						"Preferences: LSP-eslint Settings"
+					],
+					[
+						"lsp settin",
+						"Preferences: LSP Settings"
+					],
+					[
+						"syntax settings",
+						"Preferences: Settings – Syntax Specific"
+					],
+					[
+						"angular",
+						"Preferences: LSP-angular Settings"
+					],
+					[
+						":rp ",
+						":pr - Travel right pane"
+					],
+					[
+						":cp - ",
+						":cp - Close pane"
+					],
+					[
+						"pakcage file",
+						"View Package File"
+					],
+					[
+						"pane right",
+						"Origami: Move File to Pane on the Right"
+					],
+					[
+						":pt -",
+						":pt - Previous tab"
+					],
+					[
+						":lt",
+						":pl - Travel left pane"
+					],
+					[
+						"left pane",
+						"Origami: Move File to Pane on the Left"
+					],
+					[
+						"destro",
+						"Origami: Destroy Current Pane"
+					],
+					[
+						":plr",
+						":plr - Travel right pane"
+					],
+					[
+						"next",
+						"Next tab"
+					],
+					[
+						"prev",
+						"Previous tab"
+					],
+					[
+						"destroy p",
+						"Origami: Destroy Current Pane"
+					],
+					[
+						"commands",
+						"Preferences: CommandsBrowser Settings."
+					],
+					[
+						"origami above",
+						"Origami: Focus on Pane Above"
+					],
+					[
+						":sp",
+						"Git: Stash Pop"
+					],
+					[
+						"typescript",
+						"Set Syntax: TypeScript"
+					],
+					[
+						"typescr",
+						"Preferences: LSP-typescript Settings"
+					],
+					[
+						"imports ",
+						"LSP-typescript: Organize Imports"
+					],
+					[
+						"jspr",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"typescri",
+						"Preferences: LSP-typescript Settings"
+					],
+					[
+						"projet",
+						"Project: Refresh Folders"
+					],
+					[
+						":e",
+						":e - Revert"
+					],
+					[
+						":g",
+						"Git: Gitk"
+					],
+					[
+						":full",
+						"View: Toggle Full Screen"
+					],
+					[
+						":fullsc",
+						"View: Toggle Full Screen"
+					],
+					[
+						"enab",
+						"Package Control: Enable Package"
+					],
+					[
+						"rainbo",
+						"RainbowBrackets: Setup Plugin"
+					],
+					[
+						"terminus",
+						"Terminus: Open Default Shell in Tab (View)"
+					],
+					[
+						"keyb",
+						"Preferences: Key Bindings"
+					],
+					[
+						"docbl",
+						"DocBlockr: Decorate line comment"
+					],
+					[
+						"lsp-rust",
+						"Preferences: LSP-angular Settings"
+					],
+					[
+						"termin",
+						"Terminus: Open Default Shell in Tab (View)"
+					],
+					[
+						"jsp",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"js",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"jspretter",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"lsp typ",
+						"Preferences: LSP-typescript Settings"
+					],
+					[
+						"pro",
+						"Project: Edit Project"
+					],
+					[
+						"project ",
+						"Project: Edit Project"
+					],
+					[
+						"lsp-es",
+						"Preferences: LSP-eslint Settings"
+					],
+					[
+						"enable",
+						"Package Control: Enable Package"
+					],
+					[
+						"list pack",
+						"Package Control: List Packages"
+					],
+					[
+						"ngx settin",
+						"Preferences: Settings – Syntax Specific"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 263.0,
+				"history":
+				[
+					"exit",
+					"invisi.screen",
+					"view.run_command('example')",
+					"view.run_command('example_command')",
+					"view.run('example_command')",
+					"q()",
+					"q",
+					"exit()",
+					"print(a)",
+					"a = 1",
+					"help",
+					"h",
+					"exit()",
+					"exit",
+					"ls",
+					"exit()",
+					"print(\"test\")",
+					"System.out.println(\"hello World\")",
+					"bonjour",
+					"test"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/Users/rufuslevi/.dotfiles/taskfile.yml",
+				"/Users/rufuslevi/Developer/dotfiles/tmux/tmux.conf",
+				"/Users/rufuslevi/Developer/configs/com.googlecode.iterm2.plist",
+				"/Users/rufuslevi/.config/tmux/plugins/tmux/catppuccin.tmux",
+				"/Users/rufuslevi/.config/tmux/tmux.conf",
+				"/Users/rufuslevi/Developer/INF2610/lab1/Lab.c",
+				"/Users/rufuslevi/Developer/INF2610/lab1/Makefile",
+				"/Users/rufuslevi/Downloads/myk.conf",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/interapi/README.md",
+				"/Users/rufuslevi/Developer/scripts/work_desktop.sh",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/main.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/salesforce.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/grpcclient.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/models/event-payloads.go",
+				"/Users/rufuslevi/go/pkg/mod/github.com/linkedin/goavro/v2@v2.12.0/codec.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/api/pubsub_api.pb.go",
+				"/Users/rufuslevi/go/pkg/mod/github.com/mitchellh/mapstructure@v1.5.0/mapstructure.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/go-object/go-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/salesforce-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/zendesk/zendesk.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/api/pubsub_api_grpc.pb.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/common.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/utils/errorHandler.go",
+				"/Users/rufuslevi/go/pkg/mod/google.golang.org/grpc@v1.55.0/stream.go",
+				"/Users/rufuslevi/.config/nvim/after/plugin/telescope.lua",
+				"/Users/rufuslevi/.config/nvim/init.lua",
+				"/Users/rufuslevi/.config/nvim/lua/plugins.lua",
+				"/Users/rufuslevi/.config/nvim/lua/plug.lua",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/zendesk/enums/ticket.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-object/zendesk-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-object/zendesk-ticket.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-ticket/zendesk-ticket.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-ticket.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/go-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/credentials/credentials.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/oauth.go",
+				"/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/request.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/record-info.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/records-result.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/go-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/examples/publishStream/main.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/go.mod",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/pubsub_api_grpc.pb.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/pubsub_api.pb.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/client.go",
+				"/Users/rufuslevi/Library/CloudStorage/OneDrive-Solotech.com/Documents/Projet#2-Salesforce/Meeting KPI's Léo",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/assets/Test.json",
+				"/Users/rufuslevi/Developer/solotech/troubleshoot-lwc-1/README.md",
+				"/Users/rufuslevi/Library/Application Support/iTerm2/Scripts/iterm2_dark_mode.py",
+				"/Users/rufuslevi/.config/alacritty/alacritty.yml",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/main-page/main-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/socket/socket-manager.service.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/games-management/games-handler.service.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/database/user-stats-storage.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/user.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/Cargo.lock",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/player-rack/player-rack.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/game-client.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/player-rack/player-rack.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/Cargo.toml",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/letter-placement.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/src/main.rs",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/settings-page/settings-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/dialog-box-avatar-selector/dialog-box-avatar-selector.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/communication/http-handler.service.ts",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.14/src/lib.rs",
+				"/Users/rufuslevi/Developer/log3900/server/app/controllers/profile-picture.controller.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/avatar-data.ts",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.14/src/async_impl/client.rs",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/classes/test-classes/socket-test-emulator.ts",
+				"/Users/rufuslevi/Developer/log3900/.git/refs/remotes/origin/feature/server-observer",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/.gitignore",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/connection-page/connection-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/connection-page/connection-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/server/app/controllers/authentification.controller.ts",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie_store-0.14.1/src/cookie_store.rs",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie_store-0.14.1/src/lib.rs",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/main-page/main-page.component.scss",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/tauri-1.2.4/src/lib.rs",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/tauri-1.2.4/src/state.rs",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/rustfmt.toml",
+				"/Users/rufuslevi/Developer/log3900/server/app/interfaces/dictionary-container.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/games-management/games-state.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/communication/client-socket.service.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/client-utilities/game-sessions.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/dialog-box-password/dialog-box-password.component.spec.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/dialog-box-password/dialog-box-password.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/interfaces/game-room-client.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/interfaces/game-room.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.spec.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-create-page/game-creation-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/user-creation-page/user-creation-page.component.scss",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-create-page/game-creation-page.component.scss",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/assets/i18n/en.json",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/assets/i18n/fr.json",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.scss",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/game-configuration.service.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/room-player.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/player-room-info.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/user.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/join-game-room-parameters.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-create-page/game-creation-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/constants/user.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/settings-page/settings-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/package.json",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/settings-page/settings-page.component.scss",
+				"/Users/rufuslevi/Developer/log3900/common/constants/players.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/header/header.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/theme.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/header/header.component.html",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/game-parameters.ts",
+				"/Users/rufuslevi/Developer/log3900/common/models/game-visibility.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/client-utilities/game-sessions.service.spec.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/header/header.component.scss",
+				"/Users/rufuslevi/Developer/log3900/server/app/interfaces/game-parameters.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/interfaces/game-parameters.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/player-rack/player-rack.component.scss",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/styles.scss",
+				"/Users/rufuslevi/Developer/log3900/server/app/app.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/node_modules/@angular/forms/index.d.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-create-page/game-creation-page.component.spec.ts",
+				"/Users/rufuslevi/Developer/log3900/common/constants/socket-events.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/middlewares/token-verification-middleware.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/modules/material.module.ts"
+			],
+			"find":
+			{
+				"height": 49.0
+			},
+			"find_in_files":
+			{
+				"height": 134.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/Users/rufuslevi/.config/btop/btop.conf",
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 8268,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"glslvalidator_configured": true,
+									"glslvalidator_enabled": 1,
+									"lsp_uri": "file:///Users/rufuslevi/.config/btop/btop.conf",
+									"syntax": "Packages/zzz A File Icon zzz/aliases/Plain Text (INI).sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 31.0
+			},
+			"input":
+			{
+				"height": 50.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.CommandsBrowser":
+			{
+				"height": 318.0
+			},
+			"output.LSP Log Panel":
+			{
+				"height": 0.0
+			},
+			"output.SublimeLinter":
+			{
+				"height": 126.0
+			},
+			"output.Terminus":
+			{
+				"height": 220.0
+			},
+			"output.diagnostics":
+			{
+				"height": 0.0
+			},
+			"output.doc":
+			{
+				"height": 0.0
+			},
+			"output.exec":
+			{
+				"height": 308.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.git":
+			{
+				"height": 127.0
+			},
+			"output.hd_output_panel":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"output.references":
+			{
+				"height": 426.0
+			},
+			"output.zsh":
+			{
+				"height": 339.0
+			},
+			"pinned_build_system": "",
+			"position": "YnBsaXN0MDDUAQIDBAUGByFYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlct0ICQoLDA0ODxAREhMUFRYXGBgaGxwdHh0fIF1OU1dpbmRvd0ZyYW1lV05TVGl0bGVfEB5fTlNXaW5kb3dMYXN0VXNlcldpbmRvd0xheW91dHNfEBBOU0ZpcnN0UmVzcG9uZGVyXxAXTlNVbm1hbmFnZWRXaW5kb3dGcmFtZTJbTlNDbGFzc05hbWVfEBBfTlNXaW5kb3dMYXlvdXRzW05TU3R5bGVNYXNrXxAXX05TV2luZG93TW92ZUdlbmVyYXRpb25fECZOU1dpbmRvd01hbmFnZW1lbnRQZXJzaXN0ZW50SWRlbnRpZmllcl8QGV9OU1dpbmRvd1Jlc2l6ZUdlbmVyYXRpb25fEBNOU1dpbmRvd1dvcmtzcGFjZUlEXk5TV2luZG93TnVtYmVygAKAA4AQgACAAIAEgAYRgA8QAIABgAURcj6vEBQiIyQlJicoMTc4OT9HSElMT1VZWlUkbnVsbF8QJDVEMzMwMzMyLUE3MkQtNDUzQy05QzBFLTdBRTZGODg0MkYwMV8QHzE1MCAxNjQgMTIwNyA4OTAgMCAwIDI1NjAgMTQxNSBfEBh+Ly5jb25maWcvYnRvcC9idG9wLmNvbmZYUFhXaW5kb3dfECQ2RTk3QkU4OC1DREM5LTQ5NDctOTcyQS0zQ0Q3RDU0NjdGODbTKSorLC4wV05TLmtleXNaTlMub2JqZWN0c1YkY2xhc3OhLYAHoS+AC4AP0zIzKzQ1Nl8QGE5TU2NyZWVuTGF5b3V0VVVJRFN0cmluZ18QEk5TU2NyZWVuTGF5b3V0U2l6ZYAIgAmACl8QJDg1Qjk2NUNCLTdCMkUtNEI3Mi1BMUU5LTE3QzlCNTRGQThCOVx7MjU2MCwgMTQ0MH3SOjs8PVokY2xhc3NuYW1lWCRjbGFzc2VzXk5TU2NyZWVuTGF5b3V0ojw+WE5TT2JqZWN01UBBQitDRB0dRUZfEB9OU1dpbmRvd0xheW91dFNjcmVlbkxheW91dEZyYW1lXxAeTlNXaW5kb3dMYXlvdXRSZXNpemVHZW5lcmF0aW9uXxAcTlNXaW5kb3dMYXlvdXRNb3ZlR2VuZXJhdGlvbl8QGU5TV2luZG93TGF5b3V0V2luZG93RnJhbWWADYAOgAxfEBl7ezE1MCwgMTY0fSwgezEyMDcsIDg5MH19XxAWe3swLCAwfSwgezI1NjAsIDE0MTV9fdI6O0pLXk5TV2luZG93TGF5b3V0oko+0jo7TU5cTlNEaWN0aW9uYXJ5ok0+0ykqK1BSMKE0gAihU4ARgA/VQEFCK0NWHR1FWIATgA6AEl8QGXt7MTUwLCAxNjR9LCB7MTIwNywgODkwfX1fEBZ7ezAsIDB9LCB7MjU2MCwgMTQxNX19AAgAEQAaACQAKQAyADcASQBkAHIAegCbAK4AyADUAOcA8wENATYBUgFoAXcBeQF7AX0BfwGBAYMBhQGIAYoBjAGOAZEBqAGuAdUB9wISAhsCQgJJAlECXAJjAmUCZwJpAmsCbQJ0Ao8CpAKmAqgCqgLRAt4C4wLuAvcDBgMJAxIDHQM/A2ADfwObA50DnwOhA70D1gPbA+oD7QPyA/8EAgQJBAsEDQQPBBEEEwQeBCAEIgQkBEAAAAAAAAACAQAAAAAAAABbAAAAAAAAAAAAAAAAAAAEWQ",
+			"project": "",
+			"replace":
+			{
+				"height": 58.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"zedn",
+						"src/salesforce/models/zendesk-ticket.go"
+					],
+					[
+						"common",
+						"src/salesforce/grpc/common.go"
+					],
+					[
+						"grpc",
+						"src/salesforce/grpc/grpcclient.go"
+					],
+					[
+						"socket-man",
+						"~ Serveur ~/app/services/socket/socket-manager.service.ts"
+					],
+					[
+						"client-so",
+						"~ Client lourd ~/src/app/services/communication/client-socket.service.ts"
+					],
+					[
+						"game-cle",
+						"~ Client lourd ~/src/app/services/game-client.service.ts"
+					],
+					[
+						"socket-manage",
+						"~ Serveur ~/app/services/socket/socket-manager.service.ts"
+					],
+					[
+						"games-han",
+						"~ Serveur ~/app/services/games-management/games-handler.service.ts"
+					],
+					[
+						"user-",
+						"~ Serveur ~/app/services/database/user-stats-storage.service.ts"
+					],
+					[
+						"main-pa",
+						"~ Client lourd ~/src/app/pages/main-page/main-page.component.html"
+					],
+					[
+						"cargo",
+						"~ Client lourd ~/src-tauri/Cargo.lock"
+					],
+					[
+						"player-rac",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.ts"
+					],
+					[
+						"player-rack",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.html"
+					],
+					[
+						"rack",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.html"
+					],
+					[
+						"rack.com",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.html"
+					],
+					[
+						"game-client",
+						"~ Client lourd ~/src/app/services/game-client.service.ts"
+					],
+					[
+						"proti",
+						"~ Serveur ~/app/controllers/profile-picture.controller.ts"
+					],
+					[
+						"http-",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"main.rs",
+						"~ Client lourd ~/src-tauri/src/main.rs"
+					],
+					[
+						"remove",
+						"~ Racine ~/.git/refs/remotes/origin/feature/server-observer"
+					],
+					[
+						"ignore",
+						"~ Client lourd ~/src-tauri/.gitignore"
+					],
+					[
+						"auth",
+						"~ Serveur ~/app/controllers/authentification.controller.ts"
+					],
+					[
+						"conect",
+						"~ Client lourd ~/src/app/pages/connection-page/connection-page.component.html"
+					],
+					[
+						"handler",
+						"~ Serveur ~/app/services/games-management/games-handler.service.ts"
+					],
+					[
+						"authen",
+						"~ Serveur ~/app/controllers/authentification.controller.ts"
+					],
+					[
+						"user.ser",
+						"~ Client lourd ~/src/app/services/user.service.ts"
+					],
+					[
+						"carg",
+						"~ Client lourd ~/src-tauri/Cargo.toml"
+					],
+					[
+						"http",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"main",
+						"~ Client lourd ~/src-tauri/src/main.rs"
+					],
+					[
+						"http-cl",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"dictionaryC",
+						"~ Serveur ~/app/interfaces/dictionaryContainer.ts"
+					],
+					[
+						"game-state",
+						"~ Serveur ~/app/services/games-management/games-state.service.ts"
+					],
+					[
+						"socket",
+						"~ Serveur ~/app/services/socket/socket-manager.service.ts"
+					],
+					[
+						"client",
+						"~ Client lourd ~/src/app/services/communication/client-socket.service.ts"
+					],
+					[
+						"game-ses",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"join-",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.ts"
+					],
+					[
+						"dialgo",
+						"~ Client lourd ~/src/app/components/dialog-box-password/dialog-box-password.component.html"
+					],
+					[
+						"join",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html"
+					],
+					[
+						"game-",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"create",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"creat",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"player",
+						"~ Common ~/interfaces/player-room-info.ts"
+					],
+					[
+						"user.",
+						"~ Common ~/interfaces/user.ts"
+					],
+					[
+						"user",
+						"~ Client lourd ~/src/app/services/user.service.ts"
+					],
+					[
+						"en",
+						"~ Client lourd ~/src/assets/i18n/en.json"
+					],
+					[
+						"fr",
+						"~ Client lourd ~/src/assets/i18n/fr.json"
+					],
+					[
+						"waitin",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.ts"
+					],
+					[
+						"wiaitn",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.html"
+					],
+					[
+						"game-create",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"sett",
+						"~ Client lourd ~/src/app/pages/settings-page/settings-page.component.html"
+					],
+					[
+						"game-se",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"letter",
+						"~ Client lourd ~/src/app/services/letter-placement.service.ts"
+					],
+					[
+						"game-ser",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"game-creat",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.ts"
+					],
+					[
+						"game-confi",
+						"~ Client lourd ~/src/app/services/game-configuration.service.ts"
+					],
+					[
+						"game-crea",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"settings",
+						"~ Client lourd ~/src/app/pages/settings-page/settings-page.component.html"
+					],
+					[
+						"multi",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html"
+					],
+					[
+						"game-conf",
+						"~ Client lourd ~/src/app/services/game-configuration.service.ts"
+					],
+					[
+						"theme",
+						"~ Client lourd ~/src/app/services/theme.service.ts"
+					],
+					[
+						"header",
+						"~ Client lourd ~/src/app/components/header/header.component.ts"
+					],
+					[
+						"cliet",
+						"~ Client lourd ~/src/app/services/communication/client-socket.service.ts"
+					],
+					[
+						"game-cea",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"player-room",
+						"~ Common ~/interfaces/player-room-info.ts"
+					],
+					[
+						"user.ts",
+						"~ Common ~/interfaces/user.ts"
+					],
+					[
+						"game crea",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"rakc",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.scss"
+					],
+					[
+						"http-han",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"game-con",
+						"~ Client lourd ~/src/app/services/game-configuration.service.ts"
+					],
+					[
+						"wiating",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.ts"
+					],
+					[
+						"connec",
+						"~ Client lourd ~/src/app/pages/connection-page/connection-page.component.html"
+					],
+					[
+						"material",
+						"~ Client lourd ~/src/app/modules/material.module.ts"
+					],
+					[
+						"module",
+						"~ Client lourd ~/src/app/app.module.ts"
+					],
+					[
+						"mater",
+						"~ Client lourd ~/src/app/modules/material.module.ts"
+					],
+					[
+						"",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.ts"
+					],
+					[
+						"en.",
+						"~ Client lourd ~/src/assets/i18n/en.json"
+					],
+					[
+						"fr.json",
+						"~ Client lourd ~/src/assets/i18n/fr.json"
+					],
+					[
+						"en.js",
+						"~ Racine ~/mobile/assets/flutter_i18n/en.json"
+					],
+					[
+						"fr.j",
+						"~ Racine ~/mobile/assets/flutter_i18n/fr.json"
+					],
+					[
+						"profi",
+						"~ Serveur ~/app/controllers/profile-picture.controller.ts"
+					],
+					[
+						"profile",
+						"~ Serveur ~/app/controllers/profile-picture.controller.ts"
+					],
+					[
+						"iuser",
+						"~ Common ~/interfaces/user.ts"
+					],
+					[
+						"user.se",
+						"~ Client lourd ~/src/app/services/user.service.ts"
+					],
+					[
+						"game-sess",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"game-sett",
+						"~ Serveur ~/app/interfaces/game-scrabble-information.ts"
+					],
+					[
+						"game",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"client-",
+						"~ Client lourd ~/src/app/services/communication/client-socket.service.ts"
+					],
+					[
+						"waiting",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.ts"
+					],
+					[
+						"play-area",
+						"~ Client lourd ~/src/app/components/play-area/play-area.component.ts"
+					],
+					[
+						"game-cl",
+						"~ Client lourd ~/src/app/services/game-client.service.ts"
+					],
+					[
+						"player.ts",
+						"~ Serveur ~/app/constants/players.ts"
+					],
+					[
+						"letter-pla",
+						"~ Client lourd ~/src/app/services/letter-placement.service.ts"
+					],
+					[
+						"letter-lpla",
+						"~ Serveur ~/app/classes/letter-placement.class.ts"
+					],
+					[
+						"game-boar",
+						"~ Client lourd ~/src/app/components/game-board/game-board.component.ts"
+					],
+					[
+						"witing",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.html"
+					],
+					[
+						"letter-",
+						"~ Client lourd ~/src/app/services/letter-placement.service.ts"
+					],
+					[
+						"eslint",
+						"~ Racine ~/.eslintrc.json"
+					],
+					[
+						"game-board",
+						"~ Client lourd ~/src/app/components/game-board/game-board.component.ts"
+					],
+					[
+						"grid",
+						"~ Client lourd ~/src/app/services/grid.service.ts"
+					],
+					[
+						"open",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.html"
+					],
+					[
+						"game-bot",
+						"~ Client lourd ~/src/app/components/game-board/game-board.component.ts"
+					],
+					[
+						"picture",
+						"~ Serveur ~/app/controllers/profile-picture.controller.ts"
+					],
+					[
+						"dial",
+						"~ Client lourd ~/src/app/components/dialog-box-avatar-selector/dialog-box-avatar-selector.component.ts"
+					],
+					[
+						"dialog",
+						"~ Client lourd ~/src/app/components/dialog-box-avatar-selector/dialog-box-avatar-selector.component.ts"
+					],
+					[
+						"authe",
+						"~ Serveur ~/app/services/authentication/authentication.service.ts"
+					],
+					[
+						"heade",
+						"~ Client lourd ~/src/app/components/header/header.component.html"
+					],
+					[
+						"app.ts",
+						"~ Serveur ~/app/app.ts"
+					],
+					[
+						"foot",
+						"~ Client lourd ~/src/app/components/footer/footer.component.scss"
+					],
+					[
+						"footer",
+						"~ Client lourd ~/src/app/components/footer/footer.component.html"
+					],
+					[
+						"game service",
+						"~ Client lourd ~/src/app/services/game-client.service.ts"
+					],
+					[
+						"multiplayer-",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html"
+					],
+					[
+						"multipla",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html"
+					],
+					[
+						"main-page",
+						"~ Client lourd ~/src/app/pages/main-page/main-page.component.html"
+					],
+					[
+						"creation",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.ts"
+					],
+					[
+						"connection",
+						"~ Client lourd ~/src/app/pages/connection-page/connection-page.component.ts"
+					],
+					[
+						"http-handler",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"connect",
+						"~ Client lourd ~/src/app/pages/connection-page/connection-page.component.ts"
+					],
+					[
+						"header.com",
+						"~ Client lourd ~/src/app/components/header/header.component.html"
+					],
+					[
+						"user-crea",
+						"~ Client lourd ~/src/app/pages/user-creation-page/user-creation-page.component.ts"
+					],
+					[
+						"user.serv",
+						"~ Client lourd ~/src/app/services/user.service.ts"
+					],
+					[
+						"image-in",
+						"~ Common ~/interfaces/image-info.ts"
+					],
+					[
+						"app-cookie",
+						"~ Client lourd ~/src/app/services/communication/app-cookie.service.ts"
+					],
+					[
+						"information",
+						"~ Client lourd ~/src/app/components/information-panel/information-panel.component.html"
+					],
+					[
+						"routin",
+						"~ Client lourd ~/src/app/modules/app-routing.module.ts"
+					],
+					[
+						"chat",
+						"~ Client lourd ~/src/app/components/chatbox/chatbox.component.spec.ts"
+					],
+					[
+						"chatbox-hand",
+						"~ Client lourd ~/src/app/services/chat/chatbox-handler.service.ts"
+					],
+					[
+						"chatbox-han",
+						"~ Serveur ~/app/services/client-utilities/chatbox-handler.service.ts"
+					],
+					[
+						"user-ce",
+						"~ Client lourd ~/src/app/pages/user-creation-page/user-creation-page.component.spec.ts"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"~/Developer/log3900.sublime-project"
+					]
+				],
+				"width": 380.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": false,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 235.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 658,
+			"workspace_name": ""
+		},
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"create",
+						"createWheels"
+					],
+					[
+						"plane",
+						"planeType"
+					],
+					[
+						"iden",
+						"identifierStr"
+					],
+					[
+						"identif",
+						"identifierStr"
+					],
+					[
+						"size",
+						"sizeOfIdentifier"
+					],
+					[
+						"identi",
+						"identifierStr"
+					],
+					[
+						"siz",
+						"sizeOfIdentifier"
+					],
+					[
+						"idn",
+						"identifierFactory"
+					],
+					[
+						"ia",
+						"isRearWheel"
+					],
+					[
+						"in",
+						"int"
+					],
+					[
+						"Chan",
+						"ChangeType"
+					],
+					[
+						"json",
+						"jsonBody"
+					],
+					[
+						"print",
+						"Println"
+					],
+					[
+						"even",
+						"eventPayload"
+					],
+					[
+						"Mar",
+						"MarshalIndent"
+					],
+					[
+						"pr",
+						"Println"
+					],
+					[
+						"Get",
+						"GetPayload"
+					],
+					[
+						"prin",
+						"Println"
+					],
+					[
+						"Las",
+						"LastModifiedDate"
+					],
+					[
+						"Creade",
+						"CreatedById"
+					],
+					[
+						"event",
+						"eventPayload"
+					],
+					[
+						"sf",
+						"sfGrpcModels.EventPayload"
+					],
+					[
+						"pack",
+						"package models"
+					],
+					[
+						"Dele",
+						"DeleteWithFilter"
+					],
+					[
+						"bas",
+						"baseQuery"
+					],
+					[
+						"base",
+						"baseQuery"
+					],
+					[
+						"fmt",
+						"fmt.Sprint"
+					],
+					[
+						"sprint",
+						"Sprintf"
+					],
+					[
+						"pubsub",
+						"pubsub"
+					],
+					[
+						"Crea",
+						"CreateObjectCopies"
+					],
+					[
+						"plugin",
+						"pluginsList"
+					],
+					[
+						"go",
+						"goObjects"
+					],
+					[
+						"zendesk",
+						"zendesk/"
+					],
+					[
+						"New",
+						"New"
+					],
+					[
+						"sales",
+						"salesforce"
+					],
+					[
+						"Statu",
+						"Status__c"
+					],
+					[
+						"Pro",
+						"Priority__c"
+					],
+					[
+						"Typ",
+						"Type__c"
+					],
+					[
+						"Stat",
+						"Status__c"
+					],
+					[
+						"Prio",
+						"Priority__c"
+					],
+					[
+						"Zendes",
+						"zendeskTicket"
+					],
+					[
+						"ob",
+						"objectName"
+					],
+					[
+						"ReplayPreset_",
+						"ReplayPreset_LATEST"
+					],
+					[
+						"client",
+						"client"
+					],
+					[
+						"bo",
+						"Body"
+					],
+					[
+						"io",
+						"ioutil"
+					],
+					[
+						"sp",
+						"Sprintf"
+					],
+					[
+						"get",
+						"GetTopic"
+					],
+					[
+						"connect",
+						"connectGRPC"
+					],
+					[
+						"user",
+						"UserInfoEndpoint"
+					],
+					[
+						"Replay",
+						"ReplayPreset_EARLIEST"
+					],
+					[
+						"priority",
+						"ConditionFieldPriority"
+					],
+					[
+						"dele",
+						"DeleteTicket"
+					],
+					[
+						"getTicket",
+						"GetTickets"
+					],
+					[
+						"Http",
+						"HttpResponse"
+					],
+					[
+						"req",
+						"reqwest"
+					],
+					[
+						"to",
+						"to_owned() (as ToOwned)"
+					],
+					[
+						"Cookie",
+						"CookieStore (use reqwest::cookie::CookieStore)"
+					],
+					[
+						"from_",
+						"from_str(…)"
+					],
+					[
+						"ser",
+						"serde_json"
+					],
+					[
+						"Jon",
+						"serde_json"
+					],
+					[
+						"cl",
+						"clone() (as Clone)"
+					],
+					[
+						"E",
+						"Error"
+					],
+					[
+						"CONTENT_",
+						"CONTENT_TYPE (use reqwest::header::CONTENT_TYPE)"
+					],
+					[
+						"hea",
+						"headers(…)"
+					],
+					[
+						"http",
+						"httpPost"
+					],
+					[
+						"Ht",
+						"HttpResponse"
+					],
+					[
+						"res",
+						"response"
+					],
+					[
+						"Ok",
+						"Ok()"
+					],
+					[
+						"App",
+						"AppHandle"
+					],
+					[
+						"dan",
+						"danger_accept_invalid_certs(…)"
+					],
+					[
+						"han",
+						"handle()"
+					],
+					[
+						"gam",
+						"gameRoom"
+					],
+					[
+						"matS",
+						"matSuffix"
+					],
+					[
+						"mat-fab",
+						"mat-flat-button"
+					],
+					[
+						"mat-butt",
+						"mat-raised-button"
+					],
+					[
+						"game",
+						"gameRoom"
+					],
+					[
+						"MI",
+						"MIN_PASSWORD_LENGTH"
+					],
+					[
+						"min",
+						"minLength"
+					],
+					[
+						"Gam",
+						"GameVisibility"
+					],
+					[
+						"isGame",
+						"isGamePublic"
+					],
+					[
+						"Game",
+						"isGameLocked"
+					],
+					[
+						"passw",
+						"isPasswordFieldEnabled"
+					],
+					[
+						"pass",
+						"passwordEnableForm"
+					],
+					[
+						"is",
+						"isPasswordFieldEnabled"
+					],
+					[
+						"re",
+						"removeValidators"
+					],
+					[
+						"has",
+						"hasValidator"
+					],
+					[
+						"pa",
+						"passwordEnableForm"
+					],
+					[
+						"value",
+						"valueChanges"
+					],
+					[
+						"Val",
+						"Validators"
+					],
+					[
+						"ta",
+						"@tauri-apps/api"
+					],
+					[
+						"set",
+						"setValue"
+					],
+					[
+						"con",
+						"console"
+					],
+					[
+						"new",
+						"newValue"
+					],
+					[
+						"on",
+						"registerOnChange"
+					],
+					[
+						"games",
+						"gamesToJoin"
+					],
+					[
+						"Form",
+						"FormControl"
+					],
+					[
+						"mat-slide",
+						"mat-slide-toggle"
+					],
+					[
+						"formGroup",
+						"[formGroup]"
+					],
+					[
+						"pla",
+						"playerElement"
+					],
+					[
+						"User",
+						"UserService"
+					],
+					[
+						"padding",
+						"padding-bottom"
+					],
+					[
+						"Total",
+						"TOTAL_ROWS"
+					],
+					[
+						"Pla",
+						"PlayDirection"
+					],
+					[
+						"Sock",
+						"SocketEvents"
+					],
+					[
+						"isTile",
+						"isTileOutOfRow"
+					],
+					[
+						"Plac",
+						"PlacingState"
+					],
+					[
+						"direction",
+						"PlayDirection"
+					],
+					[
+						"com",
+						"computeNewPosition"
+					],
+					[
+						"login",
+						"loginRes"
+					],
+					[
+						"getD",
+						"getDefaultImages"
+					],
+					[
+						"logi",
+						"loginRes"
+					],
+					[
+						"ima",
+						"imageKeyFile"
+					],
+					[
+						"file",
+						"fileValidationError?"
+					],
+					[
+						"File",
+						"FileReader"
+					],
+					[
+						"catch",
+						"catchError"
+					],
+					[
+						"Valida",
+						"Validators"
+					],
+					[
+						"Image",
+						"ImageInfo"
+					],
+					[
+						"ca",
+						"catchError"
+					],
+					[
+						"profile",
+						"profilePicture"
+					],
+					[
+						"MAX",
+						"MAX_EMAIL_LENGTH"
+					],
+					[
+						"image",
+						"imageSources"
+					],
+					[
+						"HttpHandel",
+						"HttpHandlerService"
+					],
+					[
+						"cat",
+						"catchError"
+					],
+					[
+						"val",
+						"value"
+					],
+					[
+						"Ima",
+						"ImageType"
+					],
+					[
+						"va",
+						"value"
+					],
+					[
+						"fol",
+						"folders"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/Users/rufuslevi/.dotfiles/taskfile.yml",
+					"settings":
+					{
+						"buffer_size": 740,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "Package Control Messages\n========================\n\nFormatter\n---------\n\n                  CHANGELOG\n\n  1.1.0:\n      - Rewrote the entire set of APIs.\n        Please see README > Development section\n        to update your module APIs accordingly.\n      - Introduced new options:\n          format_on_paste\n          exclude_syntaxes\n      - Various bug fixes and improvements\n\nGuna\n----\n\n  ## Changelog\n  ***\n\n  #### v4.3.1 : 11/28/2023\n\n  \t* Update\n  \t\t- add the font size option into 'font_switch' settings with the keymap (alt + pageup/pagedown)\n  \t\te.g) font_switch : [ [\"Courier New\", 11], [\"JetBrains Mono\", 12] ]",
+					"settings":
+					{
+						"buffer_size": 617,
+						"line_ending": "Unix",
+						"name": "Package Control Messages",
+						"read_only": true,
+						"scratch": true
+					},
+					"undo_stack":
+					[
+						[
+							2,
+							1,
+							"insert",
+							{
+								"characters": "Package Control Messages\n========================\n\nFormatter\n---------\n\n                  CHANGELOG\n\n  1.1.0:\n      - Rewrote the entire set of APIs.\n        Please see README > Development section\n        to update your module APIs accordingly.\n      - Introduced new options:\n          format_on_paste\n          exclude_syntaxes\n      - Various bug fixes and improvements"
+							},
+							"HAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAGAAAAAAAAAAZAAAAAAAAAAAAAAAZAAAAAAAAADEAAAAAAAAAAAAAADEAAAAAAAAAMgAAAAAAAAAAAAAAMgAAAAAAAAAzAAAAAAAAAAAAAAAzAAAAAAAAADwAAAAAAAAAAAAAADwAAAAAAAAAPQAAAAAAAAAAAAAAPQAAAAAAAABGAAAAAAAAAAAAAABGAAAAAAAAAEcAAAAAAAAAAAAAAEcAAAAAAAAASAAAAAAAAAAAAAAASAAAAAAAAABjAAAAAAAAAAAAAABjAAAAAAAAAGQAAAAAAAAAAAAAAGQAAAAAAAAAZQAAAAAAAAAAAAAAZQAAAAAAAABtAAAAAAAAAAAAAABtAAAAAAAAAG4AAAAAAAAAAAAAAG4AAAAAAAAAlQAAAAAAAAAAAAAAlQAAAAAAAACWAAAAAAAAAAAAAACWAAAAAAAAAMUAAAAAAAAAAAAAAMUAAAAAAAAAxgAAAAAAAAAAAAAAxgAAAAAAAAD1AAAAAAAAAAAAAAD1AAAAAAAAAPYAAAAAAAAAAAAAAPYAAAAAAAAAFQEAAAAAAAAAAAAAFQEAAAAAAAAWAQAAAAAAAAAAAAAWAQAAAAAAAC8BAAAAAAAAAAAAAC8BAAAAAAAAMAEAAAAAAAAAAAAAMAEAAAAAAABKAQAAAAAAAAAAAABKAQAAAAAAAEsBAAAAAAAAAAAAAEsBAAAAAAAAdQEAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+						],
+						[
+							3,
+							1,
+							"insert",
+							{
+								"characters": "\n\nGuna\n----\n\n  ## Changelog\n  ***\n\n  #### v4.3.1 : 11/28/2023\n\n  \t* Update\n  \t\t- add the font size option into 'font_switch' settings with the keymap (alt + pageup/pagedown)\n  \t\te.g) font_switch : [ [\"Courier New\", 11], [\"JetBrains Mono\", 12] ]"
+							},
+							"FAAAAHUBAAAAAAAAdgEAAAAAAAAAAAAAdgEAAAAAAAB3AQAAAAAAAAAAAAB3AQAAAAAAAHsBAAAAAAAAAAAAAHsBAAAAAAAAfAEAAAAAAAAAAAAAfAEAAAAAAACAAQAAAAAAAAAAAACAAQAAAAAAAIEBAAAAAAAAAAAAAIEBAAAAAAAAggEAAAAAAAAAAAAAggEAAAAAAACQAQAAAAAAAAAAAACQAQAAAAAAAJEBAAAAAAAAAAAAAJEBAAAAAAAAlgEAAAAAAAAAAAAAlgEAAAAAAACXAQAAAAAAAAAAAACXAQAAAAAAAJgBAAAAAAAAAAAAAJgBAAAAAAAAsgEAAAAAAAAAAAAAsgEAAAAAAACzAQAAAAAAAAAAAACzAQAAAAAAALQBAAAAAAAAAAAAALQBAAAAAAAAvwEAAAAAAAAAAAAAvwEAAAAAAADAAQAAAAAAAAAAAADAAQAAAAAAACICAAAAAAAAAAAAACICAAAAAAAAIwIAAAAAAAAAAAAAIwIAAAAAAABpAgAAAAAAAAAAAAA",
+							"AQAAAAAAAAABAAAAdQEAAAAAAAB1AQAAAAAAAAAAAAAAAPC/"
+						]
+					]
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						":w",
+						":w - Save"
+					],
+					[
+						"settings",
+						"Preferences: Settings"
+					],
+					[
+						"select colo",
+						"UI: Select Color Scheme"
+					],
+					[
+						"packag",
+						"Package Control: Install Package"
+					],
+					[
+						"color sel",
+						"UI: Select Color Scheme"
+					],
+					[
+						"color",
+						"UI: Customize Color Scheme"
+					],
+					[
+						"theme",
+						"UI: Select Theme"
+					],
+					[
+						"guna",
+						"Guna"
+					],
+					[
+						"install",
+						"Package Control: Install Package"
+					],
+					[
+						"git comm",
+						"Git: Commit"
+					],
+					[
+						"git add",
+						"Git: Add All"
+					],
+					[
+						"pakca install",
+						"Package Control: Install Package"
+					],
+					[
+						"color scheme",
+						"UI: Select Color Scheme"
+					],
+					[
+						":",
+						":$ - EOF"
+					],
+					[
+						"colors",
+						"UI: Select Color Scheme"
+					],
+					[
+						"packa",
+						"Package Control: Install Package"
+					],
+					[
+						"package",
+						"Package Control: Install Package"
+					],
+					[
+						"format",
+						"ESLint Formatter: Format this file"
+					],
+					[
+						"origami",
+						"Origami: Create Pane on the Right"
+					],
+					[
+						"split",
+						"File: Split View"
+					],
+					[
+						"popup",
+						"Package Control: Upgrade Package"
+					],
+					[
+						"lsp:",
+						"LSP: Toggle Inlay Hints"
+					],
+					[
+						"code lens",
+						"LSP: Run Code Lens"
+					],
+					[
+						"lsp",
+						"LSP: Run Code Lens"
+					],
+					[
+						"lsp ",
+						"LSP: Expand Selection"
+					],
+					[
+						"package di",
+						"Package Control: Disable Package"
+					],
+					[
+						"forma",
+						"ESLint Formatter: Format this file"
+					],
+					[
+						"FORMAT",
+						"LSP: Format File"
+					],
+					[
+						"pack",
+						"Package Control: Install Package"
+					],
+					[
+						"setting",
+						"Preferences: Settings"
+					],
+					[
+						"spli",
+						"File: Split View"
+					],
+					[
+						"key",
+						"Preferences: Key Bindings"
+					],
+					[
+						"lsp code ",
+						"LSP: Run Code Lens"
+					],
+					[
+						"lsp code",
+						"LSP: Code Action…"
+					],
+					[
+						"keybin",
+						"Preferences: Key Bindings"
+					],
+					[
+						"terminal",
+						"Preferences: Terminal Settings"
+					],
+					[
+						"package br",
+						"Preferences: Browse Packages"
+					],
+					[
+						"package disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"package settings",
+						"Preferences: Package Control Settings"
+					],
+					[
+						"rename",
+						"LSP: Rename"
+					],
+					[
+						"preferences goi",
+						"Preferences: LSP-gopls Settings"
+					],
+					[
+						"pacage disa",
+						"Package Control: Disable Package"
+					],
+					[
+						"pacakge",
+						"Package Control: Install Package"
+					],
+					[
+						"gofmt",
+						"Gofmt: Format this file"
+					],
+					[
+						"preferences packa",
+						"Preferences: Package Control Settings"
+					],
+					[
+						"preferen",
+						"Preferences: Browse Packages"
+					],
+					[
+						"go build",
+						"Build With: Go"
+					],
+					[
+						"dark",
+						"Toggle Dark Mode"
+					],
+					[
+						"browse",
+						"Preferences: Browse Packages"
+					],
+					[
+						":W",
+						":w - Save"
+					],
+					[
+						":q",
+						"ST: Save Query"
+					],
+					[
+						":cp ",
+						":cp - Close pane"
+					],
+					[
+						"mini",
+						"View: Toggle Minimap"
+					],
+					[
+						":pr",
+						":pr - Travel right pane"
+					],
+					[
+						"remove",
+						"Package Control: Remove Package"
+					],
+					[
+						"toml",
+						"Set Syntax: TOML"
+					],
+					[
+						"rust enhan",
+						"Preferences: Rust Enhanced Settings"
+					],
+					[
+						"rust sett",
+						"Preferences: Rust Enhanced Settings"
+					],
+					[
+						"instlal",
+						"Package Control: Install Package"
+					],
+					[
+						"remo",
+						"Package Control: Remove Package"
+					],
+					[
+						"colo",
+						"UI: Select Color Scheme"
+					],
+					[
+						"insta",
+						"Package Control: Install Package"
+					],
+					[
+						"font",
+						"Origami: Focus on Pane on the Left"
+					],
+					[
+						":cp",
+						"Origami: Create Pane Above"
+					],
+					[
+						":sl",
+						":sl - Send to left pane"
+					],
+					[
+						"setttings",
+						"ST: Settings"
+					],
+					[
+						"settin",
+						"Preferences: Settings"
+					],
+					[
+						"lsp sett",
+						"Preferences: LSP Settings"
+					],
+					[
+						"instal",
+						"Package Control: Install Package"
+					],
+					[
+						"lens ",
+						"LSP: Run Code Lens"
+					],
+					[
+						"toggle inl",
+						"LSP: Toggle Inlay Hints"
+					],
+					[
+						"project ed",
+						"Project: Edit Project"
+					],
+					[
+						"brow",
+						"CommandsBrowser: Browse available Plugin/Package commands."
+					],
+					[
+						":close pa",
+						":cp - Close pane"
+					],
+					[
+						":sr",
+						":sr - Send to right pane"
+					],
+					[
+						"origami sett",
+						"Preferences: Origami Settings"
+					],
+					[
+						"brows",
+						"CommandsBrowser: Browse available Plugin/Package commands."
+					],
+					[
+						":pl",
+						":pl - Travel left pane"
+					],
+					[
+						"origami move ",
+						"Origami: Move File to Pane on the Right"
+					],
+					[
+						"disable",
+						"Package Control: Disable Package"
+					],
+					[
+						"eslin",
+						"Preferences: LSP-eslint Settings"
+					],
+					[
+						"jsprett",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"eslint",
+						"Preferences: LSP-eslint Settings"
+					],
+					[
+						"lsp settin",
+						"Preferences: LSP Settings"
+					],
+					[
+						"syntax settings",
+						"Preferences: Settings – Syntax Specific"
+					],
+					[
+						"angular",
+						"Preferences: LSP-angular Settings"
+					],
+					[
+						":rp ",
+						":pr - Travel right pane"
+					],
+					[
+						":cp - ",
+						":cp - Close pane"
+					],
+					[
+						"pakcage file",
+						"View Package File"
+					],
+					[
+						"pane right",
+						"Origami: Move File to Pane on the Right"
+					],
+					[
+						":pt -",
+						":pt - Previous tab"
+					],
+					[
+						":lt",
+						":pl - Travel left pane"
+					],
+					[
+						"left pane",
+						"Origami: Move File to Pane on the Left"
+					],
+					[
+						"destro",
+						"Origami: Destroy Current Pane"
+					],
+					[
+						":plr",
+						":plr - Travel right pane"
+					],
+					[
+						"next",
+						"Next tab"
+					],
+					[
+						"prev",
+						"Previous tab"
+					],
+					[
+						"destroy p",
+						"Origami: Destroy Current Pane"
+					],
+					[
+						"commands",
+						"Preferences: CommandsBrowser Settings."
+					],
+					[
+						"origami above",
+						"Origami: Focus on Pane Above"
+					],
+					[
+						":sp",
+						"Git: Stash Pop"
+					],
+					[
+						"typescript",
+						"Set Syntax: TypeScript"
+					],
+					[
+						"typescr",
+						"Preferences: LSP-typescript Settings"
+					],
+					[
+						"imports ",
+						"LSP-typescript: Organize Imports"
+					],
+					[
+						"jspr",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"typescri",
+						"Preferences: LSP-typescript Settings"
+					],
+					[
+						"projet",
+						"Project: Refresh Folders"
+					],
+					[
+						":e",
+						":e - Revert"
+					],
+					[
+						":g",
+						"Git: Gitk"
+					],
+					[
+						":full",
+						"View: Toggle Full Screen"
+					],
+					[
+						":fullsc",
+						"View: Toggle Full Screen"
+					],
+					[
+						"enab",
+						"Package Control: Enable Package"
+					],
+					[
+						"rainbo",
+						"RainbowBrackets: Setup Plugin"
+					],
+					[
+						"terminus",
+						"Terminus: Open Default Shell in Tab (View)"
+					],
+					[
+						"keyb",
+						"Preferences: Key Bindings"
+					],
+					[
+						"docbl",
+						"DocBlockr: Decorate line comment"
+					],
+					[
+						"lsp-rust",
+						"Preferences: LSP-angular Settings"
+					],
+					[
+						"termin",
+						"Terminus: Open Default Shell in Tab (View)"
+					],
+					[
+						"jsp",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"js",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"jspretter",
+						"Preferences: JsPrettier Settings - Side-by-Side"
+					],
+					[
+						"lsp typ",
+						"Preferences: LSP-typescript Settings"
+					],
+					[
+						"pro",
+						"Project: Edit Project"
+					],
+					[
+						"project ",
+						"Project: Edit Project"
+					],
+					[
+						"lsp-es",
+						"Preferences: LSP-eslint Settings"
+					],
+					[
+						"enable",
+						"Package Control: Enable Package"
+					],
+					[
+						"list pack",
+						"Package Control: List Packages"
+					],
+					[
+						"ngx settin",
+						"Preferences: Settings – Syntax Specific"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 263.0,
+				"history":
+				[
+					"exit",
+					"invisi.screen",
+					"view.run_command('example')",
+					"view.run_command('example_command')",
+					"view.run('example_command')",
+					"q()",
+					"q",
+					"exit()",
+					"print(a)",
+					"a = 1",
+					"help",
+					"h",
+					"exit()",
+					"exit",
+					"ls",
+					"exit()",
+					"print(\"test\")",
+					"System.out.println(\"hello World\")",
+					"bonjour",
+					"test"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/Users/rufuslevi/.config/btop/btop.conf",
+				"/Users/rufuslevi/.dotfiles/taskfile.yml",
+				"/Users/rufuslevi/Developer/dotfiles/tmux/tmux.conf",
+				"/Users/rufuslevi/Developer/configs/com.googlecode.iterm2.plist",
+				"/Users/rufuslevi/.config/tmux/plugins/tmux/catppuccin.tmux",
+				"/Users/rufuslevi/.config/tmux/tmux.conf",
+				"/Users/rufuslevi/Developer/INF2610/lab1/Lab.c",
+				"/Users/rufuslevi/Developer/INF2610/lab1/Makefile",
+				"/Users/rufuslevi/Downloads/myk.conf",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/interapi/README.md",
+				"/Users/rufuslevi/Developer/scripts/work_desktop.sh",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/main.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/salesforce.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/grpcclient.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/models/event-payloads.go",
+				"/Users/rufuslevi/go/pkg/mod/github.com/linkedin/goavro/v2@v2.12.0/codec.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/api/pubsub_api.pb.go",
+				"/Users/rufuslevi/go/pkg/mod/github.com/mitchellh/mapstructure@v1.5.0/mapstructure.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/go-object/go-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/salesforce-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/zendesk/zendesk.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/api/pubsub_api_grpc.pb.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/common.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/utils/errorHandler.go",
+				"/Users/rufuslevi/go/pkg/mod/google.golang.org/grpc@v1.55.0/stream.go",
+				"/Users/rufuslevi/.config/nvim/after/plugin/telescope.lua",
+				"/Users/rufuslevi/.config/nvim/init.lua",
+				"/Users/rufuslevi/.config/nvim/lua/plugins.lua",
+				"/Users/rufuslevi/.config/nvim/lua/plug.lua",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/zendesk/enums/ticket.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-object/zendesk-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-object/zendesk-ticket.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-ticket/zendesk-ticket.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/zendesk-ticket.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/go-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/credentials/credentials.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/oauth.go",
+				"/opt/homebrew/Cellar/go/1.20.4/libexec/src/net/http/request.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/record-info.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/models/records-result.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/go-object.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/examples/publishStream/main.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/go.mod",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/pubsub_api_grpc.pb.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/pubsub_api.pb.go",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/src/salesforce/grpc/client.go",
+				"/Users/rufuslevi/Library/CloudStorage/OneDrive-Solotech.com/Documents/Projet#2-Salesforce/Meeting KPI's Léo",
+				"/Users/rufuslevi/Developer/solotech/go-workspace/salesforce-connector/assets/Test.json",
+				"/Users/rufuslevi/Developer/solotech/troubleshoot-lwc-1/README.md",
+				"/Users/rufuslevi/Library/Application Support/iTerm2/Scripts/iterm2_dark_mode.py",
+				"/Users/rufuslevi/.config/alacritty/alacritty.yml",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/main-page/main-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/socket/socket-manager.service.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/games-management/games-handler.service.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/database/user-stats-storage.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/user.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/Cargo.lock",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/player-rack/player-rack.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/game-client.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/player-rack/player-rack.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/Cargo.toml",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/letter-placement.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/src/main.rs",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/settings-page/settings-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/dialog-box-avatar-selector/dialog-box-avatar-selector.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/communication/http-handler.service.ts",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.14/src/lib.rs",
+				"/Users/rufuslevi/Developer/log3900/server/app/controllers/profile-picture.controller.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/avatar-data.ts",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.14/src/async_impl/client.rs",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/classes/test-classes/socket-test-emulator.ts",
+				"/Users/rufuslevi/Developer/log3900/.git/refs/remotes/origin/feature/server-observer",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/.gitignore",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/connection-page/connection-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/connection-page/connection-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/server/app/controllers/authentification.controller.ts",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie_store-0.14.1/src/cookie_store.rs",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/cookie_store-0.14.1/src/lib.rs",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/main-page/main-page.component.scss",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/tauri-1.2.4/src/lib.rs",
+				"/Users/rufuslevi/.cargo/registry/src/github.com-1ecc6299db9ec823/tauri-1.2.4/src/state.rs",
+				"/Users/rufuslevi/Developer/log3900/desktop/src-tauri/rustfmt.toml",
+				"/Users/rufuslevi/Developer/log3900/server/app/interfaces/dictionary-container.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/games-management/games-state.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/communication/client-socket.service.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/client-utilities/game-sessions.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/dialog-box-password/dialog-box-password.component.spec.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/dialog-box-password/dialog-box-password.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/interfaces/game-room-client.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/interfaces/game-room.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.spec.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-create-page/game-creation-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/user-creation-page/user-creation-page.component.scss",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-create-page/game-creation-page.component.scss",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/assets/i18n/en.json",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/assets/i18n/fr.json",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.scss",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/game-configuration.service.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/room-player.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/player-room-info.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/user.ts",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/join-game-room-parameters.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-create-page/game-creation-page.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/constants/user.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/settings-page/settings-page.component.html",
+				"/Users/rufuslevi/Developer/log3900/desktop/package.json",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/settings-page/settings-page.component.scss",
+				"/Users/rufuslevi/Developer/log3900/common/constants/players.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/header/header.component.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/services/theme.service.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/header/header.component.html",
+				"/Users/rufuslevi/Developer/log3900/common/interfaces/game-parameters.ts",
+				"/Users/rufuslevi/Developer/log3900/common/models/game-visibility.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/services/client-utilities/game-sessions.service.spec.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/header/header.component.scss",
+				"/Users/rufuslevi/Developer/log3900/server/app/interfaces/game-parameters.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/interfaces/game-parameters.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/components/player-rack/player-rack.component.scss",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/styles.scss",
+				"/Users/rufuslevi/Developer/log3900/server/app/app.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/node_modules/@angular/forms/index.d.ts",
+				"/Users/rufuslevi/Developer/log3900/desktop/src/app/pages/multiplayer-create-page/game-creation-page.component.spec.ts",
+				"/Users/rufuslevi/Developer/log3900/common/constants/socket-events.ts",
+				"/Users/rufuslevi/Developer/log3900/server/app/middlewares/token-verification-middleware.ts"
+			],
+			"find":
+			{
+				"height": 49.0
+			},
+			"find_in_files":
+			{
+				"height": 134.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"scrollbar_highlights": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"use_gitignore": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/Users/rufuslevi/.dotfiles/taskfile.yml",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 740,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"auto_complete_triggers":
+									[
+										{
+											"characters": "<",
+											"selector": "text.html, text.xml"
+										},
+										{
+											"rhs_empty": true,
+											"selector": "punctuation.accessor"
+										}
+									],
+									"glslvalidator_configured": true,
+									"glslvalidator_enabled": 1,
+									"lsp_active": true,
+									"lsp_hover_provider_count": 1,
+									"lsp_uri": "file:///Users/rufuslevi/.dotfiles/taskfile.yml",
+									"show_definitions": false,
+									"syntax": "Packages/YAML/YAML.sublime-syntax",
+									"tab_size": 2,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"stack_multiselect": false,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"selected": true,
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 617,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										617,
+										617
+									]
+								],
+								"settings":
+								{
+									"auto_indent": false,
+									"lsp_uri": "buffer://sublime/65",
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_width": 2,
+									"word_wrap": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"stack_multiselect": false,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 31.0
+			},
+			"input":
+			{
+				"height": 50.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.CommandsBrowser":
+			{
+				"height": 318.0
+			},
+			"output.LSP Log Panel":
+			{
+				"height": 0.0
+			},
+			"output.SublimeLinter":
+			{
+				"height": 126.0
+			},
+			"output.Terminus":
+			{
+				"height": 220.0
+			},
+			"output.diagnostics":
+			{
+				"height": 0.0
+			},
+			"output.doc":
+			{
+				"height": 0.0
+			},
+			"output.exec":
+			{
+				"height": 308.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"output.git":
+			{
+				"height": 127.0
+			},
+			"output.hd_output_panel":
+			{
+				"height": 0.0
+			},
+			"output.mdpopups":
+			{
+				"height": 0.0
+			},
+			"output.references":
+			{
+				"height": 426.0
+			},
+			"output.zsh":
+			{
+				"height": 339.0
+			},
+			"pinned_build_system": "",
+			"position": "YnBsaXN0MDDUAQIDBAUGByJYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlct0ICQoLDA0ODxAREhMUFRYXGBgaGxwdHh8gIV1OU1dpbmRvd0ZyYW1lV05TVGl0bGVfEB5fTlNXaW5kb3dMYXN0VXNlcldpbmRvd0xheW91dHNfEBBOU0ZpcnN0UmVzcG9uZGVyXxAXTlNVbm1hbmFnZWRXaW5kb3dGcmFtZTJbTlNDbGFzc05hbWVfEBBfTlNXaW5kb3dMYXlvdXRzW05TU3R5bGVNYXNrXxAXX05TV2luZG93TW92ZUdlbmVyYXRpb25fECZOU1dpbmRvd01hbmFnZW1lbnRQZXJzaXN0ZW50SWRlbnRpZmllcl8QGV9OU1dpbmRvd1Jlc2l6ZUdlbmVyYXRpb25fEBNOU1dpbmRvd1dvcmtzcGFjZUlEXk5TV2luZG93TnVtYmVygAKAA4AQgACAAIAEgAYRgA8QAYABEACABRFyQa8QFCMkJSYnKCkyODk6QEhJSk1QVlpbVSRudWxsXxAkMTNBQTRGQ0MtODdDNS00NjAxLTgwQ0ItMjg1Njg0NEIyRTU5XxAfNTUwIDMxOCAxMjA3IDg5MCAwIDAgMjU2MCAxNDE1IF8QGFBhY2thZ2UgQ29udHJvbCBNZXNzYWdlc1hQWFdpbmRvd18QJDZFOTdCRTg4LUNEQzktNDk0Ny05NzJBLTNDRDdENTQ2N0Y4NtMqKywtLzFXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6EugAehMIALgA/TMzQsNTY3XxAYTlNTY3JlZW5MYXlvdXRVVUlEU3RyaW5nXxASTlNTY3JlZW5MYXlvdXRTaXplgAiACYAKXxAkODVCOTY1Q0ItN0IyRS00QjcyLUExRTktMTdDOUI1NEZBOEI5XHsyNTYwLCAxNDQwfdI7PD0+WiRjbGFzc25hbWVYJGNsYXNzZXNeTlNTY3JlZW5MYXlvdXSiPT9YTlNPYmplY3TVQUJDLERFHx1GR18QH05TV2luZG93TGF5b3V0U2NyZWVuTGF5b3V0RnJhbWVfEB5OU1dpbmRvd0xheW91dFJlc2l6ZUdlbmVyYXRpb25fEBxOU1dpbmRvd0xheW91dE1vdmVHZW5lcmF0aW9uXxAZTlNXaW5kb3dMYXlvdXRXaW5kb3dGcmFtZYANgA6ADF8QGXt7NTUwLCAzMTh9LCB7MTIwNywgODkwfX1fEBZ7ezAsIDB9LCB7MjU2MCwgMTQxNX190js8S0xeTlNXaW5kb3dMYXlvdXSiSz/SOzxOT1xOU0RpY3Rpb25hcnmiTj/TKissUVMxoTWACKFUgBGAD9VBQkMsRFcfHUZZgBOADoASXxAZe3s1NTAsIDMxOH0sIHsxMjA3LCA4OTB9fV8QFnt7MCwgMH0sIHsyNTYwLCAxNDE1fX0ACAARABoAJAApADIANwBJAGQAcgB6AJsArgDIANQA5wDzAQ0BNgFSAWgBdwF5AXsBfQF/AYEBgwGFAYgBigGMAY4BkAGTAaoBsAHXAfkCFAIdAkQCSwJTAl4CZQJnAmkCawJtAm8CdgKRAqYCqAKqAqwC0wLgAuUC8AL5AwgDCwMUAx8DQQNiA4EDnQOfA6EDowO/A9gD3QPsA+8D9AQBBAQECwQNBA8EEQQTBBUEIAQiBCQEJgRCAAAAAAAAAgEAAAAAAAAAXAAAAAAAAAAAAAAAAAAABFs",
+			"project": "",
+			"replace":
+			{
+				"height": 58.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"zedn",
+						"src/salesforce/models/zendesk-ticket.go"
+					],
+					[
+						"common",
+						"src/salesforce/grpc/common.go"
+					],
+					[
+						"grpc",
+						"src/salesforce/grpc/grpcclient.go"
+					],
+					[
+						"socket-man",
+						"~ Serveur ~/app/services/socket/socket-manager.service.ts"
+					],
+					[
+						"client-so",
+						"~ Client lourd ~/src/app/services/communication/client-socket.service.ts"
+					],
+					[
+						"game-cle",
+						"~ Client lourd ~/src/app/services/game-client.service.ts"
+					],
+					[
+						"socket-manage",
+						"~ Serveur ~/app/services/socket/socket-manager.service.ts"
+					],
+					[
+						"games-han",
+						"~ Serveur ~/app/services/games-management/games-handler.service.ts"
+					],
+					[
+						"user-",
+						"~ Serveur ~/app/services/database/user-stats-storage.service.ts"
+					],
+					[
+						"main-pa",
+						"~ Client lourd ~/src/app/pages/main-page/main-page.component.html"
+					],
+					[
+						"cargo",
+						"~ Client lourd ~/src-tauri/Cargo.lock"
+					],
+					[
+						"player-rac",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.ts"
+					],
+					[
+						"player-rack",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.html"
+					],
+					[
+						"rack",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.html"
+					],
+					[
+						"rack.com",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.html"
+					],
+					[
+						"game-client",
+						"~ Client lourd ~/src/app/services/game-client.service.ts"
+					],
+					[
+						"proti",
+						"~ Serveur ~/app/controllers/profile-picture.controller.ts"
+					],
+					[
+						"http-",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"main.rs",
+						"~ Client lourd ~/src-tauri/src/main.rs"
+					],
+					[
+						"remove",
+						"~ Racine ~/.git/refs/remotes/origin/feature/server-observer"
+					],
+					[
+						"ignore",
+						"~ Client lourd ~/src-tauri/.gitignore"
+					],
+					[
+						"auth",
+						"~ Serveur ~/app/controllers/authentification.controller.ts"
+					],
+					[
+						"conect",
+						"~ Client lourd ~/src/app/pages/connection-page/connection-page.component.html"
+					],
+					[
+						"handler",
+						"~ Serveur ~/app/services/games-management/games-handler.service.ts"
+					],
+					[
+						"authen",
+						"~ Serveur ~/app/controllers/authentification.controller.ts"
+					],
+					[
+						"user.ser",
+						"~ Client lourd ~/src/app/services/user.service.ts"
+					],
+					[
+						"carg",
+						"~ Client lourd ~/src-tauri/Cargo.toml"
+					],
+					[
+						"http",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"main",
+						"~ Client lourd ~/src-tauri/src/main.rs"
+					],
+					[
+						"http-cl",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"dictionaryC",
+						"~ Serveur ~/app/interfaces/dictionaryContainer.ts"
+					],
+					[
+						"game-state",
+						"~ Serveur ~/app/services/games-management/games-state.service.ts"
+					],
+					[
+						"socket",
+						"~ Serveur ~/app/services/socket/socket-manager.service.ts"
+					],
+					[
+						"client",
+						"~ Client lourd ~/src/app/services/communication/client-socket.service.ts"
+					],
+					[
+						"game-ses",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"join-",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.ts"
+					],
+					[
+						"dialgo",
+						"~ Client lourd ~/src/app/components/dialog-box-password/dialog-box-password.component.html"
+					],
+					[
+						"join",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html"
+					],
+					[
+						"game-",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"create",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"creat",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"player",
+						"~ Common ~/interfaces/player-room-info.ts"
+					],
+					[
+						"user.",
+						"~ Common ~/interfaces/user.ts"
+					],
+					[
+						"user",
+						"~ Client lourd ~/src/app/services/user.service.ts"
+					],
+					[
+						"en",
+						"~ Client lourd ~/src/assets/i18n/en.json"
+					],
+					[
+						"fr",
+						"~ Client lourd ~/src/assets/i18n/fr.json"
+					],
+					[
+						"waitin",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.ts"
+					],
+					[
+						"wiaitn",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.html"
+					],
+					[
+						"game-create",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"sett",
+						"~ Client lourd ~/src/app/pages/settings-page/settings-page.component.html"
+					],
+					[
+						"game-se",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"letter",
+						"~ Client lourd ~/src/app/services/letter-placement.service.ts"
+					],
+					[
+						"game-ser",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"game-creat",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.ts"
+					],
+					[
+						"game-confi",
+						"~ Client lourd ~/src/app/services/game-configuration.service.ts"
+					],
+					[
+						"game-crea",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"settings",
+						"~ Client lourd ~/src/app/pages/settings-page/settings-page.component.html"
+					],
+					[
+						"multi",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html"
+					],
+					[
+						"game-conf",
+						"~ Client lourd ~/src/app/services/game-configuration.service.ts"
+					],
+					[
+						"theme",
+						"~ Client lourd ~/src/app/services/theme.service.ts"
+					],
+					[
+						"header",
+						"~ Client lourd ~/src/app/components/header/header.component.ts"
+					],
+					[
+						"cliet",
+						"~ Client lourd ~/src/app/services/communication/client-socket.service.ts"
+					],
+					[
+						"game-cea",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"player-room",
+						"~ Common ~/interfaces/player-room-info.ts"
+					],
+					[
+						"user.ts",
+						"~ Common ~/interfaces/user.ts"
+					],
+					[
+						"game crea",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.html"
+					],
+					[
+						"rakc",
+						"~ Client lourd ~/src/app/components/player-rack/player-rack.component.scss"
+					],
+					[
+						"http-han",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"game-con",
+						"~ Client lourd ~/src/app/services/game-configuration.service.ts"
+					],
+					[
+						"wiating",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.ts"
+					],
+					[
+						"connec",
+						"~ Client lourd ~/src/app/pages/connection-page/connection-page.component.html"
+					],
+					[
+						"material",
+						"~ Client lourd ~/src/app/modules/material.module.ts"
+					],
+					[
+						"module",
+						"~ Client lourd ~/src/app/app.module.ts"
+					],
+					[
+						"mater",
+						"~ Client lourd ~/src/app/modules/material.module.ts"
+					],
+					[
+						"",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.ts"
+					],
+					[
+						"en.",
+						"~ Client lourd ~/src/assets/i18n/en.json"
+					],
+					[
+						"fr.json",
+						"~ Client lourd ~/src/assets/i18n/fr.json"
+					],
+					[
+						"en.js",
+						"~ Racine ~/mobile/assets/flutter_i18n/en.json"
+					],
+					[
+						"fr.j",
+						"~ Racine ~/mobile/assets/flutter_i18n/fr.json"
+					],
+					[
+						"profi",
+						"~ Serveur ~/app/controllers/profile-picture.controller.ts"
+					],
+					[
+						"profile",
+						"~ Serveur ~/app/controllers/profile-picture.controller.ts"
+					],
+					[
+						"iuser",
+						"~ Common ~/interfaces/user.ts"
+					],
+					[
+						"user.se",
+						"~ Client lourd ~/src/app/services/user.service.ts"
+					],
+					[
+						"game-sess",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"game-sett",
+						"~ Serveur ~/app/interfaces/game-scrabble-information.ts"
+					],
+					[
+						"game",
+						"~ Serveur ~/app/services/client-utilities/game-sessions.service.ts"
+					],
+					[
+						"client-",
+						"~ Client lourd ~/src/app/services/communication/client-socket.service.ts"
+					],
+					[
+						"waiting",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.ts"
+					],
+					[
+						"play-area",
+						"~ Client lourd ~/src/app/components/play-area/play-area.component.ts"
+					],
+					[
+						"game-cl",
+						"~ Client lourd ~/src/app/services/game-client.service.ts"
+					],
+					[
+						"player.ts",
+						"~ Serveur ~/app/constants/players.ts"
+					],
+					[
+						"letter-pla",
+						"~ Client lourd ~/src/app/services/letter-placement.service.ts"
+					],
+					[
+						"letter-lpla",
+						"~ Serveur ~/app/classes/letter-placement.class.ts"
+					],
+					[
+						"game-boar",
+						"~ Client lourd ~/src/app/components/game-board/game-board.component.ts"
+					],
+					[
+						"witing",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.html"
+					],
+					[
+						"letter-",
+						"~ Client lourd ~/src/app/services/letter-placement.service.ts"
+					],
+					[
+						"eslint",
+						"~ Racine ~/.eslintrc.json"
+					],
+					[
+						"game-board",
+						"~ Client lourd ~/src/app/components/game-board/game-board.component.ts"
+					],
+					[
+						"grid",
+						"~ Client lourd ~/src/app/services/grid.service.ts"
+					],
+					[
+						"open",
+						"~ Client lourd ~/src/app/pages/waiting-opponent-page/waiting-opponent-page.component.html"
+					],
+					[
+						"game-bot",
+						"~ Client lourd ~/src/app/components/game-board/game-board.component.ts"
+					],
+					[
+						"picture",
+						"~ Serveur ~/app/controllers/profile-picture.controller.ts"
+					],
+					[
+						"dial",
+						"~ Client lourd ~/src/app/components/dialog-box-avatar-selector/dialog-box-avatar-selector.component.ts"
+					],
+					[
+						"dialog",
+						"~ Client lourd ~/src/app/components/dialog-box-avatar-selector/dialog-box-avatar-selector.component.ts"
+					],
+					[
+						"authe",
+						"~ Serveur ~/app/services/authentication/authentication.service.ts"
+					],
+					[
+						"heade",
+						"~ Client lourd ~/src/app/components/header/header.component.html"
+					],
+					[
+						"app.ts",
+						"~ Serveur ~/app/app.ts"
+					],
+					[
+						"foot",
+						"~ Client lourd ~/src/app/components/footer/footer.component.scss"
+					],
+					[
+						"footer",
+						"~ Client lourd ~/src/app/components/footer/footer.component.html"
+					],
+					[
+						"game service",
+						"~ Client lourd ~/src/app/services/game-client.service.ts"
+					],
+					[
+						"multiplayer-",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html"
+					],
+					[
+						"multipla",
+						"~ Client lourd ~/src/app/pages/multiplayer-join-page/multiplayer-join-page.component.html"
+					],
+					[
+						"main-page",
+						"~ Client lourd ~/src/app/pages/main-page/main-page.component.html"
+					],
+					[
+						"creation",
+						"~ Client lourd ~/src/app/pages/multiplayer-create-page/game-creation-page.component.ts"
+					],
+					[
+						"connection",
+						"~ Client lourd ~/src/app/pages/connection-page/connection-page.component.ts"
+					],
+					[
+						"http-handler",
+						"~ Client lourd ~/src/app/services/communication/http-handler.service.ts"
+					],
+					[
+						"connect",
+						"~ Client lourd ~/src/app/pages/connection-page/connection-page.component.ts"
+					],
+					[
+						"header.com",
+						"~ Client lourd ~/src/app/components/header/header.component.html"
+					],
+					[
+						"user-crea",
+						"~ Client lourd ~/src/app/pages/user-creation-page/user-creation-page.component.ts"
+					],
+					[
+						"user.serv",
+						"~ Client lourd ~/src/app/services/user.service.ts"
+					],
+					[
+						"image-in",
+						"~ Common ~/interfaces/image-info.ts"
+					],
+					[
+						"app-cookie",
+						"~ Client lourd ~/src/app/services/communication/app-cookie.service.ts"
+					],
+					[
+						"information",
+						"~ Client lourd ~/src/app/components/information-panel/information-panel.component.html"
+					],
+					[
+						"routin",
+						"~ Client lourd ~/src/app/modules/app-routing.module.ts"
+					],
+					[
+						"chat",
+						"~ Client lourd ~/src/app/components/chatbox/chatbox.component.spec.ts"
+					],
+					[
+						"chatbox-hand",
+						"~ Client lourd ~/src/app/services/chat/chatbox-handler.service.ts"
+					],
+					[
+						"chatbox-han",
+						"~ Serveur ~/app/services/client-utilities/chatbox-handler.service.ts"
+					],
+					[
+						"user-ce",
+						"~ Client lourd ~/src/app/pages/user-creation-page/user-creation-page.component.spec.ts"
+					]
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 500.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"",
+						"~/Developer/log3900.sublime-project"
+					]
+				],
+				"width": 380.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": false,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 235.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 659,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+			"/Users/rufuslevi/Developer/log3900.sublime-workspace",
+			"/Users/rufuslevi/Library/CloudStorage/OneDrive-polymtl.ca/LOG3430/TP/TP4/tp4.sublime-workspace",
+			"/Users/rufuslevi/Developer/log3900/workspace.sublime-workspace"
+		]
+	}
+}

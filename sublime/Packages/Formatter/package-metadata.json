@@ -1,0 +1,1 @@
+{"dependencies": [], "description": "A Sublime Text 3 & 4 plugin to beautify and minify source code.", "url": "https://github.com/bitst0rm-pub/Formatter", "platforms": ["*"], "version": "1.1.0", "sublime_text": ">=3000"}

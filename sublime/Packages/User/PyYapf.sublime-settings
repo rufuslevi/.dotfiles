@@ -1,0 +1,4 @@
+{
+	"yapf_command": "/opt/homebrew/bin/yapf",
+	"on_save": false,
+}

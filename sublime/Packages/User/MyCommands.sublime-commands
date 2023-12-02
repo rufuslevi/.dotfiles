@@ -1,0 +1,52 @@
+[
+	{
+		"caption": ":nt - Next tab",
+		"command": "next_view"
+	},
+	{
+		"caption": ":pt - Previous tab",
+		"command": "prev_view"
+	},
+	{
+		"caption": ":cp - Close pane",
+		"command": "destroy_pane",
+		"args": {
+			"direction": "self"
+		}
+	},
+	{
+		"caption": ":pr - Travel right pane",
+		"command": "travel_to_pane",
+		"args": {
+			"direction": "right"
+		}
+	},
+	{
+		"caption": ":pl - Travel left pane",
+		"command": "travel_to_pane",
+		"args": {
+			"direction": "left"
+		}
+	},
+	{
+		"caption": ":pu - Travel up pane",
+		"command": "travel_to_pane",
+		"args": {
+			"direction": "up"
+		}
+	},
+	{
+		"caption": ":sr - Send to right pane",
+		"command": "carry_file_to_pane",
+		"args": {
+			"direction": "right"
+		}
+	},
+	{
+		"caption": ":sl - Send to left pane",
+		"command": "carry_file_to_pane",
+		"args": {
+			"direction": "left"
+		}
+	}
+]

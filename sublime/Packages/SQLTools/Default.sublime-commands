@@ -1,0 +1,89 @@
+[
+  {
+    "caption": "ST: Select Connection",
+    "command": "st_select_connection"
+  },
+  {
+    "caption": "ST: Execute",
+    "command": "st_execute"
+  },
+  {
+    "caption": "ST: Execute All File",
+    "command": "st_execute_all"
+  },
+  {
+    "caption": "ST: Explain Plan",
+    "command": "st_explain_plan"
+  },
+  {
+    "caption": "ST: History",
+    "command": "st_history"
+  },
+  {
+    "caption": "ST: Show Table Records",
+    "command": "st_show_records"
+  },
+  {
+    "caption": "ST: Table Description",
+    "command": "st_desc_table"
+  },
+  {
+    "caption": "ST: Function Description",
+    "command": "st_desc_function"
+  },
+  {
+    "caption": "ST: Refresh Connection Data",
+    "command": "st_refresh_connection_data"
+  },
+  {
+    "caption": "ST: Save Query",
+    "command": "st_save_query"
+  },
+  {
+    "caption": "ST: Remove Saved Query",
+    "command": "st_remove_saved_query"
+  },
+  {
+    "caption": "ST: List and Run Saved Queries",
+    "command": "st_list_queries",
+    "args"   : {"mode": "run"}
+  },
+  {
+    "caption": "ST: List and Open Saved Queries",
+    "command": "st_list_queries",
+    "args"   :  {"mode": "open"}
+  },
+  {
+    "caption": "ST: List and Insert Saved Queries",
+    "command": "st_list_queries",
+    "args"   :  {"mode": "insert"}
+  },
+  {
+    "caption": "ST: Format SQL",
+    "command": "st_format"
+  },
+  {
+    "caption": "ST: Format SQL All File",
+    "command": "st_format_all"
+  },
+  {
+    "caption": "ST: About",
+    "command": "st_version"
+  },
+  {
+    "caption": "ST: Setup Connections",
+    "command": "edit_settings", "args":
+    {
+      "base_file": "${packages}/SQLTools/SQLToolsConnections.sublime-settings",
+      "default": "// List all your connections to DBs here\n{\n\t\"connections\": {\n\t\t$0\n\t},\n\t\"default\": null\n}"
+    }
+  },
+  {
+    "caption": "ST: Settings",
+    "command": "edit_settings", "args":
+    {
+      "base_file": "${packages}/SQLTools/SQLTools.sublime-settings",
+      "default": "// Settings in here override those in \"SQLTools/SQLTools.sublime-settings\"\n{\n\t$0\n}\n"
+    }
+  }
+]

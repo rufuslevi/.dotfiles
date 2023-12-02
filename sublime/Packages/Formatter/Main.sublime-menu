@@ -1,0 +1,340 @@
+[
+    {
+        "caption": "Tools",
+        "id": "tools",
+        "mnemonic": "T",
+        "children": [
+            {
+                "caption": "Formatter",
+                "mnemonic": "F",
+                "id": "formatter",
+                "children": [
+                    {
+                        "caption": "☰ Quick Options",
+                        "mnemonic": "Q",
+                        "command": "quick_options"
+                    },
+                    {
+                        "caption": "-"
+                    },
+                    {
+                        "caption": "Beautysh",
+                        "mnemonic": "B",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "beautysh",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "Black",
+                        "mnemonic": "B",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "black",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "ClangFormat",
+                        "mnemonic": "C",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "clangformat",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "CSScomb",
+                        "mnemonic": "C",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "csscomb",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "ESLint",
+                        "mnemonic": "E",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "eslint",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "HTML Tidy",
+                        "mnemonic": "H",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "htmltidy",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "JS Beautifier",
+                        "mnemonic": "J",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "jsbeautifier",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "JSONMax",
+                        "mnemonic": "J",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "jsonmax",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "Perltidy",
+                        "mnemonic": "P",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "perltidy",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "PHP CS Fixer",
+                        "mnemonic": "P",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "phpcsfixer",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "Prettier",
+                        "mnemonic": "P",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "prettier",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "Pretty Diff",
+                        "mnemonic": "P",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "prettydiffmax",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "PrettyTable",
+                        "mnemonic": "P",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "prettytable",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "RuboCop",
+                        "mnemonic": "R",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "rubocop",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "Shfmt",
+                        "mnemonic": "S",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "shfmt",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "SQL Formatter",
+                        "mnemonic": "S",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "sqlformatter",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "Stylelint",
+                        "mnemonic": "S",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "stylelint",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "SwiftFormat",
+                        "mnemonic": "S",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "swiftformat",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "Uncrustify",
+                        "mnemonic": "U",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "uncrustify",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "YAPF",
+                        "mnemonic": "Y",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "yapf",
+                            "type": "beautifier"
+                        }
+                    },
+                    {
+                        "caption": "-"
+                    },
+                    {
+                        "caption": "Clean CSS (min)",
+                        "mnemonic": "C",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "cleancss",
+                            "type": "minifier"
+                        }
+                    },
+                    {
+                        "caption": "HTMLMinifier (min)",
+                        "mnemonic": "H",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "htmlminifier",
+                            "type": "minifier"
+                        }
+                    },
+                    {
+                        "caption": "JSONMin (min)",
+                        "mnemonic": "J",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "jsonmin",
+                            "type": "minifier"
+                        }
+                    },
+                    {
+                        "caption": "Pretty Diff (min)",
+                        "mnemonic": "P",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "prettydiffmin",
+                            "type": "minifier"
+                        }
+                    },
+                    {
+                        "caption": "Python Minifier (min)",
+                        "mnemonic": "P",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "pythonminifier",
+                            "type": "minifier"
+                        }
+                    },
+                    {
+                        "caption": "Shfmt (min)",
+                        "mnemonic": "S",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "shfmtmin",
+                            "type": "minifier"
+                        }
+                    },
+                    {
+                        "caption": "SQLMin (min)",
+                        "mnemonic": "S",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "sqlmin",
+                            "type": "minifier"
+                        }
+                    },
+                    {
+                        "caption": "Terser (min)",
+                        "mnemonic": "T",
+                        "command": "run_format",
+                        "args": {
+                            "uid": "terser",
+                            "type": "minifier"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "caption": "Preferences",
+        "id": "preferences",
+        "mnemonic": "n",
+        "children": [
+            {
+                "caption": "Package Settings",
+                "id": "package-settings",
+                "mnemonic": "P",
+                "children": [
+                    {
+                        "caption": "Formatter",
+                        "mnemonic": "F",
+                        "children": [
+                            {
+                                "caption": "Settings",
+                                "mnemonic": "S",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/Formatter/Formatter.sublime-settings",
+                                    "default": "// Do NOT edit anything in the left-hand pane.\n// Pick up items you need, but make sure to maintain the structure.\n{\n\t$0\n}\n"
+                                }
+                            },
+                            {
+                                "caption": "Open Config Folders",
+                                "mnemonic": "O",
+                                "command": "open_config_folders"
+                            },
+                            {
+                                "caption": "-"
+                            },
+                            {
+                                "caption": "Example Key Bindings",
+                                "mnemonic": "E",
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/Formatter/Example.sublime-keymap"
+                                }
+                            },
+                            {
+                                "caption": "Key Bindings – User",
+                                "mnemonic": "K",
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/User/Default (${platform}).sublime-keymap"
+                                }
+                            },
+                            {
+                                "caption": "-"
+                            },
+                            {
+                                "caption": "Version Info",
+                                "mnemonic": "V",
+                                "command": "show_version"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
