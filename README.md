@@ -1,6 +1,5 @@
 <h1 align="center">
   <a href="https://github.com/rufuslevi/dotfiles">
-    <!-- Please provide path to your logo here -->
     <img src="docs/images/logo.svg" alt="Logo" width="100" height="100">
   </a>
 </h1>
@@ -8,15 +7,15 @@
 <div align="center">
   .dotfiles
   <br />
-  <a href="#about"><strong>Explore the screenshots »</strong></a>
+  <a href="#about"><strong>Explore the screenshots</strong></a>
   <br />
 </div>
 
 <div align="center">
-    <br />
 
-[![Project license](https://img.shields.io/github/license/rufuslevi/dotfiles.svg?style=flat-square)](LICENSE)
+<br />
 
+[![Project license][![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 [![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/rufuslevi/dotfiles/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with love by rufuslevi](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-rufuslevi-ff1414.svg?style=flat-square)](https://github.com/rufuslevi)
 </div>
@@ -41,8 +40,7 @@
 
 ## About
 
-> [!TODO]
-> Describe the philosophy of the config
+> TODO:grey_exclamation:  Describe the philosophy of the config
 
 ### My Setup
 
@@ -71,20 +69,15 @@
 - lua
     - luarocks
 
-<table><tr><td>
-
-<details>
+<details style="width: 100%">
 <summary>Screenshots</summary>
 <br>
 
-> [!TODO]
-> Add Screenshots and gifs
+> TODO:grey_exclamation: : Add Screenshots and gifs
 
 ## template (to be changed)
 <img src="docs/images/screenshot.png" title="Home Page" width="100%">
 </details>
-
-</td></tr></table>
 
 ## Getting Started
 
@@ -95,13 +88,13 @@ The overall installation logic relies on [task](https://github.com/go-task/task)
 #### Rust
 - [cargo binstall](https://github.com/cargo-bins/cargo-binstall)
 
-> TODO :grey_exclamation: : Add different libraries and programs used in the config.
+> TODO:grey_exclamation: : Add different libraries and programs used in the config.
 
 ### Installation
-> TODO :grey_exclamation: : Add indications about the *task* setup.
+> TODO:grey_exclamation: : Add indications about the *task* setup.
 
 ## Usage
-> TODO :grey_exclamation: : Add some indications for common shortcuts
+> TODO:grey_exclamation: : Add some indications for common shortcuts
 
 ## Assistance
 
