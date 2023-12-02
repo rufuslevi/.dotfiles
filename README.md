@@ -41,7 +41,7 @@
 
 ## About
 
-> TODO:grey_exclamation:  Describe the philosophy of the config
+> :grey_exclamation: TODO : Describe the philosophy of the config
 
 ### My Setup
 
@@ -74,7 +74,7 @@
 <summary>Screenshots</summary>
 <br>
 
-> TODO:grey_exclamation: : Add Screenshots and gifs
+> :grey_exclamation: TODO : Add Screenshots and gifs
 
 ## template (to be changed)
 <img src="docs/images/screenshot.png" title="Home Page" width="100%">
