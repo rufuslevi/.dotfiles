@@ -6,6 +6,9 @@ vim.opt.cursorline = false
 vim.opt.cc = "80"
 vim.opt.syntax = "ON"
 vim.opt.termguicolors = true
+vim.wo.wrap = false
+vim.wo.linebreak = false
+vim.opt.wrap = false
 vim.g.mapleader = " "
 
 vim.g.nvim_tree_auto_close = 1
