@@ -14,11 +14,11 @@
 
 <div align="center">
     <br />
-    [![Project license](https://img.shields.io/github/license/rufuslevi/dotfiles.svg?style=flat-square)](LICENSE)
 
-    [![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/rufuslevi/dotfiles/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[![Project license](https://img.shields.io/github/license/rufuslevi/dotfiles.svg?style=flat-square)](LICENSE)
 
-    [![code with love by rufuslevi](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-rufuslevi-ff1414.svg?style=flat-square)](https://github.com/rufuslevi)
+[![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/rufuslevi/dotfiles/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[![code with love by rufuslevi](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-rufuslevi-ff1414.svg?style=flat-square)](https://github.com/rufuslevi)
 </div>
 
 <details open="open">
@@ -30,7 +30,8 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Assistance](#assistance)
+- [Support](#support)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
@@ -40,11 +41,8 @@
 
 ## About
 
-> Provide general information about your project here.
-> What problem does it (intend to) solve?
-> What is the purpose of your project?
-> Why did you undertake it?
-> You don't have to answer all the questions -- just the ones relevant to your project.
+> [!TODO]
+> Describe the philosophy of the config
 
 ### My Setup
 
@@ -76,13 +74,14 @@
 <table><tr><td>
 
 <details>
-    <summary>Screenshots</summary>
-    <br>
+<summary>Screenshots</summary>
+<br>
 
-    > TODO :grey_exclamation: : Add Screenshots and gifs
+> [!TODO]
+> Add Screenshots and gifs
 
-    ## template (to be changed)
-    <img src="docs/images/screenshot.png" title="Home Page" width="100%">
+## template (to be changed)
+<img src="docs/images/screenshot.png" title="Home Page" width="100%">
 </details>
 
 </td></tr></table>
@@ -93,10 +92,10 @@
 
 The overall installation logic relies on [task](https://github.com/go-task/task). That includes the installation of different tools and the transfering of config files.
 
-### Rust
+#### Rust
 - [cargo binstall](https://github.com/cargo-bins/cargo-binstall)
 
-> TODO :grey_exclamation: : Add different
+> TODO :grey_exclamation: : Add different libraries and programs used in the config.
 
 ### Installation
 > TODO :grey_exclamation: : Add indications about the *task* setup.
@@ -104,16 +103,16 @@ The overall installation logic relies on [task](https://github.com/go-task/task)
 ## Usage
 > TODO :grey_exclamation: : Add some indications for common shortcuts
 
-## Support
+## Assistance
 
 > This is obviously a personal project, but if you ever feel the need for help I will be happy to support with the tools listed here to the best of my knowledge.
 
 You can reach out to me at one of the following places:
 
 - [GitHub issues](https://github.com/rufuslevi/dotfiles/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+)
-- Contact options listed on [this GitHub profile](https://github.com/rufuslevi)
+- Contact options listed on [my GitHub profile](https://github.com/rufuslevi)
 
-## Project assistance
+## Support
 
 If you want to say **thank you** or/and support active development of dotfiles:
 
@@ -129,6 +128,6 @@ See [LICENSE](LICENSE) for more information.
 ## Acknowledgements
 
 Thanks to all the marvellous tools that enabled this forever ongoing project.
-> [logo](https://github.com/jglovier/dotfiles-logo) by [jglovier](https://github.com/jglovier)
+> [logo](https://github.com/jglovier/dotfiles-logo) by [jglovier](https://github.com/jglovier) \
 > [README template](https://github.com/dec0dOS/amazing-github-template) by [dec0dOS](https://github.com/dec0dOS)
 > 
