@@ -15,7 +15,7 @@
 
 <br />
 
-[![Project license][![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 [![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/rufuslevi/dotfiles/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 [![code with love by rufuslevi](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-rufuslevi-ff1414.svg?style=flat-square)](https://github.com/rufuslevi)
 </div>
