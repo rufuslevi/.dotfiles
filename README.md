@@ -1,9 +1,58 @@
-# Software stack 
-## OS
+<h1 align="center">
+  <a href="https://github.com/rufuslevi/dotfiles">
+    <!-- Please provide path to your logo here -->
+    <img src="docs/images/logo.svg" alt="Logo" width="100" height="100">
+  </a>
+</h1>
+
+<div align="center">
+  .dotfiles
+  <br />
+  <a href="#about"><strong>Explore the screenshots »</strong></a>
+  <br />
+</div>
+
+<div align="center">
+    <br />
+    [![Project license](https://img.shields.io/github/license/rufuslevi/dotfiles.svg?style=flat-square)](LICENSE)
+
+    [![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/rufuslevi/dotfiles/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+
+    [![code with love by rufuslevi](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-rufuslevi-ff1414.svg?style=flat-square)](https://github.com/rufuslevi)
+</div>
+
+<details open="open">
+<summary>Table of Contents</summary>
+
+- [About](#about)
+  - [My Setup](#my-setup)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
+</details>
+
+---
+
+## About
+
+> Provide general information about your project here.
+> What problem does it (intend to) solve?
+> What is the purpose of your project?
+> Why did you undertake it?
+> You don't have to answer all the questions -- just the ones relevant to your project.
+
+### My Setup
+
+#### OS
 - MacOS running on M1 Pro Macbook Pro
 - Dual-boot KDE Linux - Windows 11 running on a custom build
 
-## Terminal
+#### Terminal
 - Wezterm - Emulator written in Rust
 - nu - Shell based on the nu programming language
 - Starship - Dynamic minimal shell prompt written in Rust
@@ -11,26 +60,75 @@
 - eza - `ls` smarter alternative written in Rust 
 - btop - `htop` alternative with a better and more complete UI
 
-### nu plugins
+##### NuShell
 - [nu_plugin_net](https://crates.io/crates/nu_plugin_net)
 
-## Coding
+#### Coding
 - [neovim](https://github.com/neovim/neovim) - Do I need to explain?
 - [VSCodium](https://github.com/VSCodium/vscodium) - Completely open source build of Microsoft one
  
-## Languages
+#### Languages
 - Rust
+- Go
 - lua
+    - luarocks
 
-# Setup
-## Dependencies
+<table><tr><td>
 
-### General
-- [task](https://github.com/go-task/task) - Simple task runner written in Go
+<details>
+    <summary>Screenshots</summary>
+    <br>
+
+    > TODO :grey_exclamation: : Add Screenshots and gifs
+
+    ## template (to be changed)
+    <img src="docs/images/screenshot.png" title="Home Page" width="100%">
+</details>
+
+</td></tr></table>
+
+## Getting Started
+
+### Prerequisites
+
+The overall installation logic relies on [task](https://github.com/go-task/task). That includes the installation of different tools and the transfering of config files.
 
 ### Rust
 - [cargo binstall](https://github.com/cargo-bins/cargo-binstall)
 
-### Lua 
-- [luarocks](https://github.com/luarocks/luarocks) - Package manager for lua
+> TODO :grey_exclamation: : Add different
 
+### Installation
+> TODO :grey_exclamation: : Add indications about the *task* setup.
+
+## Usage
+> TODO :grey_exclamation: : Add some indications for common shortcuts
+
+## Support
+
+> This is obviously a personal project, but if you ever feel the need for help I will be happy to support with the tools listed here to the best of my knowledge.
+
+You can reach out to me at one of the following places:
+
+- [GitHub issues](https://github.com/rufuslevi/dotfiles/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+)
+- Contact options listed on [this GitHub profile](https://github.com/rufuslevi)
+
+## Project assistance
+
+If you want to say **thank you** or/and support active development of dotfiles:
+
+- Add a [GitHub Star](https://github.com/rufuslevi/dotfiles) to the project.
+- Tweet about the dotfiles.
+
+## License
+
+This project is licensed under the **GNU General Public License v3**.
+
+See [LICENSE](LICENSE) for more information.
+
+## Acknowledgements
+
+Thanks to all the marvellous tools that enabled this forever ongoing project.
+> [logo](https://github.com/jglovier/dotfiles-logo) by [jglovier](https://github.com/jglovier)
+> [README template](https://github.com/dec0dOS/amazing-github-template) by [dec0dOS](https://github.com/dec0dOS)
+> 
