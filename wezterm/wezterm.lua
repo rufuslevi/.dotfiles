@@ -13,6 +13,8 @@ local WINDOW_DECORATIONS = "INTEGRATED_BUTTONS|MACOS_FORCE_ENABLE_SHADOW"
 local LIGHT_THEME = "rose-pine-dawn"
 local DARK_THEME = "Sonokai (Gogh)"
 local SHELL = "/bin/zsh"
+local DEFAULT_WIDTH = 120
+local DEFAULT_HEIGHT = 40
 
 -- Function to hot-reload on dark mode switch from the OS
 -- Source : https://github.com/wez/wezterm/issues/806#issuecomment-882110170
@@ -83,6 +85,8 @@ config.window_frame = {
 	}),
 	font_size = FONT_SIZE,
 }
+config.initial_cols = DEFAULT_WIDTH
+config.initial_rows = DEFAULT_HEIGHT
 config.hide_tab_bar_if_only_one_tab = false
 config.window_decorations = WINDOW_DECORATIONS
 
