@@ -16,7 +16,8 @@
 <br />
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
-[![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/rufuslevi/dotfiles/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+<br />
+
 [![code with love by rufuslevi](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-rufuslevi-ff1414.svg?style=flat-square)](https://github.com/rufuslevi)
 </div>
 
@@ -88,13 +89,13 @@ The overall installation logic relies on [task](https://github.com/go-task/task)
 #### Rust
 - [cargo binstall](https://github.com/cargo-bins/cargo-binstall)
 
-> TODO:grey_exclamation: : Add different libraries and programs used in the config.
+> :grey_exclamation:  TODO: Add different libraries and programs used in the config.
 
 ### Installation
-> TODO:grey_exclamation: : Add indications about the *task* setup.
+> :grey_exclamation: TODO : Add indications about the *task* setup.
 
 ## Usage
-> TODO:grey_exclamation: : Add some indications for common shortcuts
+> :grey_exclamation: TODO : Add some indications for common shortcuts
 
 ## Assistance
 
