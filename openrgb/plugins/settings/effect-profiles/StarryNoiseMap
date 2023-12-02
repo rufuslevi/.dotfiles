@@ -1,0 +1,96 @@
+{
+    "Effects": [
+        {
+            "AllowOnlyFirst": false,
+            "AutoStart": true,
+            "Brightness": 100,
+            "ControllerZones": [
+                {
+                    "description": "Razer Device, US (ANSI), Black",
+                    "is_segment": false,
+                    "location": "HID: DevSrvsID:4295051509",
+                    "name": "Razer Huntsman V2 TKL",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "PM2140F58601740       ",
+                    "vendor": "Razer",
+                    "version": "v1.0",
+                    "zone_idx": 0
+                }
+            ],
+            "CustomName": "",
+            "CustomSettings": {
+                "groups": [
+                    {
+                        "composer_fn": 1,
+                        "layers": [
+                            {
+                                "composer_fn": 1,
+                                "effect_settings": {
+                                    "AllowOnlyFirst": false,
+                                    "Brightness": 100,
+                                    "CustomName": "",
+                                    "EffectClassName": "StarryNight",
+                                    "FPS": 59,
+                                    "RandomColors": false,
+                                    "Slider2Val": 17,
+                                    "Speed": 40,
+                                    "Temperature": 0,
+                                    "Tint": 0,
+                                    "UserColors": [
+                                        16105070,
+                                        13696768,
+                                        65310,
+                                        16236246,
+                                        6159213
+                                    ]
+                                }
+                            },
+                            {
+                                "composer_fn": 1,
+                                "effect_settings": {
+                                    "AllowOnlyFirst": false,
+                                    "Brightness": 55,
+                                    "CustomName": "",
+                                    "CustomSettings": {
+                                        "amplitude": 3.6740000247955322,
+                                        "colors": [
+                                            2025492,
+                                            9300480,
+                                            13991425,
+                                            16727477,
+                                            12845197
+                                        ],
+                                        "colors_choice": 2,
+                                        "frequency": 0.08150000125169754,
+                                        "lacunarity": 0.3285999894142151,
+                                        "motion": 0,
+                                        "motion_speed": 0,
+                                        "octaves": 1,
+                                        "persistence": 1.7275999784469604
+                                    },
+                                    "EffectClassName": "NoiseMap",
+                                    "FPS": 45,
+                                    "RandomColors": false,
+                                    "Slider2Val": 1,
+                                    "Speed": 24,
+                                    "Temperature": 0,
+                                    "Tint": 0
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "EffectClassName": "Layers",
+            "FPS": 60,
+            "RandomColors": false,
+            "Slider2Val": 1,
+            "Speed": 1,
+            "Temperature": 0,
+            "Tint": 0
+        }
+    ],
+    "version": 2
+}

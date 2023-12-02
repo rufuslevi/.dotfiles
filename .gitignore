@@ -1,8 +1,9 @@
 # Files
 *.DS_Store
+nvim/lazy-lock.json
+nushell/config/history.txt
 
 # Directories
 mason/
 plugged/
-nvim/lazy-lock.json
-nushell/config/history.txt
+openrgb/logs/

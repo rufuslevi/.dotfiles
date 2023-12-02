@@ -1,0 +1,28 @@
+{
+    "AllowOnlyFirst": false,
+    "Brightness": 100,
+    "CustomSettings": {
+        "amplitude": 3.6740000247955322,
+        "colors": [
+            2025492,
+            9300480,
+            13991425,
+            16727477,
+            12845197
+        ],
+        "colors_choice": 2,
+        "frequency": 0.08159999549388885,
+        "lacunarity": 0.3285999894142151,
+        "motion": 0,
+        "motion_speed": 0,
+        "octaves": 1,
+        "persistence": 1.7275999784469604
+    },
+    "EffectClassName": "NoiseMap",
+    "FPS": 45,
+    "RandomColors": false,
+    "Slider2Val": 1,
+    "Speed": 24,
+    "Temperature": 0,
+    "Tint": 0
+}

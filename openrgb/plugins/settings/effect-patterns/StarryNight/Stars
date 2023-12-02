@@ -1,0 +1,18 @@
+{
+    "AllowOnlyFirst": false,
+    "Brightness": 100,
+    "EffectClassName": "StarryNight",
+    "FPS": 59,
+    "RandomColors": false,
+    "Slider2Val": 17,
+    "Speed": 40,
+    "Temperature": 0,
+    "Tint": 0,
+    "UserColors": [
+        16105070,
+        13696768,
+        65310,
+        16236246,
+        6159213
+    ]
+}
