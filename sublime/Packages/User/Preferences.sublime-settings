@@ -17,11 +17,7 @@
     /*"vintage_start_in_command_mode": true,*/
     /*"shift_tab_unindent": true,*/
     /*"hardware_acceleration": "opengl",*/
-    // "font_face": "Cascadia Code",
-    // "font_face": "CaskaydiaCove NF",
-    // "font_face": "SauceCodePro Nerd Font",
-    /*"font_face": "MonaspaceNeon",*/
-    // "font_face": "Courrier Prime",
+    "font_face": "MonaspaceNeon",
     /*"font_options": [
         "no_round",
         "dlig",
@@ -44,12 +40,12 @@
         "node_modules",
         "src-tauri/release"
     ],*/
-    /*"rulers": [
+    "rulers": [
         [
             80,
             "dotted"
         ]
-    ],*/
+    ],
     /*"open_externally_patterns": [
         "*.jpg",
         "*.jpeg",
