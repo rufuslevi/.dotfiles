@@ -2,6 +2,7 @@
 
 require("config.options.themes")
 require("config.options.ui")
+require("config.options.lsp")
 
 -- Consistency settings
 vim.opt.swapfile = false
