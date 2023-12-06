@@ -57,6 +57,7 @@
 - eza - `ls` smarter alternative written in Rust 
 - btop - `htop` alternative with a better and more complete UI
 - pokemon-colorscript - A little script to generate pokemons in terminal
+- brew
 
 ##### NuShell
 - [nu_plugin_net](https://crates.io/crates/nu_plugin_net)
