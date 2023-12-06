@@ -24,7 +24,6 @@
 		"GLSL Validator",
 		"glslViewer",
 		"Gofmt",
-		"Golang Build",
 		"Hooks",
 		"HoverDocs",
 		"HTML5",
@@ -68,6 +67,7 @@
 		"Theme - Monokai Pro",
 		"Toggle Dark Mode",
 		"TOML",
+		"Vintage Relative Lines",
 	],
 	"debug": true,
 }
