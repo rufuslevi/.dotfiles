@@ -15,6 +15,7 @@ local DARK_THEME = "Sonokai (Gogh)"
 local SHELL = "/bin/zsh"
 local DEFAULT_WIDTH = 120
 local DEFAULT_HEIGHT = 40
+local OPACITY = 0.95
 
 -- Function to hot-reload on dark mode switch from the OS
 -- Source : https://github.com/wez/wezterm/issues/806#issuecomment-882110170
@@ -42,9 +43,12 @@ if os.execute("cd C:/WINDOWS") then
 	config.window_decorations = "TITLE"
 elseif not os.execute("cd /Applications") then
 	wezterm.log_info("Running on Linux!")
+	SHELL = "/home/linuxbrew/.linuxbrew/bin/nu"
 
 	FONT_SIZE = 10
-	config.window_decorations = "TITLE"
+	OPACITY = 1
+	config.window_decorations = "TITLE|RESIZE"
+	config.integrated_title_button_style = "Gnome"
 else
 	wezterm.log_info("MacOS!")
 	SHELL = "/Users/rufuslevi/.cargo/bin/nu"
@@ -52,7 +56,7 @@ end
 
 config.default_prog = { SHELL }
 
-config.window_background_opacity = 0.95
+config.window_background_opacity = OPACITY
 config.macos_window_background_blur = 20
 config.use_fancy_tab_bar = true
 config.font = wezterm.font({
