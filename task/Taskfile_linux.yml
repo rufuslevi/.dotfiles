@@ -4,4 +4,9 @@ tasks:
   tmux:
     cmds:
       - mkdir -p ~/.config/tmux
-      - stow -v -t ~/.config/tmux tmux
+      - stow -v -t ~/.config/tmux tmuxnushell
+  nushell:
+    cmds:
+      - mkdir -p ~/.config/nushell
+      - stow -v -t ~/.config/nushell -d nushell dot-config
+      - stow -v -t ~/.config/nushell -d nushell config
