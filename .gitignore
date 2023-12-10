@@ -7,3 +7,5 @@ nushell/config/history.txt
 mason/
 plugged/
 openrgb/logs/
+!sublime/Packages/User
+sublime/Packages
