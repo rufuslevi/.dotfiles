@@ -78,3 +78,6 @@ $env.PATH = ($env.PATH | split row (char esep) | prepend '/usr/local/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '~/Library/Python/3.11/bin')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '~/Library/Python/3.11/lib/python/site-packages')
 $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/opt/mbedtls@2/bin')
+
+# GOPATH
+$env.GOPATH = '~/Developer/go'
