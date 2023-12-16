@@ -2,6 +2,8 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"Formatter",
+		"Rust Enhanced",
 	],
 	"installed_packages":
 	[
