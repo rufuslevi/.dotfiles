@@ -5,3 +5,7 @@ tasks:
     cmds:
       - mkdir -p ~/AppData/Roaming/nushell
       - dploy stow nushell ~/AppData/Roaming/nushell 
+  sublime:
+    cmds:
+      - mkdir -p ~/AppData/Roaming/"Sublime Text"
+      - dploy stow sublime ~/AppData/Roaming/"Sublime Text"

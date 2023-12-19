@@ -2,8 +2,8 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"Formatter",
-		"Rust Enhanced",
+		"glslViewer",
+		"Sublimerge 3",
 	],
 	"installed_packages":
 	[
