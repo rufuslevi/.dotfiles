@@ -13,3 +13,7 @@ tasks:
     cmds:
       - mkdir -p ~/AppData/Roaming/"Sublime Text"
       - dploy stow sublime ~/AppData/Roaming/"Sublime Text"
+  wezterm:
+    cmds:
+      - mkdir -p ~/.config/wezterm
+      - dploy stow wezterm ~/.config/wezterm
