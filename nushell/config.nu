@@ -13,6 +13,11 @@ alias ll = ls -l
 if (sys).host.name != "Windows" {
     pokemon-colorscripts -r -s --no-title
 }
+if (sys).host.name == "Darwin" {
+    def nuopen [arg, --raw (-r)] { if $raw { open -r $arg } else { open $arg } }
+    alias open = ^open
+    alias kate = ^open -a kate
+}
 
 # For more information on defining custom themes, see
 # https://www.nushell.sh/book/coloring_and_theming.html
