@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  nushell:
+    cmds:
+      - mkdir -p ~/AppData/Roaming/nushell
+      - dploy stow nushell ~/AppData/Roaming/nushell 

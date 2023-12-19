@@ -3,14 +3,16 @@
 # version = "0.87.1"
 
 # Loading of modules
-use ~/.config/nushell/plugins/plugins.nu
-plugins
+# use ~/.config/nushell/plugins/plugins.nu
+# plugins
 
 alias lg = lazygit
 alias code = codium  
 alias ll = ls -l
 
-pokemon-colorscripts -r -s --no-title
+if (sys).host.name != "Windows" {
+    pokemon-colorscripts -r -s --no-title
+}
 
 # For more information on defining custom themes, see
 # https://www.nushell.sh/book/coloring_and_theming.html

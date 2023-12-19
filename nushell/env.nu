@@ -72,12 +72,21 @@ $env.NU_PLUGIN_DIRS = [
 ]
 
 # PATH
-$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
-$env.PATH = ($env.PATH | split row (char esep) | prepend '~/.cargo/bin')
-$env.PATH = ($env.PATH | split row (char esep) | prepend '/usr/local/bin')
-$env.PATH = ($env.PATH | split row (char esep) | prepend '~/Library/Python/3.11/bin')
-$env.PATH = ($env.PATH | split row (char esep) | prepend '~/Library/Python/3.11/lib/python/site-packages')
-$env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/opt/mbedtls@2/bin')
+if (sys).host.name == "Windows" {
+    $env.Path = ($env.Path | split row (char esep) | prepend '/opt/homebrew/bin')
+    $env.Path = ($env.Path | split row (char esep) | prepend '~/.cargo/bin')
+    $env.Path = ($env.Path | split row (char esep) | prepend '/usr/local/bin')
+    $env.Path = ($env.Path | split row (char esep) | prepend '~/Library/Python/3.11/bin')
+    $env.Path = ($env.Path | split row (char esep) | prepend '~/Library/Python/3.11/lib/python/site-packages')
+    $env.Path = ($env.Path | split row (char esep) | prepend '/opt/homebrew/opt/mbedtls@2/bin')
+} else {
+    $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
+    $env.PATH = ($env.PATH | split row (char esep) | prepend '~/.cargo/bin')
+    $env.PATH = ($env.PATH | split row (char esep) | prepend '/usr/local/bin')
+    $env.PATH = ($env.PATH | split row (char esep) | prepend '~/Library/Python/3.11/bin')
+    $env.PATH = ($env.PATH | split row (char esep) | prepend '~/Library/Python/3.11/lib/python/site-packages')
+    $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/opt/mbedtls@2/bin')
+}
 
 # GOPATH
 $env.GOPATH = '~/Developer/go'
