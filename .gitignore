@@ -9,4 +9,4 @@ plugged/
 openrgb/logs/
 !sublime/Packages/User
 sublime/Packages
-sublime/Packages/User/Package Control.sublime-settings
+sublime/Local
