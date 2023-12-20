@@ -1,5 +1,4 @@
 {
-    "font_size": 14,
     "syntaxes": [
         {
             "syntax": "Ngx HTML/NgxHTML",
@@ -16,7 +15,6 @@
     "hardware_acceleration": "opengl",
     "font_face": "Monaspace Neon",
     "font_options": [
-        "no_round",
         "dlig",
         "ss01",
         "ss02",
@@ -72,7 +70,6 @@
     "gnd_w5d10": true,
     "index_files": true,
     "ignored_packages": [
-        "glslViewer",
-        "Sublimerge 3",
     ],
+    "font_size": 11,
 }
