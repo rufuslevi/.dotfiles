@@ -69,7 +69,5 @@
     "gnd_m12": true,
     "gnd_w5d10": true,
     "index_files": true,
-    "ignored_packages": [
-    ],
-    "font_size": 11,
+    "ignored_packages": [],
 }
