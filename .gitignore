@@ -8,5 +8,6 @@ mason/
 plugged/
 openrgb/logs/
 !sublime/Packages/User
+!sublime/Packages/Default
 sublime/Packages
 sublime/Local

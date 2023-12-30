@@ -8,9 +8,7 @@ tasks:
   nushell:
     cmds:
       - mkdir -p ~/Library/"Application Support"/nushell
-      - stow -v -t ~/Library/"Application Support"/nushell -d nushell config
-      - mkdir -p ~/.config/nushell
-      - stow -v -t ~/.config/nushell -d nushell dot-config
+      - stow -v -t ~/Library/"Application Support"/nushell nushell       
   sublime:
     cmds:
       - mkdir -p ~/Library/"Application Support"/"Sublime Text"

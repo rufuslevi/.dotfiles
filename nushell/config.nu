@@ -3,14 +3,21 @@
 # version = "0.87.1"
 
 # Loading of modules
-use ~/.config/nushell/plugins/plugins.nu
-plugins
+# use ~/.config/nushell/plugins/plugins.nu
+# plugins
 
 alias lg = lazygit
 alias code = codium  
 alias ll = ls -l
 
-pokemon-colorscripts -r -s --no-title
+if (sys).host.name != "Windows" {
+    pokemon-colorscripts -r -s --no-title
+}
+if (sys).host.name == "Darwin" {
+    def nuopen [arg, --raw (-r)] { if $raw { open -r $arg } else { open $arg } }
+    alias open = ^open
+    alias kate = ^open -a kate
+}
 
 # For more information on defining custom themes, see
 # https://www.nushell.sh/book/coloring_and_theming.html

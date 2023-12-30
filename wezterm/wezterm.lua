@@ -38,8 +38,10 @@ end)
 -- Changing constants based on the host OS
 if os.execute("cd C:/WINDOWS") then
 	wezterm.log_info("Running on Windows!")
+	SHELL = "C:/Program Files/nu/bin/nu.exe"
 
-	FONT_SIZE = 10
+	FONT_SIZE = 11
+	OPACITY = 1
 	config.window_decorations = "TITLE"
 elseif not os.execute("cd /Applications") then
 	wezterm.log_info("Running on Linux!")
