@@ -10,3 +10,7 @@ tasks:
       - mkdir -p ~/.config/nushell
       - stow -v -t ~/.config/nushell -d nushell dot-config
       - stow -v -t ~/.config/nushell -d nushell config
+  sublime:
+    cmds:
+      - mkdir -p ~/.config/sublime-text-3
+      - stow -v -t ~/.config/sublime-text-3 sublime
