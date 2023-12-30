@@ -16,6 +16,10 @@ local SHELL = "/bin/zsh"
 local DEFAULT_WIDTH = 120
 local DEFAULT_HEIGHT = 40
 local OPACITY = 0.95
+local LEFT_PADDING = 0
+local RIGHT_PADDING = 0
+local UP_PADDING = 0
+local DOWN_PADDING = 0
 
 -- Function to hot-reload on dark mode switch from the OS
 -- Source : https://github.com/wez/wezterm/issues/806#issuecomment-882110170
@@ -29,6 +33,7 @@ wezterm.on("window-config-reloaded", function(window, pane)
 		scheme = LIGHT_THEME
 	end
 
+	wezterm.log_info(appearance)
 	if overrides.color_scheme ~= scheme then
 		overrides.color_scheme = scheme
 		window:set_config_overrides(overrides)
@@ -47,9 +52,10 @@ elseif not os.execute("cd /Applications") then
 	wezterm.log_info("Running on Linux!")
 	SHELL = "/home/linuxbrew/.linuxbrew/bin/nu"
 
-	FONT_SIZE = 10
+	FONT_SIZE = 10.5
 	OPACITY = 1
-	config.window_decorations = "TITLE|RESIZE"
+	UP_PADDING = 10
+	WINDOW_DECORATIONS = "TITLE|RESIZE"
 	config.integrated_title_button_style = "Gnome"
 else
 	wezterm.log_info("MacOS!")
@@ -79,10 +85,10 @@ config.font = wezterm.font({
 })
 config.font_size = FONT_SIZE
 config.window_padding = {
-	left = 0,
-	right = 0,
-	top = 0,
-	bottom = 0,
+	left = LEFT_PADDING,
+	right = RIGHT_PADDING,
+	top = UP_PADDING,
+	bottom = DOWN_PADDING,
 }
 config.window_frame = {
 	font = wezterm.font({
