@@ -86,7 +86,6 @@ if (sys).host.name == "Windows" {
     $env.PATH = ($env.PATH | split row (char esep) | prepend '~/Library/Python/3.11/bin')
     $env.PATH = ($env.PATH | split row (char esep) | prepend '~/Library/Python/3.11/lib/python/site-packages')
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/opt/mbedtls@2/bin')
-    $env.PATH = ($env.PATH | split row (char esep) | prepend '/opt/homebrew/bin')
     $env.PATH = ($env.PATH | split row (char esep) | prepend '/usr/share')
 }
 
