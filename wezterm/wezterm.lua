@@ -59,7 +59,7 @@ elseif not os.execute("cd /Applications") then
 	config.integrated_title_button_style = "Gnome"
 else
 	wezterm.log_info("MacOS!")
-	SHELL = "/Users/rufuslevi/.cargo/bin/nu"
+	-- SHELL = "/Users/rufuslevi/.cargo/bin/nu"
 end
 
 config.default_prog = { SHELL }
