@@ -13,12 +13,6 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 
 ENABLE_CORRECTION="true"
 
-# Uncomment the following line to display red dots whilst waiting for completion.
-# You can also set it to another string to have that shown instead of the default red dots.
-# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
-# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-# COMPLETION_WAITING_DOTS="true"
-
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
 # plugins=(git)
@@ -30,16 +24,6 @@ plugins+=(
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 autoload -Uz vcs_info # enable vcs_info
 
@@ -52,12 +36,6 @@ compinit -C
 precmd () { vcs_info } # always load before displaying the prompt
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
-
-# PS1='%F{green}%n%f@%m %2/ $ '
-# RPROMPT='$vcs_info_msg_0_'
-
-# zstyle ':vcs_info:*' formats ' %s(%F{red}%b%f)' # git(main)
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
