@@ -9,6 +9,10 @@ tasks:
     cmds:
       - mkdir -p ~/Library/"Application Support"/nushell
       - stow -v -t ~/Library/"Application Support"/nushell nushell       
+  skhd:
+    cmds:
+      - mkdir -p ~/.config/skhd
+      - stow -v -t ~/.config/skhd skhd
   sublime:
     cmds:
       - mkdir -p ~/Library/"Application Support"/"Sublime Text"
