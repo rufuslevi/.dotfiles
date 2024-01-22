@@ -40,4 +40,4 @@ tasks:
       - stow -v -t ~/.config/tmux tmux
   zsh:
     cmds:
-      - stow -v zsh
+      - stow -v -t ~ zsh

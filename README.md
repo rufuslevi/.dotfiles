@@ -51,6 +51,7 @@
 
 #### Terminal
 - Wezterm - Emulator written in Rust
+- zsh - Shell extending default bash
 - nu - Shell based on the nu programming language
 - Starship - Dynamic minimal shell prompt written in Rust
 - bat - `cat` smarter alternative written in Rust
@@ -58,6 +59,10 @@
 - btop - `htop` alternative with a better and more complete UI
 - pokemon-colorscript - A little script to generate pokemons in terminal
 - brew
+
+#### ZSH
+- p10k - A theme for Zsh emphasizing on speed, flexibility and out-of-the-box experience
+- oh-my-zsh - An open source, community-driven framework for managing your zsh configuration
 
 ##### NuShell
 - [nu_plugin_net](https://crates.io/crates/nu_plugin_net)
