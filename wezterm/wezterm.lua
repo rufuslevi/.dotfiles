@@ -50,7 +50,7 @@ if os.execute("cd C:/WINDOWS") then
 	config.window_decorations = "TITLE"
 elseif not os.execute("cd /Applications") then
 	wezterm.log_info("Running on Linux!")
-	SHELL = "/home/linuxbrew/.linuxbrew/bin/nu"
+	-- SHELL = "/home/linuxbrew/.linuxbrew/bin/nu"
 
 	FONT_SIZE = 10.5
 	OPACITY = 1
