@@ -8,8 +8,7 @@ tasks:
   nushell:
     cmds:
       - mkdir -p ~/.config/nushell
-      - stow -v -t ~/.config/nushell -d nushell dot-config
-      - stow -v -t ~/.config/nushell -d nushell config
+      - stow -v -t ~/.config/nushell nushell
   pulse:
     cmds:
       - mkdir -p ~/.pulse
