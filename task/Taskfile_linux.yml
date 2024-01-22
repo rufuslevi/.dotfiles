@@ -10,6 +10,10 @@ tasks:
       - mkdir -p ~/.config/nushell
       - stow -v -t ~/.config/nushell -d nushell dot-config
       - stow -v -t ~/.config/nushell -d nushell config
+  pulse:
+    cmds:
+      - mkdir -p ~/.pulse
+      - stow -v -t ~/.pulse pulse
   sublime:
     cmds:
       - mkdir -p ~/.config/sublime-text-3
