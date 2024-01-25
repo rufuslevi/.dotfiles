@@ -19,4 +19,9 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export VISUAL='nvim'
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
+export DOTNET_ROOT="~/.dotnet"
+
+# Add .NET Core SDK tools
+export PATH="$PATH:/Users/rufuslevi/.dotnet/tools"
+
 export EDITOR='nvim'
