@@ -42,6 +42,7 @@
 		"LSP-html",
 		"LSP-json",
 		"LSP-lua",
+		"LSP-OmniSharp",
 		"LSP-pylsp",
 		"LSP-pyright",
 		"LSP-rust-analyzer",
