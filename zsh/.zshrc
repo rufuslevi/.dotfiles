@@ -1,5 +1,7 @@
 # zmodload zsh/zprof
 
+pokemon-colorscripts -r -s --no-title
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -9,21 +11,21 @@ fi
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-zstyle ':omz:update' mode auto      # update automatically without asking
+# update automatically without asking
+zstyle ':omz:update' mode auto
 
 ENABLE_CORRECTION="true"
 
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
-# plugins=(git)
 plugins+=(
+  git
   zsh-autosuggestions
   zsh-syntax-highlighting
   colored-man-pages
 )
 
 source $ZSH/oh-my-zsh.sh
-
 
 autoload -Uz vcs_info # enable vcs_info
 
@@ -33,7 +35,8 @@ for dump in ~/.zcompdump(N.mh+24); do
 done
 compinit -C
 
-precmd () { vcs_info } # always load before displaying the prompt
+# always load before displaying the prompt
+precmd () { vcs_info } 
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 
@@ -52,12 +55,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# Aliases
-# alias python='python3.10'
-# alias pip='pip3'
-alias lg='lazygit'
-alias code='codium'
-
 # Defer initialization of nvm until nvm, node or a node-dependent command is
 # run. Ensure this block is only run once if .bashrc gets sourced multiple times
 # by checking whether __init_nvm is a function.
@@ -73,22 +70,10 @@ if [ -s "$HOME/.nvm/nvm.sh" ] && [ ! "$(whence -w __init_nvm)" = function ]; the
   }
   for i in "${__node_commands[@]}"; do alias $i='__init_nvm && '$i; done
 fi
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-HISTSIZE=1000
-SAVEHIST=1000
-
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-
-pokemon-colorscripts -r -s --no-title
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source "/Users/rufuslevi/Developer/scripts/easier-c.sh"
-
-# zprof
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

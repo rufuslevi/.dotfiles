@@ -12,10 +12,15 @@ export PATH=$PATH:/Users/rufuslevi/Library/Python/3.11/bin
 export PATH=$PATH:/Users/rufuslevi/Library/Python/3.11/lib/python/site-packages
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/Users/rufuslevi/Applications/platform-tools
+export PATH=$PATH:/opt/homebrew/opt/gradle@6/bin
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+export PATH=$PATH:"/Users/rufuslevi/Library/Application Support/JetBrains/Toolbox/scripts"
 
 export GOPATH=/Users/rufuslevi/Developer/go
 
+export MANPATH="/opt/local/share/man:$MANPATH"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 export VISUAL='nvim'
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
