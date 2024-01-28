@@ -22,7 +22,19 @@ export MANPATH="/opt/local/share/man:$MANPATH"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 export VISUAL='nvim'
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+# What OS are we running?
+if [[ $(uname) == "Darwin" ]]; then
+    # echo "Running MacOS!"
+    export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+elif command -v apt > /dev/null; then
+    # echo "Running Debian based Linux!"
+
+else
+    echo 'Unknown OS!'
+fi
+
 
 export DOTNET_ROOT="~/.dotnet"
 
