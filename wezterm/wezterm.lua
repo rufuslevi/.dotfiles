@@ -58,19 +58,6 @@ elseif not os.execute("cd /Applications") then
 	UP_PADDING = 10
 	WINDOW_DECORATIONS = "TITLE|RESIZE"
 	config.integrated_title_button_style = "Gnome"
-
-	KEYS = {
-		{
-			key = "t",
-			mods = "CTRL",
-			action = wezterm.action.SpawnTab("CurrentPaneDomain"),
-		},
-		{
-			key = "w",
-			mods = "CTRL",
-			action = wezterm.action.CloseCurrentTab({ confirm = true }),
-		},
-	}
 else
 	wezterm.log_info("MacOS!")
 	-- SHELL = "/Users/rufuslevi/.cargo/bin/nu"
