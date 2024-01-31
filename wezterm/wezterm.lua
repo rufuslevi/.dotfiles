@@ -8,6 +8,7 @@ if wezterm.config_builder then
 end
 
 -- Constants
+local KEYS = {}
 local FONT_SIZE = 14
 local WINDOW_DECORATIONS = "INTEGRATED_BUTTONS|MACOS_FORCE_ENABLE_SHADOW"
 local LIGHT_THEME = "rose-pine-dawn"
@@ -57,6 +58,19 @@ elseif not os.execute("cd /Applications") then
 	UP_PADDING = 10
 	WINDOW_DECORATIONS = "TITLE|RESIZE"
 	config.integrated_title_button_style = "Gnome"
+
+	KEYS = {
+		{
+			key = "t",
+			mods = "CTRL",
+			action = wezterm.action.SpawnTab("CurrentPaneDomain"),
+		},
+		{
+			key = "w",
+			mods = "CTRL",
+			action = wezterm.action.CloseCurrentTab({ confirm = true }),
+		},
+	}
 else
 	wezterm.log_info("MacOS!")
 	-- SHELL = "/Users/rufuslevi/.cargo/bin/nu"
@@ -101,5 +115,6 @@ config.initial_cols = DEFAULT_WIDTH
 config.initial_rows = DEFAULT_HEIGHT
 config.hide_tab_bar_if_only_one_tab = false
 config.window_decorations = WINDOW_DECORATIONS
+config.keys = KEYS
 
 return config
