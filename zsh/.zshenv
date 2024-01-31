@@ -30,6 +30,7 @@ if [[ $(uname) == "Darwin" ]]; then
 
 elif command -v apt > /dev/null; then
     # echo "Running Debian based Linux!"
+    export PATH=$PATH:~/Applications/gradle-6.9.4/bin
 
 else
     echo 'Unknown OS!'
