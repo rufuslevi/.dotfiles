@@ -2,8 +2,23 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"A File Icon",
+		"Formatter",
 		"glslViewer",
+		"LSP",
+		"LSP-angular",
+		"LSP-css",
+		"LSP-eslint",
+		"LSP-json",
+		"LSP-lua",
+		"LSP-pylsp",
+		"LSP-pyright",
+		"LSP-rust-analyzer",
+		"LSP-typescript",
+		"Ngx HTML",
+		"SublimeLinter",
 		"Sublimerge 3",
+		"Theme - Monokai Pro",
 	],
 	"installed_packages":
 	[
