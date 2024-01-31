@@ -76,4 +76,17 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-source "/Users/rufuslevi/.easier-c.sh"
+# What OS are we running?
+if [[ $(uname) == "Darwin" ]]; then
+    # echo "Running MacOS!"
+    source "/Users/rufuslevi/.easier-c.sh"
+
+elif command -v apt > /dev/null; then
+    # echo "Running Debian based Linux!"
+    source "/home/rufuslevi/.easier-c.sh"
+
+else
+    echo 'Unknown OS!'
+fi
+
+
