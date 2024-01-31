@@ -76,4 +76,4 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-source "/Users/rufuslevi/Developer/scripts/easier-c.sh"
+source "/Users/rufuslevi/.easier-c.sh"
