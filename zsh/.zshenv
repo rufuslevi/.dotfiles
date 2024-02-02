@@ -7,14 +7,20 @@ export PATH=$PATH:~/.cargo/bin
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:$HOME/Library/Python/3.11/bin
 export PATH=$PATH:$HOME/Library/Python/3.11/lib/python/site-packages
-export PATH=$PATH:/opt/homebrew/opt/mbedtls@2/bin
 export PATH=$PATH:/Users/rufuslevi/Library/Python/3.11/bin
 export PATH=$PATH:/Users/rufuslevi/Library/Python/3.11/lib/python/site-packages
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/Users/rufuslevi/Applications/platform-tools
 export PATH=$PATH:/opt/homebrew/opt/gradle@6/bin
+export PATH=$PATH:/opt/homebrew/opt/ruby/bin
+export PATH=$PATH:/opt/homebrew/opt/mbedtls@2/bin
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 export PATH=$PATH:"/Users/rufuslevi/Library/Application Support/JetBrains/Toolbox/scripts"
+
+# ruby flags
+export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/ruby/lib/pkgconfig"
 
 export GOPATH=/Users/rufuslevi/Developer/go
 
