@@ -57,7 +57,7 @@ return {
       border = "rounded",
     },
     config = function()
-      require("pretty_hover").setup(opts)
+      require("pretty_hover").setup({})
     end,
   },
   {
