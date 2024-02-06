@@ -12,6 +12,7 @@ vim.keymap.set("n", "<leader>cs", vim.lsp.buf.document_symbol, { desc = "Code sy
 -- vim.keymap.set("n", "<leader>ch", vim.lsp.buf.hover, { desc = "Code definition" })
 vim.keymap.set("n", "<leader>ch", hover.hover, { desc = "Code definition" })
 vim.keymap.set("n", "<leader>ce", vim.diagnostic.open_float, { desc = "Code error" })
+vim.keymap.set("n", "<leader>cn", vim.lsp.buf.rename, { desc = "Rename symbol" })
 
 vim.keymap.set("n", "<leader>mp", function()
   builtin.man_pages({ sections = { "ALL" } })
