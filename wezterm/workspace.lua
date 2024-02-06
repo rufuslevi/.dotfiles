@@ -8,9 +8,57 @@ local workspaces = {
 		}),
 	},
 	{
+		id = "inf8480",
+		label = Wezterm.format({
+			{ Attribute = { Italic = true } },
+			{ Foreground = { AnsiColor = "Purple" } },
+			{ Text = "inf8480" },
+		}),
+		cwd = Wezterm.home_dir .. "/Developer/poly/inf8480",
+	},
+	{
+		id = "game_of_life",
+		label = Wezterm.format({
+			{ Attribute = { Italic = true } },
+			{ Foreground = { AnsiColor = "Purple" } },
+			{ Text = "game_of_life" },
+		}),
+		cwd = Wezterm.home_dir .. "/Developer/game_of_life",
+		tabs = {
+			{
+				title = "Folder",
+			},
+			{
+				title = "Neovim",
+				args = { "nvim", "." },
+				toActivate = true,
+			},
+		},
+	},
+	{
+		id = ".dotfiles",
+		label = Wezterm.format({
+			{ Attribute = { Italic = true } },
+			{ Foreground = { AnsiColor = "Purple" } },
+			{ Text = ".dotfiles" },
+		}),
+		cwd = Wezterm.home_dir .. "/.dotfiles",
+		tabs = {
+			{
+				title = "Folder",
+			},
+			{
+				title = "Neovim",
+				args = { "nvim", "." },
+				toActivate = true,
+			},
+		},
+	},
+	{
 		id = "domum",
 		label = Wezterm.format({
 			{ Attribute = { Intensity = "Bold" } },
+			{ Attribute = { Underline = "Single" } },
 			{ Foreground = { AnsiColor = "Black" } },
 			{ Text = "domum" },
 		}),
@@ -20,34 +68,6 @@ local workspaces = {
 				args = { "ssh", "domum" },
 			},
 		},
-	},
-	{
-		id = ".dotfiles",
-		label = Wezterm.format({
-			{ Attribute = { Italic = true } },
-			{ Foreground = { AnsiColor = "Blue" } },
-			{ Text = ".dotfiles" },
-		}),
-		cwd = Wezterm.home_dir .. "/.dotfiles",
-		tabs = {
-			{
-				title = "Folder",
-			},
-			{
-				title = "nvim",
-				args = { "nvim", "." },
-				toActivate = true,
-			},
-		},
-	},
-	{
-		id = "inf8480",
-		label = Wezterm.format({
-			{ Attribute = { Italic = true } },
-			{ Foreground = { AnsiColor = "Blue" } },
-			{ Text = "inf8480" },
-		}),
-		cwd = Wezterm.home_dir .. "/Developer/poly/inf8480",
 	},
 }
 
