@@ -71,7 +71,6 @@ local function generateWorkspace(inner_window, inner_pane, id)
 					cwd = workspace.cwd,
 				},
 			}),
-			Wezterm.action.ClearScrollback("ScrollbackAndViewport"),
 		}),
 		inner_pane
 	)
@@ -91,31 +90,35 @@ local function generateWorkspace(inner_window, inner_pane, id)
 
 	for i, tab in pairs(workspace.tabs) do
 		local muxTab
+		local pane
 		if i ~= 1 then
-			muxTab, _, _ = muxWindow:spawn_tab({
+			muxTab, pane, _ = muxWindow:spawn_tab({
 				cwd = tab.cwd,
-				args = tab.args,
 			})
 		else
 			muxTab = muxWindow:tabs()[1]
-			local pane = muxTab:panes()[1]
+			pane = muxTab:panes()[1]
+		end
 
-			if tab.args then
-				local command = ""
-				for _, arg in pairs(tab.args) do
+		if tab.args then
+			local command = ""
+			for argId, arg in pairs(tab.args) do
+				if argId == 1 then
+					command = arg
+				else
 					command = command .. " " .. arg
 				end
-
-				guiWindow:perform_action(
-					Wezterm.action.Multiple({
-						Wezterm.action.SendString(command),
-						Wezterm.action.SendKey({
-							key = "Enter",
-						}),
-					}),
-					pane
-				)
 			end
+
+			guiWindow:perform_action(
+				Wezterm.action.Multiple({
+					Wezterm.action.SendString(command),
+					Wezterm.action.SendKey({
+						key = "Enter",
+					}),
+				}),
+				pane
+			)
 		end
 
 		if tab.title then
@@ -179,7 +182,6 @@ local function selectWorkspace(window, pane)
 							break
 						end
 					end
-					print(workspaceAlreadyOpen)
 
 					if workspaceAlreadyOpen then
 						switchToWorkspace(inner_window, inner_pane, id)
