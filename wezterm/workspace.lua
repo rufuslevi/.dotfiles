@@ -1,77 +1,4 @@
-local workspaces = {
-	{
-		id = "fun",
-		label = Wezterm.format({
-			{ Attribute = { Intensity = "Bold" } },
-			{ Foreground = { AnsiColor = "Fuchsia" } },
-			{ Text = "fun" },
-		}),
-	},
-	{
-		id = "inf8480",
-		label = Wezterm.format({
-			{ Attribute = { Italic = true } },
-			{ Foreground = { AnsiColor = "Purple" } },
-			{ Text = "inf8480" },
-		}),
-		cwd = Wezterm.home_dir .. "/Developer/poly/inf8480",
-	},
-	{
-		id = "game_of_life",
-		label = Wezterm.format({
-			{ Attribute = { Italic = true } },
-			{ Foreground = { AnsiColor = "Purple" } },
-			{ Text = "game_of_life" },
-		}),
-		cwd = Wezterm.home_dir .. "/Developer/game_of_life",
-		tabs = {
-			{
-				title = "Folder",
-			},
-			{
-				title = "Neovim",
-				args = { "nvim", "." },
-				toActivate = true,
-			},
-		},
-	},
-	{
-		id = ".dotfiles",
-		label = Wezterm.format({
-			{ Attribute = { Italic = true } },
-			{ Foreground = { AnsiColor = "Purple" } },
-			{ Text = ".dotfiles" },
-		}),
-		cwd = Wezterm.home_dir .. "/.dotfiles",
-		tabs = {
-			{
-				title = "Folder",
-			},
-			{
-				title = "Neovim",
-				args = { "nvim", "." },
-				toActivate = true,
-			},
-		},
-	},
-	{
-		id = "domum",
-		label = Wezterm.format({
-			{ Attribute = { Intensity = "Bold" } },
-			{ Attribute = { Underline = "Single" } },
-			{ Foreground = { AnsiColor = "Black" } },
-			{ Text = "domum" },
-		}),
-		tabs = {
-			{
-				title = "SSH - domum",
-				args = { "ssh", "domum" },
-			},
-		},
-	},
-}
-
-local function generateWorkspace(inner_window, inner_pane, id)
+local function generateWorkspace(inner_window, inner_pane, id, workspaces)
 	local workspace
 	for _, w in pairs(workspaces) do
 		if w.id == id then
@@ -163,6 +90,7 @@ local function switchToWorkspace(window, pane, id)
 end
 
 local function selectWorkspace(window, pane)
+	local workspaces = require("workspaces")
 	local choices = {}
 	local currentWindows = Wezterm.mux.all_windows()
 
@@ -207,7 +135,7 @@ local function selectWorkspace(window, pane)
 						switchToWorkspace(inner_window, inner_pane, id)
 					end
 					if not workspaceAlreadyOpen then
-						generateWorkspace(inner_window, inner_pane, id)
+						generateWorkspace(inner_window, inner_pane, id, workspaces)
 					end
 					Wezterm.reload_configuration()
 				end
