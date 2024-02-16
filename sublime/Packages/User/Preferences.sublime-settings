@@ -86,4 +86,5 @@
         "SublimeLinter",
         "Theme - Monokai Pro",
     ],
+    "font_size": 15,
 }
