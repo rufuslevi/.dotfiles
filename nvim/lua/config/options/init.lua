@@ -35,6 +35,7 @@ vim.opt.relativenumber = true
 -- Mouse settings
 vim.opt.mouse = "a"
 vim.opt.mousemoveevent = true
+vim.opt.mousescroll = "ver:1,hor:2"
 
 -- Behaviors settings
 vim.opt.updatetime = 50
