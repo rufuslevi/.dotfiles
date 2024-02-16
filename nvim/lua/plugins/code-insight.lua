@@ -3,6 +3,7 @@
 return {
   {
     "tpope/vim-sleuth",
+    enabled = false,
   },
   {
     "numToStr/Comment.nvim",
