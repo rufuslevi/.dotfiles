@@ -1,6 +1,7 @@
 # zmodload zsh/zprof
 
-pokemon-colorscripts -r -s --no-title
+# pokemon-colorscripts -r -s --no-title
+lua ~/Developer/pokemon-catcher/src/init.lua 1
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -76,10 +77,13 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+eval "$(zoxide init --cmd cd zsh)"
+
 # What OS are we running?
 if [[ $(uname) == "Darwin" ]]; then
     # echo "Running MacOS!"
     source "/Users/rufuslevi/.easier-c.sh"
+    source "/Users/rufuslevi/.bazel/bin/bazel-complete.bash"
 
 elif command -v apt > /dev/null; then
     # echo "Running Debian based Linux!"
@@ -89,4 +93,4 @@ else
     echo 'Unknown OS!'
 fi
 
-
+source ~/.zprofile
