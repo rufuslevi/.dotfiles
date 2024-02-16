@@ -46,36 +46,51 @@
 ### My Setup
 
 #### OS
+
 - MacOS running on M1 Pro Macbook Pro
+  - Asahi Linux available in dual-boot
 - Dual-boot KDE Linux - Windows 11 running on a custom build
 
 #### Terminal
-- Wezterm - Emulator written in Rust
-- zsh - Shell extending default bash
-- nu - Shell based on the nu programming language
-- Starship - Dynamic minimal shell prompt written in Rust
-- bat - `cat` smarter alternative written in Rust
-- eza - `ls` smarter alternative written in Rust 
-- btop - `htop` alternative with a better and more complete UI
-- pokemon-colorscript - A little script to generate pokemons in terminal
-- brew
 
-#### ZSH
-- p10k - A theme for Zsh emphasizing on speed, flexibility and out-of-the-box experience
-- oh-my-zsh - An open source, community-driven framework for managing your zsh configuration
+- [WezTerm](https://wezfurlong.org/wezterm/index.html) - Powerful cross-platform terminal emulator and multiplexer written by [@wez](https://github.com/wez) and implemented in Rust
+- [zsh](https://zsh.sourceforge.io) - Shell extending default bash
+- [nu](https://github.com/nushell/nushell) - A new type of shell
+
+##### Tools
+
+- [zoxide](https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file) Smarter cd command, inspired by z and autojump
+- [bat](https://github.com/sharkdp/bat) - A `cat` clone with wings
+- [eza](https://github.com/eza-community/eza) - A modern, maintained replacement for ls
+- [btop](https://github.com/aristocratos/btop) - A monitor of resources
+- [brew](https://brew.sh) - The Missing Package Manager for macOS (or Linux)
+- [fzf](https://github.com/junegunn/fzf) - A general-purpose command-line fuzzy finder
+- [pokemon-colorscript](https://gitlab.com/phoneybadger/pokemon-colorscripts) - A script to print out images of pokemon to the terminal
+
+##### ZSH
+
+- [p10k](https://github.com/romkatv/powerlevel10k) - A theme for Zsh emphasizing on speed, flexibility and out-of-the-box experience
+- [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) - Oh My Zsh is an open source, community-driven framework for managing your zsh configuration
 
 ##### NuShell
+
 - [nu_plugin_net](https://crates.io/crates/nu_plugin_net)
 
 #### Coding
-- [neovim](https://github.com/neovim/neovim) - Do I need to explain?
-- [VSCodium](https://github.com/VSCodium/vscodium) - Completely open source build of Microsoft one
- 
+
+- [neovim](https://github.com/neovim/neovim) - A project that seeks to aggressively refactor Vim in order to
+- [Zed](https://github.com/zed-industries/zed) - A high-performance, multiplayer code editor
+- [Sublime Text](https://www.sublimetext.com) - Text editing, done right
+- [VSCodium](https://github.com/VSCodium/vscodium) - Completely open source build of the Microsoft editor
+
 #### Languages
-- Rust
+
 - Go
+- C
+- C#
 - lua
-    - luarocks
+- JavaScript & TypeScript
+- Rust
 
 <details style="width: 100%">
 <summary>Screenshots</summary>
@@ -84,6 +99,7 @@
 > :grey_exclamation: TODO : Add Screenshots and gifs
 
 ## template (to be changed)
+
 <img src="docs/images/screenshot.png" title="Home Page" width="100%">
 </details>
 
@@ -94,14 +110,17 @@
 The overall installation logic relies on [task](https://github.com/go-task/task). That includes the installation of different tools and the transfering of config files.
 
 #### Rust
+
 - [cargo binstall](https://github.com/cargo-bins/cargo-binstall)
 
 > :grey_exclamation:  TODO: Add different libraries and programs used in the config.
 
 ### Installation
+
 > :grey_exclamation: TODO : Add indications about the *task* setup.
 
 ## Usage
+
 > :grey_exclamation: TODO : Add some indications for common shortcuts
 
 ## Assistance
@@ -131,4 +150,3 @@ See [LICENSE](LICENSE) for more information.
 Thanks to all the marvellous tools that enabled this forever ongoing project.
 > [logo](https://github.com/jglovier/dotfiles-logo) by [jglovier](https://github.com/jglovier) \
 > [README template](https://github.com/dec0dOS/amazing-github-template) by [dec0dOS](https://github.com/dec0dOS)
-> 
