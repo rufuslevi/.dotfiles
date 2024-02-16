@@ -49,6 +49,7 @@ Config.window_frame = {
 	font_size = FONT_SIZE,
 }
 Config.tab_bar_at_bottom = true
+Config.enable_scroll_bar = false
 Config.max_fps = 165
 Config.initial_cols = DEFAULT_WIDTH
 Config.initial_rows = DEFAULT_HEIGHT
