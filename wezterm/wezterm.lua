@@ -16,10 +16,11 @@ Config.default_prog = { SHELL }
 Config.window_background_opacity = OPACITY
 Config.macos_window_background_blur = 20
 Config.use_fancy_tab_bar = true
+Config.line_height = 1.17
 Config.font = Wezterm.font({
 	family = "Monaspace Neon",
-	weight = "Regular",
-	stretch = "Normal",
+	weight = "Medium",
+	stretch = "Condensed",
 	harfbuzz_features = {
 		"ss01=1",
 		"ss02=1",
@@ -33,6 +34,7 @@ Config.font = Wezterm.font({
 	},
 })
 Config.font_size = FONT_SIZE
+Config.freetype_load_flags = "NO_HINTING"
 Config.window_padding = {
 	left = LEFT_PADDING,
 	right = RIGHT_PADDING,
@@ -46,6 +48,8 @@ Config.window_frame = {
 	}),
 	font_size = FONT_SIZE,
 }
+Config.tab_bar_at_bottom = true
+Config.max_fps = 165
 Config.initial_cols = DEFAULT_WIDTH
 Config.initial_rows = DEFAULT_HEIGHT
 Config.hide_tab_bar_if_only_one_tab = false
