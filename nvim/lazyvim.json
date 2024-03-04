@@ -1,6 +1,5 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.editor.symbols-outline",
     "lazyvim.plugins.extras.lang.clangd",
     "lazyvim.plugins.extras.lang.cmake",
     "lazyvim.plugins.extras.lang.go",
@@ -13,10 +12,11 @@
     "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.linting.eslint",
-    "lazyvim.plugins.extras.lsp.none-ls"
+    "lazyvim.plugins.extras.lsp.none-ls",
+    "lazyvim.plugins.extras.editor.symbols-outline"
   ],
   "news": {
-    "NEWS.md": "2123"
+    "NEWS.md": "2191"
   },
   "version": 2
 }
