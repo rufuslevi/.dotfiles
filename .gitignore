@@ -11,3 +11,4 @@ openrgb/logs/
 !sublime/Packages/Default
 sublime/Packages
 sublime/Local
+nvim/lazyvim.json
