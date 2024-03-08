@@ -35,6 +35,11 @@ return {
   {
     "rose-pine/neovim",
     name = "rose-pine",
+    opts = {
+      on_colors = function(colors)
+        colors.bg_statusline = colors.none
+      end,
+    },
   },
   {
     "catppuccin/nvim",
@@ -120,13 +125,21 @@ return {
           vim.api.nvim_set_option("background", "dark")
 
           vim.cmd("colorscheme sonokai")
-          require("lualine").setup({ options = { theme = "sonokai" } })
+          require("lualine").setup({
+            options = {
+              theme = "sonokai",
+            },
+          })
         end,
         set_light_mode = function()
           vim.api.nvim_set_option("background", "light")
 
           vim.cmd("colorscheme rose-pine-dawn")
-          require("lualine").setup({ options = { theme = "rose-pine" } })
+          require("lualine").setup({
+            options = {
+              theme = "rose-pine",
+            },
+          })
         end,
       })
       require("auto-dark-mode").init()

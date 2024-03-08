@@ -15,6 +15,7 @@ return {
     },
     config = function()
       local bufferline = require("bufferline")
+      local icons = require("lazyvim.config").icons.diagnostics
       bufferline.setup({
         options = {
           mode = "buffers",
@@ -24,7 +25,13 @@ return {
             return string.format("%s·", opts.ordinal)
           end,
           diagnostics = "nvim_lsp",
-          diagnostics_update_in_insert = true,
+          diagnostics_indicator = function(_, _, diag)
+            local ret = (diag.error and icons.Error .. diag.error .. " " or "")
+              .. (diag.warning and icons.Warn .. diag.warning or "")
+              .. (diag.hint and icons.Hint .. diag.hint or "")
+              .. (diag.info and icons.Info .. diag.info or "")
+            return vim.trim(ret)
+          end,
           tab_size = 20,
           offsets = {
             {
@@ -47,29 +54,34 @@ return {
           end,
           show_tab_indicators = false,
           custom_areas = {
-            right = function()
+            left = function()
               local result = {}
               local seve = vim.diagnostic.severity
-              local error = #vim.diagnostic.get(0, { severity = seve.ERROR })
-              local warning = #vim.diagnostic.get(0, { severity = seve.WARN })
-              local info = #vim.diagnostic.get(0, { severity = seve.INFO })
-              local hint = #vim.diagnostic.get(0, { severity = seve.HINT })
+              local error = #vim.diagnostic.get(nil, { severity = seve.ERROR })
+              local warning = #vim.diagnostic.get(nil, { severity = seve.WARN })
+              local info = #vim.diagnostic.get(nil, { severity = seve.INFO })
+              local hint = #vim.diagnostic.get(nil, { severity = seve.HINT })
 
               if error ~= 0 then
-                table.insert(result, { text = "  " .. error, fg = "#EC5241" })
+                table.insert(result, { text = icons.Error .. error, fg = "#EC5241" })
               end
 
               if warning ~= 0 then
-                table.insert(result, { text = "  " .. warning, fg = "#EFB839" })
+                table.insert(result, { text = icons.Warn .. warning, fg = "#EFB839" })
               end
 
               if hint ~= 0 then
-                table.insert(result, { text = "  " .. hint, fg = "#A3BA5E" })
+                table.insert(result, { text = icons.Hint .. hint, fg = "#A3BA5E" })
               end
 
               if info ~= 0 then
-                table.insert(result, { text = "  " .. info, fg = "#7EA9A7" })
+                table.insert(result, { text = icons.Info .. info, fg = "#7EA9A7" })
               end
+
+              if next(result) ~= nil then
+                table.insert(result, { text = " > " })
+              end
+
               return result
             end,
           },
