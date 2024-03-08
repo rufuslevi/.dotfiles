@@ -28,6 +28,7 @@ elseif not os.execute("cd /Applications") then
 else
 	Wezterm.log_info("MacOS!")
 
+	WINDOW_DECORATIONS = "TITLE|RESIZE|MACOS_FORCE_DISABLE_SHADOW"
 	INTEGRATED_BUTTONS = "MacOsNative"
 
 	for _, v in ipairs(keymaps.getDarwin()) do
