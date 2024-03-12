@@ -1,6 +1,5 @@
 -- This is where the keymaps to move in the ui are to be put
 local bufferDeleter = require("bufdelete")
-local symbolsOutline = require("symbols-outline")
 -- local signature = require("lsp_signature")
 
 vim.keymap.set("n", "<leader>bd", bufferDeleter.bufdelete, { desc = "Delete buffer" })
@@ -15,5 +14,4 @@ vim.keymap.set("n", "<leader>b6", "<Cmd>BufferLineGoToBuffer 6<CR>", { desc = "G
 vim.keymap.set("n", "<leader>b7", "<Cmd>BufferLineGoToBuffer 7<CR>", { desc = "Goto buffer 7" })
 vim.keymap.set("n", "<leader>b8", "<Cmd>BufferLineGoToBuffer 8<CR>", { desc = "Goto buffer 8" })
 vim.keymap.set("n", "<leader>b9", "<Cmd>BufferLineGoToBuffer 9<CR>", { desc = "Goto buffer 9" })
-vim.keymap.set("n", "<leader>co", symbolsOutline.toggle_outline, { desc = "Open code outline" })
 -- vim.keymap.set("n", "<leader>ch", signature.toggle_float_win, { desc = "Lsp signature" })
