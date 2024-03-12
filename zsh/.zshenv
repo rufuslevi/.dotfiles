@@ -1,12 +1,14 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 . "$HOME/.cargo/env"
-export PATH=$PATH:/usr/share
-export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:/opt/homebrew/bin
-export PATH=$PATH:~/.cargo/bin
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+export PATH=/opt/homebrew/bin:$PATH
+export PATH=/opt/homebrew/sbin:$PATH
+export PATH=/usr/share:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=/opt/local/bin:$PATH
+export PATH=/opt/local/sbin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$GOPATH/bin:$PATH
 
 # ruby flags
 export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
