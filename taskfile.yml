@@ -27,6 +27,9 @@ tasks:
     cmds:
       - mkdir -p ~/.config/OpenRGB
       - stow -v -t ~/.config/OpenRGB openrgb
+  scripts:
+    cmds:
+      - stow -v -t ~ scripts
   starship:
     cmds:
       - stow -v -t ~/.config starship
@@ -38,6 +41,4 @@ tasks:
     cmds:
       - mkdir -p ~/.config/tmux
       - stow -v -t ~/.config/tmux tmux
-  zsh:
-    cmds:
-      - stow -v -t ~ zsh
+

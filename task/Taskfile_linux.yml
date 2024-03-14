@@ -17,3 +17,7 @@ tasks:
     cmds:
       - mkdir -p ~/.config/sublime-text-3
       - stow -v -t ~/.config/sublime-text-3 sublime
+  zsh:
+    cmds:
+      - mkdir -p ~/.config/zsh
+      - stow -v -t ~/.config/zsh zsh

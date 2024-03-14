@@ -16,7 +16,9 @@ if os.execute("cd C:/WINDOWS") then
 elseif not os.execute("cd /Applications") then
 	Wezterm.log_info("Running on Linux!")
 
+	SHELL = "zsh"
 	FONT_SIZE = 10.5
+	FONT_FAMILY = "MonaspiceNe Nerd Font Mono"
 	OPACITY = 1
 	UP_PADDING = 10
 	WINDOW_DECORATIONS = "TITLE|RESIZE"

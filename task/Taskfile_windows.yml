@@ -17,3 +17,6 @@ tasks:
     cmds:
       - mkdir -p ~/.config/wezterm
       - dploy stow wezterm ~/.config/wezterm
+  zsh:
+    cmds:
+      - stow -v -t ~ zsh

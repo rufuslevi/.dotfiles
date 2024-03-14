@@ -9,6 +9,7 @@ end
 
 dofile(Wezterm.home_dir .. "/.config/wezterm/workspace.lua")
 dofile(Wezterm.home_dir .. "/.config/wezterm/constants.lua")
+dofile(Wezterm.home_dir .. "/.config/wezterm/tabbar.lua")
 dofile(Wezterm.home_dir .. "/.config/wezterm/os_constants.lua")
 dofile(Wezterm.home_dir .. "/.config/wezterm/dynamic_theme.lua")
 
@@ -18,7 +19,7 @@ Config.macos_window_background_blur = 20
 Config.use_fancy_tab_bar = true
 Config.line_height = 1.17
 Config.font = Wezterm.font({
-	family = "Monaspace Neon",
+	family = FONT_FAMILY,
 	weight = "Medium",
 	stretch = "Condensed",
 	harfbuzz_features = {
@@ -46,7 +47,9 @@ Config.window_frame = {
 		family = "Monaspace Radon",
 		weight = "DemiBold",
 	}),
-	font_size = FONT_SIZE,
+	font_size = FONT_SIZE+1,
+	active_titlebar_bg = "1e1e2e",
+	inactive_titlebar_bg = "1e1e2e",
 }
 Config.tab_bar_at_bottom = true
 Config.enable_scroll_bar = false

@@ -1,0 +1,8 @@
+{
+    "patterns": {
+        "NOTE": "NOTE[\\s]*?:[\\s]*(?P<note>.*)$",
+        "CHANGED": "CHANGED[\\s]*?:[\\s]*(?P<changed>.*)$",
+        "FIXME": "FIX ?ME[\\s]*?:[\\s]*(?P<fixme>.*)$",
+        "TODO": "TODO[\\s]*?:[\\s]*(?P<todo>.*)$"
+    }
+}
