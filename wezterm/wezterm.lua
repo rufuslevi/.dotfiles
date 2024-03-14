@@ -47,7 +47,7 @@ Config.window_frame = {
 		family = "Monaspace Radon",
 		weight = "DemiBold",
 	}),
-	font_size = FONT_SIZE+1,
+	font_size = FONT_SIZE + 1,
 	active_titlebar_bg = "1e1e2e",
 	inactive_titlebar_bg = "1e1e2e",
 }
