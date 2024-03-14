@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-23.11-darwin";
+    nixpkgs-darwin.url = "github:nixos/nixpkgs/nixpkgs-23.11-darwin";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     home-manager = {
@@ -30,7 +30,7 @@
     }; 
   };
 
-  outputs = { self, darwin, nixpkgs, home-manager, ... }@inputs:
+  outputs = { self, darwin, nixpkgs-darwin, home-manager, ... }@inputs:
   let 
     user = "rufuslevi";
     hostname = "luna";
@@ -74,7 +74,7 @@
           comma = import inputs.comma { inherit (prev) pkgs; };
         };  
         apple-silicon = final: prev: optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
-          pkgs-x86 = import inputs.nixpkgs {
+          pkgs-x86 = import inputs.nixpkgs-darwin {
             system = "x86_64-darwin";
             inherit (nixpkgsConfig) config;
           };
