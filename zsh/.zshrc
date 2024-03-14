@@ -10,7 +10,33 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# What OS are we running?
+if [[ $(uname) == "Darwin" ]]; then
+    # echo "Running MacOS!"
+    ZSH_THEME="powerlevel10k/powerlevel10k"
+    plugins+=(
+      git
+      zsh-autosuggestions
+      zsh-syntax-highlighting
+      colored-man-pages
+    )
+
+elif command -v apt > /dev/null; then
+    # echo "Running Debian based Linux!"
+    ZSH_THEME="powerlevel10k/powerlevel10k"
+    plugins+=(
+      git
+      zsh-autosuggestions
+      zsh-syntax-highlighting
+      colored-man-pages
+    )
+
+elif command -v nix > /dev/null; then
+    # echo "Running NixOS based Linux!"
+
+else
+    echo 'Unknown OS!'
+fi
 
 # update automatically without asking
 zstyle ':omz:update' mode auto
@@ -19,12 +45,6 @@ ENABLE_CORRECTION="true"
 
 export NVM_LAZY_LOAD=true
 export NVM_COMPLETION=true
-plugins+=(
-  git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  colored-man-pages
-)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,8 +109,14 @@ elif command -v apt > /dev/null; then
     # echo "Running Debian based Linux!"
     source "/home/rufuslevi/.easier-c.sh"
 
+elif command -v nix > /dev/null; then
+    # echo "Running NixOS based Linux!"
+    source "/home/rufuslevi/.easier-c.sh"
+
 else
     echo 'Unknown OS!'
 fi
 
-source ~/.zprofile
+if [ -f ~/.zprofile ]; then
+  source ~/.zprofile
+fi

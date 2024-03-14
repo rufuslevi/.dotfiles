@@ -1,6 +1,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-. "$HOME/.cargo/env"
+if [ -f ~/.cargo/env ]; then
+    . "$HOME/.cargo/env"
+fi
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/sbin:$PATH
 export PATH=/usr/share:$PATH
@@ -52,6 +54,9 @@ elif command -v apt > /dev/null; then
     # echo "Running Debian based Linux!"
     export PATH=$PATH:~/Applications/gradle-6.9.4/bin
 
+elif command -v nix > /dev/null; then
+    # echo "Running NixOS based Linux!"
+
 else
     echo 'Unknown OS!'
 fi
@@ -63,3 +68,4 @@ export DOTNET_ROOT="~/.dotnet"
 export PATH="$PATH:/Users/rufuslevi/.dotnet/tools"
 
 export EDITOR='nvim'
+setopt no_global_rcs

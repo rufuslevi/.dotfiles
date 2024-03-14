@@ -9,7 +9,7 @@
         "setclient": false,
         "setcustom": false,
         "setminimized": true,
-        "setprofile": false,
+        "setprofile": true,
         "setserver": false,
         "setserverhost": false,
         "setserverport": false
@@ -1256,12 +1256,22 @@
             "Z370 AORUS Ultra Gaming-CF"
         ]
     },
+    "LogManager": {
+        "dialog_no_show_hashes": [
+            6856110824172292845
+        ]
+    },
     "Plugins": {
         "plugins": [
             {
                 "description": "Provides a variety of custom effects",
                 "enabled": true,
                 "name": "OpenRGB Effects Plugin"
+            },
+            {
+                "description": "Sync colors with hardware measures",
+                "enabled": true,
+                "name": "Hardware Sync"
             }
         ]
     },
