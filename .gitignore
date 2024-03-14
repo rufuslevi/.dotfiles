@@ -12,3 +12,4 @@ openrgb/logs/
 sublime/Packages
 sublime/Local
 nvim/lazyvim.json
+flake.lock
