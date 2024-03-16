@@ -24,10 +24,10 @@ with pkgs;
       plugins = [ "git" "colored-man-pages" ];
     };
     initExtra = ''
-      source $HOME/.config/zsh/.zshrc
-      source $HOME/.config/zsh/.zshenv
-      source $HOME/.config/zsh/.zprofile
-      source $HOME/.config/zsh/.p10k.zsh
+      source ../../zsh/.zshrc
+      source ../../zsh/.zshenv
+      source ../../zsh/.zprofile
+      source ../../zsh/.p10k.zsh
     '';
   };
   neovim = {
