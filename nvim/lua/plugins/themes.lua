@@ -44,7 +44,7 @@ return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    enabled = false,
+    enabled = true,
     priority = 1000,
     config = function()
       require("catppuccin").setup({
@@ -78,11 +78,16 @@ return {
           gitsigns = true,
           nvimtree = true,
           telescope = true,
-          notify = false,
-          mini = false,
+          notify = true,
+          mini = true,
           mason = true,
           treesitter = true,
           treesitter_context = true,
+          indent_blankline = {
+            enabled = true,
+            scope_color = "", -- catppuccin color (eg. `lavender`) Default: text
+            colored_indent_levels = false,
+          },
           -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
         },
       })
@@ -124,10 +129,12 @@ return {
         set_dark_mode = function()
           vim.api.nvim_set_option("background", "dark")
 
-          vim.cmd("colorscheme sonokai")
+          -- vim.cmd("colorscheme sonokai")
+          vim.cmd("colorscheme catppuccin-mocha")
           require("lualine").setup({
             options = {
-              theme = "sonokai",
+              -- theme = "sonokai",
+              theme = "catppuccin",
             },
           })
         end,
