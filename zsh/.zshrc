@@ -20,6 +20,9 @@ if [[ $(uname) == "Darwin" ]]; then
       zsh-syntax-highlighting
       colored-man-pages
     )
+    if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+        . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+    fi
 
 elif command -v apt > /dev/null; then
     # echo "Running Debian based Linux!"
