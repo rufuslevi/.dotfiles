@@ -36,18 +36,19 @@
     };
   };
 
-  outputs = { self, darwin, nixpkgs, nixpkgs-darwin, home-manager, ... }@inputs:
+  outputs = { self, darwin, nixpkgs, nixpkgs-darwin, home-manager, nix-homebrew, ... }@inputs:
     let
       user = "rufuslevi";
       hostname = "luna";
       system = "aarch64-darwin";
       specialArgs = { inherit user hostname; };
 
-      inherit (darwin.lib) darwinSystem;
       inherit (inputs.nixpkgs-unstable.lib) attrValues makeOverridable optionalAttrs singleton;
 
       nixpkgsDarwinConfig = {
-        config = { allowUnfree = true; };
+        config = { 
+          allowUnfree = true;
+        };
         overlays = attrValues self.overlays ++ singleton (
           # Sub in x86 version of packages that don't build on Apple Silicon yet
           final: prev: (optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
@@ -67,14 +68,14 @@
         };
         apple-silicon = final: prev: optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
           pkgs-x86 = import inputs.nixpkgs-darwin {
-            system = "x86_64-darwin";
+            system = "86_64-darwin";
             inherit (nixpkgsDarwinConfig) config;
           };
         };
       };
 
       darwinConfigurations = rec {
-        luna = darwinSystem {
+        luna = darwin.lib.darwinSystem {
           inherit system specialArgs;
           modules = [
             ./darwin/configuration.nix
@@ -84,6 +85,18 @@
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.users.rufuslevi = import ./darwin/home.nix;
+            }
+            nix-homebrew.darwinModules.nix-homebrew {
+              nix-homebrew = {
+                # Install Homebrew under the default prefix
+                enable = true;
+                # Apple Silicon Only: Also install Homebrew under the default Intel prefix for Rosetta 2
+                enableRosetta = true;
+                # User owning the Homebrew prefix
+                user = user;
+                # Automatically migrate existing Homebrew installations
+                autoMigrate = true;
+              };
             }
           ];
         };
