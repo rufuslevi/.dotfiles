@@ -13,13 +13,6 @@ fi
 # What OS are we running?
 if [[ $(uname) == "Darwin" ]]; then
     # echo "Running MacOS!"
-    ZSH_THEME="powerlevel10k/powerlevel10k"
-    plugins+=(
-      git
-      zsh-autosuggestions
-      zsh-syntax-highlighting
-      colored-man-pages
-    )
     if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
         . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
     fi
