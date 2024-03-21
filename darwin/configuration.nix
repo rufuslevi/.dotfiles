@@ -9,9 +9,10 @@ in {
   nix.extraOptions = ''
     auto-optimise-store = true
     experimental-features = nix-command flakes
-  '' + lib.optionalString (pkgs.system == "aarch64-darwin") ''
-    extra-platforms = x86_64-darwin aarch64-darwin
   '';
+  # + lib.optionalString (pkgs.system == "aarch64-darwin") ''
+  #   extra-platforms = x86_64-darwin aarch64-darwin
+  # '';
 
   nixpkgs.config.allowUnsupportdSystem = true;
   nixpkgs.config.allowBroken = true;
@@ -25,10 +26,12 @@ in {
     isHidden = false;
     shell = pkgs.zsh;
   };
-  
-  environment.systemPackages = with pkgs; [
-  ];
 
+  programs = {
+    zsh = {
+      enable = true;
+    };
+  };
 
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
