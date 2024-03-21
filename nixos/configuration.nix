@@ -13,7 +13,7 @@
     grub = {
       enable = true;
       device = "nodev";
-      useOSProber = true;
+      useOSProber = false;
       efiSupport = true;
       theme = "/boot/grub/themes/hyperfluent";
       extraEntries = import ./grub-entries.nix;
@@ -54,30 +54,22 @@
     LC_TIME = "fr_CA.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  services = {
-    desktopManager.plasma6.enable = true;
-    xserver = {
+  hardware = {
+    bluetooth = {
       enable = true;
-      # Enable the KDE Plasma Desktop Environment.
-      displayManager.sddm.enable = true;
-
-
-      # Configure keymap in X11
-      xkb = {
-        layout = "ca";
-        variant = "multix";
-      };
+      powerOnBoot = true;
     };
-  };
-
-  xdg = {
-    autostart.enable = true;
-    portal = {
+    openrazer.enable = true;
+    opengl = {
       enable = true;
-      extraPortals = [
-        pkgs.xdg-desktop-portal
-        pkgs.xdg-desktop-portal-gtk
+      driSupport = true;
+      driSupport32Bit = true;
+      extraPackages = with pkgs; [
+        mesa_drivers
+        intel-ocl
+        vaapiIntel
+        vaapiVdpau
+        libvdpau-va-gl
       ];
     };
   };
@@ -107,6 +99,7 @@
       }
     '';
   };
+
   systemd.sockets.mpd.listenStreams = [ "/run/mpd/socket" ];
   systemd.services.mpd.environment = {
     # https://gitlab.freedesktop.org/pipewire/pipewire/-/issues/609
@@ -114,22 +107,33 @@
     XDG_RUNTIME_DIR = "/run/user/1000";
   };
 
-  hardware = {
-    bluetooth = {
+  # Enable the X11 windowing system.
+  services = {
+    desktopManager.plasma6.enable = true;
+    xserver = {
       enable = true;
-      powerOnBoot = true;
+      # Enable the KDE Plasma Desktop Environment.
+      displayManager.sddm.enable = true;
+
+
+      # Configure keymap in X11
+      xkb = {
+        layout = "ca";
+        variant = "multix";
+      };
     };
-    openrazer.enable = true;
-    opengl = {
+  };
+
+  xdg = {
+    autostart.enable = true;
+    menus = {
       enable = true;
-      driSupport = true;
-      driSupport32Bit = true;
-      extraPackages = with pkgs; [
-        mesa_drivers
-        intel-ocl
-        vaapiIntel
-        vaapiVdpau
-        libvdpau-va-gl
+    };
+    portal = {
+      enable = true;
+      extraPortals = [
+        pkgs.xdg-desktop-portal
+        pkgs.xdg-desktop-portal-gtk
       ];
     };
   };
@@ -156,6 +160,9 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    unzip
+    dex
+    speedtest-rs
     man-pages
     man-pages-posix
     udiskie
@@ -173,14 +180,20 @@
     gnome.nautilus
     kdePackages.dolphin
     kdePackages.partitionmanager
-    nwg-look
+    kdePackages.kirigami
+    kdePackages.systemsettings
+    themechanger
     wezterm
     kitty
     pavucontrol
+    pwvucontrol
     playerctl
+    brightnessctl
+    bluetuith
     librewolf
     vivaldi
     kate
+    ranger
     openrgb-with-all-plugins
     go-task
     stow
@@ -195,6 +208,8 @@
     hyprland-protocols
     hyprpicker
     hyprpaper
+    nwg-panel
+    nwg-dock-hyprland
     yambar
     yambar-hyprland-wses
     eww
@@ -202,14 +217,10 @@
     wofi
     inputs.anyrun.packages.${pkgs.system}.anyrun
     xdg-utils
+    xdg-ninja
     xdg-desktop-portal
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
-    qt5.qtwayland
-    qt6.qmake
-    qt6.qtwayland
-    adwaita-qt
-    adwaita-qt6
     glib
     nixpkgs-fmt
     nixpkgs-lint
@@ -232,7 +243,10 @@
       xwayland.enable = true;
     };
     waybar = {
-      enable = false;
+      enable = true;
+    };
+    dconf = {
+      enable = true;
     };
     firefox = {
       enable = true;
@@ -309,7 +323,7 @@
   };
 
   fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "Monaspace" ]; })
+    (nerdfonts.override { fonts = [ "Monaspace" "SourceCodePro" "CascadiaCode" ]; })
   ];
 
   services.openssh.enable = true;

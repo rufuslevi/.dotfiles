@@ -24,10 +24,10 @@ with pkgs;
       plugins = [ "git" "colored-man-pages" ];
     };
     initExtra = ''
-      source ../../zsh/.zshrc
-      source ../../zsh/.zshenv
-      source ../../zsh/.zprofile
-      source ../../zsh/.p10k.zsh
+      source ~/.config/zsh/.zshrc
+      source ~/.config/zsh/.zshenv
+      source ~/.config/zsh/.zprofile
+      source ~/.config/zsh/.p10k.zsh
     '';
   };
   neovim = {
@@ -44,7 +44,7 @@ with pkgs;
       "workbench.preferredDarkColorTheme" = "Catppuccin Mocha";
       "catppuccin.workbenchMode" = "flat";
       "workbench.productIconTheme" = "fluent-icons";
-      "editor.fontFamily" = "'SauceCodePro Nerd Font', 'Cousine Nerd Font Mono', 'Courier Prime', 'MesloLGS Nerd Font', 'CaskaydiaCove Nerd Font', 'Monaco For Powerline', 'Noto Sans Medium', monospace";
+      "editor.fontFamily" = "'MonaspiceNe Nerd Font' 'CaskaydiaCove Nerd Font' 'SauceCodePro Nerd Font', 'Courier Prime'";
       "editor.fontLigatures" = true;
       "editor.fontSize" = 14;
       "editor.lineNumbers" = "relative";
@@ -77,6 +77,7 @@ with pkgs;
       "window.systemColorTheme" = "auto";
       "vim.leader" = " ";
       "git.autofetch" = true;
+      "keyboard.dispatch" = "keyCode";
     };
     extensions = with vscode-extensions; [
       mvllow.rose-pine
