@@ -24,5 +24,5 @@ font-features = "ss01 ss02 ss03 ss04 ss05 ss06 ss07 ss08"
 history = true
 fuzzy-match = true
 require-match = false
-auto-accept-single = true
+auto-accept-single = false
 prompt-text = "yeehaw: "
