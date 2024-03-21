@@ -1,5 +1,8 @@
 local keymaps = require("./keymaps")
-KEYS = keymaps.getBase()
+
+for _, v in ipairs(keymaps.getBase()) do
+	table.insert(KEYS, v)
+end
 
 if os.execute("cd C:/WINDOWS") then
 	Wezterm.log_info("Running on Windows!")
@@ -16,6 +19,7 @@ if os.execute("cd C:/WINDOWS") then
 elseif not os.execute("cd /Applications") then
 	Wezterm.log_info("Running on Linux!")
 
+	LIGHT_THEME = "Catppuccin Mocha"
 	SHELL = "zsh"
 	FONT_SIZE = 10.5
 	FONT_FAMILY = "MonaspiceNe Nerd Font Mono"
@@ -23,6 +27,11 @@ elseif not os.execute("cd /Applications") then
 	UP_PADDING = 10
 	WINDOW_DECORATIONS = "TITLE|RESIZE"
 	INTEGRATED_BUTTONS = "Gnome"
+	LEADER = {
+		key = "/",
+		mods = "CTRL",
+		timeout_milliseconds = 1000,
+	}
 
 	for _, v in ipairs(keymaps.getLinux()) do
 		table.insert(KEYS, v)
@@ -37,3 +46,4 @@ else
 		table.insert(KEYS, v)
 	end
 end
+

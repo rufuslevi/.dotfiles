@@ -55,7 +55,63 @@ local function getDarwin()
 	return {}
 end
 local function getLinux()
-	return {}
+	return {
+		{
+			key = "c",
+			mods = "LEADER",
+			action = Wezterm.action.CloseCurrentTab({ confirm = true }),
+		},
+		{
+			key = "t",
+			mods = "LEADER",
+			action = Wezterm.action.SpawnTab("CurrentPaneDomain"),
+		},
+		{
+			key = "1",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(0),
+		},
+		{
+			key = "2",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(1),
+		},
+		{
+			key = "3",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(2),
+		},
+		{
+			key = "4",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(3),
+		},
+		{
+			key = "5",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(4),
+		},
+		{
+			key = "6",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(5),
+		},
+		{
+			key = "7",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(6),
+		},
+		{
+			key = "8",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(7),
+		},
+		{
+			key = "9",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(8),
+		},
+	}
 end
 
 return { getBase = getBase, getWindows = getWindows, getDarwin = getDarwin, getLinux = getLinux }

@@ -7,6 +7,8 @@ if Wezterm.config_builder then
 	Config = Wezterm.config_builder()
 end
 
+Config.disable_default_key_bindings = true
+
 dofile(Wezterm.home_dir .. "/.config/wezterm/workspace.lua")
 dofile(Wezterm.home_dir .. "/.config/wezterm/constants.lua")
 dofile(Wezterm.home_dir .. "/.config/wezterm/tabbar.lua")
