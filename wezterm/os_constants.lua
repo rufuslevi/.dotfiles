@@ -19,7 +19,6 @@ if os.execute("cd C:/WINDOWS") then
 elseif not os.execute("cd /Applications") then
 	Wezterm.log_info("Running on Linux!")
 
-	LIGHT_THEME = "Catppuccin Mocha"
 	SHELL = "zsh"
 	FONT_SIZE = 10.5
 	FONT_FAMILY = "MonaspiceNe Nerd Font Mono"
@@ -46,4 +45,3 @@ else
 		table.insert(KEYS, v)
 	end
 end
-

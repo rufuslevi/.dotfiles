@@ -1,6 +1,6 @@
 -- Function to hot-reload on dark mode switch from the OS
 -- Source : https://github.com/wez/wezterm/issues/806#issuecomment-882110170
-Wezterm.on("window-config-reloaded", function(window, pane)
+Wezterm.on("window-config-reloaded", function(window)
 	local overrides = window:get_config_overrides() or {}
 	local appearance = window:get_appearance()
 	local scheme = ""
