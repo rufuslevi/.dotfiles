@@ -1,0 +1,108 @@
+{
+  "name": "default",
+  "layer": "top",
+  "modules-left": ["tray", "hyprland/window"],
+  "modules-center": ["hyprland/workspaces", "privacy"],
+  "modules-right": ["custom/media", "pulseaudio", "bluetooth", "network", "custom/dunst", "clock"],
+  "height": 24,
+  "margin": "8 8 0 8",
+  "tray": {
+    "icon-size": 16,
+    "spacing": 6,
+    "show-passive-items": true
+  },
+  "hyprland/window": {
+    "format": "{title}"
+  },
+  "hyprland/workspaces": {
+    "format": "({id}){name}",
+    "format-icons": {
+      "social": "󰙯",
+      "web": "󰈹",
+      "yeet": "",
+      "yeet_v2": "",
+      "lib": "",
+      "org": "",
+      "music": ""
+    }
+  },
+  "custom/dunst": {
+    "return-type": "json",
+    "exec": "~/.config/waybar/scripts/dunst.sh",
+    "on-click": "dunstctl set-paused toggle",
+    "restart-interval": 1,
+  },
+  "custom/media": {
+    "format": "{icon} {}",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 40,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl stop",
+    "smooth-scrolling-threshold": 10, 
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null", 
+  },
+  "privacy": {
+    "icon-spacing": 5,
+    "icon-size": 16,
+    "transition-duration": 250,
+    "modules": [
+      {
+        "type": "screenshare",
+        "tooltip": true,
+        "tooltip-icon-size": 16
+      },
+      {
+        "type": "audio-out",
+        "tooltip": true,
+        "tooltip-icon-size": 16
+      },
+      {
+        "type": "audio-in",
+        "tooltip": true,
+        "tooltip-icon-size": 16
+      }
+    ]
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"]
+  },
+  "bluetooth": {
+    "format": "{status} ",
+    "format-disabled": "",
+    "format-connected": "{num_connections} ",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+  },
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "{essid} ({signalStrength}%) 󰖩",
+    "format-ethernet": "󰲝",
+    "format-disconnected": "", //An empty format will hide the module.
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+  },
+  "clock": {
+    "format": "{:%d %B %Y  %H:%M}"
+  }
+}
