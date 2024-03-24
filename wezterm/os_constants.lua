@@ -22,9 +22,6 @@ local function updateConstants(constants)
 
 		constants.SHELL = "zsh"
 		constants.FONT_SIZE = 10.5
-		constants.FONT_FAMILY = "MonaspiceNe Nerd Font Mono"
-		constants.OPACITY = 1
-		constants.UP_PADDING = 10
 		constants.WINDOW_DECORATIONS = "TITLE|RESIZE"
 		constants.INTEGRATED_BUTTONS = "Gnome"
 		constants.LEADER = {
