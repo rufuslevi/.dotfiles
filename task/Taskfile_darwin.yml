@@ -1,14 +1,18 @@
-version: '3'
+version: "3"
 
 tasks:
   yabai:
     cmds:
       - mkdir -p ~/.config/yabai
       - stow -v -t ~/.config/yabai yabai
+  borders:
+    cmds:
+      - mkdir -p ~/.config/borders
+      - stow -v -t ~/.config/borders borders
   nushell:
     cmds:
       - mkdir -p ~/Library/"Application Support"/nushell
-      - stow -v -t ~/Library/"Application Support"/nushell nushell       
+      - stow -v -t ~/Library/"Application Support"/nushell nushell
   skhd:
     cmds:
       - mkdir -p ~/.config/skhd
