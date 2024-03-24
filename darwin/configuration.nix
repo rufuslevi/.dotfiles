@@ -1,8 +1,9 @@
 { config, pkgs, lib, home-manager, ... }:
 
-let 
+let
   user = "rufuslevi";
-in {
+in
+{
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
 
@@ -25,6 +26,16 @@ in {
     home = "/Users/${user}";
     isHidden = false;
     shell = pkgs.zsh;
+  };
+
+  homebrew = {
+    enable = true;
+    taps = [
+      "FelixKratz/formulae"
+    ];
+    brews = [
+      "borders"
+    ];
   };
 
   programs = {
