@@ -4,17 +4,12 @@
 # ctrl - t : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "float" else "bsp" end')
 
 # Change window focus
-# ctrl + shift - j : yabai -m window --focus south
-# ctrl + shift - k : yabai -m window --focus north
-# ctrl + shift - h : yabai -m window --focus west
-# ctrl + shift - l : yabai -m window --focus east
+ctrl + shift - j : yabai -m window --focus south
+ctrl + shift - k : yabai -m window --focus north
+ctrl + shift - h : yabai -m window --focus west
+ctrl + shift - l : yabai -m window --focus east
 
-# Handle windows mode and scale
-# ctrl - f : yabai -m window --toggle float
-# && (yabai -m query --windows --window | jq .app | xargs -I{} yabai -m rule --add app="{}" manage=off)
-# ctrl - b : yabai -m window --toggle bsp
-# && (yabai -m query --windows --window | jq .app | xargs -I{} yabai -m rule --add app="{}" manage=on)
-# ctrl - z : yabai -m window --toggle zoom-fullscreen
+ctrl - v : yabai -m window --toggle float
 
 # Change virt desktop focus
 ctrl - 0x18 : yabai -m space --create

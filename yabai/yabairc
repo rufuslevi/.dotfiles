@@ -2,24 +2,13 @@ yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
 # Windows appearance
-# yabai -m config layout bsp
-yabai -m config layout float
+yabai -m config layout bsp
+# yabai -m config layout float
 
 # yabai -m config window_placement second_child
 
-# yabai -m config window_opacity off
-# yabai -m config active_window_opacity 1.0
-# yabai -m config normal_window_opacity 1.0
-
 # yabai -m config window_shadow float
 # yabai -m config window_topmost on
-
-# yabai -m config window_border off
-# yabai -m config window_border_blur off
-# yabai -m config window_border_radius 0
-# yabai -m config active_window_border 0x83E0CE
-# yabai -m config normal_window_border 0x83E0CE
-
 
 # Padding
 yabai -m config top_padding 8
@@ -29,36 +18,28 @@ yabai -m config right_padding 8
 yabai -m config window_gap 4
 # yabai -m config external_bar all:0:25
 
-
 # Mouse settings
 # yabai -m config mouse_follows_focus off
-# yabai -m config focus_follows_mouse autofocus
+yabai -m config focus_follows_mouse autofocus
 
-
-# yabai -m config mouse_modifier alt
-# lclick+drag
-# yabai -m config mouse_action1 move
-# rclick+drag
-# yabai -m config mouse_action2 resize
-
-# yabai -m mouse_drop_action swap
-
+yabai -m config mouse_modifier ctrl
+yabai -m config mouse_action1 move
+yabai -m config mouse_action2 resize
 
 # Enabled apps
-# yabai -m rule --add app!="^(Arc|iTerm2|Obsidian)$" manage=off
+yabai -m rule --add app!="^(Arc|iTerm2|Obsidian)$" manage=off
 # yabai -m rule --add app!="^$" manage=off
 
-
 # Disabled apps
-# yabai -m rule --add app="^Réglages système$" manage=off
-# yabai -m rule --add app="^Calculatrice$" manage=off
-# yabai -m rule --add app="^QuickTime Player$" manage=off
-# yabai -m rule --add app="^Finder$" manage=off
-# yabai -m rule --add app="^Equinox$" manage=off
-# yabai -m rule --add app="^SigmaOS$" manage=off
-# yabai -m rule --add app="^Arc$" title="^$" mouse_follows_focus=off
+yabai -m rule --add app="^Réglages système$" manage=off
+yabai -m rule --add app="^Calculatrice$" manage=off
+yabai -m rule --add app="^QuickTime Player$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Equinox$" manage=off
+yabai -m rule --add app="^SigmaOS$" manage=off
+yabai -m rule --add app="^Arc$" title="^$" mouse_follows_focus=off
 
-// For yabai-indicator
+# For yabai-indicator
 # yabai -m signal --add event=mission_control_exit action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
 # yabai -m signal --add event=display_added action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
 # yabai -m signal --add event=display_removed action='echo "refresh" | nc -U /tmp/yabai-indicator.socket'
