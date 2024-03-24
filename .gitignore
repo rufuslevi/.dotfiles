@@ -4,7 +4,6 @@ nvim/lazy-lock.json
 nushell/config/history.txt
 
 # Directories
-.secrets/
 mason/
 plugged/
 openrgb/logs/

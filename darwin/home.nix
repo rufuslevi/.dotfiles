@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+  home.username = "rufuslevi";
   home.stateVersion = "22.05";
 
   programs.direnv.enable = true;
@@ -47,7 +48,6 @@
         source = ../zsh;
         recursive = true;
       };
-    };
   };
 
   home.packages = with pkgs; [

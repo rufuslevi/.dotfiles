@@ -19,6 +19,10 @@ in
   nixpkgs.config.allowBroken = true;
   nix.settings.experimental-features = "nix-command flakes";
 
+  networking = {
+    hostName = "luna";
+  };
+
   security.pam.enableSudoTouchIdAuth = true;
 
   users.users.${user} = {
