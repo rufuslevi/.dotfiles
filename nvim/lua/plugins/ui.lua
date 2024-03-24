@@ -25,6 +25,12 @@ return {
     end,
   },
   {
+    "NvChad/nvim-colorizer.lua",
+    config = function()
+      require("colorizer").setup()
+    end,
+  },
+  {
     "Fildo7525/pretty_hover",
     event = "LspAttach",
     opts = {

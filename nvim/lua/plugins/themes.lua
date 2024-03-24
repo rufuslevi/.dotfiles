@@ -117,6 +117,35 @@ return {
     end,
   },
   {
+    "ellisonleao/gruvbox.nvim",
+    config = function()
+      require("gruvbox").setup({
+        terminal_colors = true,
+        undercurl = true,
+        underline = true,
+        bold = true,
+        italic = {
+          strings = true,
+          emphasis = true,
+          comments = true,
+          operators = false,
+          folds = true,
+        },
+        strikethrough = true,
+        invert_selection = false,
+        invert_signs = false,
+        invert_tabline = false,
+        invert_intend_guides = false,
+        inverse = true, -- invert background for search, diffs, statuslines and errors
+        contrast = "", -- can be "hard", "soft" or empty string
+        palette_overrides = {},
+        overrides = {},
+        dim_inactive = false,
+        transparent_mode = false,
+      })
+    end,
+  },
+  {
     "Shatur/neovim-ayu",
     priority = 1000,
   },
@@ -128,20 +157,18 @@ return {
         update_interval = 1000,
         set_dark_mode = function()
           vim.api.nvim_set_option("background", "dark")
+          vim.cmd("colorscheme gruvbox")
 
-          -- vim.cmd("colorscheme sonokai")
-          vim.cmd("colorscheme catppuccin-mocha")
           require("lualine").setup({
             options = {
-              -- theme = "sonokai",
-              theme = "catppuccin",
+              theme = "gruvbox_dark",
             },
           })
         end,
         set_light_mode = function()
           vim.api.nvim_set_option("background", "light")
-
           vim.cmd("colorscheme rose-pine-dawn")
+
           require("lualine").setup({
             options = {
               theme = "rose-pine",
