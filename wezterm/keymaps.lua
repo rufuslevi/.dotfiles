@@ -44,7 +44,17 @@ local function getBase()
 		{
 			key = "c",
 			mods = "LEADER",
+			action = Wezterm.action.CloseCurrentTab({ confirm = true }),
+		},
+		{
+			key = "v",
+			mods = "LEADER",
 			action = Wezterm.action.ClearScrollback("ScrollbackAndViewport"),
+		},
+		{
+			key = "t",
+			mods = "LEADER",
+			action = Wezterm.action.SpawnTab("CurrentPaneDomain"),
 		},
 	}
 end
@@ -52,20 +62,56 @@ local function getWindows()
 	return {}
 end
 local function getDarwin()
-	return {}
+	return {
+		{
+			key = "1",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(0),
+		},
+		{
+			key = "2",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(1),
+		},
+		{
+			key = "3",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(2),
+		},
+		{
+			key = "4",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(3),
+		},
+		{
+			key = "5",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(4),
+		},
+		{
+			key = "6",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(5),
+		},
+		{
+			key = "7",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(6),
+		},
+		{
+			key = "8",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(7),
+		},
+		{
+			key = "9",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(8),
+		},
+	}
 end
 local function getLinux()
 	return {
-		{
-			key = "c",
-			mods = "LEADER",
-			action = Wezterm.action.CloseCurrentTab({ confirm = true }),
-		},
-		{
-			key = "t",
-			mods = "LEADER",
-			action = Wezterm.action.SpawnTab("CurrentPaneDomain"),
-		},
 		{
 			key = "1",
 			mods = "CTRL",
