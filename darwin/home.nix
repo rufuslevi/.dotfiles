@@ -48,6 +48,7 @@
         source = ../zsh;
         recursive = true;
       };
+    };
   };
 
   home.packages = with pkgs; [
