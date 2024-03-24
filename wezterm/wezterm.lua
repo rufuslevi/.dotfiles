@@ -48,7 +48,7 @@ Config.window_padding = {
 }
 Config.window_frame = {
 	font = Wezterm.font({
-		family = "Monaspace Radon",
+		family = "MonaspiceRn Nerd Font",
 		weight = "DemiBold",
 	}),
 	font_size = constants.global.FONT_SIZE + 1,
