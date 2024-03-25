@@ -103,19 +103,19 @@
     '';
   };
   services.samba = {
-  enable = true;
-  securityType = "user";
-  openFirewall = true;
-  extraConfig = ''
-    workgroup = WORKGROUP
-    server string = smbnix
-    netbios name = smbnix
-    security = user 
-    hosts allow = 192.168.0. 127.0.0.1 localhost
-    hosts deny = 0.0.0.0/0
-    guest account = nobody
-    map to guest = bad user
-  '';
+    enable = true;
+    securityType = "user";
+    openFirewall = true;
+    extraConfig = ''
+      workgroup = WORKGROUP
+      server string = smbnix
+      netbios name = smbnix
+      security = user 
+      hosts allow = 192.168.0. 127.0.0.1 localhost
+      hosts deny = 0.0.0.0/0
+      guest account = nobody
+      map to guest = bad user
+    '';
   };
 
   services.samba-wsdd = {
@@ -234,8 +234,6 @@
     xdg-desktop-portal-wlr
     xdg-desktop-portal-hyprland
     glib
-    nixpkgs-fmt
-    nixpkgs-lint
   ];
 
   programs = {

@@ -285,6 +285,9 @@ in
     marksman
     rust-analyzer
     nil
+    nixfmt
+    nixpkgs_fmt
+    nixpkgs-lint
     go
     gopls
     python312
