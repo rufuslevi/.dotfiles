@@ -2,8 +2,8 @@
 
 return {
   {
-    "sheerun/vim-polyglot",
-    enabled = false,
+    "nvim-lualine/lualine.nvim",
+    event = "VeryLazy",
   },
   {
     "xiyaowong/transparent.nvim",
@@ -20,6 +20,7 @@ return {
   },
   {
     "karb94/neoscroll.nvim",
+    enable = true,
     config = function()
       require("neoscroll").setup()
     end,
