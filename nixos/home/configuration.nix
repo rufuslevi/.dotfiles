@@ -38,9 +38,32 @@ let
       name = "Gruvbox Dark";
       package = pkgs.gruvbox-dark-gtk;
     } else {
-      name = "Rose-pine";
+      name = "rose-pine-dawn";
       package = pkgs.rose-pine-gtk-theme;
     };
+  qt5ct_conf =
+    if config.darkmode then
+      ../../themes/qt5ct_dark.conf
+    else
+      ../../themes/qt5ct_light.conf;
+  qt6ct_conf =
+    if config.darkmode then
+      ../../themes/qt6ct_dark.conf
+    else
+      ../../themes/qt6ct_light.conf;
+  kvantum_theme =
+    if config.darkmode then ''
+      [General]
+      theme=gruvbox-kvantum
+    '' else ''
+      [General]
+      theme=GraphiteNord-rimless
+    '';
+  bat_theme =
+    if config.darkmode then
+      ''--theme "gruvbox-dark"''
+    else
+      ''--theme "Monokai Extended Light"'';
 in
 {
   imports = [ ../../variables.nix ];
@@ -59,7 +82,7 @@ in
   wayland.windowManager.hyprland = {
     enable = true;
     extraConfig = ''
-      source = ~/.config/hypr/hypr.conf
+            source = ~/.config/hypr/hypr.conf
       source = ~/.config/hypr/test-hypr.conf
     '';
   };
@@ -85,6 +108,10 @@ in
       name = "volantes";
       package = pkgs.volantes-cursors;
       size = 24;
+    };
+    iconTheme = {
+      name = "Breeze";
+      package = pkgs.kdePackages.breeze-gtk;
     };
   };
 
@@ -187,13 +214,16 @@ in
         source = ../../waybar;
         recursive = true;
       };
-      "Kvantum/kvantum.kvconfig".text = ''
-        [General]
-        theme=gruvbox-kvantum
-      '';
-
+      "bat/config".text = "${bat_theme}";
+      "qt5ct/qt5ct.conf" = { source = qt5ct_conf; };
+      "qt6ct/qt6ct.conf" = { source = qt6ct_conf; };
+      "Kvantum/kvantum.kvconfig".text = kvantum_theme;
       "Kvantum/gruvbox-kvantum" = {
         source = ../../themes/gruvbox-kvantum;
+        recursive = true;
+      };
+      "Kvantum/GraphiteNord-rimless" = {
+        source = ../../themes/GraphiteNord-rimless;
         recursive = true;
       };
     };
@@ -269,7 +299,6 @@ in
     qt6.qmake
     qt6.qtwayland
     xorg.libxcb
-    gnome.adwaita-icon-theme
     gsettings-desktop-schemas
 
     # Fonts
@@ -329,3 +358,4 @@ in
     '';
   };
 }
+
