@@ -7,6 +7,7 @@ export PATH=/usr/share:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/opt/local/bin:$PATH
 export PATH=/opt/local/sbin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$GOPATH/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH

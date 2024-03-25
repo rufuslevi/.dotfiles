@@ -82,7 +82,7 @@ in
   wayland.windowManager.hyprland = {
     enable = true;
     extraConfig = ''
-            source = ~/.config/hypr/hypr.conf
+      source = ~/.config/hypr/hypr.conf
       source = ~/.config/hypr/test-hypr.conf
     '';
   };
@@ -94,9 +94,27 @@ in
       latitude = 45.50884;
       longitude = -73.58781;
     };
+    darkman = {
+      enable = true;
+      settings = {
+        lat = 45.5;
+        lng = -73.6;
+        usegeoclue = true;
+      };
+      lightModeScripts = {
+        darkman = ''
+          ~/.config/scripts/variable_nix_light.sh
+        '';
+      };
+      darkModeScripts = {
+        darkman = ''
+          ~/.config/scripts/variable_nix_dark.sh
+        '';
+      };
+    };
     playerctld = { enable = true; };
     flameshot = {
-      enable = true;
+      enable = false;
       settings = { General = { showStartupLaunchMessage = false; }; };
     };
   };
@@ -207,8 +225,9 @@ in
       "tofi/config" = { source = ../../tofi/config; };
       "hypr/hypr.conf" = { source = ../../hypr/hypr.conf; };
       "waypaper/config.ini" = { source = ../../waypaper/config.ini; };
-      "scripts/hyprland_qt_fix.sh" = {
-        source = ../../scripts/hyprland_qt_fix.sh;
+      "scripts" = {
+        source = ../../scripts;
+        recursive = true;
       };
       "waybar" = {
         source = ../../waybar;
@@ -228,6 +247,13 @@ in
       };
     };
   };
+
+  # home.file = {
+  #   ".local/bin" = {
+  #     source = ../../scripts;
+  #     recursive = true;
+  #   };
+  # };
 
   home.packages = with pkgs; [
     speedtest-rs
@@ -250,6 +276,9 @@ in
     notion-app-enhanced
     youtube-tui
     mpv
+    vlc
+    qbittorrent
+    brave
     obsidian
     cider
     webcord
@@ -283,7 +312,6 @@ in
     at-spi2-atk
 
     #Theming
-    darkman
     volantes-cursors
     kdePackages.qtwebsockets
     kdePackages.qtwayland
