@@ -1,39 +1,58 @@
 @import "colors/gruvbox.css";
 
 * {
-    font-size: 16px;
-    font-family: "MonaspiceKr Nerd Font Mono";
-    min-height: 10px;
-    padding: 0;
-    margin: 0;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border: none;
-    border-radius: 10px;
-    transition: none;
+  font-size: 16px;
+  font-family: "MonaspiceKr Nerd Font Mono";
+  min-height: 10px;
+  padding: 0;
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: none;
+  border-radius: 10px;
+  transition: none;
 }
 
 window#waybar {
-    background:transparent;
+  background: transparent;
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 
-#workspaces, #window, #network, #privacy, #pulseaudio, #bluetooth, #clock, #battery, #backlight, #memory, #cpu, #tray, #mpris, #custom-weather, #custom-dunst, #custom-launcher, #custom-power, #custom-wallpaper, #custom-updates, #custom-media {
-	margin-left: 4px;
-	margin-right: 4px;
-	padding-left: 8px;
-	padding-right: 8px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: @fg;
-	transition: none;
-	color: @fg;
-	background: @bg;
+#workspaces,
+#window,
+#network,
+#privacy,
+#pulseaudio,
+#bluetooth,
+#clock,
+#battery,
+#backlight,
+#memory,
+#cpu,
+#tray,
+#mpris,
+#custom-weather,
+#custom-dunst,
+#custom-launcher,
+#custom-power,
+#custom-wallpaper,
+#custom-updates,
+#custom-media {
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: @fg;
+  transition: none;
+  color: @fg;
+  background: @bg;
 }
 
 #window {
@@ -43,27 +62,27 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-	padding-left: 6px;
-	padding-right: 6px;
-	margin-left: 6px;
-	margin-right: 6px;
-	color: @fg4;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+  color: @fg4;
 }
 
 #workspaces button.active {
-	color: @fg4;
+  color: @fg4;
 }
 #workspaces button.empty {
-	color: @fg4
+  color: @fg4;
 }
 #workspaces button.persistent {
-	color: @fg2
+  color: @fg2;
 }
 #workspaces button.visible {
-	color: @fg2
+  color: @fg2;
 }
 #workspaces button.urgent {
-	color: @red
+  color: @red;
 }
 
 #network {
@@ -78,32 +97,33 @@ window#waybar.hidden {
 #battery {
 }
 
-#battery.charging, #battery.plugged {
-	color: #161320;
-    background-color: #B5E8E0;
+#battery.charging,
+#battery.plugged {
+  color: #161320;
+  background-color: #b5e8e0;
 }
 
 #battery.critical:not(.charging) {
-    background-color: #B5E8E0;
-    color: #161320;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  background-color: #b5e8e0;
+  color: #161320;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes blink {
-    to {
-        background-color: #BF616A;
-        color: #B5E8E0;
-    }
+  to {
+    background-color: #bf616a;
+    color: #b5e8e0;
+  }
 }
 
 #backlight {
 }
 #clock {
-	margin-right: 0px;
+  margin-right: 0px;
 }
 
 #memory {
@@ -112,7 +132,7 @@ window#waybar.hidden {
 }
 
 #tray {
-	margin-left: 0px;
+  margin-left: 0px;
 }
 
 #custom-launcher {
@@ -131,40 +151,40 @@ window#waybar.hidden {
 }
 
 #tags {
-	font-size: 4px;
-	margin-left: 12px;
-	margin-bottom: 0px;
-	border-radius: 10px;
-	background: #161320;
+  font-size: 4px;
+  margin-left: 12px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  background: #161320;
 }
 
 #tags button {
-	color: #B5E8E0;
-	background: transparent;
-	font-size: 16px;
-	border-radius: 2px;
+  color: #b5e8e0;
+  background: transparent;
+  font-size: 16px;
+  border-radius: 2px;
 }
 
 #tags button.occupied {
-	color: #F28FAD;
-	background: transparent;
-	font-size: 4px;
+  color: #f28fad;
+  background: transparent;
+  font-size: 4px;
 }
 
 #tags button.focused {
-    color: #ABE9B3;
-    border-top: 2px solid #ABE9B3;
-    border-bottom: 2px solid #ABE9B3;
+  color: #abe9b3;
+  border-top: 2px solid #abe9b3;
+  border-bottom: 2px solid #abe9b3;
 }
 
 #tags button:hover {
-	box-shadow: inherit;
-	text-shadow: inherit;
-	color: #FAE3B0;
-    border-color: #E8A2AF;
-    color: #E8A2AF;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: #fae3b0;
+  border-color: #e8a2af;
+  color: #e8a2af;
 }
 
 #tags button.focused:hover {
-    color: #E8A2AF;
+  color: #e8a2af;
 }
