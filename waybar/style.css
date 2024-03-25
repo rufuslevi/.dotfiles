@@ -47,19 +47,20 @@ window#waybar.hidden {
 	padding-right: 6px;
 	margin-left: 6px;
 	margin-right: 6px;
+	color: @fg4;
 }
 
 #workspaces button.active {
-	color: @green;
+	color: @fg4;
 }
 #workspaces button.empty {
-	color: @fg2
-}
-#workspaces button.persistent {
 	color: @fg4
 }
+#workspaces button.persistent {
+	color: @fg2
+}
 #workspaces button.visible {
-	color: @blue
+	color: @fg2
 }
 #workspaces button.urgent {
 	color: @red
