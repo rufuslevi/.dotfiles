@@ -7,6 +7,11 @@ Wezterm.on("window-config-reloaded", function(window)
 	local appearance = window:get_appearance()
 	local scheme = ""
 
+	local file = io.open(Wezterm.home_dir .. "/.config/wezterm/theme.bin", "w")
+	if not file then
+		return nil
+	end
+
 	if appearance:find("Dark") then
 		file:write("dark")
 		scheme = constants.themes.dark_theme

@@ -17,7 +17,7 @@ local global = {
 	OPACITY = 1,
 	LEFT_PADDING = 0,
 	RIGHT_PADDING = 0,
-	UP_PADDING = 48,
+	UP_PADDING = 16,
 	DOWN_PADDING = 0,
 }
 
