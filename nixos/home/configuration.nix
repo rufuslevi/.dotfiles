@@ -8,9 +8,10 @@ let
     msbuild
   ];
 
-  extra-lib = with pkgs;[
-    # Add any extra libraries you want accessible to Rider here
-  ];
+  extra-lib = with pkgs;
+    [
+      # Add any extra libraries you want accessible to Rider here
+    ];
 
   rider = pkgs.jetbrains.rider.overrideAttrs (attrs: {
     postInstall = ''
@@ -42,9 +43,7 @@ let
     };
 in
 {
-  imports = [
-    ../../variables.nix
-  ];
+  imports = [ ../../variables.nix ];
 
   home.username = "rufuslevi";
   home.homeDirectory = "/home/rufuslevi";
@@ -53,9 +52,7 @@ in
   dconf = {
     settings = {
       "org/gnome/desktop/wm/preferences".button-layout = "";
-      "org/gnome/desktop/interface" = {
-        color-scheme = dconf_color;
-      };
+      "org/gnome/desktop/interface" = { color-scheme = dconf_color; };
     };
   };
 
@@ -74,16 +71,10 @@ in
       latitude = 45.50884;
       longitude = -73.58781;
     };
-    playerctld = {
-      enable = true;
-    };
+    playerctld = { enable = true; };
     flameshot = {
       enable = true;
-      settings = {
-        General = {
-          showStartupLaunchMessage = false;
-        };
-      };
+      settings = { General = { showStartupLaunchMessage = false; }; };
     };
   };
 
@@ -100,17 +91,13 @@ in
   qt = {
     enable = true;
     platformTheme = "qtct";
-    style = {
-      name = "kvantum";
-    };
+    style = { name = "kvantum"; };
   };
 
   xdg = {
     portal = {
       config = {
-        common = {
-          "org.freedesktop.impl.portal.Settings" = "gtk";
-        };
+        common = { "org.freedesktop.impl.portal.Settings" = "gtk"; };
       };
     };
     userDirs = {
@@ -136,16 +123,28 @@ in
         "text/markdown" = [ "nvim.desktop" ];
         "text/plain" = [ "nvim.desktop;org.kde.kate.desktop" ];
         "text/x-cmake" = [ "nvim.desktop" ];
-        "x-scheme-handler/http" = [ "librewolf.desktop;firefox-developer-edition.desktop;firefox-devedition.desktop" ];
-        "x-scheme-handler/https" = [ "librewolf.desktop;firefox-developer-edition.desktop;firefox-devedition.desktop" ];
-        "x-scheme-handler/chrome" = [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
-        "text/html" = [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
-        "application/x-extension-htm" = [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
-        "application/x-extension-html" = [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
-        "application/x-extension-shtml" = [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
-        "application/xhtml+xml" = [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
-        "application/x-extension-xhtml" = [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
-        "application/x-extension-xht" = [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
+        "x-scheme-handler/http" = [
+          "librewolf.desktop;firefox-developer-edition.desktop;firefox-devedition.desktop"
+        ];
+        "x-scheme-handler/https" = [
+          "librewolf.desktop;firefox-developer-edition.desktop;firefox-devedition.desktop"
+        ];
+        "x-scheme-handler/chrome" =
+          [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
+        "text/html" =
+          [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
+        "application/x-extension-htm" =
+          [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
+        "application/x-extension-html" =
+          [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
+        "application/x-extension-shtml" =
+          [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
+        "application/xhtml+xml" =
+          [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
+        "application/x-extension-xhtml" =
+          [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
+        "application/x-extension-xht" =
+          [ "firefox-developer-edition.desktop;firefox-devedition.desktop" ];
       };
       defaultApplications = {
         "application/pdf" = [ "okularApplication_pdf.desktop" ];
@@ -178,20 +177,23 @@ in
       };
     };
     configFile = {
-      "tofi/config" = {
-        source = ../../tofi/config;
-      };
-      "hypr/hypr.conf" = {
-        source = ../../hypr/hypr.conf;
-      };
-      "waypaper/config.ini" = {
-        source = ../../waypaper/config.ini;
-      };
+      "tofi/config" = { source = ../../tofi/config; };
+      "hypr/hypr.conf" = { source = ../../hypr/hypr.conf; };
+      "waypaper/config.ini" = { source = ../../waypaper/config.ini; };
       "scripts/hyprland_qt_fix.sh" = {
         source = ../../scripts/hyprland_qt_fix.sh;
       };
       "waybar" = {
         source = ../../waybar;
+        recursive = true;
+      };
+      "Kvantum/kvantum.kvconfig".text = ''
+        [General]
+        theme=gruvbox-kvantum
+      '';
+
+      "Kvantum/gruvbox-kvantum" = {
+        source = ../../themes/gruvbox-kvantum;
         recursive = true;
       };
     };
@@ -286,7 +288,7 @@ in
     rust-analyzer
     nil
     nixfmt
-    nixpkgs_fmt
+    nixpkgs-fmt
     nixpkgs-lint
     go
     gopls
@@ -309,7 +311,7 @@ in
         desktopFile = pkgs.makeDesktopItem {
           name = "jetbrains-rider";
           desktopName = "Rider";
-          exec = "\"${rider}/bin/rider\"";
+          exec = ''"${rider}/bin/rider"'';
           icon = "rider";
           type = "Application";
           # Don't show desktop icon in search or run launcher
