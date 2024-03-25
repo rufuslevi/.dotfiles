@@ -30,14 +30,27 @@ let
       shopt -u extglob
     '' + attrs.postInstall or "";
   });
+
+  dconf_color = if config.darkmode then "prefer-dark" else "prefer-light";
 in
 {
+  imports = [
+    ../../variables.nix
+  ];
+
   home.username = "rufuslevi";
   home.homeDirectory = "/home/rufuslevi";
   home.stateVersion = "23.11";
 
   dconf = {
-    settings."org/gnome/desktop/wm/preferences".button-layout = "";
+    settings = {
+      "org/gnome/desktop/wm/preferences".button-layout = "";
+      "org/gnome/desktop/interface" = {
+        # gtk-key-theme = "Catppuccin-Mocha-Standard-Mauve-Dark";
+        # cursor-theme = "Catppuccin-Mocha-Dark";
+        color-scheme = dconf_color;
+      };
+    };
   };
 
   wayland.windowManager.hyprland = {
@@ -87,6 +100,11 @@ in
       name = "candy-icons";
       package = pkgs.candy-icons;
     };
+    gtk3.extraConfig = {
+      gtk-key-theme-name    = "Catppuccin-Mocha-Standard-Mauve-Dark";
+      gtk-icon-theme-name   = "candy-icons";
+      gtk-cursor-theme-name = "Catppuccin-Mocha-Dark";
+    };
   };
 
   qt = {
@@ -102,6 +120,13 @@ in
   };
 
   xdg = {
+    portal = {
+      config = {
+        common = {
+          "org.freedesktop.impl.portal.Settings" = "gtk";
+        };
+      };
+    };
     userDirs = {
       enable = true;
       desktop = "${config.home.homeDirectory}/Bureau";
@@ -179,6 +204,10 @@ in
       "scripts/hyprland_qt_fix.sh" = {
         source = ../../scripts/hyprland_qt_fix.sh;
       };
+      "waybar" = {
+          source = ../../waybar;
+          recursive = true;
+      };
       "gtk-4.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/assets";
       "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
       "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
@@ -188,10 +217,26 @@ in
       "Kvantum/Catppuccin-Mocha-Mauve/Catppuccin-Mocha-Mauve/Catppuccin-Mocha-Mauve.kvconfig".source = "${pkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-Mocha-Mauve/Cattpuccin-Mocha-Mauve.kvconfig";
       "Kvantum/Catppuccin-Mocha-Mauve/Catppuccin-Mocha-Mauve/Catppuccin-Mocha-Mauve.svg".source = "${pkgs.catppuccin-kvantum}/share/Kvantum/Catppuccin-Mocha-Mauve/Cattpuccin-Mocha-Mauve.svg";
     };
+    systemDirs.data = [
+      "${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}"
+      "${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}"
+    ];
   };
 
   home.packages = with pkgs; [
-    volantes-cursors
+    killall
+    stow
+    jq
+    openrazer-daemon
+    zoxide
+    cargo
+    rustc
+    lua
+    eza
+    gcc
+    lxqt.lxqt-policykit
+    ripgrep
+    libqalculate
     notion-app-enhanced
     youtube-tui
     mpv
@@ -200,19 +245,27 @@ in
     webcord
     caprine-bin
     sublime4
+    onedrive
     guake
     bitwarden-desktop
-    github-desktop
+    
+    # Git
+    gitui
     gh
-    git-credential-manager
+
+    waybar-mpris
     krabby
-    gopls
     qpwgraph
     helvum
     swww
     waypaper
+    wlogout
+    cliphist
+    at-spi2-atk
 
     #Theming
+    darkman
+    volantes-cursors
     kdePackages.qtwebsockets
     kdePackages.qtwayland
     kdePackages.qtstyleplugin-kvantum
@@ -224,12 +277,16 @@ in
     qt6.qmake
     qt6.qtwayland
     xorg.libxcb
+    gnome.adwaita-icon-theme
+    gsettings-desktop-schemas
     adwaita-qt
     adwaita-qt6
 
     # Fonts
     atkinson-hyperlegible
+    font-awesome
 
+    clipman
     lua54Packages.jsregexp
     llvmPackages_17.clang-unwrapped
     gnome.gnome-tweaks
@@ -239,6 +296,10 @@ in
     jdt-language-server
     marksman
     rust-analyzer
+    go
+    gopls
+    python312
+    python312Packages.pip
     shfmt
     taplo
     rider

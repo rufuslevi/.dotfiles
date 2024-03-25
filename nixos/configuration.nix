@@ -82,7 +82,10 @@
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
+  security = {
+    rtkit.enable = true;
+    polkit.enable = true;
+  };
   services.pipewire = {
     enable = true;
     alsa.enable = true;
@@ -99,6 +102,29 @@
       }
     '';
   };
+  services.samba = {
+  enable = true;
+  securityType = "user";
+  openFirewall = true;
+  extraConfig = ''
+    workgroup = WORKGROUP
+    server string = smbnix
+    netbios name = smbnix
+    security = user 
+    hosts allow = 192.168.0. 127.0.0.1 localhost
+    hosts deny = 0.0.0.0/0
+    guest account = nobody
+    map to guest = bad user
+  '';
+  };
+
+  services.samba-wsdd = {
+    enable = true;
+    openFirewall = true;
+  };
+  services.gvfs.enable = true;
+
+  services.openssh.ports = [ 22 443 2222 7422 ];
 
   systemd.sockets.mpd.listenStreams = [ "/run/mpd/socket" ];
   systemd.services.mpd.environment = {
@@ -160,6 +186,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    gnome.gvfs
     unzip
     dex
     speedtest-rs
@@ -196,20 +223,10 @@
     ranger
     openrgb-with-all-plugins
     go-task
-    stow
-    openrazer-daemon
-    zoxide
-    cargo
-    rustup
-    lua
-    eza
-    gcc
-    xflux-gui
     hyprland-protocols
     hyprpicker
     hyprpaper
     nwg-panel
-    nwg-dock-hyprland
     yambar
     yambar-hyprland-wses
     eww
@@ -220,6 +237,7 @@
     xdg-ninja
     xdg-desktop-portal
     xdg-desktop-portal-gtk
+    xdg-desktop-portal-wlr
     xdg-desktop-portal-hyprland
     glib
     nixpkgs-fmt
@@ -258,6 +276,7 @@
         "browser.translations.automaticallyPopup" = false;
         "browser.translations.panelShown" = false;
         "svg.context-properties.content.enabled" = true;
+        "intl.multilingual.enabled" = true;
       };
       preferencesStatus = "default";
       languagePacks = [ "fr" ];
