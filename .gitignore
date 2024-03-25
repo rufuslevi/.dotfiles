@@ -2,6 +2,7 @@
 *.DS_Store
 nvim/lazy-lock.json
 nushell/config/history.txt
+wezterm/theme.bin
 
 # Directories
 mason/

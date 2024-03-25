@@ -21,7 +21,6 @@ Config.default_prog = { constants.global.SHELL }
 Config.window_background_opacity = constants.global.OPACITY
 Config.macos_window_background_blur = 20
 Config.use_fancy_tab_bar = true
-Config.line_height = 1.17
 Config.font = Wezterm.font({
 	family = constants.global.FONT_FAMILY,
 	weight = "Medium",
