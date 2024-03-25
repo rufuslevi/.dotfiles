@@ -5,6 +5,6 @@
     darkmode = mkOption { type = bool; };
   };
   config = {
-    darkmode = true;
+    darkmode = false;
   };
 }
