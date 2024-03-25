@@ -6,7 +6,7 @@ for i in {1..5}; do
 		tooltip=$(curl -s "https://wttr.in/$1?format=4")
 		if [[ $? == 0 ]]; then
 			tooltip=$(echo "$tooltip" | sed -E "s/\s+/ /g")
-			echo "{\"text\":\"$text\", \"tooltip\":\"$tooltip\"}"
+			echo "{\"text\":\"$text\", \"tooltip\":\"$tooltip\", \"class\":\"weather\"}"
 			exit
 		fi
 	fi

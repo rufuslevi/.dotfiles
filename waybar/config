@@ -3,7 +3,7 @@
   "layer": "top",
   "modules-left": ["tray", "hyprland/window"],
   "modules-center": ["hyprland/workspaces", "privacy"],
-  "modules-right": ["custom/media", "pulseaudio", "bluetooth", "network", "custom/dunst", "clock"],
+  "modules-right": ["mpris", "custom/weather", "pulseaudio", "bluetooth", "network", "custom/dunst", "clock"],
   "height": 24,
   "margin": "8 8 0 8",
   "tray": {
@@ -26,23 +26,32 @@
       "music": ""
     }
   },
+  "custom/weather": {
+    "exec": "~/.config/waybar/scripts/get_weather.sh Montreal+Canada",
+    "return-type": "json",
+    "tooltip": true,
+    "interval": 3600
+  },
   "custom/dunst": {
     "return-type": "json",
     "exec": "~/.config/waybar/scripts/dunst.sh",
     "on-click": "dunstctl set-paused toggle",
     "restart-interval": 1,
   },
-  "custom/media": {
-    "format": "{icon} {}",
-    "escape": true,
-    "return-type": "json",
-    "max-length": 40,
+  "mpris": {
+    "format": "{status_icon} {dynamic}",
+    "tooltip-format": "{status_icon} {player} - {dynamic}",
+    "dynamic-order": ["title", "artist"],
+    "dynamic-len": 42,
+    "dynamic-separator": "/",
     "on-click": "playerctl play-pause",
-    "on-click-right": "playerctl stop",
-    "smooth-scrolling-threshold": 10, 
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",
-    "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null", 
+    "status_icons": {
+       "paused": "󰏤",
+       "playing": "󰐊",
+       "stopped": ""
+    },
   },
   "privacy": {
     "icon-spacing": 5,
@@ -71,7 +80,7 @@
     "format-bluetooth": "{volume}% {icon}",
     "format-muted": "",
     "format-icons": {
-      "headphone": "",
+      "headphone": "󰋋",
       "hands-free": "",
       "headset": "",
       "phone": "",
