@@ -188,8 +188,6 @@
   environment.systemPackages = with pkgs; [
     gnome.gvfs
     unzip
-    dex
-    speedtest-rs
     man-pages
     man-pages-posix
     udiskie
@@ -205,10 +203,6 @@
     dunst
     wl-clipboard
     gnome.nautilus
-    kdePackages.dolphin
-    kdePackages.partitionmanager
-    kdePackages.kirigami
-    kdePackages.systemsettings
     themechanger
     wezterm
     kitty
