@@ -54,8 +54,6 @@ in
     settings = {
       "org/gnome/desktop/wm/preferences".button-layout = "";
       "org/gnome/desktop/interface" = {
-        # gtk-key-theme = "Catppuccin-Mocha-Standard-Mauve-Dark";
-        # cursor-theme = "Catppuccin-Mocha-Dark";
         color-scheme = dconf_color;
       };
     };
@@ -91,28 +89,19 @@ in
 
   gtk = {
     enable = true;
-    cursorTheme = {
-      name = "Catppuccin-Mocha-Dark";
-      package = pkgs.catppuccin-cursors.mochaDark;
-      size = 24;
-    };
     theme = gtk_theme;
-    iconTheme = {
-      name = "candy-icons";
-      package = pkgs.candy-icons;
-    };
-    gtk3.extraConfig = {
-      gtk-key-theme-name = gtk_theme.name;
-      gtk-icon-theme-name = "candy-icons";
-      gtk-cursor-theme-name = "Catppuccin-Mocha-Dark";
+    cursorTheme = {
+      name = "volantes";
+      package = pkgs.volantes-cursors;
+      size = 24;
     };
   };
 
   qt = {
     enable = true;
-    platformTheme = "gtk3";
+    platformTheme = "qtct";
     style = {
-      name = "gtk2";
+      name = "kvantum";
     };
   };
 
@@ -205,17 +194,7 @@ in
         source = ../../waybar;
         recursive = true;
       };
-      "gtk-4.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/assets";
-      "gtk-4.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk.css";
-      "gtk-4.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-4.0/gtk-dark.css";
-      "gtk-3.0/assets".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-3.0/assets";
-      "gtk-3.0/gtk.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-3.0/gtk.css";
-      "gtk-3.0/gtk-dark.css".source = "${config.gtk.theme.package}/share/themes/${config.gtk.theme.name}/gtk-3.0/gtk-dark.css";
     };
-    systemDirs.data = [
-      "${pkgs.gtk3}/share/gsettings-schemas/${pkgs.gtk3.name}"
-      "${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}"
-    ];
   };
 
   home.packages = with pkgs; [
@@ -305,6 +284,7 @@ in
     jdt-language-server
     marksman
     rust-analyzer
+    nil
     go
     gopls
     python312
