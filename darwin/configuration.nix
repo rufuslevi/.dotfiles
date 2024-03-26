@@ -25,14 +25,7 @@ in {
     shell = pkgs.zsh;
   };
 
-  homebrew = {
-    enable = true;
-    taps = [ "FelixKratz/formulae" ];
-    casks = [ "homebrew/cask-fonts/font-monaspace-nerd-font" ];
-    brews = [ "borders" ];
-  };
-
-  programs = { zsh = { enable = true; }; };
+  homebrew = { } // import ./brew.nix { };
 
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
