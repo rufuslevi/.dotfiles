@@ -1,5 +1,6 @@
 # Files
 *.DS_Store
+variables.nix.bak
 nvim/lazy-lock.json
 nushell/config/history.txt
 wezterm/theme.bin
