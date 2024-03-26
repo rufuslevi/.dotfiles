@@ -46,7 +46,7 @@
       inherit (inputs.nixpkgs-unstable.lib) attrValues makeOverridable optionalAttrs singleton;
 
       nixpkgsDarwinConfig = {
-        config = { 
+        config = {
           allowUnfree = true;
         };
         overlays = attrValues self.overlays ++ singleton (
@@ -84,9 +84,10 @@
               nixpkgs = nixpkgsDarwinConfig;
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.rufuslevi = import ./darwin/home.nix;
+              home-manager.users.rufuslevi = import ./darwin/home/home.nix;
             }
-            nix-homebrew.darwinModules.nix-homebrew {
+            nix-homebrew.darwinModules.nix-homebrew
+            {
               nix-homebrew = {
                 enable = true;
                 enableRosetta = true;
