@@ -14,9 +14,7 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
-    nix-homebrew = {
-      url = "github:zhaofengli-wip/nix-homebrew";
-    };
+    nix-homebrew = { url = "github:zhaofengli-wip/nix-homebrew"; };
     homebrew-bundle = {
       url = "github:homebrew/homebrew-bundle";
       flake = false;
@@ -36,28 +34,32 @@
     };
   };
 
-  outputs = { self, darwin, nixpkgs, nixpkgs-darwin, home-manager, nix-homebrew, ... }@inputs:
+  outputs =
+    { self
+    , darwin
+    , nixpkgs
+    , nixpkgs-darwin
+    , home-manager
+    , nix-homebrew
+    , ...
+    }@inputs:
     let
       user = "rufuslevi";
       hostname = "luna";
       system = "aarch64-darwin";
       specialArgs = { inherit user hostname; };
 
-      inherit (inputs.nixpkgs-unstable.lib) attrValues makeOverridable optionalAttrs singleton;
+      inherit (inputs.nixpkgs-unstable.lib)
+        attrValues makeOverridable optionalAttrs singleton;
 
       nixpkgsDarwinConfig = {
-        config = {
-          allowUnfree = true;
-        };
+        config = { allowUnfree = true; };
         overlays = attrValues self.overlays ++ singleton (
           # Sub in x86 version of packages that don't build on Apple Silicon yet
-          final: prev: (optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
-            inherit (final.pkgs-x86)
-              idris2
-              nix-index
-              niv
-              purescript;
-          })
+          final: prev:
+            (optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
+              inherit (final.pkgs-x86) idris2 nix-index niv purescript;
+            })
         );
       };
     in
@@ -66,12 +68,13 @@
         comma = final: prev: {
           comma = import inputs.comma { inherit (prev) pkgs; };
         };
-        apple-silicon = final: prev: optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
-          pkgs-x86 = import inputs.nixpkgs-darwin {
-            system = "86_64-darwin";
-            inherit (nixpkgsDarwinConfig) config;
+        apple-silicon = final: prev:
+          optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
+            pkgs-x86 = import inputs.nixpkgs-darwin {
+              system = "86_64-darwin";
+              inherit (nixpkgsDarwinConfig) config;
+            };
           };
-        };
       };
 
       darwinConfigurations = rec {
@@ -84,7 +87,8 @@
               nixpkgs = nixpkgsDarwinConfig;
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.rufuslevi = import ./darwin/home/home.nix;
+              home-manager.users.rufuslevi =
+                import ./darwin/home/configuration.nix;
             }
             nix-homebrew.darwinModules.nix-homebrew
             {
