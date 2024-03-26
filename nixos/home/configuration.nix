@@ -66,7 +66,7 @@ let
       ''--theme "Monokai Extended Light"'';
 in
 {
-  imports = [ ../../variables.nix ];
+  imports = [ ../variables.nix ];
 
   home.username = "rufuslevi";
   home.homeDirectory = "/home/rufuslevi";
@@ -256,6 +256,7 @@ in
   # };
 
   home.packages = with pkgs; [
+    kdePackages.qtimageformats
     speedtest-rs
     killall
     stow
