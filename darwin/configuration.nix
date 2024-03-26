@@ -20,8 +20,6 @@ in {
     };
   };
 
-  networking = { hostName = "luna"; };
-
   security.pam.enableSudoTouchIdAuth = true;
 
   users.users.${user} = {
@@ -31,6 +29,7 @@ in {
     shell = pkgs.zsh;
   };
 
+  networking = { hostName = "luna"; };
   homebrew = { } // import ./brew.nix { };
 
   system.stateVersion = 4;

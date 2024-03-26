@@ -25,6 +25,10 @@
       source ~/.config/zsh/.p10k.zsh
     '';
   };
-  neovim = { enable = true; };
+  neovim = {
+    enable = true;
+    defaultEditor = true;
+  };
   btop = { enable = true; };
+  bat = { enable = true; };
 }

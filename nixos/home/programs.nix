@@ -25,7 +25,7 @@
   };
   neovim = {
     enable = true;
-    defaultEditor = false;
+    defaultEditor = true;
   };
   vscode = {
     enable = true;

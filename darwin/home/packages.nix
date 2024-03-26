@@ -1,24 +1,48 @@
 { pkgs, ... }:
 
 with pkgs; [
-  krabby
-  fantasque-sans-mono
+  # GUI apps
+  qbittorrent
+  obsidian
   vscodium
-  ripgrep
   wezterm
-  btop
-  nil
-  nixfmt
-  nixpkgs-fmt
-  zoxide
-  lua
+
+  # Fonts
+  atkinson-hyperlegible
+  font-awesome
+
+  # Desktop tools
   skhd
   yabai
+
+  # TUI tools
   neofetch
-  gcc
+  btop
+  krabby
+  libqalculate
+
+  # CLI tools
+  zoxide
   fzf
+  ripgrep
+  eza
+  stow
+  speedtest-rs
+  jq
+  fd
+  tree-sitter
+
+  # Languages
+  lua
+  gcc
   rustc
   cargo
   llvm
+  nodejs_21
+
+  # LSP
+  nil
+  nixfmt
+  nixpkgs-fmt
 ]
 
