@@ -5,14 +5,20 @@ in {
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
 
-  nix.extraOptions = ''
-    auto-optimise-store = true
-    experimental-features = nix-command flakes
-  '';
+  nix = {
+    settings = { experimental-features = "nix-command flakes"; };
+    extraOptions = ''
+      auto-optimise-store = true
+      experimental-features = nix-command flakes
+    '';
+  };
 
-  nixpkgs.config.allowUnsupportdSystem = true;
-  nixpkgs.config.allowBroken = true;
-  nix.settings.experimental-features = "nix-command flakes";
+  nixpkgs = {
+    config = {
+      allowUnsupportdSystem = true;
+      allowBroken = true;
+    };
+  };
 
   networking = { hostName = "luna"; };
 
@@ -27,8 +33,6 @@ in {
 
   homebrew = { } // import ./brew.nix { };
 
-  # Used for backwards compatibility, please read the changelog before changing.
-  # $ darwin-rebuild changelog
   system.stateVersion = 4;
 }
 
