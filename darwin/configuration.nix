@@ -1,9 +1,7 @@
 { config, pkgs, lib, home-manager, ... }:
 
-let
-  user = "rufuslevi";
-in
-{
+let user = "rufuslevi";
+in {
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
 
@@ -11,17 +9,12 @@ in
     auto-optimise-store = true
     experimental-features = nix-command flakes
   '';
-  # + lib.optionalString (pkgs.system == "aarch64-darwin") ''
-  #   extra-platforms = x86_64-darwin aarch64-darwin
-  # '';
 
   nixpkgs.config.allowUnsupportdSystem = true;
   nixpkgs.config.allowBroken = true;
   nix.settings.experimental-features = "nix-command flakes";
 
-  networking = {
-    hostName = "luna";
-  };
+  networking = { hostName = "luna"; };
 
   security.pam.enableSudoTouchIdAuth = true;
 
@@ -34,22 +27,12 @@ in
 
   homebrew = {
     enable = true;
-    taps = [
-      "FelixKratz/formulae"
-    ];
-    casks = [
-      "homebrew/cask-fonts/font-monaspace-nerd-font"
-    ];
-    brews = [
-      "borders"
-    ];
+    taps = [ "FelixKratz/formulae" ];
+    casks = [ "homebrew/cask-fonts/font-monaspace-nerd-font" ];
+    brews = [ "borders" ];
   };
 
-  programs = {
-    zsh = {
-      enable = true;
-    };
-  };
+  programs = { zsh = { enable = true; }; };
 
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
