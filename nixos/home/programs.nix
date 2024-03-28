@@ -75,7 +75,7 @@
         esbenp.prettier-vscode
         dbaeumer.vscode-eslint
         jnoortheen.nix-ide
-      ] ++ vscode-utils.extensionsFromVscodeMarketplace [{
+      ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [{
         name = "remote-ssh-edit";
         publisher = "ms-vscode-remote";
         version = "0.47.2";

@@ -141,7 +141,6 @@
       # Enable the KDE Plasma Desktop Environment.
       displayManager.sddm.enable = true;
 
-
       # Configure keymap in X11
       xkb = {
         layout = "ca";
@@ -152,15 +151,10 @@
 
   xdg = {
     autostart.enable = true;
-    menus = {
-      enable = true;
-    };
+    menus = { enable = true; };
     portal = {
       enable = true;
-      extraPortals = [
-        pkgs.xdg-desktop-portal
-        pkgs.xdg-desktop-portal-gtk
-      ];
+      extraPortals = [ pkgs.xdg-desktop-portal pkgs.xdg-desktop-portal-gtk ];
     };
   };
 
@@ -179,9 +173,7 @@
   nixpkgs.config.allowUnfree = true;
 
   # For Sublime4
-  nixpkgs.config.permittedInsecurePackages = [
-    "openssl-1.1.1w"
-  ];
+  nixpkgs.config.permittedInsecurePackages = [ "openssl-1.1.1w" ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -214,7 +206,7 @@
     librewolf
     vivaldi
     kate
-    ranger
+    yazi
     openrgb-with-all-plugins
     go-task
     hyprland-protocols
@@ -238,12 +230,8 @@
 
   programs = {
     nix-ld.enable = true;
-    zsh = {
-      enable = true;
-    };
-    git = {
-      enable = true;
-    };
+    zsh = { enable = true; };
+    git = { enable = true; };
     neovim = {
       enable = true;
       defaultEditor = true;
@@ -252,12 +240,8 @@
       enable = true;
       xwayland.enable = true;
     };
-    waybar = {
-      enable = true;
-    };
-    dconf = {
-      enable = true;
-    };
+    waybar = { enable = true; };
+    dconf = { enable = true; };
     firefox = {
       enable = true;
       package = pkgs.firefox-devedition;
@@ -275,8 +259,10 @@
     };
     steam = {
       enable = true;
-      remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-      dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+      remotePlay.openFirewall =
+        true; # Open ports in the firewall for Steam Remote Play
+      dedicatedServer.openFirewall =
+        true; # Open ports in the firewall for Source Dedicated Server
     };
     nix-ld.libraries = with pkgs; [
       alsa-lib
@@ -333,9 +319,12 @@
     ];
   };
 
-  fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "Monaspace" "SourceCodePro" "CascadiaCode" ]; })
-  ];
+  fonts.packages = with pkgs;
+    [
+      (nerdfonts.override {
+        fonts = [ "Monaspace" "SourceCodePro" "CascadiaCode" ];
+      })
+    ];
 
   services.openssh.enable = true;
   services.hardware.openrgb.enable = true;
