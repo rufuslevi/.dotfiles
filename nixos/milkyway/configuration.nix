@@ -21,13 +21,11 @@
     };
   };
 
-  networking = {
-    hostName = "milkyway";
-    firewall = {
-      enable = true;
-      allowedTCPPorts = [ 80 443 ];
-      allowedUDPPorts = [ 34197 ];
-    };
+  networking.hostName = "milkyway";
+  networking.firewall = {
+    enable = true;
+    allowedTCPPorts = [ 80 443 ];
+    allowedUDPPorts = [ 34197 ];
   };
 
   nixpkgs.config.nvidia.acceptLicense = true;
