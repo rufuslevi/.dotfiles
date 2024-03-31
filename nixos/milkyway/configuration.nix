@@ -30,6 +30,8 @@
     };
   };
 
+  nixpkgs.config.nvidia.acceptLicense = true;
+
   # Load nvidia driver for Xorg and Wayland
   hardware.nvidia = {
     # Modesetting is required.
