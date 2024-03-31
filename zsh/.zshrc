@@ -98,7 +98,7 @@ eval "$(zoxide init --cmd cd zsh)"
 # What OS are we running?
 if [[ $(uname) == "Darwin" ]]; then
     # echo "Running MacOS!"
-    source "/Users/rufuslevi/.easier-c.sh"
+    source "/Users/rufuslevi/.config/scripts/.easier-c.sh"
     source "/Users/rufuslevi/.bazel/bin/bazel-complete.bash"
 
 elif command -v apt > /dev/null; then
