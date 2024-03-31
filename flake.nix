@@ -107,15 +107,35 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-          ./nixos/hardware-configuration-domum.nix
           ./nixos/configuration.nix
+          ./nixos/domum/hardware-configuration.nix
+          ./nixos/domum/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager = {
               extraSpecialArgs = { inherit inputs; };
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.rufuslevi = import ./nixos/home/configuration.nix;
+              users.rufuslevi = import ./nixos/domum/home.nix;
+            };
+          }
+        ];
+      };
+
+      nixosConfigurations.milkyway = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./nixos/configuration.nix
+          ./nixos/milkyway/hardware-configuration.nix
+          ./nixos/milkyway/configuration.nix
+          home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              extraSpecialArgs = { inherit inputs; };
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.rufuslevi = import ./nixos/milkyway/home.nix;
             };
           }
         ];
