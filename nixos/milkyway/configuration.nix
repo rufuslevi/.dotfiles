@@ -11,7 +11,6 @@
   boot.loader = {
     systemd-boot.enable = false;
     efi.canTouchEfiVariables = true;
-    efi.efiSysMountPoint = "/boot/efi";
     grub = {
       enable = true;
       device = "nodev";
@@ -61,14 +60,8 @@
     package = config.boot.kernelPackages.nvidiaPackages.legacy_340;
   };
 
-  services = {
-    openssh.ports = [ 22 443 2222 7422 ];
-    xserver.videoDrivers = [ "nvidia" ];
-  };
+  services.openssh.ports = [ 22 443 2222 7422 ];
+  services.xserver.videoDrivers = [ "nvidia" ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [ ];
 }
