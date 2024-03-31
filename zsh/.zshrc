@@ -103,11 +103,11 @@ if [[ $(uname) == "Darwin" ]]; then
 
 elif command -v apt > /dev/null; then
     # echo "Running Debian based Linux!"
-    source "/home/rufuslevi/scripts/.easier-c.sh"
+    source "/home/rufuslevi/.config/scripts/.easier-c.sh"
 
 elif command -v nix > /dev/null; then
     # echo "Running NixOS based Linux!"
-    source "/home/rufuslevi/scripts/.easier-c.sh"
+    source "/home/rufuslevi/.config/scripts/.easier-c.sh"
 
 else
     echo 'Unknown OS!'
