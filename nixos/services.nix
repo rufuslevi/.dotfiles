@@ -9,7 +9,6 @@
       variant = "multix";
     };
   };
-  desktopManager.plasma6.enable = true;
   pipewire = {
     enable = true;
     alsa.enable = true;
