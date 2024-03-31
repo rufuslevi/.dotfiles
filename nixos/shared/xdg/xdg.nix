@@ -124,7 +124,7 @@ in
         recursive = true;
       };
       "zsh" = {
-        source = ../../zsh;
+        source = ../../../zsh;
         recursive = true;
       };
       "bat/config".text = "${bat_theme}";
