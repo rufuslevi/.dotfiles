@@ -100,7 +100,7 @@ in
     enable = true;
     theme = gtk_theme;
     cursorTheme = {
-      name = "volantes";
+      name = "volantes_cursors";
       package = pkgs.volantes-cursors;
       size = 24;
     };
@@ -121,6 +121,7 @@ in
     speedtest-rs
     killall
     stow
+    fuse3
     jq
     openrazer-daemon
     zoxide
@@ -177,7 +178,6 @@ in
     ueberzug
 
     #Theming
-    volantes-cursors
     kdePackages.qtwebsockets
     kdePackages.qtwayland
     kdePackages.qtstyleplugin-kvantum
