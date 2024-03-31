@@ -5,10 +5,10 @@
 { config, inputs, pkgs, ... }:
 
 {
-  boot.initrd.kernelModules = [ "nvidia" ];
-  boot.extraModulePackages =
-    [ config.boot.kernelPackages.nvidia_x11_legacy340 ];
+  #boot.initrd.kernelModules = [ "nvidia" ];
+  #boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11_legacy340 ];
 
+  boot.kernelParams = [ "module_blacklist=i915" "module_blacklist=amdgpu" ];
   boot.loader = {
     systemd-boot.enable = false;
     efi.canTouchEfiVariables = true;

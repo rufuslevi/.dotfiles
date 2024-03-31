@@ -57,7 +57,7 @@
     users.rufuslevi = {
       isNormalUser = true;
       description = "Michael Roussel";
-      extraGroups = [ "networkmanager" "wheel" ];
+      extraGroups = [ "networkmanager" "wheel" "video" "render" ];
     };
   };
 
