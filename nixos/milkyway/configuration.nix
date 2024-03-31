@@ -6,7 +6,8 @@
 
 {
   boot.initrd.kernelModules = [ "nvidia" ];
-  boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
+  boot.extraModulePackages =
+    [ config.boot.kernelPackages.nvidia_x11_legacy340 ];
 
   boot.loader = {
     systemd-boot.enable = false;
