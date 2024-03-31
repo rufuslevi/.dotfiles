@@ -58,7 +58,7 @@
     # accessible via `nvidia-settings`.
     nvidiaSettings = true;
 
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    package = config.boot.kernelPackages.nvidiaPackages.legacy_340;
   };
 
   services = {
@@ -70,5 +70,9 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [ ];
+  environment.systemPackages = with pkgs; [
+    nvidia-x11
+    nvidia-settings
+    nvidia-persistenced
+  ];
 }
