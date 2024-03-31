@@ -123,6 +123,10 @@ in
         source = ../../../waybar;
         recursive = true;
       };
+      "zsh" = {
+        source = ../../zsh;
+        recursive = true;
+      };
       "bat/config".text = "${bat_theme}";
       "qt5ct/qt5ct.conf" = { source = qt5ct_conf; };
       "qt6ct/qt6ct.conf" = { source = qt6ct_conf; };

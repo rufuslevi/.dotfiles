@@ -2,7 +2,5 @@
 
 {
   imports = [ ../shared/configuration.nix ];
-
-  home.packages = with pkgs; [ ];
 }
 

@@ -2,5 +2,5 @@
 
 {
   options = with lib; with types; { darkmode = mkOption { type = bool; }; };
-  config = { darkmode = false; };
+  config = { darkmode = true; };
 }
