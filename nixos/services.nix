@@ -3,12 +3,13 @@
 {
   xserver = {
     enable = true;
-    displayManager.sddm.enable = true;
+    displayManager = { sddm.enable = true; };
     xkb = {
       layout = "ca";
       variant = "multix";
     };
   };
+  desktopManager.plasma6.enable = true;
   pipewire = {
     enable = true;
     alsa.enable = true;

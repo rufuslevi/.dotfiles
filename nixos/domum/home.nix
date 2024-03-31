@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ inputs, pkgs, lib, ... }:
 
 let
   extra-path = with pkgs; [
@@ -36,6 +36,7 @@ in
   imports = [ ../shared/configuration.nix ];
 
   home.packages = with pkgs; [
+    inputs.anyrun.packages.${pkgs.system}.anyrun
     openrgb-with-all-plugins
     openrazer-daemon
 

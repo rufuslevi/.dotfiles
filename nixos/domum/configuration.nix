@@ -32,7 +32,6 @@
   services = {
     printing.enable = true;
     openssh.ports = [ 22 443 2222 7422 ];
-    desktopManager.plasma6.enable = true;
     hardware.openrgb.enable = true;
   };
 

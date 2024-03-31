@@ -126,7 +126,6 @@
     eww
     tofi
     wofi
-    inputs.anyrun.packages.${pkgs.system}.anyrun
     xdg-utils
     xdg-ninja
     glib
