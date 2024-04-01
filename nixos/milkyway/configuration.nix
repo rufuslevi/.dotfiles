@@ -66,7 +66,6 @@
       "guest ok" = "yes";
       "create mask" = "0644";
       "directory mask" = "0755";
-      "force user" = "rufuslevi";
     };
     series = {
       path = "/mnt/hitachi/Séries";
@@ -75,7 +74,6 @@
       "guest ok" = "yes";
       "create mask" = "0644";
       "directory mask" = "0755";
-      "force user" = "rufuslevi";
     };
   };
   services.plex = {
