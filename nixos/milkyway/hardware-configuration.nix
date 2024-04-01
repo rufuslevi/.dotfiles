@@ -27,13 +27,13 @@
 
   fileSystems."/mnt/toshiba" = {
     device = "/dev/disk/by-uuid/3e8963f9-4f99-4178-9aa8-0136b248b86f";
-    options = [ "rw" "users" ];
+    options = [ "rw" "users" "user" "exec" "umask=000" ];
     fsType = "ext4";
   };
 
   fileSystems."/mnt/hitachi" = {
     device = "/dev/disk/by-uuid/082ceb39-b73d-419b-a08d-ab136384a024";
-    options = [ "rw" "users" ];
+    options = [ "rw" "users" "user" "exec" "umask=000" ];
     fsType = "ext4";
   };
 
