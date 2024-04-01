@@ -26,12 +26,12 @@
   };
 
   fileSystems."/mnt/toshiba" = {
-    device = "/dev/disk/by-uuid/1F6705B1-29B6-454E-A685-69536FEB5BF2";
+    device = "/dev/disk/by-uuid/3e8963f9-4f99-4178-9aa8-0136b248b86f";
     fsType = "ext4";
   };
 
   fileSystems."/mnt/hitachi" = {
-    device = "/dev/disk/by-uuid/3173A2A8-A006-4BA7-9817-D5EBCD12BF82";
+    device = "/dev/disk/by-uuid/082ceb39-b73d-419b-a08d-ab136384a024";
     fsType = "ext4";
   };
 
