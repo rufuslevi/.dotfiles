@@ -58,6 +58,26 @@
   };
 
   services.openssh.ports = [ 22 443 2222 7422 ];
+  services.samba.shares = {
+    films = {
+      path = "/mnt/toshiba/Films";
+      browseable = "yes";
+      "read only" = "no";
+      "guest ok" = "yes";
+      "create mask" = "0644";
+      "directory mask" = "0755";
+      "force user" = "rufuslevi";
+    };
+    series = {
+      path = "/mnt/hitachi/Séries";
+      browseable = "yes";
+      "read only" = "no";
+      "guest ok" = "yes";
+      "create mask" = "0644";
+      "directory mask" = "0755";
+      "force user" = "rufuslevi";
+    };
+  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
