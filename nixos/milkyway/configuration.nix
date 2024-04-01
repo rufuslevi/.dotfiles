@@ -78,6 +78,10 @@
       "force user" = "rufuslevi";
     };
   };
+  services.plex = {
+    enable = true;
+    openFirewall = true;
+  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
