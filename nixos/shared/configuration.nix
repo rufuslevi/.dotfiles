@@ -114,7 +114,10 @@ in
     kdePackages.kio
     kdePackages.kio-fuse
     kdePackages.dolphin
-    kdePackages.partitionmanager
+    # kdePackages.partitionmanager
+    libsForQt5.partitionmanager
+    p11-kit
+    iftop
 
     # Git
     gitui
@@ -135,6 +138,7 @@ in
     ueberzug
 
     #Theming
+    volantes-cursors
     kdePackages.qtwebsockets
     kdePackages.qtwayland
     kdePackages.qtstyleplugin-kvantum
@@ -148,7 +152,6 @@ in
     libsForQt5.kwayland-integration
     qt6.qmake
     qt6.qtwayland
-    xorg.libxcb
     gsettings-desktop-schemas
 
     # Fonts
