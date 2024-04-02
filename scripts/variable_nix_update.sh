@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VARIABLES_FILE=./variables.nix
+VARIABLES_FILE=$HOME/.dotfiles/nix/nixos/variables.nix
 if grep -q "darkmode = true;" $VARIABLES_FILE; then
 	echo "Currently dark-mode. Switching to light-mode."
 	sed -i.bak 's/darkmode = true/darkmode = false/g' $VARIABLES_FILE

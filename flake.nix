@@ -85,7 +85,7 @@
             }
             home-manager.darwinModules.home-manager
             nix-homebrew.darwinModules.nix-homebrew
-            ./darwin/configuration.nix
+            ./nix/darwin/configuration.nix
           ];
         };
       };
@@ -94,16 +94,16 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-          ./nixos/configuration.nix
-          ./nixos/domum/hardware-configuration.nix
-          ./nixos/domum/configuration.nix
+          ./nix/nixos/configuration.nix
+          ./nix/nixos/domum/hardware-configuration.nix
+          ./nix/nixos/domum/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager = {
               extraSpecialArgs = { inherit inputs; };
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.rufuslevi = import ./nixos/domum/home.nix;
+              users.rufuslevi = import ./nix/nixos/domum/home.nix;
             };
           }
         ];
@@ -113,16 +113,16 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-          ./nixos/configuration.nix
-          ./nixos/milkyway/hardware-configuration.nix
-          ./nixos/milkyway/configuration.nix
+          ./nix/nixos/configuration.nix
+          ./nix/nixos/milkyway/hardware-configuration.nix
+          ./nix/nixos/milkyway/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager = {
               extraSpecialArgs = { inherit inputs; };
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.rufuslevi = import ./nixos/milkyway/home.nix;
+              users.rufuslevi = import ./nix/nixos/milkyway/home.nix;
             };
           }
         ];
