@@ -112,22 +112,23 @@ in
       };
     };
     configFile = {
-      "tofi/config" = { source = ../../../tofi/config; };
-      "hypr/hypr.conf" = { source = ../../../hypr/hypr.conf; };
-      "waypaper/config.ini" = { source = ../../../waypaper/config.ini; };
       "scripts" = {
         source = ../../../scripts;
-        recursive = true;
-      };
-      "waybar" = {
-        source = ../../../waybar;
         recursive = true;
       };
       "zsh" = {
         source = ../../../zsh;
         recursive = true;
       };
+      "waybar" = {
+        source = ../../../waybar;
+        recursive = true;
+      };
+      "tofi/config" = { source = ../../../tofi/config; };
+      "hypr/hypr.conf" = { source = ../../../hypr/hypr.conf; };
+      "waypaper/config.ini" = { source = ../../../waypaper/config.ini; };
       "bat/config".text = "${bat_theme}";
+      # Theming
       "qt5ct/qt5ct.conf" = { source = qt5ct_conf; };
       "qt6ct/qt6ct.conf" = { source = qt6ct_conf; };
       "Kvantum/kvantum.kvconfig".text = kvantum_theme;

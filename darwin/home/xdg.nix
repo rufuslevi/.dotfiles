@@ -3,10 +3,14 @@
 {
   enable = true;
   configFile = {
-    "btop/btop.conf" = { source = ../../btop/btop.conf; };
+    "scripts" = {
+      source = ../../scripts;
+      recursive = true;
+    };
     "zsh" = {
       source = ../../zsh;
       recursive = true;
     };
+    "btop/btop.conf" = { source = ../../btop/btop.conf; };
   };
 }

@@ -45,9 +45,8 @@
     }@inputs:
     let
       user = "rufuslevi";
-      hostname = "luna";
       system = "aarch64-darwin";
-      specialArgs = { inherit user hostname; };
+      specialArgs = { inherit user nixpkgsDarwinConfig; };
 
       inherit (inputs.nixpkgs-unstable.lib)
         attrValues makeOverridable optionalAttrs singleton;
@@ -81,24 +80,12 @@
         luna = darwin.lib.darwinSystem {
           inherit system specialArgs;
           modules = [
-            ./darwin/configuration.nix
-            home-manager.darwinModules.home-manager
             {
               nixpkgs = nixpkgsDarwinConfig;
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.rufuslevi =
-                import ./darwin/home/configuration.nix;
             }
+            home-manager.darwinModules.home-manager
             nix-homebrew.darwinModules.nix-homebrew
-            {
-              nix-homebrew = {
-                enable = true;
-                enableRosetta = true;
-                user = user;
-                autoMigrate = true;
-              };
-            }
+            ./darwin/configuration.nix
           ];
         };
       };

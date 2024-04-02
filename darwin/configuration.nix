@@ -1,10 +1,6 @@
-{ config, pkgs, lib, home-manager, ... }:
+{ user, pkgs, ... }:
 
-let user = "rufuslevi";
-in {
-  # Auto upgrade nix package and the daemon service.
-  services.nix-daemon.enable = true;
-
+{
   nix = {
     settings = { experimental-features = "nix-command flakes"; };
     extraOptions = ''
@@ -20,17 +16,34 @@ in {
     };
   };
 
+  nix-homebrew = {
+    enable = true;
+    enableRosetta = true;
+    user = user;
+    autoMigrate = true;
+  };
+
+  home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    users.${user}.imports = [ ./home/configuration.nix ];
+  };
+
+  networking = { hostName = "luna"; };
+
+  # Auto upgrade nix package and the daemon service.
+  services.nix-daemon.enable = true;
   security.pam.enableSudoTouchIdAuth = true;
 
   users.users.${user} = {
     name = "${user}";
-    home = "/Users/${user}";
+    home = "/Users/${user}/";
     isHidden = false;
-    shell = pkgs.zsh;
+    shell = "zsh";
   };
 
-  networking = { hostName = "luna"; };
   homebrew = { } // import ./brew.nix { };
+  programs.zsh.enable = true;
 
   system.stateVersion = 4;
 }
