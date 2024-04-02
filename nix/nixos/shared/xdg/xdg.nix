@@ -4,14 +4,14 @@ let
   dconf_color = if config.darkmode then "prefer-dark" else "prefer-light";
   qt5ct_conf =
     if config.darkmode then
-      ../../../themes/qt5ct_dark.conf
+      ../../../../themes/qt5ct_dark.conf
     else
-      ../../../themes/qt5ct_light.conf;
+      ../../../../themes/qt5ct_light.conf;
   qt6ct_conf =
     if config.darkmode then
-      ../../../themes/qt6ct_dark.conf
+      ../../../../themes/qt6ct_dark.conf
     else
-      ../../../themes/qt6ct_light.conf;
+      ../../../../themes/qt6ct_light.conf;
   kvantum_theme =
     if config.darkmode then ''
       [General]
@@ -113,31 +113,31 @@ in
     };
     configFile = {
       "scripts" = {
-        source = ../../../scripts;
+        source = ../../../../scripts;
         recursive = true;
       };
       "zsh" = {
-        source = ../../../zsh;
+        source = ../../../../zsh;
         recursive = true;
       };
       "waybar" = {
-        source = ../../../waybar;
+        source = ../../../../waybar;
         recursive = true;
       };
-      "tofi/config" = { source = ../../../tofi/config; };
-      "hypr/hypr.conf" = { source = ../../../hypr/hypr.conf; };
-      "waypaper/config.ini" = { source = ../../../waypaper/config.ini; };
+      "tofi/config" = { source = ../../../../tofi/config; };
+      "hypr/hypr.conf" = { source = ../../../../hypr/hypr.conf; };
+      "waypaper/config.ini" = { source = ../../../../waypaper/config.ini; };
       "bat/config".text = "${bat_theme}";
       # Theming
       "qt5ct/qt5ct.conf" = { source = qt5ct_conf; };
       "qt6ct/qt6ct.conf" = { source = qt6ct_conf; };
       "Kvantum/kvantum.kvconfig".text = kvantum_theme;
       "Kvantum/gruvbox-kvantum" = {
-        source = ../../../themes/gruvbox-kvantum;
+        source = ../../../../themes/gruvbox-kvantum;
         recursive = true;
       };
       "Kvantum/GraphiteNord-rimless" = {
-        source = ../../../themes/GraphiteNord-rimless;
+        source = ../../../../themes/GraphiteNord-rimless;
         recursive = true;
       };
     };
