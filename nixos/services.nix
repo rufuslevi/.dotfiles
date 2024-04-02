@@ -47,9 +47,6 @@
   gvfs = { enable = true; };
   openssh = {
     enable = true;
-    settings = {
-      passwordAuthentification = false;
-
-    };
+    settings = { PasswordAuthentication = false; };
   };
 }
