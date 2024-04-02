@@ -11,10 +11,6 @@ with pkgs; [
   atkinson-hyperlegible
   font-awesome
 
-  # Desktop tools
-  skhd
-  yabai
-
   # TUI tools
   neofetch
   btop
@@ -44,5 +40,6 @@ with pkgs; [
   nil
   nixfmt
   nixpkgs-fmt
+  rust-analyzer
 ]
 
