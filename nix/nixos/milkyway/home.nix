@@ -1,6 +1,6 @@
 { config, pkgs, lib, inputs, ... }:
 
 {
-  imports = [ ../shared/configuration.nix ];
+  imports = [ ../shared/dark_theme.nix ../shared/configuration.nix ];
 }
 
