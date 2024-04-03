@@ -88,7 +88,7 @@
         };
       };
 
-      nixosConfigurations.domum_light = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.domum-light = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
@@ -107,7 +107,7 @@
         ];
       };
 
-      nixosConfigurations.domum_dark = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.domum-dark = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
