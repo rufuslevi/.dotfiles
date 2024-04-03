@@ -34,9 +34,10 @@
       server string = smbnix
       netbios name = smbnix
       security = user 
+      securityType = "user"
       hosts allow = 192.168.0. 127.0.0.1 localhost
       hosts deny = 0.0.0.0/0
-      guest account = nobody
+      guest account = rufuslevi
       map to guest = bad user
     '';
   };
@@ -44,7 +45,9 @@
     enable = true;
     openFirewall = true;
   };
+  devmon.enable = true;
   gvfs = { enable = true; };
+  udisks2.enable = true;
   openssh = {
     enable = true;
     settings = { PasswordAuthentication = false; };

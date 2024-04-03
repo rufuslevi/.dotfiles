@@ -20,8 +20,8 @@
   networking.hostName = "milkyway";
   networking.firewall = {
     enable = true;
-    allowedTCPPorts = [ 80 443 ];
-    allowedUDPPorts = [ 34197 ];
+    allowedTCPPorts = [ 80 139 443 445 ];
+    allowedUDPPorts = [ 137 138 34197 ];
   };
 
   nixpkgs.config.nvidia.acceptLicense = true;
@@ -60,25 +60,29 @@
   services.openssh.ports = [ 22 443 2222 7422 ];
   services.samba.shares = {
     films = {
-      path = "/mnt/toshiba/Films";
+      path = "/mnt/toshiba";
       browseable = "yes";
       "read only" = "no";
       "guest ok" = "yes";
-      "create mask" = "0644";
-      "directory mask" = "0755";
     };
     series = {
-      path = "/mnt/hitachi/Séries";
+      path = "/mnt/hitachi";
       browseable = "yes";
       "read only" = "no";
       "guest ok" = "yes";
-      "create mask" = "0644";
-      "directory mask" = "0755";
     };
   };
   services.plex = {
     enable = true;
     openFirewall = true;
+    user = "plex";
+    group = "plex";
+  };
+
+  services.jellyfin = {
+    enable = true;
+    openFirewall = true;
+    user = "jellyfin";
   };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

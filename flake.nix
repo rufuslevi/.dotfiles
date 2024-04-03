@@ -80,9 +80,7 @@
         luna = darwin.lib.darwinSystem {
           inherit system specialArgs;
           modules = [
-            {
-              nixpkgs = nixpkgsDarwinConfig;
-            }
+            { nixpkgs = nixpkgsDarwinConfig; }
             home-manager.darwinModules.home-manager
             nix-homebrew.darwinModules.nix-homebrew
             ./nix/darwin/configuration.nix
@@ -90,7 +88,7 @@
         };
       };
 
-      nixosConfigurations.domum = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.domum-light = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
@@ -103,7 +101,26 @@
               extraSpecialArgs = { inherit inputs; };
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.rufuslevi = import ./nix/nixos/domum/home.nix;
+              users.rufuslevi = import ./nix/nixos/domum/theme_light.nix;
+            };
+          }
+        ];
+      };
+
+      nixosConfigurations.domum-dark = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./nix/nixos/configuration.nix
+          ./nix/nixos/domum/hardware-configuration.nix
+          ./nix/nixos/domum/configuration.nix
+          home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              extraSpecialArgs = { inherit inputs; };
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              users.rufuslevi = import ./nix/nixos/domum/theme_dark.nix;
             };
           }
         ];

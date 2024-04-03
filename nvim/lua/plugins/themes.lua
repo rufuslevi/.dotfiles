@@ -153,30 +153,33 @@ return {
     "f-person/auto-dark-mode.nvim",
     enabled = true,
     config = function()
+      local set_dark_mode = function()
+        vim.api.nvim_set_option("background", "dark")
+        vim.cmd("colorscheme gruvbox")
+
+        require("lualine").setup({
+          options = {
+            theme = "gruvbox_dark",
+          },
+        })
+      end
+      local set_light_mode = function()
+        vim.api.nvim_set_option("background", "light")
+        vim.cmd("colorscheme rose-pine-dawn")
+
+        require("lualine").setup({
+          options = {
+            theme = "rose-pine",
+          },
+        })
+      end
       require("auto-dark-mode").setup({
         update_interval = 1000,
-        set_dark_mode = function()
-          vim.api.nvim_set_option("background", "dark")
-          vim.cmd("colorscheme gruvbox")
-
-          require("lualine").setup({
-            options = {
-              theme = "gruvbox_dark",
-            },
-          })
-        end,
-        set_light_mode = function()
-          vim.api.nvim_set_option("background", "light")
-          vim.cmd("colorscheme rose-pine-dawn")
-
-          require("lualine").setup({
-            options = {
-              theme = "rose-pine",
-            },
-          })
-        end,
+        set_dark_mode = set_dark_mode,
+        set_light_mode = set_light_mode,
       })
       require("auto-dark-mode").init()
+      set_dark_mode()
     end,
   },
 }

@@ -1,29 +1,9 @@
 { config, pkgs, lib, inputs, ... }:
 
-let
-  dconf_color = if config.darkmode then "prefer-dark" else "prefer-light";
-  gtk_theme =
-    if config.darkmode then {
-      name = "Gruvbox Dark";
-      package = pkgs.gruvbox-dark-gtk;
-    } else {
-      name = "rose-pine-dawn";
-      package = pkgs.rose-pine-gtk-theme;
-    };
-in
 {
-  imports = [ ../variables.nix ./xdg/xdg.nix ];
-
   home.username = "rufuslevi";
   home.homeDirectory = "/home/rufuslevi";
   home.stateVersion = "23.11";
-
-  dconf = {
-    settings = {
-      "org/gnome/desktop/wm/preferences".button-layout = "";
-      "org/gnome/desktop/interface" = { color-scheme = dconf_color; };
-    };
-  };
 
   wayland.windowManager.hyprland = {
     enable = true;
@@ -67,7 +47,6 @@ in
 
   gtk = {
     enable = true;
-    theme = gtk_theme;
     cursorTheme = {
       name = "volantes_cursors";
       package = pkgs.volantes-cursors;
@@ -83,6 +62,17 @@ in
     enable = true;
     platformTheme = "qtct";
     style = { name = "kvantum"; };
+  };
+
+  xdg = { } // import ./xdg.nix { inherit config; };
+  programs = { } // import ./programs.nix { inherit pkgs; };
+
+  home.activation = {
+    # https://github.com/philj56/tofi/issues/115#issuecomment-1701748297
+    regenerateTofiCache = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+      tofi_cache=${config.xdg.cacheHome}/tofi-drun
+      [[ -f "$tofi_cache" ]] && rm "$tofi_cache"
+    '';
   };
 
   home.packages = with pkgs; [
@@ -136,6 +126,7 @@ in
     w3m
     libcaca
     ueberzug
+    cifs-utils
 
     #Theming
     volantes-cursors
@@ -180,14 +171,5 @@ in
     taplo
   ];
 
-  programs = { } // import ./programs.nix { inherit pkgs; };
-
-  home.activation = {
-    # https://github.com/philj56/tofi/issues/115#issuecomment-1701748297
-    regenerateTofiCache = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-      tofi_cache=${config.xdg.cacheHome}/tofi-drun
-      [[ -f "$tofi_cache" ]] && rm "$tofi_cache"
-    '';
-  };
 }
 
