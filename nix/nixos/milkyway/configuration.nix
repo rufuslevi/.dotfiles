@@ -57,7 +57,10 @@
     package = config.boot.kernelPackages.nvidiaPackages.legacy_340;
   };
 
+  services.xserver.videoDrivers = [ "nvidiaLegacy340" ];
+
   services.openssh.ports = [ 22 443 2222 7422 ];
+
   services.samba.shares = {
     films = {
       path = "/mnt/toshiba";
@@ -71,12 +74,6 @@
       "read only" = "no";
       "guest ok" = "yes";
     };
-  };
-  services.plex = {
-    enable = true;
-    openFirewall = true;
-    user = "plex";
-    group = "plex";
   };
 
   services.jellyfin = {
