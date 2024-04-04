@@ -33,6 +33,10 @@ tasks:
   starship:
     cmds:
       - stow -v -t ~/.config starship
+  waybar:
+    cmds:
+      - mkdir -p ~/.config/waybar
+      - stow -v -t ~/.config/waybar waybar
   wezterm:
     cmds:
       - mkdir -p ~/.config/wezterm
@@ -41,4 +45,3 @@ tasks:
     cmds:
       - mkdir -p ~/.config/tmux
       - stow -v -t ~/.config/tmux tmux
-
