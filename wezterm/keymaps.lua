@@ -2,6 +2,16 @@ local workspaceHandler = require("workspace")
 
 local function getBase()
 	return {
+        {
+            key = 'c',
+            mods = 'SUPER',
+            action = Wezterm.action.CopyTo('ClipboardAndPrimarySelection'),
+        }, 
+        {
+            key = "v",
+            mods = "SUPER",
+            action = Wezterm.action.PasteFrom("Clipboard"),
+        },
 		{
 			key = "l",
 			mods = "LEADER",
