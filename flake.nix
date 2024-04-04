@@ -101,7 +101,7 @@
               extraSpecialArgs = { inherit inputs; };
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.rufuslevi = import ./nix/nixos/domum/theme_light.nix;
+              users.rufuslevi = import ./nix/nixos/domum/home_light.nix;
             };
           }
         ];
@@ -120,7 +120,7 @@
               extraSpecialArgs = { inherit inputs; };
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.rufuslevi = import ./nix/nixos/domum/theme_dark.nix;
+              users.rufuslevi = import ./nix/nixos/domum/home_dark.nix;
             };
           }
         ];
