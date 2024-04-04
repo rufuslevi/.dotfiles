@@ -78,6 +78,7 @@
   home.packages = with pkgs; [
     selectdefaultapplication
     kdePackages.qtimageformats
+    tmux
     speedtest-rs
     killall
     stow
