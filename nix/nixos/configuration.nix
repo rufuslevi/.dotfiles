@@ -80,7 +80,7 @@
       enable = true;
       extraPortals = [
         pkgs.xdg-desktop-portal
-        pkgs.xdg-desktop-portal-gtk
+        pkgs.kdePackages.xdg-desktop-portal-kde
         pkgs.xdg-desktop-portal-wlr
         pkgs.xdg-desktop-portal-hyprland
       ];
@@ -107,7 +107,6 @@
     libnotify
     dunst
     wl-clipboard
-    gnome.nautilus
     themechanger
     wezterm
     kitty

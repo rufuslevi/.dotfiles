@@ -173,13 +173,16 @@ return {
           },
         })
       end
-      require("auto-dark-mode").setup({
-        update_interval = 1000,
-        set_dark_mode = set_dark_mode,
-        set_light_mode = set_light_mode,
-      })
-      require("auto-dark-mode").init()
-      set_dark_mode()
+      if vim.fn.hostname() ~= "milkyway" then
+        require("auto-dark-mode").setup({
+          update_interval = 1000,
+          set_dark_mode = set_dark_mode,
+          set_light_mode = set_light_mode,
+        })
+        require("auto-dark-mode").init()
+      else
+        set_dark_mode()
+      end
     end,
   },
 }
