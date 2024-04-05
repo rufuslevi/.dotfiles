@@ -24,6 +24,7 @@
     libqalculate
 
     # CLI tools
+    yazi
     zoxide
     fzf
     ripgrep
@@ -33,6 +34,7 @@
     jq
     fd
     tree-sitter
+    bat
 
     # Languages
     lua

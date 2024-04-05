@@ -3,6 +3,8 @@ export ZSH="$HOME/.oh-my-zsh"
 if [ -f ~/.cargo/env ]; then
     . "$HOME/.cargo/env"
 fi
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH=/usr/share:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/opt/local/bin:$PATH

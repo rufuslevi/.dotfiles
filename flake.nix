@@ -14,35 +14,13 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
-    nix-homebrew = { url = "github:zhaofengli-wip/nix-homebrew"; };
-    homebrew-bundle = {
-      url = "github:homebrew/homebrew-bundle";
-      flake = false;
-    };
-    homebrew-core = {
-      url = "github:homebrew/homebrew-core";
-      flake = false;
-    };
-    homebrew-cask = {
-      url = "github:homebrew/homebrew-cask";
-      flake = false;
-    };
-
     anyrun = {
       url = "github:Kirottu/anyrun";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs =
-    { self
-    , darwin
-    , nixpkgs
-    , nixpkgs-darwin
-    , home-manager
-    , nix-homebrew
-    , ...
-    }@inputs:
+  outputs = { self, darwin, nixpkgs, nixpkgs-darwin, home-manager, ... }@inputs:
     let
       user = "rufuslevi";
       system = "aarch64-darwin";
@@ -82,7 +60,6 @@
           modules = [
             { nixpkgs = nixpkgsDarwinConfig; }
             home-manager.darwinModules.home-manager
-            nix-homebrew.darwinModules.nix-homebrew
             ./nix/darwin/configuration.nix
           ];
         };

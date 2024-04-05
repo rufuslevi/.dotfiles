@@ -1,4 +1,4 @@
-{ user, pkgs, ... }:
+{ user, pkgs, homebrew-core, homebrew-cask, ... }:
 
 {
   nix = {
@@ -14,13 +14,6 @@
       allowUnsupportdSystem = true;
       allowBroken = true;
     };
-  };
-
-  nix-homebrew = {
-    enable = true;
-    enableRosetta = true;
-    user = user;
-    autoMigrate = true;
   };
 
   home-manager = {
