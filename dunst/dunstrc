@@ -1,0 +1,50 @@
+[global]
+    origin = top-right
+    offset = 8x8
+    padding = 16
+    horizontal_padding = 16
+    min_icon_size = 64
+    text_icon_padding = 32
+    icon_corner_radius = 8
+    gap_size = 8
+    corner_radius = 8
+    line_height = 4
+    font = MonaspiceKr Nerd Font 10
+    separator_color= frame
+
+# gruvbox-dark
+[frame]
+    width = 1
+    color = "#fbf1c7"
+
+[urgency_low]
+    background = "#282828"
+    foreground = "#ebdbb2"
+    timeout = 5
+
+[urgency_normal]
+    background = "#282828"
+    foreground = "#ebdbb2"
+    timeout = 20
+
+[urgency_critical]
+    background = "#282828"
+    foreground = "#ebdbb2"
+    timeout = 0
+
+# Catppuccin mocha
+#[frame]
+#   color = "#89B4FA"
+#
+#[urgency_low]
+#   background = "#1E1E2E"
+#   foreground = "#CDD6F4"
+#   
+#[urgency_normal]
+#   background = "#1E1E2E"
+#   foreground = "#CDD6F4"
+#
+#[urgency_critical]
+#   background = "#1E1E2E"
+#   foreground = "#CDD6F4"
+#   frame_color = "#FAB387"

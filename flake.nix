@@ -20,7 +20,16 @@
     };
   };
 
-  outputs = { self, darwin, nixpkgs, nixpkgs-darwin, home-manager, ... }@inputs:
+  outputs =
+    { self
+    , anyrun
+    , darwin
+    , nixpkgs
+    , nixpkgs-darwin
+    , home-manager
+    , nix-homebrew
+    , ...
+    }@inputs:
     let
       user = "rufuslevi";
       system = "aarch64-darwin";
@@ -69,18 +78,22 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-          ./nix/nixos/configuration.nix
-          ./nix/nixos/domum/hardware-configuration.nix
-          ./nix/nixos/domum/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager = {
               extraSpecialArgs = { inherit inputs; };
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.rufuslevi = import ./nix/nixos/domum/home_light.nix;
+              users.rufuslevi = {
+                imports = [
+                  ./nix/nixos/domum/home/home.nix
+                  ./nix/nixos/shared/home/light_theme.nix
+                  anyrun.homeManagerModules.anyrun
+                ];
+              };
             };
           }
+          ./nix/nixos/domum/configuration.nix
         ];
       };
 
@@ -88,18 +101,22 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-          ./nix/nixos/configuration.nix
-          ./nix/nixos/domum/hardware-configuration.nix
-          ./nix/nixos/domum/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager = {
-              extraSpecialArgs = { inherit inputs; };
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.rufuslevi = import ./nix/nixos/domum/home_dark.nix;
+              extraSpecialArgs = { inherit inputs; };
+              users.rufuslevi = {
+                imports = [
+                  ./nix/nixos/domum/home/home.nix
+                  ./nix/nixos/shared/home/dark_theme.nix
+                  anyrun.homeManagerModules.anyrun
+                ];
+              };
             };
           }
+          ./nix/nixos/domum/configuration.nix
         ];
       };
 
@@ -107,18 +124,8 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-          ./nix/nixos/configuration.nix
-          ./nix/nixos/milkyway/hardware-configuration.nix
-          ./nix/nixos/milkyway/configuration.nix
           home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              extraSpecialArgs = { inherit inputs; };
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              users.rufuslevi = import ./nix/nixos/milkyway/home.nix;
-            };
-          }
+          ./nix/nixos/milkyway/configuration.nix
         ];
       };
     };

@@ -2,9 +2,24 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ inputs, pkgs, lib, ... }:
+{ pkgs, ... }:
 
 {
+  imports = [ ./hardware-configuration.nix ../shared/configuration.nix ];
+
+  hardware = import ./hardware.nix { };
+  services = import ./services.nix { };
+  programs = import ./programs.nix { };
+  environment.systemPackages = import ./packages.nix { inherit pkgs; };
+
+  nix.settings = {
+    builders-use-substitutes = true;
+    substituters = [ "https://anyrun.cachix.org" ];
+
+    trusted-public-keys =
+      [ "anyrun.cachix.org-1:pqBobmOjI7nKlsUMV25u9QHa9btJK65/C8vnO3p346s=" ];
+  };
+
   boot.loader = {
     systemd-boot.enable = false;
     efi.canTouchEfiVariables = true;
@@ -24,29 +39,6 @@
     firewall = {
       enable = true;
       allowedTCPPorts = [ 80 443 ];
-    };
-  };
-
-  hardware = { openrazer.enable = true; };
-
-  services = {
-    printing.enable = true;
-    desktopManager.plasma6.enable = true;
-    openssh.ports = [ 22 443 2222 7422 ];
-    hardware.openrgb.enable = true;
-  };
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [ ];
-
-  programs = {
-    steam = {
-      enable = true;
-      remotePlay.openFirewall =
-        true; # Open ports in the firewall for Steam Remote Play
-      dedicatedServer.openFirewall =
-        true; # Open ports in the firewall for Source Dedicated Server
     };
   };
 }

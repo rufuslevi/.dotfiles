@@ -1,177 +1,76 @@
-{ config, pkgs, lib, inputs, ... }:
+# Edit this configuration file to define what should be installed on
+# your system.  Help is available in the configuration.nix(5) man page
+# and in the NixOS manual (accessible by running ‘nixos-help’).
+
+{ pkgs, ... }:
 
 {
-  home.username = "rufuslevi";
-  home.homeDirectory = "/home/rufuslevi";
-  home.stateVersion = "23.11";
+  hardware = import ./hardware.nix { inherit pkgs; };
+  xdg = import ./xdg.nix { inherit pkgs; };
+  services = import ./services.nix { };
+  programs = import ./programs.nix { inherit pkgs; };
+  environment.systemPackages = import ./packages.nix { inherit pkgs; };
 
-  wayland.windowManager.hyprland = {
-    enable = true;
-    extraConfig = ''
-      source = ~/.config/hypr/hypr.conf
-      source = ~/.config/hypr/test-hypr.conf
-    '';
+  nixpkgs.config.allowUnfree = true;
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  networking = {
+    networkmanager.enable = true;
+    defaultGateway = "192.168.0.1";
   };
 
-  services = {
-    gammastep = {
-      enable = true;
-      provider = "manual";
-      latitude = 45.50884;
-      longitude = -73.58781;
-    };
-    darkman = {
-      enable = true;
-      settings = {
-        lat = 45.5;
-        lng = -73.6;
-        usegeoclue = true;
-      };
-      lightModeScripts = {
-        darkman = ''
-          ~/.config/scripts/variable_nix_light.sh
-        '';
-      };
-      darkModeScripts = {
-        darkman = ''
-          ~/.config/scripts/variable_nix_dark.sh
-        '';
-      };
-    };
-    playerctld = { enable = true; };
-    flameshot = {
-      enable = false;
-      settings = { General = { showStartupLaunchMessage = false; }; };
+  time.timeZone = "America/New_York";
+
+  i18n = {
+    defaultLocale = "fr_CA.UTF-8";
+    extraLocaleSettings = {
+      LC_ADDRESS = "fr_CA.UTF-8";
+      LC_IDENTIFICATION = "fr_CA.UTF-8";
+      LC_MEASUREMENT = "fr_CA.UTF-8";
+      LC_MONETARY = "fr_CA.UTF-8";
+      LC_NAME = "fr_CA.UTF-8";
+      LC_NUMERIC = "fr_CA.UTF-8";
+      LC_PAPER = "fr_CA.UTF-8";
+      LC_TELEPHONE = "fr_CA.UTF-8";
+      LC_TIME = "fr_CA.UTF-8";
     };
   };
 
-  gtk = {
-    enable = true;
-    cursorTheme = {
-      name = "volantes_cursors";
-      package = pkgs.volantes-cursors;
-      size = 24;
-    };
-    iconTheme = {
-      name = "Breeze";
-      package = pkgs.kdePackages.breeze-gtk;
+  console.keyMap = "cf";
+
+  users = {
+    defaultUserShell = pkgs.zsh;
+    users.rufuslevi = {
+      isNormalUser = true;
+      description = "Michael Roussel";
+      extraGroups = [ "networkmanager" "wheel" "video" "render" ];
     };
   };
 
-  qt = {
-    enable = true;
-    platformTheme = "qtct";
-    style = { name = "kvantum"; };
+  security = {
+    rtkit.enable = true;
+    polkit.enable = true;
   };
 
-  xdg = { } // import ./xdg.nix { inherit config; };
-  programs = { } // import ./programs.nix { inherit pkgs; };
-
-  home.activation = {
-    # https://github.com/philj56/tofi/issues/115#issuecomment-1701748297
-    regenerateTofiCache = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-      tofi_cache=${config.xdg.cacheHome}/tofi-drun
-      [[ -f "$tofi_cache" ]] && rm "$tofi_cache"
-    '';
+  systemd = {
+    sockets.mpd.listenStreams = [ "/run/mpd/socket" ];
+    services.mpd.environment = { XDG_RUNTIME_DIR = "/run/user/1000"; };
   };
 
-  home.packages = with pkgs; [
-    selectdefaultapplication
-    kdePackages.qtimageformats
-    tmux
-    speedtest-rs
-    killall
-    stow
-    fuse3
-    jq
-    zoxide
-    cargo
-    rustc
-    tree-sitter
-    nodejs_21
-    fd
-    lua
-    eza
-    gcc
-    lxqt.lxqt-policykit
-    ripgrep
-    libqalculate
-    youtube-tui
-    mpv
-    vlc
-    qbittorrent
-    onedrive
+  sound.enable = true;
 
-    # KDE Tools
-    kdePackages.kio
-    kdePackages.kio-fuse
-    kdePackages.dolphin
-    # kdePackages.partitionmanager
-    libsForQt5.partitionmanager
-    p11-kit
-    iftop
+  fonts.packages = with pkgs;
+    [
+      (nerdfonts.override {
+        fonts = [ "Monaspace" "SourceCodePro" "CascadiaCode" ];
+      })
+    ];
 
-    # Git
-    gitui
-    lazygit
-    gh
-
-    dex
-    krabby
-    qpwgraph
-    helvum
-    swww
-    waypaper
-    wlogout
-    cliphist
-    at-spi2-atk
-    w3m
-    libcaca
-    ueberzug
-    cifs-utils
-
-    #Theming
-    volantes-cursors
-    kdePackages.qtwebsockets
-    kdePackages.qtwayland
-    kdePackages.qtstyleplugin-kvantum
-    kdePackages.qt6gtk2
-    kdePackages.qt6ct
-    libsForQt5.systemsettings
-    libsForQt5.qt5ct
-    libsForQt5.qt5.qtwayland
-    libsForQt5.qtstyleplugin-kvantum
-    libsForQt5.qtstyleplugins
-    libsForQt5.kwayland-integration
-    qt6.qmake
-    qt6.qtwayland
-    gsettings-desktop-schemas
-
-    # Fonts
-    atkinson-hyperlegible
-    font-awesome
-
-    clipman
-    lua54Packages.jsregexp
-    llvmPackages_17.clang-unwrapped
-    grimblast
-    lua-language-server
-    stylua
-    jdt-language-server
-    marksman
-    rust-analyzer
-    nil
-    nixfmt
-    nixpkgs-fmt
-    nixpkgs-lint
-    go
-    gopls
-    python312
-    python312Packages.pip
-    python312Packages.pillow
-    shfmt
-    taplo
-  ];
-
+  # This value determines the NixOS release from which the default
+  # settings for stateful data, like file locations and database versions
+  # on your system were taken. It‘s perfectly fine and recommended to leave
+  # this value at the release version of the first install of this system.
+  # Before changing this value read the documentation for this option
+  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
+  system.stateVersion = "23.11"; # Did you read the comment?
 }
-

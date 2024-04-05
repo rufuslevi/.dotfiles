@@ -1,4 +1,4 @@
-{ inputs, pkgs, lib, ... }:
+{ lib, pkgs, ... }:
 
 let
   extra-path = with pkgs; [
@@ -33,28 +33,7 @@ let
   });
 in
 {
-  imports = [ ../shared/configuration.nix ];
-
-  home.packages = with pkgs; [
-    inputs.anyrun.packages.${pkgs.system}.anyrun
-    openrgb-with-all-plugins
-    openrazer-daemon
-
-    guake
-    brave
-    obsidian
-    cider
-    webcord
-    caprine-bin
-    bitwarden-desktop
-
-    rider
-    jetbrains.clion
-    jetbrains.idea-ultimate
-    unityhub
-    dotnet-sdk_7
-  ];
-
+  home.packages = [ rider ];
   home.file = {
     ".local/share/applications/jetbrains-rider.desktop".source =
       let

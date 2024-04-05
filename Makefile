@@ -26,3 +26,4 @@ rebuild-domum-dark:
 
 copy-grub-theme:
 	sudo cp -r -u ./grub/hyperfluent /boot/grub/themes
+

@@ -1,0 +1,43 @@
+{ pkgs, ... }:
+
+with pkgs; [
+  exfat
+  gnome.gvfs
+  unzip
+  man-pages
+  man-pages-posix
+  udiskie
+  cmake
+  gnumake
+  os-prober
+  wget
+  neofetch
+  btop
+  gparted
+  vim
+  libnotify
+  dunst
+  wl-clipboard
+  themechanger
+  wezterm
+  kitty
+  pavucontrol
+  pwvucontrol
+  playerctl
+  brightnessctl
+  bluetuith
+  librewolf
+  vivaldi
+  kate
+  yazi
+  go-task
+  hyprland-protocols
+  hyprpicker
+  hyprpaper
+  eww
+  tofi
+  wofi
+  xdg-utils
+  xdg-ninja
+  glib
+]
