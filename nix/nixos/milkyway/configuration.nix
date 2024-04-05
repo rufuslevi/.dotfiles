@@ -63,7 +63,7 @@
     extraSpecialArgs = { inherit inputs; };
     useGlobalPkgs = true;
     useUserPackages = true;
-    users.rufuslevi = import ./nix/nixos/milkyway/home.nix;
+    users.rufuslevi = import ./home.nix;
   };
 
   services.xserver.videoDrivers = [ "nvidiaLegacy340" ];
