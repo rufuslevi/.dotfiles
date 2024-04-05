@@ -2,9 +2,17 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ inputs, pkgs, lib, ... }:
+{ pkgs, ... }:
 
 {
+  nix.settings = {
+    builders-use-substitutes = true;
+    substituters = [ "https://anyrun.cachix.org" ];
+
+    trusted-public-keys =
+      [ "anyrun.cachix.org-1:pqBobmOjI7nKlsUMV25u9QHa9btJK65/C8vnO3p346s=" ];
+  };
+
   boot.loader = {
     systemd-boot.enable = false;
     efi.canTouchEfiVariables = true;

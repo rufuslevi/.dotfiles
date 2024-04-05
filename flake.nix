@@ -36,6 +36,7 @@
 
   outputs =
     { self
+    , anyrun
     , darwin
     , nixpkgs
     , nixpkgs-darwin
@@ -101,7 +102,9 @@
               extraSpecialArgs = { inherit inputs; };
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.rufuslevi = import ./nix/nixos/domum/home_light.nix;
+              users.rufuslevi = {
+                imports = [ ./nix/nixos/domum/home_light.nix ];
+              };
             };
           }
         ];
@@ -117,10 +120,16 @@
           home-manager.nixosModules.home-manager
           {
             home-manager = {
-              extraSpecialArgs = { inherit inputs; };
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.rufuslevi = import ./nix/nixos/domum/home_dark.nix;
+              extraSpecialArgs = { inherit inputs; };
+              users.rufuslevi = {
+                imports = [
+                  ./nix/nixos/domum/home.nix
+                  ./nix/nixos/shared/dark_theme.nix
+                  anyrun.homeManagerModules.anyrun # Import the anyrun home-manager module
+                ];
+              };
             };
           }
         ];
