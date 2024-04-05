@@ -101,7 +101,7 @@
               useUserPackages = true;
               users.rufuslevi = {
                 imports = [
-                  ./nix/nixos/domum/home.nix
+                  ./nix/nixos/domum/home/home.nix
                   ./nix/nixos/shared/home/light_theme.nix
                   anyrun.homeManagerModules.anyrun
                 ];
@@ -124,7 +124,7 @@
               extraSpecialArgs = { inherit inputs; };
               users.rufuslevi = {
                 imports = [
-                  ./nix/nixos/domum/home.nix
+                  ./nix/nixos/domum/home/home.nix
                   ./nix/nixos/shared/home/dark_theme.nix
                   anyrun.homeManagerModules.anyrun
                 ];

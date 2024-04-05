@@ -1,4 +1,4 @@
-{ inputs, pkgs, lib, ... }:
+{ lib, pkgs, ... }:
 
 let
   extra-path = with pkgs; [
@@ -33,49 +33,7 @@ let
   });
 in
 {
-  imports = [ ../shared/home/home.nix ];
-
-  programs.anyrun = {
-    enable = false;
-    config = {
-      plugins = [
-        inputs.anyrun.packages.${pkgs.system}.applications
-        "${
-          inputs.anyrun.packages.${pkgs.system}.anyrun-with-all-plugins
-        }/lib/kidex"
-      ];
-      x = { fraction = 0.5; };
-      y = { fraction = 0.3; };
-      width = { fraction = 0.3; };
-      hideIcons = false;
-      ignoreExclusiveZones = false;
-      layer = "overlay";
-      hidePluginInfo = false;
-      closeOnClick = false;
-      showResultsImmediately = false;
-      maxEntries = null;
-    };
-  };
-
-  home.packages = with pkgs; [
-    openrgb-with-all-plugins
-    openrazer-daemon
-
-    guake
-    brave
-    obsidian
-    cider
-    webcord
-    caprine-bin
-    bitwarden-desktop
-
-    rider
-    jetbrains.clion
-    jetbrains.idea-ultimate
-    unityhub
-    dotnet-sdk_7
-  ];
-
+  home.packages = [ rider ];
   home.file = {
     ".local/share/applications/jetbrains-rider.desktop".source =
       let
