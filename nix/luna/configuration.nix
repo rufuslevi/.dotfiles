@@ -1,4 +1,4 @@
-{ user, pkgs, homebrew-core, homebrew-cask, ... }:
+{ user, pkgs, ... }:
 
 {
   homebrew = import ./brew.nix { };
@@ -7,7 +7,7 @@
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    users.${user}.imports = [ ./home/configuration.nix ];
+    users.${user}.imports = [ ./home/home.nix ];
   };
 
   nix = {
@@ -36,6 +36,17 @@
     home = "/Users/${user}/";
     isHidden = false;
     shell = "zsh";
+  };
+
+  fonts = {
+    fontDir.enable = true;
+    fonts = with pkgs;
+      [
+        (nerdfonts.override {
+          fonts = [ "Monaspace" "SourceCodePro" "CascadiaCode" ];
+        })
+
+      ];
   };
 
   system.stateVersion = 4;

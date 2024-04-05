@@ -9,6 +9,9 @@
     "sigmaos"
     "vivaldi"
     "miniconda"
+    "blender"
+    "openrgb"
+    "tomatobar"
   ];
   brews =
     [ "borders" "koekeishiya/formulae/yabai" "koekeishiya/formulae/skhd" ];

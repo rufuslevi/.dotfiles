@@ -6,6 +6,10 @@ with pkgs; [
   obsidian
   vscodium
   wezterm
+  utm
+
+  # GUI tools
+  raycast
 
   # Fonts
   atkinson-hyperlegible
@@ -29,6 +33,7 @@ with pkgs; [
   fd
   tree-sitter
   bat
+  git-credential-manager
 
   # Languages
   lua
