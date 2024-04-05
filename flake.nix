@@ -21,15 +21,7 @@
   };
 
   outputs =
-    { self
-    , anyrun
-    , darwin
-    , nixpkgs
-    , nixpkgs-darwin
-    , home-manager
-    , nix-homebrew
-    , ...
-    }@inputs:
+    { self, anyrun, darwin, nixpkgs, nixpkgs-darwin, home-manager, ... }@inputs:
     let
       user = "rufuslevi";
       system = "aarch64-darwin";
