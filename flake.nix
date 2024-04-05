@@ -93,9 +93,6 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-          ./nix/nixos/configuration.nix
-          ./nix/nixos/domum/hardware-configuration.nix
-          ./nix/nixos/domum/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager = {
@@ -103,10 +100,15 @@
               useGlobalPkgs = true;
               useUserPackages = true;
               users.rufuslevi = {
-                imports = [ ./nix/nixos/domum/home_light.nix ];
+                imports = [
+                  ./nix/nixos/domum/home.nix
+                  ./nix/nixos/shared/light_theme.nix
+                  anyrun.homeManagerModules.anyrun
+                ];
               };
             };
           }
+          ./nix/nixos/domum/configuration.nix
         ];
       };
 
@@ -114,9 +116,6 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-          ./nix/nixos/configuration.nix
-          ./nix/nixos/domum/hardware-configuration.nix
-          ./nix/nixos/domum/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager = {
@@ -127,11 +126,12 @@
                 imports = [
                   ./nix/nixos/domum/home.nix
                   ./nix/nixos/shared/dark_theme.nix
-                  anyrun.homeManagerModules.anyrun # Import the anyrun home-manager module
+                  anyrun.homeManagerModules.anyrun
                 ];
               };
             };
           }
+          ./nix/nixos/domum/configuration.nix
         ];
       };
 
@@ -139,18 +139,8 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
-          ./nix/nixos/configuration.nix
-          ./nix/nixos/milkyway/hardware-configuration.nix
-          ./nix/nixos/milkyway/configuration.nix
           home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              extraSpecialArgs = { inherit inputs; };
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              users.rufuslevi = import ./nix/nixos/milkyway/home.nix;
-            };
-          }
+          ./nix/nixos/milkyway/configuration.nix
         ];
       };
     };

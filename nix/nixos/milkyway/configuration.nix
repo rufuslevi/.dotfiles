@@ -5,6 +5,8 @@
 { config, inputs, pkgs, ... }:
 
 {
+  imports = [ ./hardware-configuration.nix ../configuration.nix ];
+
   boot.loader = {
     systemd-boot.enable = false;
     efi.canTouchEfiVariables = true;
@@ -85,4 +87,11 @@
   programs = { nix-ld.libraries = with pkgs; [ libnvidia-container ]; };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    users.rufuslevi = import ./nix/nixos/milkyway/home.nix;
+  };
 }

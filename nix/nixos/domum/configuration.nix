@@ -5,6 +5,8 @@
 { pkgs, ... }:
 
 {
+  imports = [ ../configuration.nix ./hardware-configuration.nix ];
+
   nix.settings = {
     builders-use-substitutes = true;
     substituters = [ "https://anyrun.cachix.org" ];
