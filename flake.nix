@@ -61,7 +61,7 @@
           modules = [
             { nixpkgs = nixpkgsDarwinConfig; }
             home-manager.darwinModules.home-manager
-            ./nix/darwin/configuration.nix
+            ./nix/luna/configuration.nix
           ];
         };
       };
