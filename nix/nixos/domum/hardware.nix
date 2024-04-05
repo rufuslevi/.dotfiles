@@ -1,0 +1,5 @@
+{ ... }:
+
+{
+  openrazer.enable = true;
+}

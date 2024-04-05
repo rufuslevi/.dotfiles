@@ -7,6 +7,11 @@
 {
   imports = [ ./hardware-configuration.nix ../shared/configuration.nix ];
 
+  hardware = import ./hardware.nix { };
+  services = import ./services.nix { };
+  programs = import ./programs.nix { };
+  environment.systemPackages = import ./packages.nix { inherit pkgs; };
+
   nix.settings = {
     builders-use-substitutes = true;
     substituters = [ "https://anyrun.cachix.org" ];
@@ -34,29 +39,6 @@
     firewall = {
       enable = true;
       allowedTCPPorts = [ 80 443 ];
-    };
-  };
-
-  hardware = { openrazer.enable = true; };
-
-  services = {
-    printing.enable = true;
-    desktopManager.plasma6.enable = true;
-    openssh.ports = [ 22 443 2222 7422 ];
-    hardware.openrgb.enable = true;
-  };
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [ ];
-
-  programs = {
-    steam = {
-      enable = true;
-      remotePlay.openFirewall =
-        true; # Open ports in the firewall for Steam Remote Play
-      dedicatedServer.openFirewall =
-        true; # Open ports in the firewall for Source Dedicated Server
     };
   };
 }
