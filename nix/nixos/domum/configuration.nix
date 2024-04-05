@@ -5,7 +5,7 @@
 { pkgs, ... }:
 
 {
-  imports = [ ../configuration.nix ./hardware-configuration.nix ];
+  imports = [ ./hardware-configuration.nix ../shared/configuration.nix ];
 
   nix.settings = {
     builders-use-substitutes = true;

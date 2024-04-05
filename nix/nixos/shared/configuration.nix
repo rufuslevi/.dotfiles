@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ inputs, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   networking = {
@@ -72,6 +72,7 @@
   sound.enable = true;
 
   services = { } // import ./services.nix { };
+  programs = { } // import ./programs.nix { inherit pkgs; };
 
   xdg = {
     autostart.enable = true;
@@ -131,8 +132,6 @@
     xdg-ninja
     glib
   ];
-
-  programs = { } // import ./programs.nix { inherit pkgs; };
 
   fonts.packages = with pkgs;
     [

@@ -5,7 +5,7 @@
 { config, inputs, pkgs, ... }:
 
 {
-  imports = [ ./hardware-configuration.nix ../configuration.nix ];
+  imports = [ ./hardware-configuration.nix ../shared/configuration.nix ];
 
   boot.loader = {
     systemd-boot.enable = false;
