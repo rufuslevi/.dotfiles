@@ -1,6 +1,15 @@
 { user, pkgs, homebrew-core, homebrew-cask, ... }:
 
 {
+  homebrew = import ./brew.nix { };
+  programs = import ./programs.nix { inherit pkgs; };
+
+  home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    users.${user}.imports = [ ./home/configuration.nix ];
+  };
+
   nix = {
     settings = { experimental-features = "nix-command flakes"; };
     extraOptions = ''
@@ -16,16 +25,10 @@
     };
   };
 
-  home-manager = {
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    users.${user}.imports = [ ./home/configuration.nix ];
-  };
+  services.nix-daemon.enable = true;
 
   networking = { hostName = "luna"; };
 
-  # Auto upgrade nix package and the daemon service.
-  services.nix-daemon.enable = true;
   security.pam.enableSudoTouchIdAuth = true;
 
   users.users.${user} = {
@@ -34,9 +37,6 @@
     isHidden = false;
     shell = "zsh";
   };
-
-  homebrew = { } // import ./brew.nix { };
-  programs.zsh.enable = true;
 
   system.stateVersion = 4;
 }
