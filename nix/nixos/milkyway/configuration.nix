@@ -82,5 +82,7 @@
     user = "jellyfin";
   };
 
+  programs = { nix-ld.libraries = with pkgs; [ libnvidia-container ]; };
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
