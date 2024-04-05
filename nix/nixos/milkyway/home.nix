@@ -1,7 +1,7 @@
-{ config, pkgs, lib, inputs, ... }:
+{ pkgs, ... }:
 
 {
-  imports = [ ../shared/dark_theme.nix ../shared/configuration.nix ];
+  imports = [ ../shared/home/dark_theme.nix ../shared/home/home.nix ];
 
   home.packages = with pkgs; [ jellyfin jellyfin-web jellyfin-ffmpeg ];
 }

@@ -33,7 +33,7 @@ let
   });
 in
 {
-  imports = [ ../shared/configuration.nix ];
+  imports = [ ../shared/home/home.nix ];
 
   programs.anyrun = {
     enable = false;

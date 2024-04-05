@@ -59,6 +59,13 @@
     package = config.boot.kernelPackages.nvidiaPackages.legacy_340;
   };
 
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    users.rufuslevi = import ./nix/nixos/milkyway/home.nix;
+  };
+
   services.xserver.videoDrivers = [ "nvidiaLegacy340" ];
 
   services.openssh.ports = [ 22 443 2222 7422 ];
@@ -87,11 +94,4 @@
   programs = { nix-ld.libraries = with pkgs; [ libnvidia-container ]; };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    users.rufuslevi = import ./nix/nixos/milkyway/home.nix;
-  };
 }

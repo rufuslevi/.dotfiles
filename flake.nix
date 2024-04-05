@@ -102,7 +102,7 @@
               users.rufuslevi = {
                 imports = [
                   ./nix/nixos/domum/home.nix
-                  ./nix/nixos/shared/light_theme.nix
+                  ./nix/nixos/shared/home/light_theme.nix
                   anyrun.homeManagerModules.anyrun
                 ];
               };
@@ -125,7 +125,7 @@
               users.rufuslevi = {
                 imports = [
                   ./nix/nixos/domum/home.nix
-                  ./nix/nixos/shared/dark_theme.nix
+                  ./nix/nixos/shared/home/dark_theme.nix
                   anyrun.homeManagerModules.anyrun
                 ];
               };
