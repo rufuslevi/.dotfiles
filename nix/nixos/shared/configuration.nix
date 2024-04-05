@@ -5,6 +5,15 @@
 { pkgs, ... }:
 
 {
+  hardware = import ./hardware.nix { inherit pkgs; };
+  xdg = import ./xdg.nix { inherit pkgs; };
+  services = import ./services.nix { };
+  programs = import ./programs.nix { inherit pkgs; };
+  environment.systemPackages = import ./packages.nix { inherit pkgs; };
+
+  nixpkgs.config.allowUnfree = true;
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   networking = {
     networkmanager.enable = true;
     defaultGateway = "192.168.0.1";
@@ -27,30 +36,7 @@
     };
   };
 
-  hardware = {
-    pulseaudio = { enable = false; };
-    bluetooth = {
-      enable = true;
-      powerOnBoot = true;
-    };
-    opengl = {
-      enable = true;
-      driSupport = true;
-      driSupport32Bit = true;
-      extraPackages = with pkgs; [
-        mesa_drivers
-        intel-ocl
-        vaapiIntel
-        vaapiVdpau
-        libvdpau-va-gl
-      ];
-    };
-  };
-
   console.keyMap = "cf";
-
-  nixpkgs.config.allowUnfree = true;
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   users = {
     defaultUserShell = pkgs.zsh;
@@ -66,72 +52,12 @@
     polkit.enable = true;
   };
 
-  systemd.sockets.mpd.listenStreams = [ "/run/mpd/socket" ];
-  systemd.services.mpd.environment = { XDG_RUNTIME_DIR = "/run/user/1000"; };
-
-  sound.enable = true;
-
-  services = import ./services.nix { };
-  programs = import ./programs.nix { inherit pkgs; };
-
-  xdg = {
-    autostart.enable = true;
-    menus = { enable = true; };
-    portal = {
-      enable = true;
-      extraPortals = [
-        pkgs.xdg-desktop-portal
-        pkgs.xdg-desktop-portal-gtk
-        pkgs.kdePackages.xdg-desktop-portal-kde
-        pkgs.xdg-desktop-portal-wlr
-        pkgs.xdg-desktop-portal-hyprland
-      ];
-    };
+  systemd = {
+    sockets.mpd.listenStreams = [ "/run/mpd/socket" ];
+    services.mpd.environment = { XDG_RUNTIME_DIR = "/run/user/1000"; };
   };
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    exfat
-    gnome.gvfs
-    unzip
-    man-pages
-    man-pages-posix
-    udiskie
-    cmake
-    gnumake
-    os-prober
-    wget
-    neofetch
-    btop
-    gparted
-    vim
-    libnotify
-    dunst
-    wl-clipboard
-    themechanger
-    wezterm
-    kitty
-    pavucontrol
-    pwvucontrol
-    playerctl
-    brightnessctl
-    bluetuith
-    librewolf
-    vivaldi
-    kate
-    yazi
-    go-task
-    hyprland-protocols
-    hyprpicker
-    hyprpaper
-    eww
-    tofi
-    wofi
-    xdg-utils
-    xdg-ninja
-    glib
-  ];
+  sound.enable = true;
 
   fonts.packages = with pkgs;
     [
