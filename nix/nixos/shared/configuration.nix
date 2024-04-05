@@ -71,8 +71,8 @@
 
   sound.enable = true;
 
-  services = { } // import ./services.nix { };
-  programs = { } // import ./programs.nix { inherit pkgs; };
+  services = import ./services.nix { };
+  programs = import ./programs.nix { inherit pkgs; };
 
   xdg = {
     autostart.enable = true;
