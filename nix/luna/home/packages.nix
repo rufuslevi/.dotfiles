@@ -1,27 +1,27 @@
 { pkgs, ... }:
 
 with pkgs; [
-  # GUI apps
+  # --- GUI apps
   qbittorrent
   obsidian
   vscodium
   wezterm
   utm
 
-  # GUI tools
-  raycast
+  # --- GUI tools
+  # raycast
 
-  # Fonts
+  # --- Fonts
   atkinson-hyperlegible
   font-awesome
 
-  # TUI tools
+  # --- TUI tools
   neofetch
   btop
   krabby
   libqalculate
 
-  # CLI tools
+  # --- CLI tools
   yazi
   zoxide
   fzf
@@ -35,7 +35,7 @@ with pkgs; [
   bat
   git-credential-manager
 
-  # Languages
+  # --- Languages
   lua
   gcc
   rustc
@@ -43,7 +43,7 @@ with pkgs; [
   llvm
   nodejs_21
 
-  # LSP
+  # --- LSP
   nil
   nixfmt
   nixpkgs-fmt
