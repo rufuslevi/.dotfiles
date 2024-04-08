@@ -41,6 +41,8 @@ tasks:
     cmds:
       - mkdir -p ~/.config/wezterm
       - stow -v -t ~/.config/wezterm wezterm
+      - touch ~/.config/wezterm/theme.bin
+      - echo "dark" > ~/.config/wezterm/theme.bin
   tmux:
     cmds:
       - mkdir -p ~/.config/tmux
