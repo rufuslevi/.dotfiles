@@ -2,51 +2,51 @@
 
 with pkgs; [
   # --- GUI apps
-  qbittorrent
-  obsidian
-  vscodium
-  wezterm
-  utm
+  #qbittorrent
+  #obsidian
+  #vscodium
+  #wezterm
+  #utm
 
   # --- GUI tools
   # raycast
 
   # --- Fonts
-  atkinson-hyperlegible
-  font-awesome
+  #--- atkinson-hyperlegible
+  #--- font-awesome
 
   # --- TUI tools
-  neofetch
-  btop
+  #neofetch
+  #btop
   krabby
-  libqalculate
+  #libqalculate
 
   # --- CLI tools
-  yazi
-  zoxide
-  fzf
-  ripgrep
-  eza
-  stow
-  speedtest-rs
-  jq
-  fd
-  tree-sitter
-  bat
-  git-credential-manager
+  #yazi
+  ##zoxide
+  #fzf
+  #ripgrep
+  #eza
+  #stow
+  #--- speedtest-rs
+  #jq
+  #fd
+  #tree-sitter
+  #bat
+  #git-credential-manager
 
   # --- Languages
-  lua
-  gcc
-  rustc
-  cargo
-  llvm
-  nodejs_21
+  #lua
+  #gcc
+  #rustc
+  #cargo
+  #llvm
+  #nodejs_21
 
   # --- LSP
   nil
   nixfmt
   nixpkgs-fmt
-  rust-analyzer
+  #rust-analyzer
 ]
 
