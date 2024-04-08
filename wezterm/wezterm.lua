@@ -12,8 +12,8 @@ end
 
 Config.disable_default_key_bindings = true
 
-dofile(Wezterm.home_dir .. "/.config/wezterm/workspace.lua")
-dofile(Wezterm.home_dir .. "/.config/wezterm/tabbar.lua")
+dofile(Wezterm.home_dir .. ".config/wezterm/workspace.lua")
+dofile(Wezterm.home_dir .. ".config/wezterm/tabbar.lua")
 
 constants.global = os_constants.updateConstants(constants.global)
 
