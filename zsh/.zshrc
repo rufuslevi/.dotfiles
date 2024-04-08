@@ -1,5 +1,7 @@
 # zmodload zsh/zprof
 
+source ~/.config/zsh/.zshenv
+
 # pokemon-colorscripts -r -s --no-title
 lua ~/Developer/pokemon-catcher/src/init.lua 1
 
@@ -51,7 +53,6 @@ eval "$(zoxide init --cmd cd zsh)"
 
 source ~/.config/zsh/.condarc.sh
 source ~/.config/zsh/.nvmrc.sh
-source ~/.config/zsh/.zshenv
 source ~/.config/zsh/.zprofile
 source ~/.config/zsh/.p10k.zsh
 source ~/.config/scripts/.easier-c.sh
