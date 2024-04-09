@@ -15,7 +15,6 @@ fi
 ENABLE_CORRECTION="true"
 
 zstyle ':omz:update' mode auto
-source $ZSH/oh-my-zsh.sh
 autoload -Uz vcs_info 
 autoload -Uz compinit
 for dump in ~/.zcompdump(N.mh+24); do
