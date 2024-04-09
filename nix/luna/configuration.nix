@@ -32,7 +32,7 @@
   system.keyboard = {
     enableKeyMapping = true;
     remapCapsLockToEscape = true;
-    swapLeftCommandAndLeftAlt = true;
+    swapLeftCommandAndLeftAlt = false;
     nonUS.remapTilde = false;
   };
 

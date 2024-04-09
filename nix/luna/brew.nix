@@ -29,6 +29,7 @@
     "mos"
     "betterdisplay"
     "key-codes"
+    "kitty"
   ];
   brews = [
     "borders"
