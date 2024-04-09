@@ -15,6 +15,9 @@ tasks:
     cmds:
       - mkdir -p ~/.config/btop
       - stow -v -t ~/.config/btop btop
+  cargo:
+    cmds:
+      - cargo install krabby
   kitty:
     cmds:
       - mkdir -p ~/.config/kitty
