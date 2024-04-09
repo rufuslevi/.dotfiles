@@ -29,12 +29,6 @@
   networking = { hostName = "luna"; };
 
   security.pam.enableSudoTouchIdAuth = true;
-  system.keyboard = {
-    enableKeyMapping = true;
-    remapCapsLockToEscape = true;
-    swapLeftCommandAndLeftAlt = false;
-    nonUS.remapTilde = false;
-  };
 
   users.users.${user} = {
     name = "${user}";
