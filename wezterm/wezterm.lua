@@ -3,6 +3,7 @@ Wezterm = require("wezterm")
 local constants = require("constants")
 local os_constants = require("os_constants")
 local dynamic_theme = require("dynamic_theme")
+local tabbar = require("tabbar")
 
 -- This table will hold the configuration.
 Config = {}
@@ -12,9 +13,8 @@ end
 
 Config.disable_default_key_bindings = true
 
-dofile(Wezterm.home_dir .. "/.config/wezterm/workspace.lua")
-dofile(Wezterm.home_dir .. "/.config/wezterm/tabbar.lua")
-
+tabbar.init()
+dynamic_theme.init()
 constants.global = os_constants.updateConstants(constants.global)
 
 Config.default_prog = { constants.global.SHELL }
