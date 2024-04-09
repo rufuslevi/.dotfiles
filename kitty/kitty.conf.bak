@@ -50,7 +50,6 @@ shell_integration enabled
 
 #: OS specific tweaks {{{
 macos_quit_when_last_window_closed no
-macos_titlebar_color background
 macos_custom_beam_cursor yes
 macos_colorspace displayp3
 #: }}}
@@ -96,6 +95,6 @@ map kitty_mod+d kitten themes --reload-in=all Gruvbox\ Dark
 
 
 # BEGIN_KITTY_THEME
-# Rosé Pine Dawn
+# Gruvbox Dark
 include current-theme.conf
 # END_KITTY_THEME
