@@ -45,7 +45,7 @@ ctrl + shift - 9 : yabai -m window --space 9
 # ctrl + alt - o : yabai -m config focus_follows_mouse off
 
 # Toggle keyboard key swap for the forward slash
-ctrl + shift + alt - a : bash ~/Developer/scripts/keymapping.sh
+ctrl + shift + alt - a : sudo bash ~/.config/scripts/razer-keymapping.sh
 
 # Toggle dark mode
 ctrl + shift - d : osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
