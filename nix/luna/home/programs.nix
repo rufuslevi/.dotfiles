@@ -26,6 +26,4 @@
     enable = true;
     defaultEditor = true;
   };
-  btop = { enable = true; };
-  bat = { enable = true; };
 }
