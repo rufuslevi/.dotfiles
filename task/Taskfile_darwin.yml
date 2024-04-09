@@ -10,7 +10,7 @@ tasks:
       - sudo yabai --stop-service
       - sudo yabai --uninstall-service
       - brew upgrade yabai
-      - ../yabai/update-sudoers.sh
+      - /bin/bash ../yabai/update-sudoers.sh
       - sudo yabai --start-service
   borders:
     cmds:
@@ -28,6 +28,3 @@ tasks:
     cmds:
       - mkdir -p ~/Library/"Application Support"/"Sublime Text"
       - stow -v -t ~/Library/"Application Support"/"Sublime Text" sublime
-  zsh:
-    cmds:
-      - stow -v -t ~ zsh

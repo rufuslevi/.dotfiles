@@ -1,10 +1,6 @@
-version: '3'
+version: "3"
 
 tasks:
-  tmux:
-    cmds:
-      - mkdir -p ~/.config/tmux
-      - stow -v -t ~/.config/tmux tmuxnushell
   nushell:
     cmds:
       - mkdir -p ~/.config/nushell
@@ -17,7 +13,7 @@ tasks:
     cmds:
       - mkdir -p ~/.config/sublime-text-3
       - stow -v -t ~/.config/sublime-text-3 sublime
-  zsh:
+  waybar:
     cmds:
-      - mkdir -p ~/.config/zsh
-      - stow -v -t ~/.config/zsh zsh
+      - mkdir -p ~/.config/waybar
+      - stow -v -t ~/.config/waybar waybar

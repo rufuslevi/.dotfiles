@@ -4,18 +4,26 @@ includes:
   os: ./task/Taskfile_{{OS}}.yml
 
 tasks:
-  default:
+  shared:
     cmds:
-      - task: kitty
-      - task: nvim
-      - task: tmux
-      - task: yabai
-      - task: zsh
+      - task btop
+      - task nvim
+      - task tmux
+      - task kitty
+      - task openrgb
+      - task scripts
+      - task cargo:install
+      - task zsh
+  macos:
+    cmds:
+      - task os:yabai:setup
+      - task os:skhd
+      - task shared
   btop:
     cmds:
       - mkdir -p ~/.config/btop
       - stow -v -t ~/.config/btop btop
-  cargo:
+  cargo:install:
     cmds:
       - cargo install krabby
   kitty:
@@ -32,14 +40,10 @@ tasks:
       - stow -v -t ~/.config/OpenRGB openrgb
   scripts:
     cmds:
-      - stow -v -t ~ scripts
+      - stow -v -t ~/.config/scripts scripts
   starship:
     cmds:
       - stow -v -t ~/.config starship
-  waybar:
-    cmds:
-      - mkdir -p ~/.config/waybar
-      - stow -v -t ~/.config/waybar waybar
   wezterm:
     cmds:
       - mkdir -p ~/.config/wezterm
@@ -50,3 +54,7 @@ tasks:
     cmds:
       - mkdir -p ~/.config/tmux
       - stow -v -t ~/.config/tmux tmux
+  zsh:
+    cmds:
+      - mkdir -p ~/.config/zsh
+      - stow -v -t ~/.config/zsh zsh
