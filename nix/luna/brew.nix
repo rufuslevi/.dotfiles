@@ -3,7 +3,7 @@
 {
   enable = true;
   global = { autoUpdate = true; };
-  taps = [ "koekeishiya/formulae" "homebrew/cask-fonts" ];
+  taps = [ "koekeishiya/formulae" "homebrew/cask-fonts" "homebrew/cask-versions" ];
   casks = [
     "homebrew/cask-fonts/font-monaspace-nerd-font"
     "sigmaos"
@@ -35,6 +35,7 @@
     "microsoft-powerpoint"
     "microsoft-onenote"
     "onedrive"
+    "zotero"
     "vlc"
     "jellyfin-media-player"
     "appcleaner"
@@ -45,6 +46,13 @@
     "home-assistant"
     "coconutbattery"
     "hot"
+    "steam"
+    "devtoys"
+    "handbrake"
+    "imageoptim"
+    "ckan"
+    "temurin"
+    "temurin8"
   ];
   brews = [
     "borders"
@@ -71,7 +79,6 @@
     "node"
     "llvm"
     "java"
-    "openjdk"
     "rust-analyzer"
     "go-task"
   ];
