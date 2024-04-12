@@ -4,7 +4,6 @@ if [ -f ~/.cargo/env ]; then
     . "$HOME/.cargo/env"
 fi
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH=/usr/share:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/opt/local/bin:$PATH
@@ -12,8 +11,7 @@ export PATH=/opt/local/sbin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$GOPATH/bin:$PATH
-export PATH=/opt/homebrew/bin:$PATH
-export PATH=/opt/homebrew/sbin:$PATH
+
 
 export GOPATH=/Users/rufuslevi/Developer/go
 
@@ -28,6 +26,10 @@ export VISUAL='nvim'
 # What OS are we running?
 if [[ $(uname) == "Darwin" ]]; then
     # echo "Running MacOS!"
+
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    export PATH=/opt/homebrew/bin:$PATH
+    export PATH=/opt/homebrew/sbin:$PATH
 
     export JAVA_HOME=`/usr/libexec/java_home -v 18`
     export LUA_PATH='/opt/homebrew/Cellar/luarocks/3.9.2/share/lua/5.4/?.lua;/opt/homebrew/share/lua/5.4/?.lua;/opt/homebrew/share/lua/5.4/?/init.lua;/opt/homebrew/lib/lua/5.4/?.lua;/opt/homebrew/lib/lua/5.4/?/init.lua;./?.lua;./?/init.lua;/Users/rufuslevi/.luarocks/share/lua/5.4/?.lua;/Users/rufuslevi/.luarocks/share/lua/5.4/?/init.lua'
