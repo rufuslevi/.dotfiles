@@ -4,6 +4,7 @@ with pkgs; [
   openrgb-with-all-plugins
   openrazer-daemon
 
+  kitty
   guake
   brave
   obsidian
