@@ -40,4 +40,5 @@ with pkgs; [
   xdg-utils
   xdg-ninja
   glib
+  cmatrix
 ]
