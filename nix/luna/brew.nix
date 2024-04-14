@@ -84,5 +84,6 @@
     "java"
     "rust-analyzer"
     "go-task"
+    "sdl2"
   ];
 }
