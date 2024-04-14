@@ -12,6 +12,7 @@ with pkgs; [
   webcord
   caprine-bin
   bitwarden-desktop
+  prismlauncher
 
   jetbrains.clion
   jetbrains.idea-ultimate

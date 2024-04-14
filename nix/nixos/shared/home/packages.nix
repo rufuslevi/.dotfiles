@@ -96,5 +96,6 @@ with pkgs; [
   python312Packages.pillow
   shfmt
   taplo
+  openjdk16-bootstrap
 ]
 
