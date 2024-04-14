@@ -53,6 +53,7 @@
     "ckan"
     "temurin"
     "temurin8"
+    "prismlauncher"
   ];
   brews = [
     "borders"
@@ -76,6 +77,8 @@
     "lua"
     "gcc"
     "rust"
+    "go"
+    "gopls"
     "node"
     "llvm"
     "java"
