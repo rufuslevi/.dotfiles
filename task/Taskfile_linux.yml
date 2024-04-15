@@ -1,6 +1,16 @@
 version: "3"
 
 tasks:
+  all:
+    cmds:
+      - task os:dunst
+      - task os:hyprland
+      - task os:nushell
+      - task os:pulse
+      - task os:sublime
+      - task os:tofi
+      - task os:waybar
+      - task os:waypaper
   dunst:
     cmds:
       - mkdir -p ~/.config/dunst
