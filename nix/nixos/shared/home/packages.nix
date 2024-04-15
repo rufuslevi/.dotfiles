@@ -42,7 +42,6 @@ with pkgs; [
   gh
 
   dex
-  krabby
   qpwgraph
   helvum
   swww

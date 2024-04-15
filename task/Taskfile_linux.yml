@@ -1,6 +1,14 @@
 version: "3"
 
 tasks:
+  dunst:
+    cmds:
+      - mkdir -p ~/.config/dunst
+      - stow -v -t ~/.config/dunst dunst
+  hyprland:
+    cmds:
+      - mkdir -p ~/.config/hypr
+      - stow -v -t ~/.config/hypr hypr
   nushell:
     cmds:
       - mkdir -p ~/.config/nushell
@@ -13,7 +21,15 @@ tasks:
     cmds:
       - mkdir -p ~/.config/sublime-text-3
       - stow -v -t ~/.config/sublime-text-3 sublime
+  tofi:
+    cmds:
+      - mkdir -p ~/.config/tofi
+      - stow -v -t ~/.config/tofi tofi
   waybar:
     cmds:
       - mkdir -p ~/.config/waybar
       - stow -v -t ~/.config/waybar waybar
+  waypaper:
+    cmds:
+      - mkdir -p ~/.config/waypaper
+      - stow -v -t ~/.config/waypaper waypaper

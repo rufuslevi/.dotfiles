@@ -14,10 +14,20 @@ tasks:
       - task scripts
       - task cargo:install
       - task zsh
-  macos:
+  luna:
     cmds:
       - task os:yabai:setup
       - task os:skhd
+      - task shared
+  domum:
+    cmds:
+      - task os:dunst
+      - task os:hyprland
+      - task os:pulse
+      - task os:sublime
+      - task os:tofi
+      - task os:waybar
+      - task os:waypaper
       - task shared
   btop:
     cmds:

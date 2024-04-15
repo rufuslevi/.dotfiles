@@ -18,9 +18,6 @@
     };
     initExtra = ''
       source ~/.config/zsh/.zshrc
-      source ~/.config/zsh/.zshenv
-      source ~/.config/zsh/.zprofile
-      source ~/.config/zsh/.p10k.zsh
     '';
   };
   neovim = {

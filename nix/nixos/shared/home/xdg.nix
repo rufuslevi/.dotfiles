@@ -92,22 +92,4 @@ in
     associations.added = applications;
     defaultApplications = applications;
   };
-  configFile = {
-    "scripts" = {
-      source = ../../../../scripts;
-      recursive = true;
-    };
-    "zsh" = {
-      source = ../../../../zsh;
-      recursive = true;
-    };
-    "waybar" = {
-      source = ../../../../waybar;
-      recursive = true;
-    };
-    "dunst/dunstrc" = { source = ../../../../dunst/dunstrc; };
-    "tofi/config" = { source = ../../../../tofi/config; };
-    "hypr/hypr.conf" = { source = ../../../../hypr/hypr.conf; };
-    "waypaper/config.ini" = { source = ../../../../waypaper/config.ini; };
-  };
 }
