@@ -6,7 +6,7 @@ with pkgs; [
 
   kitty
   guake
-  brave
+  thunderbird
   obsidian
   cider
   webcord
