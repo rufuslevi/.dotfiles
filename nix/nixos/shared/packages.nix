@@ -9,6 +9,7 @@ with pkgs; [
   udiskie
   cmake
   gnumake
+  docker
   os-prober
   wget
   neofetch

@@ -155,21 +155,21 @@ return {
     config = function()
       local set_dark_mode = function()
         vim.api.nvim_set_option("background", "dark")
-        vim.cmd("colorscheme gruvbox")
+        vim.cmd("colorscheme tokyonight-storm")
 
         require("lualine").setup({
           options = {
-            theme = "gruvbox_dark",
+            theme = "tokyonight",
           },
         })
       end
       local set_light_mode = function()
         vim.api.nvim_set_option("background", "light")
-        vim.cmd("colorscheme rose-pine-dawn")
+        vim.cmd("colorscheme tokyonight-day")
 
         require("lualine").setup({
           options = {
-            theme = "rose-pine",
+            theme = "tokyonight",
           },
         })
       end

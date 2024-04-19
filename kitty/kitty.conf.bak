@@ -51,7 +51,7 @@ shell_integration enabled
 
 #: OS specific tweaks {{{
 macos_quit_when_last_window_closed no
-macos_titlebar_color background
+# macos_titlebar_color background
 macos_custom_beam_cursor yes
 macos_colorspace displayp3
 #: }}}
@@ -80,7 +80,7 @@ map kitty_mod+shift+, load_config_file
 
 map kitty_mod+shift+t kitten themes
 map kitty_mod+shift+l kitten themes --reload-in=all Rosé\ Pine\ Dawn
-map kitty_mod+shift+d kitten themes --reload-in=all Gruvbox\ Dark
+map kitty_mod+shift+d kitten themes --reload-in=all Tokyo\ Night\ Storm 
 
 #: Clipboard {{{
 #: }}}

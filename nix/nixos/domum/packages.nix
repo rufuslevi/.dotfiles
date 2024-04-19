@@ -1,4 +1,7 @@
 { pkgs, ... }:
 
-with pkgs;
-[ ]
+with pkgs; [
+  vesktop
+  betterdiscordctl
+]
+
