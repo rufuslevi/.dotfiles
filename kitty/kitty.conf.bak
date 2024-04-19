@@ -49,13 +49,6 @@ allow_hyperlinks yes
 shell_integration enabled
 #: }}}
 
-#: OS specific tweaks {{{
-macos_quit_when_last_window_closed no
-# macos_titlebar_color background
-macos_custom_beam_cursor yes
-macos_colorspace displayp3
-#: }}}
-
 #: Keyboard shortcuts {{{
 map kitty_mod+1 goto_tab 1
 map kitty_mod+2 goto_tab 2
@@ -106,6 +99,6 @@ map kitty_mod+shift+d kitten themes --reload-in=all Tokyo\ Night\ Storm
 
 
 # BEGIN_KITTY_THEME
-# Rosé Pine Dawn
+# Tokyo Night Storm
 include current-theme.conf
 # END_KITTY_THEME

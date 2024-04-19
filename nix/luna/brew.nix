@@ -6,7 +6,7 @@
   taps = [ "koekeishiya/formulae" "homebrew/cask-fonts" "homebrew/cask-versions" ];
   casks = [
     "homebrew/cask-fonts/font-monaspace-nerd-font"
-    "sigmaos"
+    "openvpn-connect"
     "vivaldi"
     "miniconda"
     "blender"

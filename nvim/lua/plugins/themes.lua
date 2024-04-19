@@ -165,11 +165,11 @@ return {
       end
       local set_light_mode = function()
         vim.api.nvim_set_option("background", "light")
-        vim.cmd("colorscheme tokyonight-day")
+        vim.cmd("colorscheme rose-pine-dawn")
 
         require("lualine").setup({
           options = {
-            theme = "tokyonight",
+            theme = "rose-pine-dawn",
           },
         })
       end
