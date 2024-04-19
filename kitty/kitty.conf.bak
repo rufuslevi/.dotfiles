@@ -70,11 +70,11 @@ map kitty_mod+9 goto_tab 9
 map kitty_mod+t new_tab
 map kitty_mod+w close_tab
 
-map kitty_mod+c copy_and_clear_or_interrupt
-map kitty_mod+l clear_terminal scroll active
+map ctrl+c copy_and_clear_or_interrupt
+map ctrl+l clear_terminal scroll active
 
-map kitty_mod+shift+c copy_to_clipboard
-map kitty_mod+shift+v paste_from_clipboard
+map kitty_mod+c copy_to_clipboard
+map kitty_mod+v paste_from_clipboard
 
 map kitty_mod+shift+, load_config_file
 
