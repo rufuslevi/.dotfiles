@@ -20,8 +20,12 @@
       "qt6ct/qt6ct.conf" = { source = ../../../../themes/qt6ct_dark.conf; };
       "Kvantum/kvantum.kvconfig".text = ''
         [General]
-        theme=gruvbox-kvantum
+        theme=Catppuccin-Macchiato-Mauve
       '';
+      "Kvantum/Catppuccin-Macchiato-Mauve" = {
+        source = ../../../../themes/catppuccin/Catppuccin-Macchiato-Mauve;
+        recursive = true;
+      };
       "Kvantum/gruvbox-kvantum" = {
         source = ../../../../themes/gruvbox-kvantum;
         recursive = true;
