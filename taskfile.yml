@@ -43,6 +43,7 @@ tasks:
       - stow -v -t ~/.config/OpenRGB openrgb
   scripts:
     cmds:
+      - mkdir -p ~/.config/scripts
       - stow -v -t ~/.config/scripts scripts
   starship:
     cmds:

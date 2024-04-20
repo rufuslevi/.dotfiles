@@ -8,7 +8,7 @@
   imports = [ ./hardware-configuration.nix ../shared/configuration.nix ];
 
   hardware = import ./hardware.nix { inherit config; };
-  services = import ./services.nix { };
+  services = import ./services.nix { inherit pkgs; };
   programs = import ./programs.nix { inherit pkgs; };
 
   nixpkgs.config.nvidia.acceptLicense = true;
@@ -37,8 +37,8 @@
     hostName = "milkyway";
     firewall = {
       enable = true;
-      allowedTCPPorts = [ 80 139 443 445 ];
-      allowedUDPPorts = [ 137 138 34197 ];
+      allowedTCPPorts = [ 80 139 443 445 8384 22000 ];
+      allowedUDPPorts = [ 137 138 34197 22000 21027 ];
     };
   };
 }
