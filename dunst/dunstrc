@@ -12,25 +12,45 @@
     font = MonaspiceKr Nerd Font 10
     separator_color= frame
 
-# gruvbox-dark
+# tokyonight-storm
 [frame]
     width = 1
-    color = "#fbf1c7"
+    color = "#c0caf5"
 
 [urgency_low]
-    background = "#282828"
-    foreground = "#ebdbb2"
+    background = "#24283b"
+    foreground = "#c0caf5"
     timeout = 5
 
 [urgency_normal]
-    background = "#282828"
-    foreground = "#ebdbb2"
+    background = "#24283b"
+    foreground = "#c0caf5"
     timeout = 20
 
 [urgency_critical]
-    background = "#282828"
-    foreground = "#ebdbb2"
+    background = "#24283b"
+    foreground = "#c0caf5"
     timeout = 0
+
+# gruvbox-dark
+#[frame]
+#    width = 1
+#    color = "#fbf1c7"
+#
+#[urgency_low]
+#    background = "#282828"
+#    foreground = "#ebdbb2"
+#    timeout = 5
+#
+#[urgency_normal]
+#    background = "#282828"
+#    foreground = "#ebdbb2"
+#    timeout = 20
+#
+#[urgency_critical]
+#    background = "#282828"
+#    foreground = "#ebdbb2"
+#    timeout = 0
 
 # Catppuccin mocha
 #[frame]
