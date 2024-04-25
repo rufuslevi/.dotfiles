@@ -28,7 +28,6 @@ with pkgs; [
   brightnessctl
   bluetuith
   librewolf
-  vivaldi
   kate
   yazi
   go-task
