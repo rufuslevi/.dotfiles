@@ -71,7 +71,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-  color: @fg4;
+  color: @fg;
 }
 #workspaces button.empty {
   color: @fg4;
@@ -80,7 +80,7 @@ window#waybar.hidden {
   color: @fg2;
 }
 #workspaces button.visible {
-  color: @fg2;
+  color: @fg;
 }
 #workspaces button.urgent {
   color: @red;
