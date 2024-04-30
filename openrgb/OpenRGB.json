@@ -1282,7 +1282,7 @@
         "RunZoneChecks": true,
         "exit_profile": {
             "profile_name": "Light green",
-            "set_on_exit": false
+            "set_on_exit": true
         },
         "geometry": {
             "height": 0,
