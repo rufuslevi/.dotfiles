@@ -7,5 +7,6 @@ with pkgs; [
   notion-app-enhanced
   vivaldi
   vivaldi-ffmpeg-codecs
+  gnome.nautilus
 ]
 

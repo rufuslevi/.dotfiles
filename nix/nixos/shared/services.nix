@@ -15,20 +15,6 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     jack.enable = true;
-    extraConfig.pipewire."92-low-latency" = {
-      context.properties = {
-        default.clock.rate = 96000;
-        default.clock.allowed-rates = [ 44100 48000 96000 192000 ];
-        default.clock.quantum = 1024;
-        default.clock.min-quantum = 16;
-        default.clock.max-quantum = 2048;
-        default.clock.quantum-limit = 8192;
-        default.video.rate.num = 25;
-        default.video.rate.denom = 1;
-        settings.check-quantum = false;
-        settings.check-rate = false;
-      };
-    };
   };
   mpd = {
     enable = true;
