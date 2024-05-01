@@ -15,7 +15,7 @@
     "format": "{title}"
   },
   "hyprland/workspaces": {
-    "format": "({id}){name}",
+    "format": "{icon}:<b>{name}</b>:{icon}",
     "format-icons": {
       "social": "󰙯",
       "web": "󰈹",

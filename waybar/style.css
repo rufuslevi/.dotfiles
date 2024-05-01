@@ -22,7 +22,6 @@ window#waybar.hidden {
 }
 
 #backlight,
-#battery,
 #bluetooth,
 #clock,
 #cpu,
@@ -71,7 +70,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.active {
-  color: @fg;
+  color: @fg3;
 }
 #workspaces button.empty {
   color: @fg4;
@@ -93,32 +92,6 @@ window#waybar.hidden {
 }
 
 #bluetooth {
-}
-
-#battery {
-}
-
-#battery.charging,
-#battery.plugged {
-  color: #161320;
-  background-color: #b5e8e0;
-}
-
-#battery.critical:not(.charging) {
-  background-color: #b5e8e0;
-  color: #161320;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes blink {
-  to {
-    background-color: #bf616a;
-    color: #b5e8e0;
-  }
 }
 
 #backlight {
@@ -156,11 +129,11 @@ window#waybar.hidden {
   margin-left: 12px;
   margin-bottom: 0px;
   border-radius: 10px;
-  background: #161320;
+  background: @fg2;
 }
 
 #tags button {
-  color: #b5e8e0;
+  color: @fg3;
   background: transparent;
   font-size: 16px;
   border-radius: 2px;
@@ -173,17 +146,15 @@ window#waybar.hidden {
 }
 
 #tags button.focused {
-  color: #abe9b3;
-  border-top: 2px solid #abe9b3;
-  border-bottom: 2px solid #abe9b3;
+  color: @fg3;
 }
 
 #tags button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
-  color: #fae3b0;
+  color: @fg3;
   border-color: #e8a2af;
-  color: #e8a2af;
+  background: @fg3;
 }
 
 #tags button.focused:hover {
