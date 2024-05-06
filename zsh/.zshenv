@@ -11,7 +11,7 @@ export PATH=/opt/local/sbin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$GOPATH/bin:$PATH
-
+export PATH=$HOME/Applications/bin:$PATH
 
 export GOPATH=/Users/rufuslevi/Developer/go
 
