@@ -56,6 +56,7 @@
     "temurin"
     "temurin8"
     "prismlauncher"
+    "godot"
   ];
   brews = [
     "borders"
@@ -73,6 +74,7 @@
     "jq"
     "fd"
     "bat"
+    "git-lfs"
     "gitui"
     "btop"
     "neovim"
