@@ -9,5 +9,6 @@ with pkgs; [
   vivaldi-ffmpeg-codecs
   gnome.nautilus
   gdtoolkit
+  bitmagnet
 ]
 
