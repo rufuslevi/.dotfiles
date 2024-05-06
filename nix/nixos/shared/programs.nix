@@ -3,7 +3,10 @@
 {
   nix-ld.enable = true;
   zsh = { enable = true; };
-  git = { enable = true; };
+  git = {
+    enable = true;
+    lfs.enable = true;
+  };
   neovim = {
     enable = true;
     defaultEditor = true;

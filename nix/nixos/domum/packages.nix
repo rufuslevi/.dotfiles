@@ -8,5 +8,6 @@ with pkgs; [
   vivaldi
   vivaldi-ffmpeg-codecs
   gnome.nautilus
+  gdtoolkit
 ]
 
