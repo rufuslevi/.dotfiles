@@ -166,12 +166,6 @@ return {
       local set_light_mode = function()
         vim.api.nvim_set_option("background", "light")
         vim.cmd("colorscheme rose-pine-dawn")
-
-        require("lualine").setup({
-          options = {
-            theme = "rose-pine-dawn",
-          },
-        })
       end
       if vim.fn.hostname() ~= "milkyway" then
         require("auto-dark-mode").setup({
