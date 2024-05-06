@@ -14,6 +14,20 @@ return {
     end,
   },
   {
+    "ray-x/go.nvim",
+    dependencies = { -- optional packages
+      "ray-x/guihua.lua",
+      "neovim/nvim-lspconfig",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+      require("go").setup()
+    end,
+    event = { "CmdlineEnter" },
+    ft = { "go", "gomod" },
+    build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
+  },
+  {
     "stevearc/conform.nvim",
     dependencies = { "mason.nvim" },
     lazy = true,
@@ -51,6 +65,8 @@ return {
       servers = {
         tsserver = {},
         pyright = {},
+        gdscript = {},
+        gdshader_lsp = {},
       },
       -- return true if you don't want this server to be setup with lspconfig
       ---@type table<string, fun(server:string, opts:_.lspconfig.options):boolean?>
@@ -58,6 +74,18 @@ return {
         tsserver = function(_, opts)
           require("typescript").setup({ server = opts })
           return true
+        end,
+        gdscript = function(_, opts)
+          local capabilities = vim.lsp.protocol.make_client_capabilities()
+          capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
+          capabilities.workspace.didChangeWatchedFiles.dynamicRegistration = false
+          require("lspconfig").gdscript.setup(capabilities)
+
+          local gdproject = io.open(vim.fn.getcwd() .. "/project.godot", "r")
+          if gdproject then
+            io.close(gdproject)
+            vim.fn.serverstart("./godothost")
+          end
         end,
       },
     },
