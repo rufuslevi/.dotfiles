@@ -31,6 +31,7 @@
     "betterdisplay"
     "key-codes"
     "kitty"
+    # "microsoft-teams"
     "microsoft-word"
     "microsoft-excel"
     "microsoft-powerpoint"
