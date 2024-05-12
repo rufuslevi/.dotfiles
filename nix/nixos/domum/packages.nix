@@ -10,5 +10,6 @@ with pkgs; [
   gnome.nautilus
   gdtoolkit
   bitmagnet
+  github-desktop
 ]
 

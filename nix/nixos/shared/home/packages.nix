@@ -53,6 +53,8 @@ with pkgs; [
   libcaca
   ueberzug
   cifs-utils
+  vscodium
+  gimp
 
   #Theming
   volantes-cursors
