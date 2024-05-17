@@ -6,6 +6,7 @@
   taps = [ "koekeishiya/formulae" "homebrew/cask-fonts" "homebrew/cask-versions" ];
   casks = [
     "homebrew/cask-fonts/font-monaspace-nerd-font"
+    "the-unarchiver"
     "openvpn-connect"
     "vivaldi"
     "miniconda"
@@ -57,6 +58,7 @@
     "temurin8"
     "prismlauncher"
     "godot"
+    "gimp"
   ];
   brews = [
     "borders"
