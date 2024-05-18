@@ -16,7 +16,7 @@
 
   networking = {
     networkmanager.enable = true;
-    defaultGateway = "192.168.0.1";
+    wireless.userControlled.enable = true;
   };
 
   time.timeZone = "America/New_York";

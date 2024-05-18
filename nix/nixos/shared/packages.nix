@@ -41,4 +41,5 @@ with pkgs; [
   xdg-ninja
   glib
   cmatrix
+  temurin-bin-21
 ]

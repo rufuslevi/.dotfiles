@@ -17,6 +17,7 @@
   };
   waybar = { enable = true; };
   dconf = { enable = true; };
+  java = { enable = true; };
   firefox = {
     enable = true;
     package = pkgs.firefox-devedition;
