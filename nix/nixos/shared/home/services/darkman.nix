@@ -1,13 +1,7 @@
 { ... }:
 
 {
-  gammastep = {
-    enable = true;
-    provider = "manual";
-    latitude = 45.50884;
-    longitude = -73.58781;
-  };
-  darkman = {
+  services.darkman = {
     enable = true;
     settings = {
       lat = 45.5;
@@ -25,10 +19,4 @@
       '';
     };
   };
-  playerctld = { enable = true; };
-  flameshot = {
-    enable = false;
-    settings = { General = { showStartupLaunchMessage = false; }; };
-  };
 }
-
