@@ -5,8 +5,8 @@
 { pkgs, ... }:
 
 {
-  hardware = import ./hardware.nix { inherit pkgs; };
-  xdg = import ./xdg.nix { inherit pkgs; };
+  imports = [ ./hardware ./xdg ];
+
   services = import ./services.nix { };
   programs = import ./programs.nix { inherit pkgs; };
   environment.systemPackages = import ./packages.nix { inherit pkgs; };

@@ -1,7 +1,7 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
-  bluetooth = {
+  hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
     settings = {
@@ -14,17 +14,4 @@
       Policy = { AutoEnable = "true"; };
     };
   };
-  opengl = {
-    enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
-    extraPackages = with pkgs; [
-      mesa_drivers
-      intel-ocl
-      vaapiIntel
-      vaapiVdpau
-      libvdpau-va-gl
-    ];
-  };
 }
-
