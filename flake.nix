@@ -13,15 +13,9 @@
       url = "github:LnL7/nix-darwin/master";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
-
-    anyrun = {
-      url = "github:Kirottu/anyrun";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs =
-    { self, anyrun, darwin, nixpkgs, nixpkgs-darwin, home-manager, ... }@inputs:
+  outputs = { self, darwin, nixpkgs, nixpkgs-darwin, home-manager, ... }@inputs:
     let
       user = "rufuslevi";
       system = "aarch64-darwin";
@@ -80,7 +74,6 @@
                 imports = [
                   ./nix/nixos/domum/home/home.nix
                   ./nix/nixos/shared/home/themes/light_theme.nix
-                  anyrun.homeManagerModules.anyrun
                 ];
               };
             };
@@ -103,7 +96,6 @@
                 imports = [
                   ./nix/nixos/domum/home/home.nix
                   ./nix/nixos/shared/home/themes/dark_theme.nix
-                  anyrun.homeManagerModules.anyrun
                 ];
               };
             };
