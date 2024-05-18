@@ -10,12 +10,11 @@
     ./xdg
     ./services
     ./programs
+    ./packages
     ./locales.nix
     ./networking.nix
     ./users.nix
   ];
-
-  environment.systemPackages = import ./packages.nix { inherit pkgs; };
 
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
