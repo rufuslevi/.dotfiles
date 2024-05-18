@@ -6,8 +6,7 @@
   home.username = "rufuslevi";
   home.homeDirectory = "/home/rufuslevi";
   home.stateVersion = "23.11";
-
-  home.packages = import ./packages.nix { inherit pkgs; };
+  # home.packages = import ./packages.nix { inherit pkgs; };
 
   home.activation = {
     # https://github.com/philj56/tofi/issues/115#issuecomment-1701748297
