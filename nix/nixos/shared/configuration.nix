@@ -5,8 +5,15 @@
 { pkgs, ... }:
 
 {
-  imports =
-    [ ./hardware ./xdg ./services ./programs ./locales.nix ./networking.nix ];
+  imports = [
+    ./hardware
+    ./xdg
+    ./services
+    ./programs
+    ./locales.nix
+    ./networking.nix
+    ./users.nix
+  ];
 
   environment.systemPackages = import ./packages.nix { inherit pkgs; };
 
@@ -18,17 +25,6 @@
   security = {
     rtkit.enable = true;
     polkit.enable = true;
-  };
-
-  users = {
-    defaultUserShell = pkgs.zsh;
-    users.rufuslevi = {
-      createHome = true;
-      homeMode = "750";
-      isNormalUser = true;
-      description = "Michael Roussel";
-      extraGroups = [ "networkmanager" "wheel" "video" "render" ];
-    };
   };
 
   sound.enable = true;
