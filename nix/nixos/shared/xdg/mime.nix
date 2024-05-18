@@ -73,10 +73,10 @@ let
   };
 in
 {
-  portal = {
+  xdg.portal = {
     config = { common = { "org.freedesktop.impl.portal.Settings" = "gtk"; }; };
   };
-  userDirs = {
+  xdg.userDirs = {
     enable = true;
     desktop = "${config.home.homeDirectory}/Bureau";
     documents = "${config.home.homeDirectory}/Documents";
@@ -87,7 +87,7 @@ in
     templates = "${config.home.homeDirectory}/Modèles";
     videos = "${config.home.homeDirectory}/Vidéos";
   };
-  mimeApps = {
+  xdg.mimeApps = {
     enable = true;
     associations.added = applications;
     defaultApplications = applications;

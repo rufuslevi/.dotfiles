@@ -5,37 +5,20 @@
 { pkgs, ... }:
 
 {
-  imports = [ ./hardware ./xdg ./services ];
+  imports =
+    [ ./hardware ./xdg ./services ./programs ./locales.nix ./networking.nix ];
 
-  programs = import ./programs.nix { inherit pkgs; };
   environment.systemPackages = import ./packages.nix { inherit pkgs; };
 
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  networking = {
-    networkmanager.enable = true;
-    wireless.userControlled.enable = true;
-  };
-
-  time.timeZone = "America/New_York";
-
-  i18n = {
-    defaultLocale = "fr_CA.UTF-8";
-    extraLocaleSettings = {
-      LC_ADDRESS = "fr_CA.UTF-8";
-      LC_IDENTIFICATION = "fr_CA.UTF-8";
-      LC_MEASUREMENT = "fr_CA.UTF-8";
-      LC_MONETARY = "fr_CA.UTF-8";
-      LC_NAME = "fr_CA.UTF-8";
-      LC_NUMERIC = "fr_CA.UTF-8";
-      LC_PAPER = "fr_CA.UTF-8";
-      LC_TELEPHONE = "fr_CA.UTF-8";
-      LC_TIME = "fr_CA.UTF-8";
-    };
-  };
-
   console.keyMap = "cf";
+
+  security = {
+    rtkit.enable = true;
+    polkit.enable = true;
+  };
 
   users = {
     defaultUserShell = pkgs.zsh;
@@ -46,16 +29,6 @@
       description = "Michael Roussel";
       extraGroups = [ "networkmanager" "wheel" "video" "render" ];
     };
-  };
-
-  security = {
-    rtkit.enable = true;
-    polkit.enable = true;
-  };
-
-  systemd = {
-    sockets.mpd.listenStreams = [ "/run/mpd/socket" ];
-    services.mpd.environment = { XDG_RUNTIME_DIR = "/run/user/1000"; };
   };
 
   sound.enable = true;

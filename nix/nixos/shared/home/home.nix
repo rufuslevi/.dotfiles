@@ -5,7 +5,6 @@
   home.homeDirectory = "/home/rufuslevi";
   home.stateVersion = "23.11";
 
-  xdg = import ./xdg.nix { inherit config; };
   programs = import ./programs.nix { inherit pkgs; };
   services = import ./services.nix { };
   home.packages = import ./packages.nix { inherit pkgs; };
