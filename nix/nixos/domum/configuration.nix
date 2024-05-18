@@ -5,11 +5,9 @@
 { pkgs, ... }:
 
 {
-  imports = [ ./hardware-configuration.nix ../shared/configuration.nix ];
+  imports =
+    [ ./hardware ./packages ./programs ./services ./hardware.nix ../shared ];
 
-  hardware = import ./hardware.nix { };
-  services = import ./services.nix { };
-  programs = import ./programs.nix { };
   environment.systemPackages = import ./packages.nix { inherit pkgs; };
 
   boot.loader = {
