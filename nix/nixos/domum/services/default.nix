@@ -1,16 +1,14 @@
 { ... }:
 
 {
-  printing.enable = true;
+  services.printing.enable = true;
+  services.desktopManager.plasma6.enable = true;
+  services.ddccontrol.enable = true;
+  services.hardware.openrgb.enable = true;
 
-  desktopManager.plasma6.enable = true;
-  ddccontrol.enable = true;
+  services.openssh.ports = [ 22 443 2222 7422 ];
 
-  openssh.ports = [ 22 443 2222 7422 ];
-
-  hardware.openrgb.enable = true;
-
-  syncthing = {
+  services.syncthing = {
     enable = true;
     user = "rufuslevi";
     configDir = "/home/rufuslevi/.config/syncthing";
