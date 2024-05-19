@@ -38,6 +38,7 @@
     go-task
     wl-clipboard
     kdePackages.qtimageformats
+    steam-run
     xdg-utils
     xdg-ninja
   ];
