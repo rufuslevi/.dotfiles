@@ -167,7 +167,7 @@ return {
         vim.api.nvim_set_option("background", "light")
         vim.cmd("colorscheme rose-pine-dawn")
       end
-      if vim.fn.hostname() ~= "milkyway" then
+      if vim.fn.hostname() == "luna" then
         require("auto-dark-mode").setup({
           update_interval = 1000,
           set_dark_mode = set_dark_mode,
