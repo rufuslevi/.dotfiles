@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-  imports = [ ./themes ./programs ./services ./wayland.nix ];
+  imports = [ ./themes ./programs ./services ];
 
   home.username = "rufuslevi";
   home.homeDirectory = "/home/rufuslevi";

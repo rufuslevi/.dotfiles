@@ -1,5 +1,5 @@
-{ inputs, pkgs, ... }:
+{ ... }:
 
 {
-  imports = [ ../../shared/home ./rider.nix ];
+  imports = [ ../../shared/home ./rider.nix ./wayland.nix ];
 }
