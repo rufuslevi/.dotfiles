@@ -54,7 +54,6 @@ else
     echo 'Unknown OS!'
 fi
 
-
 export DOTNET_ROOT="~/.dotnet"
 
 # Add .NET Core SDK tools
