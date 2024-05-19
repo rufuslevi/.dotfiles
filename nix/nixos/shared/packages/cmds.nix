@@ -33,6 +33,7 @@
     jq
     zoxide
     fd
+    fzf
     playerctl
     brightnessctl
     go-task
