@@ -1,6 +1,6 @@
 { ... }:
 
 {
-  imports = [ ../../shared/home/dark_theme.nix ../../shared/home ];
+  imports = [ ../../shared/home/themes/dark_theme.nix ../../shared/home ];
 }
 
