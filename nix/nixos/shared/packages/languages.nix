@@ -28,5 +28,7 @@
     lua
     gcc
     temurin-bin-21
+    gdtoolkit
+    dotnet-sdk_7
   ];
 }

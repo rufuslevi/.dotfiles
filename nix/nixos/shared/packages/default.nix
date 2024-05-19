@@ -1,15 +1,6 @@
 { ... }:
 
 {
-  imports = [
-    ./cmds.nix
-    ./fonts.nix
-    ./git.nix
-    ./guis.nix
-    ./languages.nix
-    ./libs.nix
-    ./themes.nix
-    ./tuis.nix
-    ./utils.nix
-  ];
+  imports =
+    [ ./cmds.nix ./git.nix ./languages.nix ./libs.nix ./tuis.nix ./utils.nix ];
 }

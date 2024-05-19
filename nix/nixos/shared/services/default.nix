@@ -1,12 +1,5 @@
 { ... }:
 
 {
-  imports = [
-    ./drives.nix
-    ./mpd.nix
-    ./pipewire.nix
-    ./samba.nix
-    ./ssh.nix
-    ./xserver.nix
-  ];
+  imports = [ ./drives.nix ./samba.nix ./ssh.nix ];
 }
