@@ -5,7 +5,7 @@
 { config, inputs, pkgs, ... }:
 
 {
-  imports = [ ./hardware-configuration.nix ../shared/configuration.nix ];
+  imports = [ ./hardware-configuration.nix ../shared ];
 
   hardware = import ./hardware.nix { inherit config; };
   services = import ./services.nix { inherit pkgs; };
@@ -18,7 +18,7 @@
     extraSpecialArgs = { inherit inputs; };
     useGlobalPkgs = true;
     useUserPackages = true;
-    users.rufuslevi = import ./home/home.nix;
+    users.rufuslevi = import ./home;
   };
 
   boot.loader = {

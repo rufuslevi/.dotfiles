@@ -11,6 +11,19 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" "amdgpu" ];
   boot.extraModulePackages = [ ];
+  boot.loader = {
+    systemd-boot.enable = false;
+    efi.canTouchEfiVariables = true;
+    efi.efiSysMountPoint = "/boot/efi";
+    grub = {
+      enable = true;
+      device = "nodev";
+      useOSProber = false;
+      efiSupport = true;
+      theme = "/boot/grub/themes/hyperfluent";
+      extraEntries = import ./grub-entries.nix;
+    };
+  };
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/8b2d1f88-2725-4ba8-8444-54f870030095";

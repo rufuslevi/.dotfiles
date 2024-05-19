@@ -72,13 +72,13 @@
               useUserPackages = true;
               users.rufuslevi = {
                 imports = [
-                  ./nix/nixos/domum/home/home.nix
+                  ./nix/nixos/domum/home
                   ./nix/nixos/shared/home/themes/light_theme.nix
                 ];
               };
             };
           }
-          ./nix/nixos/domum/configuration.nix
+          ./nix/nixos/domum
         ];
       };
 
@@ -94,23 +94,21 @@
               extraSpecialArgs = { inherit inputs; };
               users.rufuslevi = {
                 imports = [
-                  ./nix/nixos/domum/home/home.nix
+                  ./nix/nixos/domum/home
                   ./nix/nixos/shared/home/themes/dark_theme.nix
                 ];
               };
             };
           }
-          ./nix/nixos/domum/configuration.nix
+          ./nix/nixos/domum
         ];
       };
 
       nixosConfigurations.milkyway = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
-        modules = [
-          home-manager.nixosModules.home-manager
-          ./nix/nixos/milkyway/configuration.nix
-        ];
+        modules =
+          [ home-manager.nixosModules.home-manager ./nix/nixos/milkyway ];
       };
     };
 }

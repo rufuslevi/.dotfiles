@@ -6,7 +6,7 @@
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    users.${user}.imports = [ ./home/home.nix ];
+    users.${user}.imports = [ ./home ];
   };
 
   nix = {

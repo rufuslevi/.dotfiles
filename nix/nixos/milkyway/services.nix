@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   xserver.videoDrivers = [ "nvidiaLegacy340" ];
