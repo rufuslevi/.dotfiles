@@ -1,5 +1,5 @@
 { ... }:
 
 {
-  imports = [ ./bluetooth.nix ./opengl.nix ];
+  imports = [ ./opengl.nix ];
 }
