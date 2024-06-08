@@ -58,6 +58,7 @@
     "prismlauncher"
     "godot"
     "gimp"
+    "keyboardcleantool"
   ];
   brews = [
     "borders"
