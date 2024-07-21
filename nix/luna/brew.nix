@@ -56,9 +56,12 @@
     "temurin"
     "temurin8"
     "prismlauncher"
+    "epic-games"
     "godot"
     "gimp"
     "keyboardcleantool"
+    "unnaturalscrollwheels"
+    "logi-options-plus"
   ];
   brews = [
     "borders"
@@ -90,8 +93,10 @@
     "node"
     "llvm"
     "java"
+    "openjdk@21"
     "rust-analyzer"
     "go-task"
     "sdl2"
+    "scons"
   ];
 }
