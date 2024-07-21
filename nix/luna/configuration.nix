@@ -24,6 +24,14 @@
     };
   };
 
+  system = {
+    stateVersion = 4;
+    defaults = { 
+      NSGlobalDomain.InitialKeyRepeat = 15;
+      NSGlobalDomain.KeyRepeat = 2;
+    };
+  };
+
   services = { nix-daemon.enable = true; };
 
   networking = { hostName = "luna"; };
@@ -48,6 +56,5 @@
       ];
   };
 
-  system.stateVersion = 4;
 }
 
