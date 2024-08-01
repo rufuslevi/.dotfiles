@@ -1,15 +1,14 @@
 # Toggle yabai
 # ctrl + shift - f : yabai -m space --layout float
 # ctrl + shift - b : yabai -m space --layout bsp
-# ctrl - t : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "float" else "bsp" end')
+ctrl - v : yabai -m window --toggle float & $HOME/.dotfiles/skhd/notify_window.sh
+ctrl + shift - v : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "float" else "bsp" end') & $HOME/.dotfiles/skhd/notify_space.sh
 
 # Change window focus
 ctrl + shift - j : yabai -m window --focus south
 ctrl + shift - k : yabai -m window --focus north
 ctrl + shift - h : yabai -m window --focus west
 ctrl + shift - l : yabai -m window --focus east
-
-ctrl - v : yabai -m window --toggle float
 
 # Change virt desktop focus
 ctrl - 0x18 : yabai -m space --create
