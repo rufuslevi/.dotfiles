@@ -10,6 +10,7 @@ alias rizz="git commit -m $@"
 alias yeet="git push $@"
 alias yoink="git pull"
 alias cat="bat"
+alias gdnvim="nvim --listen /tmp/godot.pipe"
 
 HISTSIZE=1000
 SAVEHIST=1000
