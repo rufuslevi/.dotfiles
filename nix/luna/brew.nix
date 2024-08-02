@@ -54,14 +54,12 @@
     "imageoptim"
     "ckan"
     "temurin"
-    "temurin8"
     "prismlauncher"
     "epic-games"
     "godot"
     "gimp"
     "keyboardcleantool"
     "unnaturalscrollwheels"
-    "logi-options-plus"
   ];
   brews = [
     "borders"
