@@ -1279,7 +1279,7 @@
         "theme": "auto"
     },
     "UserInterface": {
-        "RunZoneChecks": true,
+        "RunZoneChecks": false,
         "exit_profile": {
             "profile_name": "Light green",
             "set_on_exit": true
