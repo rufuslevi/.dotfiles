@@ -14,6 +14,27 @@ return {
     end,
   },
   {
+    "mfussenegger/nvim-dap",
+    config = function()
+      local dap = require("dap")
+      dap.adapters.godot = {
+        type = "server",
+        host = "127.0.0.1",
+        port = 6006,
+      }
+
+      dap.configurations.gdscript = {
+        {
+          type = "godot",
+          request = "launch",
+          name = "Launch scene",
+          project = "${workspaceFolder}",
+          launch_scene = true,
+        },
+      }
+    end,
+  },
+  {
     "ray-x/go.nvim",
     dependencies = { -- optional packages
       "ray-x/guihua.lua",
@@ -44,6 +65,7 @@ return {
         sh = { "shfmt" },
         nix = { "nixfmt", "nixpkgs_fmt" },
         css = { "stylelint" },
+        gdscript = { "gdformat" },
       },
     },
   },
@@ -65,7 +87,10 @@ return {
       servers = {
         tsserver = {},
         pyright = {},
-        gdscript = {},
+        gdscript = {
+          name = "godot",
+          cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
+        },
         gdshader_lsp = {},
       },
       -- return true if you don't want this server to be setup with lspconfig
@@ -74,18 +99,6 @@ return {
         tsserver = function(_, opts)
           require("typescript").setup({ server = opts })
           return true
-        end,
-        gdscript = function(_, opts)
-          local capabilities = vim.lsp.protocol.make_client_capabilities()
-          capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
-          capabilities.workspace.didChangeWatchedFiles.dynamicRegistration = false
-          require("lspconfig").gdscript.setup(capabilities)
-
-          local gdproject = io.open(vim.fn.getcwd() .. "/project.godot", "r")
-          if gdproject then
-            io.close(gdproject)
-            vim.fn.serverstart("./godothost")
-          end
         end,
       },
     },
