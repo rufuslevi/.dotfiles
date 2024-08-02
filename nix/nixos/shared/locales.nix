@@ -2,6 +2,7 @@
 
 {
   time.timeZone = "America/New_York";
+  time.hardwareClockInLocalTime = true;
 
   i18n = {
     defaultLocale = "fr_CA.UTF-8";
