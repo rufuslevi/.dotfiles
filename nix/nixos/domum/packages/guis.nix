@@ -46,5 +46,7 @@
     qpwgraph
     helvum
     selectdefaultapplication
+    lutris
+    heroic
   ];
 }

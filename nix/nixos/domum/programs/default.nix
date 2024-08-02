@@ -1,5 +1,5 @@
 { ... }:
 
 {
-  imports = [ ./firefox.nix ./hyprland.nix ./steam.nix ];
+  imports = [ ./firefox.nix ./gamescope.nix ./hyprland.nix ./steam.nix ];
 }

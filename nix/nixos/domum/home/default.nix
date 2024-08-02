@@ -1,5 +1,5 @@
 { ... }:
 
 {
-  imports = [ ../../shared/home ./rider.nix ./wayland.nix ];
+  imports = [ ../../shared/home ./services ./rider.nix ./wayland.nix ];
 }
