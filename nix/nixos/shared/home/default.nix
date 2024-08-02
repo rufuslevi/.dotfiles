@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 {
-  imports = [ ./themes ./programs ./services ];
+  imports = [ ./themes ./programs ./services ../xdg/mime.nix ];
 
   home.username = "rufuslevi";
   home.homeDirectory = "/home/rufuslevi";
