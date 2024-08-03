@@ -1,7 +1,10 @@
 # Files
 *.DS_Store
+.netrwhist
+variables.nix.bak
 nvim/lazy-lock.json
 nushell/config/history.txt
+wezterm/theme.bin
 
 # Directories
 mason/
@@ -11,3 +14,4 @@ openrgb/logs/
 !sublime/Packages/Default
 sublime/Packages
 sublime/Local
+nvim/lazyvim.json

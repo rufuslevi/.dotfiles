@@ -1,14 +1,33 @@
-version: '3'
+version: "3"
 
 tasks:
-  yabai:
+  all:
+    cmds:
+      - task os:yabai:setup
+      - task os:yabai:upgrade
+      - task os:borders
+      - task os:nushell
+      - task os:skhd
+      - task os:sublime
+  yabai:setup:
     cmds:
       - mkdir -p ~/.config/yabai
       - stow -v -t ~/.config/yabai yabai
+  yabai:upgrade:
+    cmds:
+      - sudo yabai --stop-service
+      - sudo yabai --uninstall-service
+      - brew upgrade yabai
+      - /bin/bash ../yabai/update-sudoers.sh
+      - sudo yabai --start-service
+  borders:
+    cmds:
+      - mkdir -p ~/.config/borders
+      - stow -v -t ~/.config/borders borders
   nushell:
     cmds:
       - mkdir -p ~/Library/"Application Support"/nushell
-      - stow -v -t ~/Library/"Application Support"/nushell nushell       
+      - stow -v -t ~/Library/"Application Support"/nushell nushell
   skhd:
     cmds:
       - mkdir -p ~/.config/skhd

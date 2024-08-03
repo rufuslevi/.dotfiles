@@ -3,6 +3,16 @@ local workspaceHandler = require("workspace")
 local function getBase()
 	return {
 		{
+			key = "c",
+			mods = "SUPER",
+			action = Wezterm.action.CopyTo("ClipboardAndPrimarySelection"),
+		},
+		{
+			key = "v",
+			mods = "SUPER",
+			action = Wezterm.action.PasteFrom("Clipboard"),
+		},
+		{
 			key = "l",
 			mods = "LEADER",
 			action = Wezterm.action.ShowLauncher,
@@ -44,7 +54,17 @@ local function getBase()
 		{
 			key = "c",
 			mods = "LEADER",
+			action = Wezterm.action.CloseCurrentTab({ confirm = true }),
+		},
+		{
+			key = "v",
+			mods = "LEADER",
 			action = Wezterm.action.ClearScrollback("ScrollbackAndViewport"),
+		},
+		{
+			key = "t",
+			mods = "LEADER",
+			action = Wezterm.action.SpawnTab("CurrentPaneDomain"),
 		},
 	}
 end
@@ -52,10 +72,102 @@ local function getWindows()
 	return {}
 end
 local function getDarwin()
-	return {}
+	return {
+		{
+			key = "1",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(0),
+		},
+		{
+			key = "2",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(1),
+		},
+		{
+			key = "3",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(2),
+		},
+		{
+			key = "4",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(3),
+		},
+		{
+			key = "5",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(4),
+		},
+		{
+			key = "6",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(5),
+		},
+		{
+			key = "7",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(6),
+		},
+		{
+			key = "8",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(7),
+		},
+		{
+			key = "9",
+			mods = "SUPER",
+			action = Wezterm.action.ActivateTab(8),
+		},
+	}
 end
 local function getLinux()
-	return {}
+	return {
+		{
+			key = "1",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(0),
+		},
+		{
+			key = "2",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(1),
+		},
+		{
+			key = "3",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(2),
+		},
+		{
+			key = "4",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(3),
+		},
+		{
+			key = "5",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(4),
+		},
+		{
+			key = "6",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(5),
+		},
+		{
+			key = "7",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(6),
+		},
+		{
+			key = "8",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(7),
+		},
+		{
+			key = "9",
+			mods = "CTRL",
+			action = Wezterm.action.ActivateTab(8),
+		},
+	}
 end
 
 return { getBase = getBase, getWindows = getWindows, getDarwin = getDarwin, getLinux = getLinux }

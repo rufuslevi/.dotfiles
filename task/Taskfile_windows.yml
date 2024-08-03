@@ -1,10 +1,10 @@
-version: '3'
+version: "3"
 
 tasks:
   nushell:
     cmds:
       - mkdir -p ~/AppData/Roaming/nushell
-      - dploy stow nushell ~/AppData/Roaming/nushell 
+      - dploy stow nushell ~/AppData/Roaming/nushell
   nvim:
     cmds:
       - mkdir -p ~/AppData/Local/nvim
@@ -19,4 +19,4 @@ tasks:
       - dploy stow wezterm ~/.config/wezterm
   zsh:
     cmds:
-      - dploy stow zsh ~
+      - dploy stow ~ zsh

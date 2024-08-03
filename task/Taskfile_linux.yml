@@ -1,10 +1,24 @@
-version: '3'
+version: "3"
 
 tasks:
-  tmux:
+  all:
     cmds:
-      - mkdir -p ~/.config/tmux
-      - stow -v -t ~/.config/tmux tmuxnushell
+      - task os:dunst
+      - task os:hyprland
+      - task os:nushell
+      - task os:pulse
+      - task os:sublime
+      - task os:tofi
+      - task os:waybar
+      - task os:waypaper
+  dunst:
+    cmds:
+      - mkdir -p ~/.config/dunst
+      - stow -v -t ~/.config/dunst dunst
+  hyprland:
+    cmds:
+      - mkdir -p ~/.config/hypr
+      - stow -v -t ~/.config/hypr hypr
   nushell:
     cmds:
       - mkdir -p ~/.config/nushell
@@ -17,3 +31,15 @@ tasks:
     cmds:
       - mkdir -p ~/.config/sublime-text-3
       - stow -v -t ~/.config/sublime-text-3 sublime
+  tofi:
+    cmds:
+      - mkdir -p ~/.config/tofi
+      - stow -v -t ~/.config/tofi tofi
+  waybar:
+    cmds:
+      - mkdir -p ~/.config/waybar
+      - stow -v -t ~/.config/waybar waybar
+  waypaper:
+    cmds:
+      - mkdir -p ~/.config/waypaper
+      - stow -v -t ~/.config/waypaper waypaper

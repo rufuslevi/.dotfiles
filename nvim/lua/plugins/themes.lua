@@ -35,11 +35,16 @@ return {
   {
     "rose-pine/neovim",
     name = "rose-pine",
+    opts = {
+      on_colors = function(colors)
+        colors.bg_statusline = colors.none
+      end,
+    },
   },
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    enabled = false,
+    enabled = true,
     priority = 1000,
     config = function()
       require("catppuccin").setup({
@@ -73,11 +78,16 @@ return {
           gitsigns = true,
           nvimtree = true,
           telescope = true,
-          notify = false,
-          mini = false,
+          notify = true,
+          mini = true,
           mason = true,
           treesitter = true,
           treesitter_context = true,
+          indent_blankline = {
+            enabled = true,
+            scope_color = "", -- catppuccin color (eg. `lavender`) Default: text
+            colored_indent_levels = false,
+          },
           -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
         },
       })
@@ -107,6 +117,35 @@ return {
     end,
   },
   {
+    "ellisonleao/gruvbox.nvim",
+    config = function()
+      require("gruvbox").setup({
+        terminal_colors = true,
+        undercurl = true,
+        underline = true,
+        bold = true,
+        italic = {
+          strings = true,
+          emphasis = true,
+          comments = true,
+          operators = false,
+          folds = true,
+        },
+        strikethrough = true,
+        invert_selection = false,
+        invert_signs = false,
+        invert_tabline = false,
+        invert_intend_guides = false,
+        inverse = true, -- invert background for search, diffs, statuslines and errors
+        contrast = "", -- can be "hard", "soft" or empty string
+        palette_overrides = {},
+        overrides = {},
+        dim_inactive = false,
+        transparent_mode = false,
+      })
+    end,
+  },
+  {
     "Shatur/neovim-ayu",
     priority = 1000,
   },
@@ -114,22 +153,30 @@ return {
     "f-person/auto-dark-mode.nvim",
     enabled = true,
     config = function()
-      require("auto-dark-mode").setup({
-        update_interval = 1000,
-        set_dark_mode = function()
-          vim.api.nvim_set_option("background", "dark")
+      local set_dark_mode = function()
+        vim.api.nvim_set_option("background", "dark")
+        vim.cmd("colorscheme tokyonight-storm")
 
-          vim.cmd("colorscheme sonokai")
-          require("lualine").setup({ options = { theme = "sonokai" } })
-        end,
-        set_light_mode = function()
-          vim.api.nvim_set_option("background", "light")
-
-          vim.cmd("colorscheme rose-pine-dawn")
-          require("lualine").setup({ options = { theme = "rose-pine" } })
-        end,
-      })
-      require("auto-dark-mode").init()
+        require("lualine").setup({
+          options = {
+            theme = "tokyonight",
+          },
+        })
+      end
+      local set_light_mode = function()
+        vim.api.nvim_set_option("background", "light")
+        vim.cmd("colorscheme rose-pine-dawn")
+      end
+      if vim.fn.hostname() == "luna" then
+        require("auto-dark-mode").setup({
+          update_interval = 1000,
+          set_dark_mode = set_dark_mode,
+          set_light_mode = set_light_mode,
+        })
+        require("auto-dark-mode").init()
+      else
+        set_dark_mode()
+      end
     end,
   },
 }
