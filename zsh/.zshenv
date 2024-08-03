@@ -51,7 +51,7 @@ elif command -v apt > /dev/null; then
     export PATH=$PATH:~/Applications/gradle-6.9.4/bin
 
 else
-    echo 'Unknown OS!'
+    # echo "Running Windows!"
 fi
 
 
