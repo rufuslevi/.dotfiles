@@ -3,11 +3,12 @@ KEYS = keymaps.getBase()
 
 if os.execute("cd C:/WINDOWS") then
 	Wezterm.log_info("Running on Windows!")
-	SHELL = "C:/Program Files/nu/bin/nu.exe"
+	SHELL = "C:/Program Files/Git/bin/bash.exe"
 
 	FONT_SIZE = 11
+	FREE_TYPE_LOAD_FLAGS = "DEFAULT"
 	OPACITY = 1
-	WINDOW_DECORATIONS = "TITLE"
+	WINDOW_DECORATIONS = "TITLE|RESIZE"
 	INTEGRATED_BUTTONS = "Windows"
 
 	for _, v in ipairs(keymaps.getWindows()) do

@@ -34,7 +34,7 @@ Config.font = Wezterm.font({
 	},
 })
 Config.font_size = FONT_SIZE
-Config.freetype_load_flags = "NO_HINTING"
+Config.freetype_load_flags = FREE_TYPE_LOAD_FLAGS
 Config.window_padding = {
 	left = LEFT_PADDING,
 	right = RIGHT_PADDING,
