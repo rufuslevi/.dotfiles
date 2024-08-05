@@ -1,0 +1,96 @@
+/* ############################################################################################################ */
+/* ##   ______  __      __  _______   ________  _______    ______   __    __   ______   __    __  ________   ## */
+/* ##  /      \|  \    /  \|       \ |        \|       \  /      \ |  \  |  \ /      \ |  \  /  \|        \  ## */
+/* ## |  $$$$$$\\$$\  /  $$| $$$$$$$\| $$$$$$$$| $$$$$$$\|  $$$$$$\| $$\ | $$|  $$$$$$\| $$ /  $$| $$$$$$$$  ## */
+/* ## | $$   \$$ \$$\/  $$ | $$__/ $$| $$__    | $$__| $$| $$___\$$| $$$\| $$| $$__| $$| $$/  $$ | $$__      ## */
+/* ## | $$        \$$  $$  | $$    $$| $$  \   | $$    $$ \$$    \ | $$$$\ $$| $$    $$| $$  $$  | $$  \     ## */
+/* ## | $$   __    \$$$$   | $$$$$$$\| $$$$$   | $$$$$$$\ _\$$$$$$\| $$\$$ $$| $$$$$$$$| $$$$$\  | $$$$$     ## */
+/* ## | $$__/  \   | $$    | $$__/ $$| $$_____ | $$  | $$|  \__| $$| $$ \$$$$| $$  | $$| $$ \$$\ | $$_____   ## */
+/* ##  \$$    $$   | $$    | $$    $$| $$     \| $$  | $$ \$$    $$| $$  \$$$| $$  | $$| $$  \$$\| $$     \  ## */
+/* ##   \$$$$$$     \$$     \$$$$$$$  \$$$$$$$$ \$$   \$$  \$$$$$$  \$$   \$$ \$$   \$$ \$$   \$$ \$$$$$$$$  ## */
+/* ##                                                                                                        ## */
+/* ## Anyrun Style (Catppuccin Mocha)                                                                        ## */
+/* ## Created by Cybersnake                                                                                  ## */
+/* ############################################################################################################ */
+
+* {
+  all: unset;
+  font-family: "MonaspiceKr Nerd Font Mono";
+}
+
+#window,
+#match,
+#entry,
+#plugin,
+#main {
+  background: transparent;
+}
+
+#match.activatable {
+  border-radius: 4px;
+  padding: 3px 3px;
+  margin-top: 1px;
+}
+#match.activatable:first-child {
+  margin-top: 9px;
+}
+#match.activatable:last-child {
+  margin-bottom: 1px;
+}
+
+#plugin:hover #match.activatable {
+  border-radius: 12px;
+  padding: 0.3rem;
+  margin-top: 0.01rem;
+  margin-bottom: 0;
+}
+
+#match:selected {
+  color: #f9e2af;
+  border-radius: 4px;
+}
+
+#entry {
+  border-radius: 4px;
+  margin: 3px;
+  padding: 5px 5px;
+  caret-color: #cdd6f4;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+list > #plugin {
+  border-top: 1px solid #f38ba8;
+  margin: 3px;
+  padding-top: 3px;
+  padding-left: 3px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+list > #plugin:first-child {
+  margin-top: 0.3rem;
+}
+
+list > #plugin:last-child {
+  margin-bottom: 0.3rem;
+}
+
+list > #plugin:hover {
+  padding: 5px;
+}
+
+box#main {
+  color: #cdd6f4;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #cba6f7;
+  margin-top: 15px;
+  background-color: #1e1e2e;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+zlabel#plugin {
+  font-size: 20px;
+}
