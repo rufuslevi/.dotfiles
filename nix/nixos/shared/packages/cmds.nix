@@ -7,6 +7,7 @@
     hyprpicker
     hyprpaper
 
+    hwinfo
     iftop
     clipman
     eww
