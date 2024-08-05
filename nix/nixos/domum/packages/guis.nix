@@ -1,7 +1,8 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
+    inputs.anyrun.packages.${system}.anyrun
     waybar
     vesktop
     notion-app-enhanced
