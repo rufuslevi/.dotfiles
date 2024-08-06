@@ -1,7 +1,10 @@
 # zmodload zsh/zprof
 
 source ~/.config/zsh/.zshenv
-source ~/.config/zsh/.zshprompt
+if [ -z "$PS1" ]; then
+else
+    source ~/.config/zsh/.zshprompt
+fi
 
 # What OS are we running?
 if [[ $(uname) == "Darwin" ]]; then
