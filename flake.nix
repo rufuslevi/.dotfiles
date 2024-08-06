@@ -2,7 +2,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-darwin.url = "github:nixos/nixpkgs/nixpkgs-23.11-darwin";
-    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -19,13 +19,21 @@
   };
 
   outputs =
-    { self, darwin, nixpkgs, nixpkgs-darwin, home-manager, anyrun, ... }@inputs:
+    { self
+    , darwin
+    , nixpkgs
+    , nixpkgs-unstable
+    , nixpkgs-darwin
+    , home-manager
+    , anyrun
+    , ...
+    }@attrs:
     let
       user = "rufuslevi";
       system = "aarch64-darwin";
       specialArgs = { inherit user nixpkgsDarwinConfig; };
 
-      inherit (inputs.nixpkgs-unstable.lib)
+      inherit (nixpkgs-unstable.lib)
         attrValues makeOverridable optionalAttrs singleton;
 
       nixpkgsDarwinConfig = {
@@ -41,12 +49,10 @@
     in
     {
       overlays = {
-        comma = final: prev: {
-          comma = import inputs.comma { inherit (prev) pkgs; };
-        };
+        comma = final: prev: { comma = import { inherit (prev) pkgs; }; };
         apple-silicon = final: prev:
           optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
-            pkgs-x86 = import inputs.nixpkgs-darwin {
+            pkgs-x86 = import nixpkgs-darwin {
               system = "86_64-darwin";
               inherit (nixpkgsDarwinConfig) config;
             };
@@ -66,12 +72,12 @@
 
       nixosConfigurations.domum-light = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
+        specialArgs = attrs;
         modules = [
           home-manager.nixosModules.home-manager
           {
             home-manager = {
-              extraSpecialArgs = { inherit inputs; };
+              extraSpecialArgs = attrs;
               useGlobalPkgs = true;
               useUserPackages = true;
               users.rufuslevi = {
@@ -89,14 +95,14 @@
 
       nixosConfigurations.domum-dark = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
+        specialArgs = attrs;
         modules = [
           home-manager.nixosModules.home-manager
           {
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              extraSpecialArgs = { inherit inputs; };
+              extraSpecialArgs = { inherit attrs; };
               users.rufuslevi = {
                 imports = [
                   anyrun.homeManagerModules.anyrun
@@ -112,7 +118,7 @@
 
       nixosConfigurations.milkyway = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
+        specialArgs = attrs;
         modules =
           [ home-manager.nixosModules.home-manager ./nix/nixos/milkyway ];
       };
