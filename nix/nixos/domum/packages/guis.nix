@@ -30,7 +30,6 @@
     dunst
     themechanger
     wezterm
-    kitty
     pavucontrol
     pwvucontrol
     vlc
