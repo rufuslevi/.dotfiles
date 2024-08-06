@@ -102,7 +102,7 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              extraSpecialArgs = { inherit attrs; };
+              extraSpecialArgs = attrs;
               users.rufuslevi = {
                 imports = [
                   anyrun.homeManagerModules.anyrun
