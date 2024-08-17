@@ -8,6 +8,8 @@
     hyprpaper
 
     hwinfo
+    smartmontools
+    hdparm
     iftop
     clipman
     eww
