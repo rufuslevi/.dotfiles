@@ -39,6 +39,7 @@
       pipewire
       stdenv.cc.cc
       systemd
+      time
       vulkan-loader
       xorg.libX11
       xorg.libXScrnSaver

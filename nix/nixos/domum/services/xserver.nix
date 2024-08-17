@@ -1,12 +1,16 @@
 { ... }:
 
 {
-  services.xserver = {
-    enable = true;
-    displayManager = { sddm.enable = true; };
-    xkb = {
-      layout = "ca";
-      variant = "multix";
+  services = {
+    displayManager = {
+      sddm.enable = true;
+    };
+    xserver = {
+      enable = true;
+      xkb = {
+        layout = "ca";
+        variant = "multix";
+      };
     };
   };
 }

@@ -8,7 +8,7 @@
     notion-app-enhanced
     vivaldi
     vivaldi-ffmpeg-codecs
-    gnome.nautilus
+    nautilus
     bitmagnet
     github-desktop
     openrgb-with-all-plugins
@@ -26,10 +26,9 @@
     kdePackages.kio
     kdePackages.kio-fuse
     kdePackages.dolphin
-    libsForQt5.partitionmanager
+    kdePackages.partitionmanager
     dunst
     themechanger
-    wezterm
     pavucontrol
     pwvucontrol
     vlc

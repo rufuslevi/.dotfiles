@@ -6,5 +6,6 @@
     glib
     logiops
     libinput
+    kdePackages.kirigami
   ];
 }

@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     libnotify
-    lxqt.lxqt-policykit
+    kdePackages.polkit-kde-agent-1
     at-spi2-atk
     libcaca
     p11-kit

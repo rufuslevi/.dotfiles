@@ -10,7 +10,7 @@
     marksman
     rust-analyzer
     nil
-    nixfmt
+    nixfmt-rfc-style
     nixpkgs-fmt
     nixpkgs-lint
     go
@@ -20,15 +20,14 @@
     python312Packages.pillow
     shfmt
     taplo
-    openjdk16-bootstrap
     cargo
     rustc
     tree-sitter
-    nodejs_21
+    nodejs_22
     lua
     gcc
     temurin-bin-21
-    gdtoolkit
+    gdtoolkit_4
     dotnet-sdk_7
   ];
 }
