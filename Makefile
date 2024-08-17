@@ -9,6 +9,9 @@ switch-domum-light: rebuild-domum-light copy-grub-theme
 
 switch-domum-dark: rebuild-domum-dark copy-grub-theme
 
+update-flake:
+	nix flake update
+
 switch-luna:
 	nix run nix-darwin -- switch --flake .#luna --show-trace
 
