@@ -63,7 +63,7 @@ return {
       formatters_by_ft = {
         lua = { "stylua" },
         sh = { "shfmt" },
-        nix = { "nixfmt", "nixpkgs_fmt" },
+        nix = { "nixfmt", "nixpkgs_fmt", "nil_ls" },
         css = { "stylelint" },
         gdscript = { "gdformat" },
       },
