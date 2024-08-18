@@ -47,5 +47,8 @@
     selectdefaultapplication
     lutris
     heroic
+    slurp
+    obs-studio
+    obs-studio-plugins.wlrobs
   ];
 }

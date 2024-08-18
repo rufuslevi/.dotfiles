@@ -22,6 +22,7 @@
       icu
       libGL
       libappindicator-gtk3
+      libcamera
       libdrm
       libglvnd
       libnotify

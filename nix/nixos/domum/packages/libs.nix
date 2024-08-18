@@ -6,6 +6,9 @@
     glib
     logiops
     libinput
+    libcamera
     kdePackages.kirigami
+    kdePackages.kcmutils
+    kdePackages.kservice
   ];
 }

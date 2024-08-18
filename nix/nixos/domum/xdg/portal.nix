@@ -1,14 +1,15 @@
-{ pkgs, ...}:
+{ pkgs, ... }:
 
 {
   xdg.portal = {
+    enable = true;
+    xdgOpenUsePortal = true;
+    wlr = {
       enable = true;
-      wlr = {
-        enable = true;
-      };
-      extraPortals = [
-        pkgs.xdg-desktop-portal-wlr
-        pkgs.xdg-desktop-portal-hyprland
-      ];
+    };
+    extraPortals = [
+      pkgs.xdg-desktop-portal-hyprland
+      pkgs.xdg-desktop-portal-kde
+    ];
   };
 }
