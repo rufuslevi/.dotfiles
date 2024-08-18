@@ -9,7 +9,7 @@ yabai -m config top_padding 8
 yabai -m config bottom_padding 8
 yabai -m config left_padding 8
 yabai -m config right_padding 8
-yabai -m config window_gap 4
+yabai -m config window_gap 12
 # yabai -m config external_bar all:0:25
 
 # Mouse settings
@@ -29,3 +29,4 @@ yabai -m rule --add app="^Equinox$" manage=off
 yabai -m rule --add app="^SigmaOS$" manage=off
 yabai -m rule --add app="^Arc$" title="^$" mouse_follows_focus=off
 yabai -m rule --add app="^OpenRGB$" title="^$" mouse_follows_focus=off
+
