@@ -9,6 +9,12 @@ switch-domum-light: rebuild-domum-light copy-grub-theme
 
 switch-domum-dark: rebuild-domum-dark copy-grub-theme
 
+clear-cache:
+	nix-store --gc
+
+clear-all-old-generations:
+	sudo nix-collect-garbage -d
+
 update-flake:
 	nix flake update
 
