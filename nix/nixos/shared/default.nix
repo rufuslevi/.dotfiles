@@ -17,7 +17,10 @@
   ];
 
   nixpkgs.config.allowUnfree = true;
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   console.keyMap = "cf";
 
@@ -42,12 +45,15 @@
     };
   };
 
-  fonts.packages = with pkgs;
-    [
-      (nerdfonts.override {
-        fonts = [ "Monaspace" "SourceCodePro" "CascadiaCode" ];
-      })
-    ];
+  fonts.packages = with pkgs; [
+    (nerdfonts.override {
+      fonts = [
+        "Monaspace"
+        "SourceCodePro"
+        "CascadiaCode"
+      ];
+    })
+  ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
