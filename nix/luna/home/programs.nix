@@ -8,7 +8,7 @@
   zsh = {
     enable = true;
     syntaxHighlighting.enable = true;
-    enableAutosuggestions = true;
+    autosuggestion.enable = true;
     plugins = [{
       name = "powerlevel10k";
       src = pkgs.zsh-powerlevel10k;
