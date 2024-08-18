@@ -48,3 +48,7 @@ tasks:
     cmds:
       - mkdir -p ~/.config/waypaper
       - stow -v -t ~/.config/waypaper waypaper
+  wlogout:
+    cmds:
+      - mkdir -p ~/.config/wlogout
+      - stow -v -t ~/.config/wlogout wlogout
