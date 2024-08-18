@@ -3,7 +3,7 @@
 include os/${KITTY_OS}.conf
 
 #: Fonts {{{
-font_family      MonaspiceNe Nerd Font
+font_family MonaspiceNe Nerd Font Mono
 #: }}}
 
 #: Cursor customization {{{
@@ -40,7 +40,7 @@ tab_activity_symbol !
 #: Color scheme {{{
 include RosePineDawn.conf
 background_image_layout scaled
-background_tint 0.95
+
 #: }}}
 
 #: Advanced {{{
