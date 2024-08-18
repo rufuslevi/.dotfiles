@@ -1,8 +1,6 @@
 { user, pkgs, ... }:
 
 {
-  homebrew = import ./brew.nix { };
-
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
@@ -24,23 +22,6 @@
     };
   };
 
-  system = {
-    stateVersion = 4;
-    defaults = { 
-      NSGlobalDomain.InitialKeyRepeat = 15;
-      NSGlobalDomain.KeyRepeat = 2;
-      finder = {
-        FXDefaultSearchScope = "SCcf";
-        FXPreferredViewStyle = "Nlsv";
-        QuitMenuItem = true;
-        ShowPathbar = true;
-        _FXShowPosixPathInTitle = false;
-      };
-    };
-  };
-
-  services = { nix-daemon.enable = true; };
-
   networking = { hostName = "luna"; };
 
   security.pam.enableSudoTouchIdAuth = true;
@@ -61,6 +42,5 @@
 
       ];
   };
-
 }
 
