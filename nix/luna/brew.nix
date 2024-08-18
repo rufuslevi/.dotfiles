@@ -97,6 +97,7 @@
       "go-task"
       "sdl2"
       "scons"
+      "pngquant"
     ];
   };
 }
