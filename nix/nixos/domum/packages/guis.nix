@@ -26,7 +26,6 @@
     kdePackages.kio
     kdePackages.kio-fuse
     kdePackages.dolphin
-    kdePackages.partitionmanager
     dunst
     themechanger
     pavucontrol
