@@ -89,7 +89,7 @@
       "default": ["", ""]
     },
     "scroll-step": 1,
-    "on-click": "pavucontrol",
+    "on-click": "pavucontrol-qt",
     "ignored-sinks": ["Easy Effects Sink"]
   },
   "bluetooth": {

@@ -29,7 +29,7 @@
     dunst
     themechanger
     pavucontrol
-    pwvucontrol
+    lxqt.pavucontrol-qt
     vlc
     gparted
     librewolf
