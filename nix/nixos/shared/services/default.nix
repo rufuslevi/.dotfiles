@@ -1,5 +1,9 @@
 { ... }:
 
 {
-  imports = [ ./drives.nix ./samba.nix ./ssh.nix ];
+  imports = [
+    ./drives.nix
+    ./samba.nix
+    ./ssh.nix
+  ];
 }
