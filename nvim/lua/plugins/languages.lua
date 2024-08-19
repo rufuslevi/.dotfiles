@@ -49,12 +49,54 @@ return {
     build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
   },
   {
+    "williamboman/mason.nvim",
+    cmd = "Mason",
+    build = ":MasonUpdate",
+    opts_extend = { "ensure_installed" },
+    opts = {
+      ensure_installed = {
+        "clang-format",
+        "clangd",
+        "cmakelang",
+        "cmakelint",
+        "codelldb",
+        "debugpy",
+        "docker-compose-language-service",
+        "eslint-lsp",
+        "hadolint",
+        "java-debug-adapter",
+        "java-test",
+        "jdtls",
+        "js-debug-adapter",
+        "json-lsp",
+        "lua-language-server",
+        "markdown-toc",
+        "markdownlint",
+        "marksman",
+        "nil",
+        "nixpkgs-fmt",
+        "prettier",
+        "ruff",
+        "ruff-lsp",
+        "rust-analyzer",
+        "shellcheck",
+        "shfmt",
+        "stylua",
+        "taplo",
+        "texlab",
+        "typescript-language-server",
+        "vtsls",
+        "yaml-language-server",
+      },
+    },
+  },
+  {
     "stevearc/conform.nvim",
     dependencies = { "mason.nvim" },
     lazy = true,
     cmd = "ConformInfo",
     opts = {
-      format = {
+      default_format_opts = {
         timeout_ms = 3000,
         async = false, -- not recommended to change
         quiet = false, -- not recommended to change
@@ -63,9 +105,10 @@ return {
       formatters_by_ft = {
         lua = { "stylua" },
         sh = { "shfmt" },
-        nix = { "nixfmt", "nixpkgs_fmt", "nil_ls" },
+        nix = { "nixfmt" },
         css = { "stylelint" },
         gdscript = { "gdformat" },
+        py = { "black" },
       },
     },
   },
