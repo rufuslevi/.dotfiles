@@ -2,32 +2,36 @@
 
 {
   environment.systemPackages = with pkgs; [
-    lua54Packages.jsregexp
-    llvmPackages_17.clang-unwrapped
-    lua-language-server
-    stylua
+    cargo
+    dotnet-sdk_7
+    fish
+    gcc
+    gdtoolkit_4
+    go
+    gopls
     jdt-language-server
+    llvmPackages_17.clang-unwrapped
+    lua
+    lua-language-server
+    lua54Packages.jsregexp
     marksman
-    rust-analyzer
+    nodejs_22
     nil
     nixfmt-rfc-style
     nixpkgs-fmt
     nixpkgs-lint
-    go
-    gopls
+    rust-analyzer
     python312
     python312Packages.pip
     python312Packages.pillow
+    python312Packages.debugpy
+    python312Packages.venvShellHook
+    python312Packages.pylint-venv
     shfmt
+    stylua
     taplo
-    cargo
     rustc
     tree-sitter
-    nodejs_22
-    lua
-    gcc
     temurin-bin-21
-    gdtoolkit_4
-    dotnet-sdk_7
   ];
 }

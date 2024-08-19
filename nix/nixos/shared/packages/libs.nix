@@ -2,8 +2,10 @@
 
 {
   environment.systemPackages = with pkgs; [
-    libnotify
     kdePackages.polkit-kde-agent-1
+    exfat
+    exfatprogs
+    libnotify
     at-spi2-atk
     libcaca
     p11-kit
