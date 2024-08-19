@@ -8,7 +8,7 @@ return {
   {
     "xiyaowong/transparent.nvim",
     config = function()
-      require("transparent").setup()
+      require("transparent").setup({})
     end,
   },
   {
@@ -28,7 +28,7 @@ return {
   {
     "NvChad/nvim-colorizer.lua",
     config = function()
-      require("colorizer").setup()
+      require("colorizer").setup({})
     end,
   },
   {
