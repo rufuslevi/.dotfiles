@@ -17,8 +17,10 @@
   qt = {
     enable = true;
     platformTheme = {
-      name = "qt5ct";
+      name = "kde";
     };
-    style = { name = "kvantum"; };
+    style = {
+      name = "kvantum";
+    };
   };
 }

@@ -73,9 +73,6 @@ let
   };
 in
 {
-  xdg.portal = {
-    config = { common = { "org.freedesktop.impl.portal.Settings" = "gtk"; }; };
-  };
   xdg.userDirs = {
     enable = true;
     desktop = "${config.home.homeDirectory}/Bureau";
