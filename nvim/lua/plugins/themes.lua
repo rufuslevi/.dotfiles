@@ -6,28 +6,22 @@ return {
   },
   {
     "sainnhe/sonokai",
-    priority = 1000,
   },
   {
     "shaunsingh/solarized.nvim",
-    priority = 1000,
   },
   {
     "Tsuzat/NeoSolarized.nvim",
     lazy = false,
-    priority = 1000,
   },
   {
     "loctvl842/monokai-pro.nvim",
-    priority = 1000,
   },
   {
     "sainnhe/sonokai",
-    priority = 1000,
   },
   {
     "phha/zenburn.nvim",
-    priority = 1000,
     config = function()
       require("zenburn").setup()
     end,
@@ -40,6 +34,9 @@ return {
         colors.bg_statusline = colors.none
       end,
     },
+  },
+  {
+    "folke/tokyonight.nvim",
   },
   {
     "catppuccin/nvim",
@@ -95,17 +92,10 @@ return {
   },
   {
     "rakr/vim-one",
-    priority = 1000,
-  },
-  {
-    "olimorris/onedarkpro.nvim",
-    enabled = false,
-    priority = 1000,
   },
   {
     "navarasu/onedark.nvim",
     enabled = false,
-    priority = 1000,
     config = function()
       require("onedark").setup({
         style = "light",
@@ -154,7 +144,6 @@ return {
     enabled = true,
     config = function()
       local set_dark_mode = function()
-        vim.api.nvim_set_option("background", "dark")
         vim.cmd("colorscheme tokyonight-storm")
 
         require("lualine").setup({
@@ -164,7 +153,6 @@ return {
         })
       end
       local set_light_mode = function()
-        vim.api.nvim_set_option("background", "light")
         vim.cmd("colorscheme rose-pine-dawn")
       end
       if vim.fn.hostname() == "luna" then
