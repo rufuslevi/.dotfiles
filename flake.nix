@@ -1,18 +1,18 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs-darwin.url = "github:nixos/nixpkgs/nixpkgs-23.11-darwin";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    nix-darwin = {
+      url = "github:LnL7/nix-darwin/master";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
 
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
-    darwin = {
-      url = "github:LnL7/nix-darwin/master";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
 
     anyrun.url = "github:anyrun-org/anyrun";
     anyrun.inputs.nixpkgs.follows = "nixpkgs";
@@ -20,24 +20,16 @@
 
   outputs =
     { self
-    , darwin
     , nixpkgs
     , nixpkgs-unstable
-    , nixpkgs-darwin
+    , nix-darwin
     , home-manager
     , anyrun
     , ...
     }@attrs:
     let
-      user = "rufuslevi";
-      system = "aarch64-darwin";
-      specialArgs = {
-        inherit user nixpkgsDarwinConfig;
-      };
-
       inherit (nixpkgs-unstable.lib)
         attrValues
-        makeOverridable
         optionalAttrs
         singleton
         ;
@@ -46,6 +38,7 @@
         config = {
           allowUnfree = true;
         };
+        hostPlatform = "aarch64-darwin";
         overlays =
           attrValues self.overlays
           ++ singleton (
@@ -68,22 +61,20 @@
         apple-silicon =
           final: prev:
           optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
-            pkgs-x86 = import nixpkgs-darwin {
-              system = "86_64-darwin";
+            pkgs-x86 = import nixpkgs {
+              system = "x86_64-darwin";
               inherit (nixpkgsDarwinConfig) config;
             };
           };
       };
 
-      darwinConfigurations = rec {
-        luna = darwin.lib.darwinSystem {
-          inherit system specialArgs;
+      darwinConfigurations.luna = nix-darwin.lib.darwinSystem {
+          specialArgs = attrs;
           modules = [
             { nixpkgs = nixpkgsDarwinConfig; }
             home-manager.darwinModules.home-manager
             ./nix/luna
           ];
-        };
       };
 
       nixosConfigurations.domum-light = nixpkgs.lib.nixosSystem {
