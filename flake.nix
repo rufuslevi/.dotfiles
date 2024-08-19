@@ -31,26 +31,42 @@
     let
       user = "rufuslevi";
       system = "aarch64-darwin";
-      specialArgs = { inherit user nixpkgsDarwinConfig; };
+      specialArgs = {
+        inherit user nixpkgsDarwinConfig;
+      };
 
       inherit (nixpkgs-unstable.lib)
-        attrValues makeOverridable optionalAttrs singleton;
+        attrValues
+        makeOverridable
+        optionalAttrs
+        singleton
+        ;
 
       nixpkgsDarwinConfig = {
-        config = { allowUnfree = true; };
-        overlays = attrValues self.overlays ++ singleton (
-          # Sub in x86 version of packages that don't build on Apple Silicon yet
-          final: prev:
-            (optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
-              inherit (final.pkgs-x86) idris2 nix-index niv purescript;
-            })
-        );
+        config = {
+          allowUnfree = true;
+        };
+        overlays =
+          attrValues self.overlays
+          ++ singleton (
+            # Sub in x86 version of packages that don't build on Apple Silicon yet
+            final: prev:
+              (optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
+                inherit (final.pkgs-x86)
+                  idris2
+                  nix-index
+                  niv
+                  purescript
+                  ;
+              })
+          );
       };
     in
     {
       overlays = {
         comma = final: prev: { comma = import { inherit (prev) pkgs; }; };
-        apple-silicon = final: prev:
+        apple-silicon =
+          final: prev:
           optionalAttrs (prev.stdenv.system == "aarch64-darwin") {
             pkgs-x86 = import nixpkgs-darwin {
               system = "86_64-darwin";
@@ -119,8 +135,10 @@
       nixosConfigurations.milkyway = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = attrs;
-        modules =
-          [ home-manager.nixosModules.home-manager ./nix/nixos/milkyway ];
+        modules = [
+          home-manager.nixosModules.home-manager
+          ./nix/nixos/milkyway
+        ];
       };
     };
 }
