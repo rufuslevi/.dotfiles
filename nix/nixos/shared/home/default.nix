@@ -1,7 +1,12 @@
-{ config, pkgs, lib, ... }:
+{ config, lib, ... }:
 
 {
-  imports = [ ./themes ./programs ./services ../xdg/mime.nix ];
+  imports = [
+    ./themes
+    ./programs
+    ./services
+    ../xdg/mime.nix
+  ];
 
   home.username = "rufuslevi";
   home.homeDirectory = "/home/rufuslevi";
@@ -16,4 +21,3 @@
   };
 
 }
-
