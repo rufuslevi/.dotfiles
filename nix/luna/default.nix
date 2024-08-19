@@ -1,5 +1,5 @@
 { ... }:
 
 {
-  imports = [ ./services ./configuration.nix ./brew.nix ./system.nix ];
+  imports = [ ./homebrew ./services ./configuration.nix ./system.nix ];
 }

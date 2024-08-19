@@ -8,6 +8,6 @@
     enable = true;
   };
   programs = import ./programs.nix { inherit pkgs; };
-  home.packages = with pkgs; [ nil nixfmt-rfc-style nixpkgs-fmt ];
+  home.packages = with pkgs; [ nil nixfmt-rfc-style ];
 }
 

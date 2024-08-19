@@ -1,10 +1,10 @@
-{ user, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    users.${user}.imports = [ ./home ];
+    users.rufuslevi.imports = [ ./home ];
   };
 
   nix = {
@@ -22,13 +22,17 @@
     };
   };
 
+  environment.systemPackages = with pkgs; [
+    nixfmt-rfc-style
+  ];
+
   networking = { hostName = "luna"; };
 
   security.pam.enableSudoTouchIdAuth = true;
 
-  users.users.${user} = {
-    name = "${user}";
-    home = "/Users/${user}/";
+  users.users.rufuslevi = {
+    name = "rufuslevi";
+    home = "/Users/rufuslevi/";
     isHidden = false;
     shell = "/bin/zsh";
   };
