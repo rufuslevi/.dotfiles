@@ -18,11 +18,14 @@ clear-all-old-generations:
 update-flake:
 	nix flake update
 
-switch-luna:
+install-luna:
 	nix run nix-darwin -- switch --flake .#luna --show-trace
 
 update-theme-var:
 	./scripts/variable_nix_update.sh
+
+rebuild-luna:
+	darwin-rebuild switch --flake .#luna --show-trace
 
 rebuild-milkyway:
 	sudo nixos-rebuild switch --flake .#milkyway --show-trace
