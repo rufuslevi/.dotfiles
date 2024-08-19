@@ -10,10 +10,10 @@ export PATH=/opt/local/bin:$PATH
 export PATH=/opt/local/sbin:$PATH
 export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$GOPATH/bin:$PATH
 export PATH=$HOME/Applications/bin:$PATH
 
-export GOPATH=/Users/rufuslevi/Developer/go
+export GOPATH=$HOME/.go
+export GOBIN=$HOME/.go/bin
 
 export MANPATH="/opt/local/share/man:$MANPATH"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
