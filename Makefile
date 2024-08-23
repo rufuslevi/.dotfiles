@@ -1,13 +1,13 @@
-install:
-	# TODO : Add command
+install-luna:
+	nix run nix-darwin -- switch --flake .#luna --show-trace
 
-switch-theme-nixos: update-theme-var switch-nixos
+install-milkyway: upgrade-milkyway copy-grub-theme
+install-domum-light: upgrade-domum-light copy-grub-theme
+install-domum-dark: upgrade-domum-dark copy-grub-theme
 
-switch-milkyway: rebuild-milkyway copy-grub-theme
-
-switch-domum-light: rebuild-domum-light copy-grub-theme
-
-switch-domum-dark: rebuild-domum-dark copy-grub-theme
+upgrade-milkyway: update-flake rebuild-milkyway
+upgrade-domum-dark: update-flake rebuild-domum-dark
+upgrade-domum-light: update-flake rebuild-domum-light
 
 clear-cache:
 	nix-store --gc
@@ -17,9 +17,6 @@ clear-all-old-generations:
 
 update-flake:
 	nix flake update
-
-install-luna:
-	nix run nix-darwin -- switch --flake .#luna --show-trace
 
 update-theme-var:
 	./scripts/variable_nix_update.sh
