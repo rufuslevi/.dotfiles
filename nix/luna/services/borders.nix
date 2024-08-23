@@ -2,6 +2,6 @@
 
 {
   services.jankyborders = {
-    enable = true;
+    enable = false;
   };
 }
