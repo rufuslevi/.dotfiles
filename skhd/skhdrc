@@ -47,7 +47,7 @@ ctrl + shift - 9 : yabai -m window --space 9
 ctrl + shift + alt - a : sudo bash ~/.config/scripts/razer-keymapping.sh
 
 # Toggle dark mode
-ctrl + shift - d : osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
+ctrl + shift - d : bash ~/.config/scripts/.toggle_dark_mode.sh
 
 # Vim keybind for arrows
 alt - h : skhd -k "0x7B"

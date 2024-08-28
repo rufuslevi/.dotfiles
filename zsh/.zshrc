@@ -33,4 +33,6 @@ source ~/.config/zsh/.condarc.sh
 source ~/.config/zsh/.nvmrc.sh
 
 source ~/.config/zsh/.zprofile
-source ~/.config/scripts/.easier-c.sh
+for file in ~/.config/scripts/.*.sh; do
+    source "$file"
+done
