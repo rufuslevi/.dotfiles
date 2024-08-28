@@ -145,12 +145,6 @@ return {
     config = function()
       local set_dark_mode = function()
         vim.cmd("colorscheme monokai-pro-spectrum")
-
-        require("lualine").setup({
-          options = {
-            theme = "tokyonight",
-          },
-        })
       end
       local set_light_mode = function()
         vim.cmd("colorscheme rose-pine-dawn")
