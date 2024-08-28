@@ -7,6 +7,7 @@ nushell/config/history.txt
 wezterm/theme.bin
 
 # Directories
+*idea/
 mason/
 plugged/
 openrgb/logs/
