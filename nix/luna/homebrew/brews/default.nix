@@ -8,6 +8,7 @@
     "koekeishiya/formulae/skhd"
     "neofetch"
     "libqalculate"
+    "octave"
     "fish"
     "yazi"
     "zoxide"
