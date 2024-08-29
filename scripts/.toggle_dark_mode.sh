@@ -22,5 +22,3 @@ toggledarkmode() {
 	fi
 
 }
-
-toggledarkmode
