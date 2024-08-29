@@ -8,7 +8,9 @@
   };
 
   nix = {
-    settings = { experimental-features = "nix-command flakes"; };
+    settings = {
+      experimental-features = "nix-command flakes";
+    };
     extraOptions = ''
       auto-optimise-store = true
       experimental-features = nix-command flakes
@@ -22,13 +24,11 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [
-    nixfmt-rfc-style
-  ];
+  environment.systemPackages = with pkgs; [ nixfmt-rfc-style ];
 
-  networking = { hostName = "luna"; };
-
-  security.pam.enableSudoTouchIdAuth = true;
+  networking = {
+    hostName = "luna";
+  };
 
   users.users.rufuslevi = {
     name = "rufuslevi";
@@ -38,13 +38,15 @@
   };
 
   fonts = {
-    packages = with pkgs;
-      [
-        (nerdfonts.override {
-          fonts = [ "Monaspace" "SourceCodePro" "CascadiaCode" ];
-        })
+    packages = with pkgs; [
+      (nerdfonts.override {
+        fonts = [
+          "Monaspace"
+          "SourceCodePro"
+          "CascadiaCode"
+        ];
+      })
 
-      ];
+    ];
   };
 }
-

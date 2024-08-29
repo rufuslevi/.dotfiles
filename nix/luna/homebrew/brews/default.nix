@@ -1,6 +1,8 @@
 { ... }:
 
 {
+  imports = [ ./languages.nix ];
+
   homebrew.brews = [
     "borders"
     "cmatrix"
@@ -26,20 +28,6 @@
     "btop"
     "neovim"
     "tree-sitter"
-    "lua"
-    "luarocks"
-    "gcc"
-    "rust"
-    "go"
-    "gopls"
-    "node"
-    "prettier"
-    "llvm"
-    "java"
-    "openjdk@21"
-    "rust-analyzer"
-    "go-task"
-    "sdl2"
     "scons"
     "pngquant"
   ];

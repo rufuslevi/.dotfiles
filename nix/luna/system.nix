@@ -15,4 +15,6 @@
       };
     };
   };
+
+  security.pam.enableSudoTouchIdAuth = true;
 }
