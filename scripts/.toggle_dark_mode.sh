@@ -22,3 +22,5 @@ toggledarkmode() {
 	fi
 
 }
+
+(return 0 2>/dev/null) && echo "" || toggledarkmode
