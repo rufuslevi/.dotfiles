@@ -50,5 +50,6 @@
     slurp
     obs-studio
     obs-studio-plugins.wlrobs
+    libreoffice-qt6-fresh
   ];
 }

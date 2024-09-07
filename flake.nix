@@ -85,15 +85,12 @@
 
       nixosConfigurations.domum-light = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = lib.attrsets.mergeAttrsList ([
-          attrs
-          {
-            pkgs-stable = import nixpkgs-stable {
-              system = "x86_64-linux";
-              config.allowUnfree = true;
-            };
-          }
-        ]);
+        specialArgs = attrs // {
+          pkgs-stable = import nixpkgs-stable {
+            system = "x86_64-linux";
+            config.allowUnfree = true;
+          };
+        };
         modules = [
           home-manager.nixosModules.home-manager
           {
@@ -116,15 +113,12 @@
 
       nixosConfigurations.domum-dark = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = lib.attrsets.mergeAttrsList ([
-          attrs
-          {
-            pkgs-stable = import nixpkgs-stable {
-              system = "x86_64-linux";
-              config.allowUnfree = true;
-            };
-          }
-        ]);
+        specialArgs = attrs // {
+          pkgs-stable = import nixpkgs-stable {
+            system = "x86_64-linux";
+            config.allowUnfree = true;
+          };
+        };
         modules = [
           home-manager.nixosModules.home-manager
           {
