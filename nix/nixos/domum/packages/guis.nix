@@ -12,7 +12,7 @@
     bitmagnet
     github-desktop
     openrgb-with-all-plugins
-    swaylock-effects
+    # swaylock-effects
     kitty
     guake
     thunderbird

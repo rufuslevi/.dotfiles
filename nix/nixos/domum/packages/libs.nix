@@ -10,5 +10,6 @@
     kdePackages.kirigami
     kdePackages.kcmutils
     kdePackages.kservice
+    wayland-scanner
   ];
 }

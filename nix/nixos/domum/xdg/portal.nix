@@ -9,6 +9,5 @@
         default = [ "hyprland" ];
       };
     };
-    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
   };
 }

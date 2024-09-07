@@ -5,11 +5,10 @@
     # Hyprland
     hyprland-protocols
     hyprpicker
-    hyprpaper
+    # hyprpaper
 
     hwinfo
     smartmontools
-    hdparm
     iftop
     clipman
     eww
@@ -47,4 +46,3 @@
     xdg-ninja
   ];
 }
-

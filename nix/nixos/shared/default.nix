@@ -33,6 +33,9 @@
         "CascadiaCode"
       ];
     })
+    atkinson-hyperlegible
+    font-awesome
+    helvetica-neue-lt-std
   ];
 
   # This value determines the NixOS release from which the default

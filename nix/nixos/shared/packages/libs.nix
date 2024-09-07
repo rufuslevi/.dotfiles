@@ -10,5 +10,6 @@
     libcaca
     p11-kit
     wlroots_0_18
+    ntfs3g
   ];
 }
