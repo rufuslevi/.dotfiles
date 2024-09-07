@@ -5,9 +5,6 @@ return {
     "ellisonleao/gruvbox.nvim",
   },
   {
-    "sainnhe/sonokai",
-  },
-  {
     "shaunsingh/solarized.nvim",
   },
   {
@@ -19,6 +16,12 @@ return {
   },
   {
     "sainnhe/sonokai",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.g.sonokai_enable_italic = true
+      vim.g.sonokai_style = "andromeda"
+    end,
   },
   {
     "phha/zenburn.nvim",
@@ -144,10 +147,20 @@ return {
     enabled = true,
     config = function()
       local set_dark_mode = function()
-        vim.cmd("colorscheme monokai-pro-spectrum")
+        vim.cmd("colorscheme sonokai")
+        require("lualine").setup({
+          options = {
+            theme = "sonokai",
+          },
+        })
       end
       local set_light_mode = function()
         vim.cmd("colorscheme rose-pine-dawn")
+        require("lualine").setup({
+          options = {
+            theme = "rose-pine-dawn",
+          },
+        })
       end
       if vim.fn.hostname() == "luna" then
         require("auto-dark-mode").setup({
