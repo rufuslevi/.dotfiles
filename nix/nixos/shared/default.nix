@@ -25,18 +25,21 @@
 
   console.keyMap = "cf";
 
-  fonts.packages = with pkgs; [
-    (nerdfonts.override {
-      fonts = [
-        "Monaspace"
-        "SourceCodePro"
-        "CascadiaCode"
-      ];
-    })
-    atkinson-hyperlegible
-    font-awesome
-    helvetica-neue-lt-std
-  ];
+  fonts = {
+    enableDefaultPackages = true;
+    packages = with pkgs; [
+      (nerdfonts.override {
+        fonts = [
+          "Monaspace"
+          "SourceCodePro"
+          "CascadiaCode"
+        ];
+      })
+      atkinson-hyperlegible
+      font-awesome
+      helvetica-neue-lt-std
+    ];
+  };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
