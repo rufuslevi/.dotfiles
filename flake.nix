@@ -1,9 +1,8 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
     nix-darwin = {
       url = "github:LnL7/nix-darwin/master";
@@ -15,6 +14,8 @@
       inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
 
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+
     anyrun.url = "github:anyrun-org/anyrun";
     anyrun.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -23,10 +24,11 @@
     {
       self,
       nixpkgs,
-      hyprland,
+      nixpkgs-stable,
       nixpkgs-unstable,
       nix-darwin,
       home-manager,
+      hyprland,
       anyrun,
       ...
     }@attrs:
@@ -36,6 +38,7 @@
         optionalAttrs
         singleton
         ;
+      lib = nixpkgs.lib;
 
       nixpkgsDarwinConfig = {
         config = {
@@ -82,7 +85,15 @@
 
       nixosConfigurations.domum-light = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = attrs;
+        specialArgs = lib.attrsets.mergeAttrsList ([
+          attrs
+          {
+            pkgs-stable = import nixpkgs-stable {
+              system = "x86_64-linux";
+              config.allowUnfree = true;
+            };
+          }
+        ]);
         modules = [
           home-manager.nixosModules.home-manager
           {
@@ -105,7 +116,15 @@
 
       nixosConfigurations.domum-dark = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = attrs;
+        specialArgs = lib.attrsets.mergeAttrsList ([
+          attrs
+          {
+            pkgs-stable = import nixpkgs-stable {
+              system = "x86_64-linux";
+              config.allowUnfree = true;
+            };
+          }
+        ]);
         modules = [
           home-manager.nixosModules.home-manager
           {

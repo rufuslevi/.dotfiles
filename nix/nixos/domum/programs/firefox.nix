@@ -1,9 +1,8 @@
-{ pkgs, ... }:
-
+{ pkgs-stable, ... }:
 {
   programs.firefox = {
     enable = true;
-    package = pkgs.firefox-devedition;
+    package = pkgs-stable.firefox-devedition;
     preferences = {
       "browser.tabs.inTitlebar" = 0;
       "browser.compactmode.show" = true;
