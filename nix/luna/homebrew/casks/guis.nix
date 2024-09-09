@@ -11,6 +11,7 @@
     "tomatobar"
     "qbittorrent"
     "obsidian"
+    "balenaetcher"
     "syncthing"
     "vscodium"
     "wezterm"
@@ -54,5 +55,7 @@
     "gimp"
     "keyboardcleantool"
     "unnaturalscrollwheels"
+    "unity-hub"
+    "jupyterlab"
   ];
 }
