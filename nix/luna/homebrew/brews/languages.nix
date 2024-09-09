@@ -16,5 +16,6 @@
     "gopls"
     "go-task"
     "sdl2"
+    "pyenv"
   ];
 }

@@ -4,6 +4,9 @@ if [ -f ~/.cargo/env ]; then
     . "$HOME/.cargo/env"
 fi
 
+export PYENV_ROOT=$HOME/.pyenv
+
+export PATH=$PYENV_ROOT/bin:$PATH
 export PATH=/usr/share:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/opt/local/bin:$PATH

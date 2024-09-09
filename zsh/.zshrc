@@ -6,6 +6,9 @@ else
     source ~/.config/zsh/.zshprompt
 fi
 
+[[ -d $PYENV_ROOT/bin ]]
+eval "$(pyenv init -)"
+
 # What OS are we running?
 if [[ $(uname) == "Darwin" ]]; then
     # echo "Running MacOS!"
