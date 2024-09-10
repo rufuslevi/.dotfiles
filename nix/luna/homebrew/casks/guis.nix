@@ -5,7 +5,7 @@
     "the-unarchiver"
     "openvpn-connect"
     "vivaldi"
-    "miniconda"
+    "firefox@developer-edition"
     "blender"
     "openrgb"
     "tomatobar"
@@ -56,6 +56,5 @@
     "keyboardcleantool"
     "unnaturalscrollwheels"
     "unity-hub"
-    "jupyterlab"
   ];
 }
