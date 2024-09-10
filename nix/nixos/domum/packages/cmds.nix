@@ -1,5 +1,7 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [ ddcutil ];
+  environment.systemPackages = with pkgs; [
+    ddcutil
+  ];
 }

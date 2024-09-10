@@ -1,4 +1,9 @@
-{ anyrun, pkgs, ... }:
+{
+  anyrun,
+  pkgs,
+  pkgs-stable,
+  ...
+}:
 
 {
   environment.systemPackages = with pkgs; [
@@ -12,9 +17,9 @@
     bitmagnet
     github-desktop
     openrgb-with-all-plugins
-    # swaylock-effects
-    kitty
+    pkgs-stable.swaylock-effects
     guake
+    flameshot
     thunderbird
     obsidian
     cider
@@ -23,10 +28,8 @@
     prismlauncher
     jetbrains.clion
     jetbrains.idea-ultimate
+    jetbrains.rider
     unityhub
-    kdePackages.kio
-    kdePackages.kio-fuse
-    kdePackages.dolphin
     dunst
     themechanger
     pavucontrol

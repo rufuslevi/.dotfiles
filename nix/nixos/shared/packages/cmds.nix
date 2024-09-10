@@ -1,12 +1,16 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-stable, ... }:
 
 {
   environment.systemPackages = with pkgs; [
     # Hyprland
-    hyprland-protocols
-    hyprpicker
-    # hyprpaper
+    pkgs-stable.hyprland-protocols
+    pkgs-stable.hyprpicker
+    pkgs-stable.xdg-desktop-portal
+    pkgs.xdg-desktop-portal-hyprland
+    pkgs-stable.xdg-desktop-portal-gtk
+    kdePackages.xdg-desktop-portal-kde
 
+    bat
     hwinfo
     smartmontools
     iftop
@@ -40,9 +44,9 @@
     brightnessctl
     go-task
     wl-clipboard
-    kdePackages.qtimageformats
     steam-run
     xdg-utils
     xdg-ninja
+    polonium
   ];
 }

@@ -1,5 +1,9 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [ youtube-tui mpv bluetuith ];
+  environment.systemPackages = with pkgs; [
+    youtube-tui
+    mpv
+    bluetuith
+  ];
 }

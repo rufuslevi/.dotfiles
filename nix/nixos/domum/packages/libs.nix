@@ -7,9 +7,6 @@
     logiops
     libinput
     libcamera
-    kdePackages.kirigami
-    kdePackages.kcmutils
-    kdePackages.kservice
     wayland-scanner
   ];
 }
