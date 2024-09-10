@@ -20,7 +20,7 @@ return {
     priority = 1000,
     config = function()
       vim.g.sonokai_enable_italic = true
-      vim.g.sonokai_style = "andromeda"
+      vim.g.sonokai_style = "shusia"
     end,
   },
   {
@@ -165,7 +165,7 @@ return {
       if vim.fn.hostname() == "luna" then
         require("auto-dark-mode").setup({
           update_interval = 1000,
-          set_dark_mode = set_dark_mode,
+          -- set_dark_mode = set_dark_mode,
           set_light_mode = set_light_mode,
         })
         require("auto-dark-mode").init()
