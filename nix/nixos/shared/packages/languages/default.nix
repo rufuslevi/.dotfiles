@@ -32,12 +32,7 @@
     reftools
     ruby
     rust-analyzer
-    python312
-    python312Packages.pip
-    python312Packages.pillow
-    python312Packages.debugpy
-    python312Packages.venvShellHook
-    python312Packages.pylint-venv
+    pyenv
     shfmt
     stylua
     taplo
