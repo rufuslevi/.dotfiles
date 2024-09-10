@@ -8,12 +8,12 @@ let
     "application/x-yaml" = [ "nvim.desktop" ];
     "application/yaml" = [ "org.kde.kate.desktop" ];
     "application/zip" = [ "org.kde.ark.desktop" ];
-    "application/x-extension-htm" = [ "vivaldi-stable.desktop" ];
-    "application/x-extension-html" = [ "vivaldi-stable.desktop" ];
-    "application/x-extension-shtml" = [ "vivaldi-stable.desktop" ];
-    "application/x-extension-xhtml" = [ "vivaldi-stable.desktop" ];
-    "application/x-extension-xht" = [ "vivaldi-stable.desktop" ];
-    "application/xhtml+xml" = [ "vivaldi-stable.desktop" ];
+    "application/x-extension-htm" = [ "firefox-devedition.desktop" ];
+    "application/x-extension-html" = [ "firefox-devedition.desktop" ];
+    "application/x-extension-shtml" = [ "firefox-devedition.desktop" ];
+    "application/x-extension-xhtml" = [ "firefox-devedition.desktop" ];
+    "application/x-extension-xht" = [ "firefox-devedition.desktop" ];
+    "application/xhtml+xml" = [ "firefox-devedition.desktop" ];
     "image/x-tga" = [ "org.kde.gwenview.desktop" ];
     "image/x-xcf" = [ "org.kde.gwenview.desktop" ];
     "image/webp" = [ "org.kde.gwenview.desktop" ];
@@ -38,7 +38,7 @@ let
     "text/plain" = [ "nvim.desktop" ];
     "text/markdown" = [ "nvim.desktop" ];
     "text/x-cmake" = [ "nvim.desktop" ];
-    "text/html" = [ "vivaldi-stable.desktop" ];
+    "text/html" = [ "firefox-devedition.desktop" ];
     "video/x-flv" = [ "vlc.desktop" ];
     "video/x-flic" = [ "vlc.desktop" ];
     "video/x-nxv" = [ "vlc.desktop" ];
@@ -61,15 +61,15 @@ let
     "video/ogg" = [ "vlc.desktop" ];
     "x-scheme-handler/ame" = [ "cider.desktop" ];
     "x-scheme-handler/cider" = [ "cider.desktop" ];
-    "x-scheme-handler/http" = [ "vivaldi-stable.desktop" ];
-    "x-scheme-handler/https" = [ "vivaldi-stable.desktop" ];
+    "x-scheme-handler/http" = [ "firefox-devedition.desktop" ];
+    "x-scheme-handler/https" = [ "firefox-devedition.desktop" ];
     "x-scheme-handler/itms" = [ "cider.desktop" ];
     "x-scheme-handler/itmss" = [ "cider.desktop" ];
     "x-scheme-handler/music" = [ "cider.desktop" ];
     "x-scheme-handler/musics" = [ "cider.desktop" ];
     "x-scheme-handler/x-github-client" = [ "github-desktop.desktop" ];
     "x-scheme-handler/x-github-desktop-auth" = [ "github-desktop.desktop" ];
-    "x-scheme-handler/chrome" = [ "vivaldi-stable.desktop" ];
+    "x-scheme-handler/chrome" = [ "firefox-devedition.desktop" ];
   };
 in
 {

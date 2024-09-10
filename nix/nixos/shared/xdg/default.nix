@@ -1,8 +1,10 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   xdg = {
     autostart.enable = true;
-    menus = { enable = true; };
+    menus = {
+      enable = true;
+    };
   };
 }

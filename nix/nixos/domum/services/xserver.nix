@@ -3,7 +3,10 @@
 {
   services = {
     displayManager = {
-      sddm.enable = true;
+      sddm = {
+        enable = true;
+        wayland.enable = true;
+      };
     };
     xserver = {
       enable = true;
