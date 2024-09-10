@@ -11,7 +11,7 @@
 
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
@@ -92,21 +92,20 @@
           };
         };
         modules = [
-          home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              extraSpecialArgs = attrs;
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              users.rufuslevi = {
-                imports = [
-                  anyrun.homeManagerModules.anyrun
-                  ./nix/nixos/domum/home
-                  ./nix/nixos/shared/home/themes/light_theme.nix
-                ];
-              };
-            };
-          }
+          # home-manager.nixosModules.home-manager
+          # {
+          #   home-manager = {
+          #     extraSpecialArgs = attrs;
+          #     useGlobalPkgs = true;
+          #     useUserPackages = true;
+          #     users.rufuslevi = {
+          #       imports = [
+          #         ./nix/nixos/domum/home
+          #         ./nix/nixos/shared/home/themes/light_theme.nix
+          #       ];
+          #     };
+          #   };
+          # }
           ./nix/nixos/domum
         ];
       };
@@ -120,22 +119,21 @@
           };
         };
         modules = [
-          home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              backupFileExtension = "hm-backup";
-              extraSpecialArgs = attrs;
-              users.rufuslevi = {
-                imports = [
-                  anyrun.homeManagerModules.anyrun
-                  ./nix/nixos/domum/home
-                  ./nix/nixos/shared/home/themes/dark_theme.nix
-                ];
-              };
-            };
-          }
+          # home-manager.nixosModules.home-manager
+          # {
+          #   home-manager = {
+          #     useGlobalPkgs = true;
+          #     useUserPackages = true;
+          #     backupFileExtension = "hm-backup";
+          #     extraSpecialArgs = attrs;
+          #     users.rufuslevi = {
+          #       imports = [
+          #         ./nix/nixos/domum/home
+          #         ./nix/nixos/shared/home/themes/dark_theme.nix
+          #       ];
+          #     };
+          #   };
+          # }
           ./nix/nixos/domum
         ];
       };
