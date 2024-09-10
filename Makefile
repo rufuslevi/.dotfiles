@@ -28,10 +28,10 @@ rebuild-milkyway:
 	sudo nixos-rebuild switch --flake .#milkyway --show-trace
 
 rebuild-domum-light:
-	sudo nixos-rebuild switch --flake .#domum-light --show-trace
+	sudo nixos-rebuild switch --impure --flake .#domum-light --show-trace
 
 rebuild-domum-dark:
-	sudo nixos-rebuild switch --flake .#domum-dark --show-trace
+	sudo nixos-rebuild switch --impure --flake .#domum-dark --show-trace
 
 copy-grub-theme:
 	sudo cp -r -u ./grub/hyperfluent /boot/grub/themes
