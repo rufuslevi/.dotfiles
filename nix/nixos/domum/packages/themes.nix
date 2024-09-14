@@ -6,6 +6,8 @@
     kdePackages.qtstyleplugin-kvantum
     kdePackages.qt6gtk2
     kdePackages.qt6ct
+    kdePackages.qtwayland
+    kdePackages.qtdeclarative
     gsettings-desktop-schemas
   ];
 }

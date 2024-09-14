@@ -13,6 +13,7 @@
     notion-app-enhanced
     vivaldi
     vivaldi-ffmpeg-codecs
+    brave
     nautilus
     bitmagnet
     github-desktop

@@ -24,6 +24,7 @@
       libappindicator-gtk3
       libcamera
       libdrm
+      libgcc
       libglvnd
       libnotify
       libpulseaudio
@@ -32,6 +33,7 @@
       libuuid
       libxkbcommon
       libxml2
+      llvm
       mesa
       nspr
       nss
