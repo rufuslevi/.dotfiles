@@ -56,5 +56,6 @@
     "keyboardcleantool"
     "unnaturalscrollwheels"
     "unity-hub"
+    "zed"
   ];
 }
