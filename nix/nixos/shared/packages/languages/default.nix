@@ -32,11 +32,15 @@
     reftools
     ruby
     rust-analyzer
+    python3
     pyenv
+    poetry
     shfmt
+    sqlite
     stylua
     taplo
     texliveFull
+    tcl
     rustc
     tree-sitter
     temurin-bin-21
