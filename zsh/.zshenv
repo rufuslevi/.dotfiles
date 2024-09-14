@@ -20,6 +20,7 @@ export GOBIN=$HOME/.go/bin
 
 export MANPATH="/opt/local/share/man:$MANPATH"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
 
 export LIBTOOL=glibtool
 export LIBTOOLIZE=glibtoolize make
