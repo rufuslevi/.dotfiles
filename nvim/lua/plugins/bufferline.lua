@@ -53,38 +53,38 @@ return {
             require("bufdelete").bufdelete(bufnum, true)
           end,
           show_tab_indicators = false,
-          custom_areas = {
-            left = function()
-              local result = {}
-              local seve = vim.diagnostic.severity
-              local error = #vim.diagnostic.get(nil, { severity = seve.ERROR })
-              local warning = #vim.diagnostic.get(nil, { severity = seve.WARN })
-              local info = #vim.diagnostic.get(nil, { severity = seve.INFO })
-              local hint = #vim.diagnostic.get(nil, { severity = seve.HINT })
-
-              if error ~= 0 then
-                table.insert(result, { text = icons.Error .. error, fg = "#EC5241" })
-              end
-
-              if warning ~= 0 then
-                table.insert(result, { text = icons.Warn .. warning, fg = "#EFB839" })
-              end
-
-              if hint ~= 0 then
-                table.insert(result, { text = icons.Hint .. hint, fg = "#A3BA5E" })
-              end
-
-              if info ~= 0 then
-                table.insert(result, { text = icons.Info .. info, fg = "#7EA9A7" })
-              end
-
-              if next(result) ~= nil then
-                table.insert(result, { text = " > " })
-              end
-
-              return result
-            end,
-          },
+          -- custom_areas = {
+          --   left = function()
+          --     local result = {}
+          --     local seve = vim.diagnostic.severity
+          --     local error = #vim.diagnostic.get(nil, { severity = seve.ERROR })
+          --     local warning = #vim.diagnostic.get(nil, { severity = seve.WARN })
+          --     local info = #vim.diagnostic.get(nil, { severity = seve.INFO })
+          --     local hint = #vim.diagnostic.get(nil, { severity = seve.HINT })
+          --
+          --     if error ~= 0 then
+          --       table.insert(result, { text = icons.Error .. error, fg = "#EC5241" })
+          --     end
+          --
+          --     if warning ~= 0 then
+          --       table.insert(result, { text = icons.Warn .. warning, fg = "#EFB839" })
+          --     end
+          --
+          --     if hint ~= 0 then
+          --       table.insert(result, { text = icons.Hint .. hint, fg = "#A3BA5E" })
+          --     end
+          --
+          --     if info ~= 0 then
+          --       table.insert(result, { text = icons.Info .. info, fg = "#7EA9A7" })
+          --     end
+          --
+          --     if next(result) ~= nil then
+          --       table.insert(result, { text = " > " })
+          --     end
+          --
+          --     return result
+          --   end,
+          -- },
         },
       })
     end,

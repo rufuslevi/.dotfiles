@@ -41,8 +41,6 @@ vim.opt.mousescroll = "ver:1,hor:2"
 vim.opt.updatetime = 50
 vim.opt.spell = false
 vim.opt.hlsearch = true
-vim.opt.wrap = false
--- vim.opt.smartindent = true
 
 -- Instant settings
 vim.g.instant_username = "rufuslevi"

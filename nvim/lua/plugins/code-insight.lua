@@ -38,6 +38,16 @@ return {
     end,
   },
   {
+    "mfussenegger/nvim-lint",
+    opts = {
+      linters = {
+        ["markdownlint-cli2"] = {
+          args = { "--config", "~/.config/nvim/.markdownlint-cli2.yaml", "--" },
+        },
+      },
+    },
+  },
+  {
     "jubnzv/virtual-types.nvim",
   },
   {
@@ -59,6 +69,24 @@ return {
     },
     config = function(_, opts)
       require("lsp_signature").setup(opts)
+    end,
+  },
+  {
+    "andrewferrier/wrapping.nvim",
+    config = function()
+      require("wrapping").setup({
+        notify_on_switch = true,
+        auto_set_mode_filetype_allowlist = {
+          "asciidoc",
+          "gitcommit",
+          "latex",
+          "mail",
+          "markdown",
+          "rst",
+          "tex",
+          "text",
+        },
+      })
     end,
   },
 }

@@ -39,22 +39,13 @@ return {
         "cmakelang",
         "cmakelint",
         "codelldb",
-        "debugpy",
-        "docker-compose-language-service",
         "eslint-lsp",
-        "hadolint",
         "java-debug-adapter",
         "java-test",
         "jdtls",
         "js-debug-adapter",
         "json-lsp",
         "lua-language-server",
-        "markdown-toc",
-        "markdownlint",
-        "marksman",
-        "nil",
-        "nixpkgs-fmt",
-        "prettier",
         "ruff",
         "ruff-lsp",
         "rust-analyzer",
@@ -84,7 +75,6 @@ return {
       formatters_by_ft = {
         lua = { "stylua" },
         sh = { "shfmt" },
-        nix = { "nixfmt" },
         css = { "stylelint" },
         gdscript = { "gdformat" },
         py = { "black" },
@@ -103,9 +93,7 @@ return {
         end)
       end,
     },
-    ---@class PluginLspOpts
     opts = {
-      ---@type lspconfig.options
       servers = {
         tsserver = {},
         pyright = {},
@@ -115,8 +103,6 @@ return {
         },
         gdshader_lsp = {},
       },
-      -- return true if you don't want this server to be setup with lspconfig
-      ---@type table<string, fun(server:string, opts:_.lspconfig.options):boolean?>
       setup = {
         tsserver = function(_, opts)
           require("typescript").setup({ server = opts })

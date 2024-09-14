@@ -47,12 +47,17 @@ return {
     "jbyuki/instant.nvim",
   },
   {
-    "rcarriga/nvim-notify",
+    "marioortizmanero/adoc-pdf-live.nvim",
     config = function()
-      require("notify").setup({
-        background_colour = "#000000",
-      })
+      require("adoc_pdf_live").setup()
     end,
+  },
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      background_colour = "#00000000",
+      render = "compact",
+    },
   },
   {
     "dccsillag/magma-nvim",
@@ -69,6 +74,16 @@ return {
         "<cmd>MagmaInterrupt<CR>",
         desc = "Interrupts the currently running cell and does nothing if not cell is running.",
       },
+    },
+  },
+  {
+    "HakonHarnes/img-clip.nvim",
+    event = "VeryLazy",
+    opts = {
+      dir_path = "img",
+    },
+    keys = {
+      { "<leader>pi", "<cmd>PasteImage<cr>", desc = "Paste image from system clipboard" },
     },
   },
   {

@@ -158,7 +158,7 @@ return {
         vim.cmd("colorscheme rose-pine-dawn")
         require("lualine").setup({
           options = {
-            theme = "rose-pine-dawn",
+            theme = "rose-pine",
           },
         })
       end
