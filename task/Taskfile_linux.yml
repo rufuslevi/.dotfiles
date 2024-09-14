@@ -17,6 +17,10 @@ tasks:
     cmds:
       - mkdir -p ~/.config/anyrun
       - stow -v -t ~/.config/anyrun anyrun
+  darkman:
+    cmds:
+      - mkdir -p ~/.config/darkman
+      - stow -v -t ~/.config/darkman darkman
   dunst:
     cmds:
       - mkdir -p ~/.config/dunst
@@ -29,6 +33,10 @@ tasks:
     cmds:
       - mkdir -p ~/.config/hypr
       - stow -v -t ~/.config/hypr hypr
+  kvantum:
+    cmds:
+      - mkdir -p ~/.config/Kvantum
+      - stow -v -t ~/.config/Kvantum kvantum
   nushell:
     cmds:
       - mkdir -p ~/.config/nushell

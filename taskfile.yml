@@ -22,6 +22,10 @@ tasks:
     cmds:
       - task os:all
       - task shared
+  bat:
+    cmds:
+      - mkdir -p ~/.config/bat
+      - stow -v -t ~/.config/bat bat
   btop:
     cmds:
       - mkdir -p ~/.config/btop

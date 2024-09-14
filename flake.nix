@@ -92,20 +92,6 @@
           };
         };
         modules = [
-          # home-manager.nixosModules.home-manager
-          # {
-          #   home-manager = {
-          #     extraSpecialArgs = attrs;
-          #     useGlobalPkgs = true;
-          #     useUserPackages = true;
-          #     users.rufuslevi = {
-          #       imports = [
-          #         ./nix/nixos/domum/home
-          #         ./nix/nixos/shared/home/themes/light_theme.nix
-          #       ];
-          #     };
-          #   };
-          # }
           ./nix/nixos/domum
         ];
       };
@@ -119,21 +105,6 @@
           };
         };
         modules = [
-          # home-manager.nixosModules.home-manager
-          # {
-          #   home-manager = {
-          #     useGlobalPkgs = true;
-          #     useUserPackages = true;
-          #     backupFileExtension = "hm-backup";
-          #     extraSpecialArgs = attrs;
-          #     users.rufuslevi = {
-          #       imports = [
-          #         ./nix/nixos/domum/home
-          #         ./nix/nixos/shared/home/themes/dark_theme.nix
-          #       ];
-          #     };
-          #   };
-          # }
           ./nix/nixos/domum
         ];
       };
