@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-sudo pkill -f openrgb &&
-	openrgb --startminimized
+killall -w .openrgb-wrapped &&
+  nohup openrgb --startminimized &>/dev/null &
