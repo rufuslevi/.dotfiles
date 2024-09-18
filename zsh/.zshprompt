@@ -1,5 +1,5 @@
 # Needs to be before prompt init to load correctly with instant-prompt
-lua ~/Developer/pokemon-catcher/src/init.lua 1
+lua ~/Developer/pokemon-catcher/src/init.lua init
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
