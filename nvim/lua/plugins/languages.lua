@@ -28,6 +28,9 @@ return {
     build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
   },
   {
+    "jbyuki/nabla.nvim",
+  },
+  {
     "williamboman/mason.nvim",
     cmd = "Mason",
     build = ":MasonUpdate",
