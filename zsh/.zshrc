@@ -31,6 +31,7 @@ else
 fi
 
 eval "$(zoxide init --cmd cd zsh)"
+source <(fzf --zsh)
 
 source ~/.config/zsh/.condarc.sh
 source ~/.config/zsh/.nvmrc.sh
