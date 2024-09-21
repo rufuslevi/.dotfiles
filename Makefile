@@ -5,6 +5,7 @@ install-milkyway: upgrade-milkyway copy-grub-theme
 install-domum-light: upgrade-domum-light copy-grub-theme
 install-domum-dark: upgrade-domum-dark copy-grub-theme
 
+upgrade-luna: update-flake rebuild-luna
 upgrade-milkyway: update-flake rebuild-milkyway
 upgrade-domum-dark: update-flake rebuild-domum-dark
 upgrade-domum-light: update-flake rebuild-domum-light
