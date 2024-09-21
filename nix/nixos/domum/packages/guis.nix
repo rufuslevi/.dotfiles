@@ -28,6 +28,7 @@
     bitwarden-desktop
     prismlauncher
     jetbrains.clion
+    jetbrains.pycharm-professional
     jetbrains.idea-ultimate
     jetbrains.rider
     unityhub
@@ -55,5 +56,6 @@
     obs-studio
     obs-studio-plugins.wlrobs
     libreoffice-qt6-fresh
+    octaveFull
   ];
 }
