@@ -3,8 +3,6 @@ version: "3"
 tasks:
   all:
     cmds:
-      - task os:yabai:setup
-      - task os:yabai:upgrade
       - task os:borders
       - task os:nushell
       - task os:skhd
