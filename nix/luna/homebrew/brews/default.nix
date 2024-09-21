@@ -8,6 +8,7 @@
     "cmatrix"
     "koekeishiya/formulae/yabai"
     "koekeishiya/formulae/skhd"
+    "zsh-completions"
     "neofetch"
     "libqalculate"
     "octave"
