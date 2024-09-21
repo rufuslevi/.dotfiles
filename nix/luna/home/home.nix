@@ -7,7 +7,8 @@
   xdg = {
     enable = true;
   };
-  programs = import ./programs.nix { inherit pkgs; };
-  home.packages = with pkgs; [ nil nixfmt-rfc-style ];
+  home.packages = with pkgs; [
+    nil
+    nixfmt-rfc-style
+  ];
 }
-

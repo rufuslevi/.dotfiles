@@ -78,7 +78,6 @@
         specialArgs = attrs;
         modules = [
           { nixpkgs = nixpkgsDarwinConfig; }
-          home-manager.darwinModules.home-manager
           ./nix/luna
         ];
       };

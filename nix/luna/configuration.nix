@@ -1,12 +1,6 @@
 { pkgs, ... }:
 
 {
-  home-manager = {
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    users.rufuslevi.imports = [ ./home ];
-  };
-
   nix = {
     settings = {
       experimental-features = "nix-command flakes";
@@ -24,7 +18,10 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [ nixfmt-rfc-style ];
+  environment.systemPackages = with pkgs; [
+    nil
+    nixfmt-rfc-style
+  ];
 
   networking = {
     hostName = "luna";
