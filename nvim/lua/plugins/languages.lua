@@ -49,6 +49,7 @@ return {
         "js-debug-adapter",
         "json-lsp",
         "lua-language-server",
+        "matlab-language-server",
         "ruff",
         "ruff-lsp",
         "rust-analyzer",
