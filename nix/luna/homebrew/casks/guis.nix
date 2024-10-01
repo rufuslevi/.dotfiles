@@ -41,7 +41,6 @@
     "onyx"
     "fanny"
     "google-drive"
-    "home-assistant"
     "coconutbattery"
     "hot"
     "steam"
@@ -57,5 +56,6 @@
     "unnaturalscrollwheels"
     "unity-hub"
     "zed"
+    "audacity"
   ];
 }
