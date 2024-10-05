@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    firefox-dev-edition
+    firefox-devedition
     gparted
   ];
 }

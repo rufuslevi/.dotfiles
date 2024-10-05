@@ -8,5 +8,8 @@
         enable = true;
       };
     };
+    displayManager = {
+      lightdm.enable = true;
+    };
   };
 }
