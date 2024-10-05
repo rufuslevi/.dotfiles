@@ -11,6 +11,7 @@
     waybar
     vesktop
     notion-app-enhanced
+    audacity
     vivaldi
     vivaldi-ffmpeg-codecs
     brave
@@ -21,16 +22,19 @@
     pkgs-stable.swaylock-effects
     guake
     flameshot
+    satty
     thunderbird
     obsidian
     cider
     caprine-bin
     bitwarden-desktop
     prismlauncher
+    protonup-qt
     jetbrains.clion
     jetbrains.pycharm-professional
     jetbrains.idea-ultimate
     jetbrains.rider
+    kdePackages.filelight
     unityhub
     dunst
     themechanger
@@ -57,5 +61,10 @@
     obs-studio-plugins.wlrobs
     libreoffice-qt6-fresh
     octaveFull
+    furmark
+    phoronix-test-suite
+    sysbench
+    m32edit
+    gammastep
   ];
 }

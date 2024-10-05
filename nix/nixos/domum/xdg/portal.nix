@@ -86,11 +86,36 @@ in
       enable = true;
     };
     portal = {
+      # config.common.default = "*";
       enable = true;
       xdgOpenUsePortal = true;
-      extraPortals = [
-        pkgs-stable.xdg-desktop-portal-gtk
-        pkgs.kdePackages.xdg-desktop-portal-kde
+      wlr = {
+        enable = true;
+      };
+      config = {
+        common = {
+          default = [
+            "gtk"
+          ];
+        };
+        hyprland = {
+          default = [
+            "hyprland"
+          ];
+          "org.freedesktop.impl.portal.ScreenCast" = [
+            "wlr"
+          ];
+        };
+        kde = {
+          default = [
+            "kde"
+          ];
+        };
+      };
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-gtk
+        xdg-desktop-portal-hyprland
+        kdePackages.xdg-desktop-portal-kde
       ];
     };
   };

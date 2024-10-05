@@ -8,6 +8,9 @@
     kdePackages.qt6ct
     kdePackages.qtwayland
     kdePackages.qtdeclarative
+    kdePackages.knewstuff
+
+    kdePackages.qt5compat
     gsettings-desktop-schemas
   ];
 }

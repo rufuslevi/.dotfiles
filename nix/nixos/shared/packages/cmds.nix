@@ -2,14 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-    # Hyprland
-    pkgs-stable.hyprland-protocols
-    pkgs-stable.hyprpicker
-    pkgs-stable.xdg-desktop-portal
-    pkgs.xdg-desktop-portal-hyprland
-    pkgs-stable.xdg-desktop-portal-gtk
-    kdePackages.xdg-desktop-portal-kde
-
     bat
     hwinfo
     smartmontools

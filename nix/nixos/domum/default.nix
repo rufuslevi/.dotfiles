@@ -22,6 +22,7 @@
 
   environment.pathsToLink = [
     "/share/xdg-desktop-portal"
+    "/share/xdg-desktop-portal/portals"
     "/share/applications"
   ];
 }

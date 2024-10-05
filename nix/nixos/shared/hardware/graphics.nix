@@ -1,15 +1,21 @@
 { pkgs, ... }:
 
 {
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-    extraPackages = with pkgs; [
-      mesa
-      intel-ocl
-      vaapiIntel
-      vaapiVdpau
-      libvdpau-va-gl
-    ];
+  hardware = {
+    amdgpu = {
+      initrd.enable = true;
+      amdvlk = {
+        enable = false;
+      };
+    };
+    graphics = {
+      enable = true;
+      enable32Bit = true;
+      extraPackages = with pkgs; [
+        mesa
+        vaapiVdpau
+        libvdpau-va-gl
+      ];
+    };
   };
 }

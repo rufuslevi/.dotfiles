@@ -7,5 +7,8 @@
     ./ssh.nix
   ];
 
-  services.dbus.enable = true;
+  services.dbus = {
+    enable = true;
+    implementation = "broker";
+  };
 }

@@ -8,9 +8,20 @@
     logiops
     libinput
     libcamera
-    xorg.libxcb
+    libva-utils
+    libvdpau-va-gl
+    mesa
+    mesa-demos
     tk
+    vaapiVdpau
+    vulkan-loader
+    vulkan-tools
+    vulkan-validation-layers
     wayland-scanner
+    wine
+    wineWowPackages.stable
+    winetricks
+    xorg.libxcb
     xz
     zlib
   ];

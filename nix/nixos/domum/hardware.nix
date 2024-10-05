@@ -23,23 +23,25 @@
   ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [
-    "kvm-intel"
     "amdgpu"
   ];
   boot.extraModulePackages = [ ];
   boot.loader = {
     systemd-boot.enable = false;
-    efi.canTouchEfiVariables = true;
+    efi.canTouchEfiVariables = false;
     efi.efiSysMountPoint = "/boot/EFI";
     grub = {
       enable = true;
       device = "nodev";
       useOSProber = true;
       efiSupport = true;
+      efiInstallAsRemovable = true;
       theme = "/boot/grub/themes/hyperfluent";
       extraEntries = import ./grub-entries.nix;
     };
   };
+
+  hardware.cpu.amd.updateMicrocode = true;
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/86b42cb3-f9e4-4fa5-a4d1-9d6a8699c367";
@@ -54,6 +56,16 @@
   fileSystems."/boot/EFI" = {
     device = "/dev/disk/by-uuid/2033-0504";
     fsType = "vfat";
+  };
+
+  fileSystems."/run/media/rufuslevi/BigData" = {
+    device = "/dev/disk/by-uuid/595F1B4B26958B58";
+    fsType = "ntfs";
+  };
+
+  fileSystems."/run/media/rufuslevi/Stockage" = {
+    device = "/dev/disk/by-uuid/5e9abf1f-3dcb-4916-a849-c2d902cf0175";
+    fsType = "ext4";
   };
 
   swapDevices = [
