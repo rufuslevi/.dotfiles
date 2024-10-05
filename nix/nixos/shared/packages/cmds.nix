@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     fan2go
+    lm_sensors
     bat
     hwinfo
     smartmontools
