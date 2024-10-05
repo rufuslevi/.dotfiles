@@ -7,17 +7,14 @@
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
   boot.initrd.availableKernelModules = [
-    "ehci_pci"
     "ahci"
-    "firewire_ohci"
     "xhci_pci"
     "usbhid"
     "usb_storage"
     "sd_mod"
-    "sr_mod"
   ];
   boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-intel" ];
+  boot.kernelModules = [ "kvm-intel" "amdgpu" ];
   boot.extraModulePackages = [ ];
   boot.loader = {
     systemd-boot.enable = false;
@@ -27,12 +24,12 @@
       device = "nodev";
       useOSProber = false;
       efiSupport = true;
-      theme = "/boot/grub/themes/hyperfluent";
+      # theme = "/boot/grub/themes/hyperfluent";
     };
   };
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/d8f3e37e-f096-4db4-bb72-963d6bdff43f";
+    device = "/dev/disk/by-uuid/f41f1299-1fcf-4ab1-8bf8-0f1e58c5c553";
     fsType = "ext4";
   };
 
@@ -49,7 +46,7 @@
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/6CA6-91BA";
+    device = "/dev/disk/by-uuid/99A8-4EEF";
     fsType = "vfat";
   };
 

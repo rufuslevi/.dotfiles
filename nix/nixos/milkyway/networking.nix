@@ -3,6 +3,7 @@
 {
   networking = {
     hostName = "milkyway";
+    networkmanager.enable = true;
     firewall = {
       enable = true;
       allowedTCPPorts = [ 80 139 443 445 6969 8384 22000 ];

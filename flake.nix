@@ -110,9 +110,13 @@
 
       nixosConfigurations.milkyway = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = attrs;
+        specialArgs = attrs // {
+	   pkgs-stable = import nixpkgs-stable {
+             system = "x86_64-linux";
+             config.allowUnfree = true;
+          };
+	};
         modules = [
-          home-manager.nixosModules.home-manager
           ./nix/nixos/milkyway
         ];
       };

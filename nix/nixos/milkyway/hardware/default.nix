@@ -1,5 +1,5 @@
 { ... }:
 
 {
-  imports = [ ./nvidia.nix ];
+  hardware.pulseaudio.enable = false;
 }

@@ -1,5 +1,12 @@
 { ... }:
 
 {
-  services.xserver.videoDrivers = [ "nvidiaLegacy340" ];
+  services.xserver = {
+    enable = true;
+    desktopManager = {
+      xfce = {
+        enable = true;
+      };
+    };
+  };
 }
