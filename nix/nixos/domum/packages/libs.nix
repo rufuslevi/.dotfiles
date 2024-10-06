@@ -14,6 +14,7 @@
     mesa-demos
     tk
     vaapiVdpau
+    vkbasalt
     vulkan-loader
     vulkan-tools
     vulkan-validation-layers

@@ -5,5 +5,6 @@
     youtube-tui
     mpv
     bluetuith
+    ckan
   ];
 }
