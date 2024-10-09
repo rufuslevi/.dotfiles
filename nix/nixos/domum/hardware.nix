@@ -64,8 +64,8 @@
   };
 
   fileSystems."/run/media/rufuslevi/Stockage" = {
-    device = "/dev/disk/by-uuid/5e9abf1f-3dcb-4916-a849-c2d902cf0175";
-    fsType = "ext4";
+    device = "/dev/disk/by-uuid/30FEF5EB4B701518";
+    fsType = "ntfs";
   };
 
   swapDevices = [
