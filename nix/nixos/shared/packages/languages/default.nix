@@ -27,8 +27,6 @@
     nixfmt-rfc-style
     nixpkgs-fmt
     nixpkgs-lint
-    php
-    php84Packages.composer
     reftools
     ruby
     rust-analyzer
