@@ -55,6 +55,7 @@
     helvum
     selectdefaultapplication
     lutris
+    protonup-qt
     heroic
     slurp
     obs-studio

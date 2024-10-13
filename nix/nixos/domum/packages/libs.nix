@@ -5,6 +5,7 @@
     bzip3
     openrazer-daemon
     glib
+    jansson
     logiops
     libinput
     libcamera

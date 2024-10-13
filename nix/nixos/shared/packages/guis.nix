@@ -5,5 +5,6 @@
     firefox-devedition
     gparted
     meld
+    zed-editor
   ];
 }
