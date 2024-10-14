@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-stable, ... }:
 
 {
   imports = [ ./go.nix ];
@@ -30,6 +30,7 @@
     reftools
     ruby
     rust-analyzer
+    pkgs-stable.php
     python3
     pyenv
     poetry

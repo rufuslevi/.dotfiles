@@ -36,7 +36,7 @@
     fzf
     playerctl
     brightnessctl
-    go-task
+    pkgs-stable.go-task
     wl-clipboard
     steam-run
     xdg-utils
