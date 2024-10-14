@@ -55,15 +55,7 @@
         ];
       };
 
-      nixosConfigurations.domum-light = nixpkgs-unstable.lib.nixosSystem {
-        system = system_linux;
-        specialArgs = attrs;
-        modules = [
-          ./nix/nixos/domum
-        ];
-      };
-
-      nixosConfigurations.domum-dark = nixpkgs-unstable.lib.nixosSystem {
+      nixosConfigurations.domum = nixpkgs-unstable.lib.nixosSystem {
         system = system_linux;
         specialArgs = attrs;
         modules = [
