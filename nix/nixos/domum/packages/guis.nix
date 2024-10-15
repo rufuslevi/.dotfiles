@@ -29,7 +29,7 @@
     caprine-bin
     bitwarden-desktop
     prismlauncher
-    protonup-qt
+    pkgs-stable.protonup-qt
     jetbrains.clion
     jetbrains.pycharm-professional
     jetbrains.idea-ultimate
@@ -55,7 +55,6 @@
     helvum
     selectdefaultapplication
     lutris
-    protonup-qt
     heroic
     slurp
     obs-studio
