@@ -10,7 +10,7 @@ ifeq ($(HOST), milkyway)
 	make copy-grub-theme
 endif
 ifeq ($(HOST), luna)
-	nix run nix-darwin -- switch --flake .#luna --show-trace
+	cd nix/luna; make install
 endif
 
 rebuild:
@@ -21,11 +21,15 @@ ifeq ($(HOST), milkyway)
 	sudo nixos-rebuild switch --flake .#milkyway --show-trace
 endif
 ifeq ($(HOST), luna)
-	darwin-rebuild switch --flake .#luna --show-trace
+	cd nix/luna; make rebuild
 endif
 
 update:
+ifeq ($(HOST), luna)
+	cd nix/luna; make update
+else
 	nix flake update
+endif
 
 upgrade: update rebuild
 
