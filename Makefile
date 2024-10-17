@@ -2,12 +2,10 @@ HOST = $(shell uname -n)
 
 install:
 ifeq ($(HOST), domum)
-	make upgrade
-	make copy-grub-theme
+	cd nix/nixos/domum; make upgrade; make copy-grub-theme
 endif
 ifeq ($(HOST), milkyway)
-	make upgrade
-	make copy-grub-theme
+	cd nix/nixos/milkyway; make upgrade; make copy-grub-theme
 endif
 ifeq ($(HOST), luna)
 	cd nix/luna; make install
@@ -15,7 +13,7 @@ endif
 
 rebuild:
 ifeq ($(HOST), domum)
-	sudo nixos-rebuild switch --impure --flake .#domum --show-trace
+	cd nix/nixos/domum; make rebuild
 endif
 ifeq ($(HOST), milkyway)
 	sudo nixos-rebuild switch --flake .#milkyway --show-trace
@@ -28,7 +26,7 @@ update:
 ifeq ($(HOST), luna)
 	cd nix/luna; make update
 else
-	nix flake update
+	cd nix/nixos/domum; make update
 endif
 
 upgrade: update rebuild
