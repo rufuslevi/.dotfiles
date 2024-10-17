@@ -30,12 +30,13 @@
     pkgs-stable.bitwarden-desktop
     prismlauncher
     pkgs-stable.protonup-qt
-    pkgs-stable.dolphin
+    kdePackages.dolphin
     pkgs-stable.jetbrains.clion
     pkgs-stable.jetbrains.pycharm-professional
     pkgs-stable.jetbrains.idea-ultimate
     pkgs-stable.jetbrains.rider
     kdePackages.filelight
+    kdePackages.okular
     unityhub
     dunst
     themechanger
@@ -46,7 +47,7 @@
     librewolf
     tofi
     wofi
-    kate
+    kdePackages.kate
     qbittorrent
     onedrive
     waypaper
@@ -66,6 +67,6 @@
     phoronix-test-suite
     sysbench
     m32edit
-    gammastep
+    pkgs-stable.gammastep
   ];
 }

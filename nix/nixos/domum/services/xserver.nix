@@ -5,7 +5,7 @@
     displayManager = {
       sddm = {
         enable = false;
-        wayland.enable = true;
+        wayland.enable = false;
         extraPackages = [
           pkgs.kdePackages.qt5compat
         ];

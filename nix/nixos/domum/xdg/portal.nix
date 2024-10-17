@@ -86,7 +86,6 @@ in
       enable = true;
     };
     portal = {
-      # config.common.default = "*";
       enable = true;
       xdgOpenUsePortal = true;
       wlr = {
@@ -104,6 +103,11 @@ in
           ];
           "org.freedesktop.impl.portal.ScreenCast" = [
             "wlr"
+          ];
+        };
+        gnome = {
+          default = [
+            "gnome"
           ];
         };
         kde = {
