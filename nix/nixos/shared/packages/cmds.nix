@@ -12,7 +12,7 @@
     eww
     swww
     wlogout
-    cliphist
+    pkgs-stable.cliphist
     exfat
     gnome.gvfs
     man-pages

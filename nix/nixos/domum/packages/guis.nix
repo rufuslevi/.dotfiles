@@ -27,13 +27,14 @@
     obsidian
     cider
     caprine-bin
-    bitwarden-desktop
+    pkgs-stable.bitwarden-desktop
     prismlauncher
     pkgs-stable.protonup-qt
-    jetbrains.clion
-    jetbrains.pycharm-professional
-    jetbrains.idea-ultimate
-    jetbrains.rider
+    pkgs-stable.dolphin
+    pkgs-stable.jetbrains.clion
+    pkgs-stable.jetbrains.pycharm-professional
+    pkgs-stable.jetbrains.idea-ultimate
+    pkgs-stable.jetbrains.rider
     kdePackages.filelight
     unityhub
     dunst
