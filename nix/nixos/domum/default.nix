@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -7,6 +7,8 @@
     ./packages
     ./programs
     ./services
+    ./stylix.nix
+    # ./theme.nix
     ./xdg
     ./hardware.nix
     ./networking.nix
@@ -20,9 +22,34 @@
     extra-trusted-public-keys = [ "anyrun.cachix.org-1:pqBobmOjI7nKlsUMV25u9QHa9btJK65/C8vnO3p346s=" ];
   };
 
-  environment.pathsToLink = [
-    "/share/xdg-desktop-portal"
-    "/share/xdg-desktop-portal/portals"
-    "/share/applications"
-  ];
+  home-manager = {
+    backupFileExtension = "backup";
+    users.rufuslevi = {
+      home.stateVersion = "24.05";
+      stylix = {
+        enable = true;
+        image = ../../../waypaper/assets/DSCF4379.JPEG;
+        base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+        targets = {
+          hyprland.enable = true;
+          firefox.enable = true;
+          waybar = {
+            enable = true;
+            enableCenterBackColors = true;
+          };
+          kitty.enable = true;
+        };
+      };
+      gtk = {
+        iconTheme = {
+          name = "oomox-gruvbox-dark";
+          package = pkgs.gruvbox-dark-icons-gtk;
+        };
+      };
+      wayland.windowManager.hyprland = {
+        enable = true;
+        extraConfig = "source = $HOME/.config/hypr/hypr.conf";
+      };
+    };
+  };
 }

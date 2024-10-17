@@ -36,8 +36,7 @@
       useOSProber = true;
       efiSupport = true;
       efiInstallAsRemovable = true;
-      theme = "/boot/grub/themes/hyperfluent";
-      extraEntries = import ./grub-entries.nix;
+      # theme = "/boot/grub/themes/hyperfluent";
     };
   };
 
