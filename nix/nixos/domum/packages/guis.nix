@@ -1,5 +1,6 @@
 {
   anyrun,
+  zen-browser,
   pkgs,
   pkgs-stable,
   ...
@@ -14,12 +15,14 @@
     audacity
     vivaldi
     vivaldi-ffmpeg-codecs
+    zen-browser.packages."${system}".specific
     brave
     nautilus
     bitmagnet
     github-desktop
     openrgb-with-all-plugins
     pkgs-stable.swaylock-effects
+    dconf-editor
     guake
     flameshot
     satty

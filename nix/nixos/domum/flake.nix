@@ -11,6 +11,7 @@
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
     stylix.url = "github:danth/stylix";
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
 
     anyrun = {
       url = "github:anyrun-org/anyrun";
@@ -25,6 +26,7 @@
       home-manager,
       hyprland,
       stylix,
+      zen-browser,
       anyrun,
       ...
     }:
@@ -33,6 +35,7 @@
 
       attrs.hyprland = hyprland;
       attrs.anyrun = anyrun;
+      attrs.zen-browser = zen-browser;
 
       attrs.pkgs-stable = import nixos-stable {
         inherit system;
