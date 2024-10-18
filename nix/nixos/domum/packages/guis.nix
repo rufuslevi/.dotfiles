@@ -34,6 +34,7 @@
     prismlauncher
     pkgs-stable.protonup-qt
     kdePackages.dolphin
+    kdePackages.ark
     pkgs-stable.jetbrains.clion
     pkgs-stable.jetbrains.pycharm-professional
     pkgs-stable.jetbrains.idea-ultimate
