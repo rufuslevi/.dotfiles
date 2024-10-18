@@ -29,14 +29,11 @@
       stylix = {
         enable = true;
         image = ../../../waypaper/assets/DSCF4379.JPEG;
-        base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+        # base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+        base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
         targets = {
           hyprland.enable = true;
           firefox.enable = true;
-          waybar = {
-            enable = true;
-            enableCenterBackColors = true;
-          };
           kitty.enable = true;
         };
       };
@@ -44,6 +41,11 @@
         iconTheme = {
           name = "oomox-gruvbox-dark";
           package = pkgs.gruvbox-dark-icons-gtk;
+        };
+      };
+      dconf.settings = {
+        "org/gnome/desktop/wm/preferences" = {
+          button-layout = "";
         };
       };
       wayland.windowManager.hyprland = {

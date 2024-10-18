@@ -4,7 +4,8 @@
   stylix = {
     enable = true;
     image = ../../../waypaper/assets/DSCF4379.JPEG;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+    # base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
     # cursor = {
     #   name = "Volantes";
     #   package = pkgs.volantes-cursors;
