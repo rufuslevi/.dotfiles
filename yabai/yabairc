@@ -27,6 +27,7 @@ yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Equinox$" manage=off
 yabai -m rule --add app="^SigmaOS$" manage=off
+yabai -m rule --add app="Unity" manage=off
 yabai -m rule --add app="^Arc$" title="^$" mouse_follows_focus=off
 yabai -m rule --add app="^OpenRGB$" title="^$" mouse_follows_focus=off
 
