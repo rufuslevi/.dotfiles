@@ -10,6 +10,7 @@
     ./xserver.nix
   ];
 
+  services.joycond.enable = true;
   services.printing.enable = true;
   services.desktopManager.plasma6.enable = false;
   services.ddccontrol.enable = true;

@@ -23,6 +23,7 @@
   ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [
+    "kvm-intel"
     "amdgpu"
   ];
   boot.extraModulePackages = [ ];
@@ -41,6 +42,8 @@
   };
 
   hardware.cpu.amd.updateMicrocode = true;
+  hardware.steam-hardware.enable = true;
+  hardware.enableAllFirmware = true;
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/86b42cb3-f9e4-4fa5-a4d1-9d6a8699c367";
