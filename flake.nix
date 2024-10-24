@@ -11,10 +11,10 @@
       ...
     }:
     let
-      system_linux = "x86_64-linux";
+      system = "x86_64-linux";
 
       attrs.pkgs-stable = import nixpkgs-stable {
-        inherit system_linux;
+        inherit system;
         config = {
           allowUnfree = true;
         };
@@ -22,7 +22,7 @@
     in
     {
       nixosConfigurations.milkyway = nixpkgs-unstable.lib.nixosSystem {
-        system = system_linux;
+        system = system;
         specialArgs = attrs;
         modules = [
           ./nix/nixos/milkyway
