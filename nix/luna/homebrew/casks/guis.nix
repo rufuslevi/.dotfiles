@@ -58,5 +58,6 @@
     "unity-hub"
     "zed"
     "audacity"
+    "raycast"
   ];
 }
