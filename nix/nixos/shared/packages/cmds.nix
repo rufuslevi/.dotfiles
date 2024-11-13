@@ -11,6 +11,7 @@
     clipman
     eww
     swww
+    hyprpaper
     wlogout
     pkgs-stable.cliphist
     exfat
