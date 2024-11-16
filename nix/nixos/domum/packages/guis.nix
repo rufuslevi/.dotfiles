@@ -27,6 +27,8 @@
     flameshot
     satty
     thunderbird
+    gnome-calendar
+    gnome-online-accounts-gtk
     obsidian
     cider
     caprine-bin
