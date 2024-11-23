@@ -1,8 +1,8 @@
 install:
-	nix run nix-darwin -- switch --flake .#domum --show-trace
+	nix run nix-darwin -- switch --flake .#milkyway --show-trace
 
 rebuild:
-	sudo nixos-rebuild switch --flake .#domum --show-trace
+	sudo nixos-rebuild switch --flake .#milkyway --show-trace
 
 update:
 	nix flake update

@@ -23,10 +23,14 @@ ifeq ($(HOST), luna)
 endif
 
 update:
+ifeq ($(HOST), domum)
+	cd nix/nixos/domum; make update
+endif
+ifeq ($(HOST), milkyway)
+	cd nix/nixos/milkyway; make update
+endif
 ifeq ($(HOST), luna)
 	cd nix/luna; make update
-else
-	cd nix/nixos/domum; make update
 endif
 
 upgrade: update rebuild
