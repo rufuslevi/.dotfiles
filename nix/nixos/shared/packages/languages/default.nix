@@ -21,6 +21,7 @@
     lua54Packages.jsregexp
     luarocks
     marksman
+    matlab-language-server
     mockgen
     nodejs_22
     nil
@@ -40,6 +41,7 @@
     taplo
     texliveFull
     tcl
+    typescript-language-server
     rustc
     tree-sitter
     temurin-bin-21
