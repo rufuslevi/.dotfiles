@@ -2,6 +2,9 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
+      vim.list_extend(opts.indent, {
+        enable = true,
+      })
       vim.list_extend(opts.ensure_installed, {
         "bash",
         "css",

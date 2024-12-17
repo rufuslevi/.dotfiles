@@ -38,6 +38,23 @@ return {
     end,
   },
   {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    ---@module "ibl"
+    ---@type ibl.config
+    opts = {
+      scope = {
+        enabled = true,
+      },
+    },
+  },
+  {
+    "nmac427/guess-indent.nvim",
+    config = function()
+      require("guess-indent").setup({})
+    end,
+  },
+  {
     "mfussenegger/nvim-lint",
     opts = {
       linters = {
@@ -60,7 +77,7 @@ return {
   {
     "ray-x/lsp_signature.nvim",
     event = "VeryLazy",
-    enabled = false,
+    enabled = true,
     opts = {
       bind = true, -- This is mandatory, otherwise border config won't get registered.
       handler_opts = {

@@ -98,21 +98,23 @@ return {
       end,
     },
     opts = {
+      autoformat = true,
       servers = {
-        tsserver = {},
         pyright = {},
         gdscript = {
           name = "godot",
           cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
         },
         gdshader_lsp = {},
-      },
-      setup = {
-        tsserver = function(_, opts)
-          require("typescript").setup({ server = opts })
-          return true
-        end,
+        matlab_ls = {},
       },
     },
+    config = function()
+      require("lspconfig").ts_ls.setup({})
+      require("lspconfig").matlab_ls.setup({
+        cmd = { "matlab-language-server", "--stdio" },
+        filetype = { "matlab" },
+      })
+    end,
   },
 }
