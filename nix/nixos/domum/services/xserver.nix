@@ -14,6 +14,10 @@
     xserver = {
       enable = true;
       videoDrivers = [ "amdgpu" ];
+      deviceSection = ''
+        Option "TearFree" "False"
+        Option "VariableRefresh" "True"
+      '';
       displayManager.gdm = {
         enable = true;
         wayland = true;
