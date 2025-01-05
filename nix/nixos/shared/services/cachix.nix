@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  services.cachix-agent.enable = true;
+  services.cachix-agent.enable = false;
 
   nix.settings = {
     builders-use-substitutes = true;
