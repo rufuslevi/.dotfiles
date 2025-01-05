@@ -36,13 +36,9 @@
 
   fonts = {
     packages = with pkgs; [
-      (nerdfonts.override {
-        fonts = [
-          "Monaspace"
-          "SourceCodePro"
-          "CascadiaCode"
-        ];
-      })
+      nerd-fonts.monaspace
+      nerd-fonts.sauce-code-pro
+      nerd-fonts.caskaydia-mono
       atkinson-hyperlegible
     ];
   };
