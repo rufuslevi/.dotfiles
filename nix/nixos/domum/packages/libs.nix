@@ -23,7 +23,6 @@
     wine
     wineWowPackages.stable
     winetricks
-    xboxdrv
     xorg.libxcb
     xz
     zlib

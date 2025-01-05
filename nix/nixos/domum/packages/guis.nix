@@ -15,7 +15,7 @@
     audacity
     vivaldi
     vivaldi-ffmpeg-codecs
-    zen-browser.packages."${system}".specific
+    zen-browser.packages."${system}".default
     brave
     nautilus
     bitmagnet
