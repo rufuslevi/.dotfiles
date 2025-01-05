@@ -6,7 +6,7 @@
   environment.systemPackages = with pkgs; [
     cargo
     delve
-    dotnet-sdk_7
+    dotnet-sdk
     fish
     julia
     gcc

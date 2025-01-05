@@ -17,7 +17,9 @@
     ./users.nix
   ];
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+  };
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
@@ -28,13 +30,9 @@
   fonts = {
     enableDefaultPackages = true;
     packages = with pkgs; [
-      (nerdfonts.override {
-        fonts = [
-          "Monaspace"
-          "SourceCodePro"
-          "CascadiaCode"
-        ];
-      })
+      nerd-fonts.monaspace
+      nerd-fonts.sauce-code-pro
+      nerd-fonts.caskaydia-mono
       atkinson-hyperlegible
       font-awesome
       helvetica-neue-lt-std

@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixos-stable.url = "github:NixOS/nixpkgs/nixos-24.05";
+    nixos-stable.url = "github:NixOS/nixpkgs/nixos-24.11";
     nixos-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager = {
@@ -11,7 +11,7 @@
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
     stylix.url = "github:danth/stylix";
-    zen-browser.url = "github:MarceColl/zen-browser-flake";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
     anyrun = {
       url = "github:anyrun-org/anyrun";

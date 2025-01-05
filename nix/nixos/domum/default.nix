@@ -17,7 +17,7 @@
   home-manager = {
     backupFileExtension = "backup";
     users.rufuslevi = {
-      home.stateVersion = "24.05";
+      home.stateVersion = "24.11";
       stylix = {
         enable = true;
         image = ../../../waypaper/assets/DSCF4379.JPEG;
