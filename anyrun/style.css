@@ -81,12 +81,12 @@ list > #plugin:hover {
 }
 
 box#main {
-  color: #cdd6f4;
+  color: #fbf1c7;
   border-width: 4px;
   border-style: solid;
-  border-color: #cba6f7;
+  border-color: #fbf1c7;
   margin-top: 15px;
-  background-color: #1e1e2e;
+  background-color: #3c3836;
   border-radius: 12px;
   padding: 5px;
 }
