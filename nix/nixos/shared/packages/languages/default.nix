@@ -34,7 +34,9 @@
     pkgs-stable.php
     python3
     pyenv
+    pyright
     poetry
+    prettierd
     shfmt
     sqlite
     stylua
