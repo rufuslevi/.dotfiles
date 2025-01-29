@@ -12,13 +12,6 @@ return {
     end,
   },
   {
-    "stevearc/dressing.nvim",
-    event = "InsertEnter",
-    config = function()
-      require("dressing").setup()
-    end,
-  },
-  {
     "karb94/neoscroll.nvim",
     enable = true,
     config = function()

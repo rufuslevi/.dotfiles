@@ -85,36 +85,4 @@ return {
       },
     },
   },
-  {
-    "neovim/nvim-lspconfig",
-    dependencies = {
-      "jose-elias-alvarez/typescript.nvim",
-      init = function()
-        require("lazyvim.util").lsp.on_attach(function(_, buffer)
-          -- stylua: ignore
-          vim.keymap.set( "n", "<leader>co", "TypescriptOrganizeImports", { buffer = buffer, desc = "Organize Imports" })
-          vim.keymap.set("n", "<leader>cR", "TypescriptRenameFile", { desc = "Rename File", buffer = buffer })
-        end)
-      end,
-    },
-    opts = {
-      autoformat = true,
-      servers = {
-        pyright = {},
-        gdscript = {
-          name = "godot",
-          cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
-        },
-        gdshader_lsp = {},
-        matlab_ls = {},
-      },
-    },
-    config = function()
-      require("lspconfig").ts_ls.setup({})
-      require("lspconfig").matlab_ls.setup({
-        cmd = { "matlab-language-server", "--stdio" },
-        filetype = { "matlab" },
-      })
-    end,
-  },
 }
