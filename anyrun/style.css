@@ -13,6 +13,8 @@
 /* ## Created by Cybersnake                                                                                  ## */
 /* ############################################################################################################ */
 
+@import url("themes/catppuccin-macchiato.css");
+
 * {
   all: unset;
   font-family: "MonaspiceKr Nerd Font Mono";
@@ -45,8 +47,12 @@
   margin-bottom: 0;
 }
 
+#entry {
+  caret-color: @caret;
+}
+
 #match:selected {
-  color: #f9e2af;
+  color: @selected;
   border-radius: 4px;
 }
 
@@ -54,13 +60,12 @@
   border-radius: 4px;
   margin: 3px;
   padding: 5px 5px;
-  caret-color: #cdd6f4;
   font-size: 24px;
   font-weight: 700;
 }
 
 list > #plugin {
-  border-top: 1px solid #f38ba8;
+  border-top: 1px solid @plugins;
   margin: 3px;
   padding-top: 3px;
   padding-left: 3px;
@@ -81,13 +86,13 @@ list > #plugin:hover {
 }
 
 box#main {
-  color: #fbf1c7;
+  color: @text;
+  border-color: @border;
+  background-color: @background;
   border-width: 4px;
-  border-style: solid;
-  border-color: #fbf1c7;
-  margin-top: 15px;
-  background-color: #3c3836;
   border-radius: 12px;
+  border-style: solid;
+  margin-top: 15px;
   padding: 5px;
 }
 
