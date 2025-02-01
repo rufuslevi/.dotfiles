@@ -13,24 +13,24 @@
     separator_color= frame
 
 # tokyonight-storm
-[frame]
-    width = 1
-    color = "#c0caf5"
-
-[urgency_low]
-    background = "#24283b"
-    foreground = "#c0caf5"
-    timeout = 5
-
-[urgency_normal]
-    background = "#24283b"
-    foreground = "#c0caf5"
-    timeout = 20
-
-[urgency_critical]
-    background = "#24283b"
-    foreground = "#c0caf5"
-    timeout = 0
+#[frame]
+#    width = 1
+#    color = "#c0caf5"
+#
+#[urgency_low]
+#    background = "#24283b"
+#    foreground = "#c0caf5"
+#    timeout = 5
+#
+#[urgency_normal]
+#    background = "#24283b"
+#    foreground = "#c0caf5"
+#    timeout = 20
+#
+#[urgency_critical]
+#    background = "#24283b"
+#    foreground = "#c0caf5"
+#    timeout = 0
 
 # gruvbox-dark
 #[frame]
@@ -68,3 +68,20 @@
 #   background = "#1E1E2E"
 #   foreground = "#CDD6F4"
 #   frame_color = "#FAB387"
+
+# Catppuccin macchiato
+[frame]
+   color = "#8bd5ca"
+
+[urgency_low]
+   background = "#24273a"
+   foreground = "#cad3f5"
+   
+[urgency_normal]
+   background = "#24273a"
+   foreground = "#cad3f5"
+
+[urgency_critical]
+   background = "#24273a"
+   foreground = "#cad3f5"
+   frame_color = "#8bd5ca"
