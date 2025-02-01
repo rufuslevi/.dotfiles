@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 {
   imports = [
@@ -38,6 +38,12 @@
       helvetica-neue-lt-std
       noto-fonts-emoji-blob-bin
     ];
+  };
+
+  environment = {
+    sessionVariables = {
+      LD_LIBRARY_PATH = lib.mkForce "${pkgs.stdenv.cc.cc.lib}/lib";
+    };
   };
 
   # This value determines the NixOS release from which the default

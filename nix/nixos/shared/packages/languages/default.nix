@@ -33,6 +33,7 @@
     rust-analyzer
     pkgs-stable.php
     python3
+    python311
     pyenv
     pyright
     poetry
