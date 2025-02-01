@@ -1,4 +1,4 @@
-@import "colors/gruvbox.css";
+@import "colors/macchiato.css";
 
 * {
   font-size: 14;
@@ -49,10 +49,10 @@ window#waybar.hidden {
   padding-bottom: 2px;
   border-style: solid;
   border-width: 2px;
-  border-color: @fg;
   transition: none;
-  color: @fg;
-  background: @bg;
+  border-color: @teal;
+  color: @text;
+  background: @base;
 }
 
 #window {
@@ -66,20 +66,20 @@ window#waybar.hidden {
   padding-right: 6px;
   margin-left: 6px;
   margin-right: 6px;
-  color: @fg4;
+  color: @surface1;
 }
 
 #workspaces button.active {
-  color: @fg3;
+  color: @text;
 }
 #workspaces button.empty {
-  color: @fg4;
+  color: @subtext0;
 }
 #workspaces button.persistent {
-  color: @fg2;
+  color: @surface0;
 }
 #workspaces button.visible {
-  color: @fg;
+  color: @subtext1;
 }
 #workspaces button.urgent {
   color: @red;
@@ -129,34 +129,34 @@ window#waybar.hidden {
   margin-left: 12px;
   margin-bottom: 0px;
   border-radius: 10px;
-  background: @fg2;
+  background: @base;
 }
 
 #tags button {
-  color: @fg3;
+  color: @text;
   background: transparent;
   font-size: 16px;
   border-radius: 2px;
 }
 
 #tags button.occupied {
-  color: #f28fad;
+  color: @base;
   background: transparent;
   font-size: 4px;
 }
 
 #tags button.focused {
-  color: @fg3;
+  color: @subtext1;
 }
 
 #tags button:hover {
+  /* color: @subtext1; */
+  /* border-color: @overlay0; */
+  background: @base;
   box-shadow: inherit;
   text-shadow: inherit;
-  color: @fg3;
-  border-color: #e8a2af;
-  background: @fg3;
 }
 
 #tags button.focused:hover {
-  color: #e8a2af;
+  color: @overlay2;
 }
