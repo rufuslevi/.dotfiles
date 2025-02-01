@@ -49,6 +49,8 @@ return {
     priority = 1000,
     config = function()
       require("catppuccin").setup({
+        flavour = "macchiato",
+        transparent_background = false,
         show_end_of_buffer = false, -- show the '~' characters after the end of buffers
         term_colors = true,
         dim_inactive = {
@@ -84,12 +86,6 @@ return {
           mason = true,
           treesitter = true,
           treesitter_context = true,
-          indent_blankline = {
-            enabled = true,
-            scope_color = "", -- catppuccin color (eg. `lavender`) Default: text
-            colored_indent_levels = false,
-          },
-          -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
         },
       })
     end,
@@ -148,10 +144,10 @@ return {
     enabled = true,
     config = function()
       local set_dark_mode = function()
-        vim.cmd("colorscheme sonokai")
+        vim.cmd("colorscheme catppuccin")
         require("lualine").setup({
           options = {
-            theme = "sonokai",
+            theme = "auto",
           },
         })
       end

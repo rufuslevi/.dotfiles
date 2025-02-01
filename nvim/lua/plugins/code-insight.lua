@@ -38,17 +38,7 @@ return {
     end,
   },
   {
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    ---@module "ibl"
-    ---@type ibl.config
-    opts = {
-      scope = {
-        enabled = true,
-      },
-    },
-  },
-  {
+    "lukas-reineke/  {
     "mfussenegger/nvim-lint",
     opts = {
       linters = {
