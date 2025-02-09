@@ -35,6 +35,7 @@ if [[ $(uname) == "Darwin" ]]; then
     export PATH=/opt/homebrew/bin:$PATH
     export PATH=/opt/homebrew/sbin:$PATH
     export PATH=/run/current-system/sw/bin:$PATH
+    export PATH=~/Applications/flutter/bin:$PATH
 
     export JAVA_HOME=`/usr/libexec/java_home -v 18`
     export LUA_PATH='/opt/homebrew/Cellar/luarocks/3.9.2/share/lua/5.4/?.lua;/opt/homebrew/share/lua/5.4/?.lua;/opt/homebrew/share/lua/5.4/?/init.lua;/opt/homebrew/lib/lua/5.4/?.lua;/opt/homebrew/lib/lua/5.4/?/init.lua;./?.lua;./?/init.lua;/Users/rufuslevi/.luarocks/share/lua/5.4/?.lua;/Users/rufuslevi/.luarocks/share/lua/5.4/?/init.lua'

@@ -6,6 +6,7 @@
   homebrew.brews = [
     "borders"
     "cmatrix"
+    "dart-sdk"
     "koekeishiya/formulae/yabai"
     "koekeishiya/formulae/skhd"
     "zsh-completions"
