@@ -1,7 +1,9 @@
-{...}:
+{ ... }:
 
 {
   homebrew.taps = [
-    "koekeishiya/formulae" "homebrew/cask-fonts" "homebrew/cask-versions"
+    "koekeishiya/formulae"
+    "homebrew/cask-fonts"
+    "homebrew/cask-versions"
   ];
 }
