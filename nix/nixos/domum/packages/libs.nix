@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     bzip3
     openrazer-daemon
+    gdb
     glib
     jansson
     logiops
