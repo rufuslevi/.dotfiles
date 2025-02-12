@@ -38,17 +38,6 @@ return {
     end,
   },
   {
-    "lukas-reineke/  {
-    "mfussenegger/nvim-lint",
-    opts = {
-      linters = {
-        ["markdownlint-cli2"] = {
-          args = { "--config", "~/.config/nvim/.markdownlint-cli2.yaml", "--" },
-        },
-      },
-    },
-  },
-  {
     "jubnzv/virtual-types.nvim",
   },
   {
@@ -61,7 +50,6 @@ return {
   {
     "ray-x/lsp_signature.nvim",
     event = "VeryLazy",
-    enabled = true,
     opts = {
       bind = true, -- This is mandatory, otherwise border config won't get registered.
       handler_opts = {

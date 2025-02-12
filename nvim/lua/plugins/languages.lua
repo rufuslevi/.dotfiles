@@ -31,6 +31,16 @@ return {
     "jbyuki/nabla.nvim",
   },
   {
+    "nvim-flutter/flutter-tools.nvim",
+    lazy = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "stevearc/dressing.nvim", -- optional for vim.ui.select
+    },
+    config = true,
+  },
+
+  {
     "williamboman/mason.nvim",
     cmd = "Mason",
     build = ":MasonUpdate",
@@ -70,12 +80,6 @@ return {
     lazy = true,
     cmd = "ConformInfo",
     opts = {
-      default_format_opts = {
-        timeout_ms = 3000,
-        async = false, -- not recommended to change
-        quiet = false, -- not recommended to change
-        lsp_fallback = true, -- not recommended to change
-      },
       formatters_by_ft = {
         lua = { "stylua" },
         sh = { "shfmt" },

@@ -20,10 +20,8 @@ require("lazy").setup({
     {
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
-      opts = {
-        colorscheme = "sonokai",
-      },
     },
+    { import = "config.extras" },
     { import = "plugins" },
   },
   defaults = {
