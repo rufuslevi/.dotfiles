@@ -1,8 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, hyprland, ... }:
 
 {
   imports = [
-    ../shared
     ./hardware
     ./packages
     ./programs
@@ -44,6 +43,9 @@
       wayland.windowManager.hyprland = {
         enable = true;
         extraConfig = "source = $HOME/.config/hypr/hypr.conf";
+        xwayland.enable = true;
+        package = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+        portalPackage = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
       };
     };
   };

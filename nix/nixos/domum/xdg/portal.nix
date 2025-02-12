@@ -10,7 +10,7 @@
     };
     portal = {
       enable = true;
-      xdgOpenUsePortal = true;
+      xdgOpenUsePortal = false;
       wlr = {
         enable = true;
       };
