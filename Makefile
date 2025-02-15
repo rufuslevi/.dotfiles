@@ -2,10 +2,10 @@ HOST = $(shell uname -n)
 
 install:
 ifeq ($(HOST), domum)
-	cd nix/nixos/domum; make upgrade; make copy-grub-theme
+	cd nix/nixos/domum; make install; make copy-grub-theme
 endif
 ifeq ($(HOST), milkyway)
-	cd nix/nixos/milkyway; make upgrade; make copy-grub-theme
+	cd nix/nixos/milkyway; make install; make copy-grub-theme
 endif
 ifeq ($(HOST), luna)
 	cd nix/luna; make install
