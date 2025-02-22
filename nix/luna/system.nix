@@ -2,7 +2,7 @@
 
 {
   system = {
-    stateVersion = 4;
+    stateVersion = 5;
     defaults = {
       NSGlobalDomain.InitialKeyRepeat = 15;
       NSGlobalDomain.KeyRepeat = 2;
