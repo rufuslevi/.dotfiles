@@ -17,6 +17,7 @@
     vivaldi-ffmpeg-codecs
     zen-browser.packages."${system}".default
     brave
+    blueman
     nautilus
     bitmagnet
     github-desktop
@@ -64,6 +65,7 @@
     selectdefaultapplication
     lutris
     heroic
+    scarab
     slurp
     obs-studio
     obs-studio-plugins.wlrobs

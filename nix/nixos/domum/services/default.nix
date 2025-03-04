@@ -15,4 +15,5 @@
   services.desktopManager.plasma6.enable = false;
   services.ddccontrol.enable = true;
   services.hardware.openrgb.enable = true;
+  services.blueman.enable = true;
 }

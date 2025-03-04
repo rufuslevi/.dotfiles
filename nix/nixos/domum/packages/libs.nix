@@ -14,6 +14,7 @@
     libvdpau-va-gl
     mesa
     mesa-demos
+    steam-devices-udev-rules
     tk
     vaapiVdpau
     vkbasalt
