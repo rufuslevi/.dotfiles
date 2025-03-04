@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    efibootmgr
     fan2go
     lm_sensors
     bat
