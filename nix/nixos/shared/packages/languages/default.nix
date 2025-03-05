@@ -15,7 +15,7 @@
     impl
     jdt-language-server
     llvmPackages_17.clang-unwrapped
-    lua
+    # lua
     lua-language-server
     lua51Packages.lua
     lua54Packages.jsregexp
