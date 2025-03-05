@@ -1,11 +1,5 @@
 return {
   {
-    "L3MON4D3/LuaSnip",
-    keys = function()
-      return {}
-    end,
-  },
-  {
     "LhKipp/nvim-nu",
     config = function()
       require("nu").setup({
@@ -31,6 +25,16 @@ return {
     "jbyuki/nabla.nvim",
   },
   {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        lua_ls = {
+          mason = false,
+        },
+      },
+    },
+  },
+  {
     "williamboman/mason.nvim",
     cmd = "Mason",
     build = ":MasonUpdate",
@@ -48,14 +52,12 @@ return {
         "jdtls",
         "js-debug-adapter",
         "json-lsp",
-        "lua-language-server",
         "matlab-language-server",
         "ruff",
         "ruff-lsp",
         "rust-analyzer",
         "shellcheck",
         "shfmt",
-        "stylua",
         "taplo",
         "texlab",
         "typescript-language-server",

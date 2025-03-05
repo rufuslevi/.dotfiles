@@ -28,17 +28,9 @@ return {
   },
   {
     "folke/trouble.nvim",
-    enabled = true,
     opts = { use_diagnostic_signs = true },
   },
   {
-    "simrat39/inlay-hints.nvim",
-    config = function()
-      require("inlay-hints").setup()
-    end,
-  },
-  {
-    "lukas-reineke/  {
     "mfussenegger/nvim-lint",
     opts = {
       linters = {
@@ -74,20 +66,18 @@ return {
   },
   {
     "andrewferrier/wrapping.nvim",
-    config = function()
-      require("wrapping").setup({
-        notify_on_switch = true,
-        auto_set_mode_filetype_allowlist = {
-          "asciidoc",
-          "gitcommit",
-          "latex",
-          "mail",
-          "markdown",
-          "rst",
-          "tex",
-          "text",
-        },
-      })
-    end,
+    opts = {
+      notify_on_switch = true,
+      auto_set_mode_filetype_allowlist = {
+        "asciidoc",
+        "gitcommit",
+        "latex",
+        "mail",
+        "markdown",
+        "rst",
+        "tex",
+        "text",
+      },
+    },
   },
 }
