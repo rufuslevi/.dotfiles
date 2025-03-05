@@ -52,6 +52,7 @@
     vlc
     gparted
     librewolf
+    redlib
     tofi
     wofi
     kdePackages.kate
