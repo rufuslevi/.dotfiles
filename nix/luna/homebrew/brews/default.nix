@@ -10,6 +10,7 @@
     "koekeishiya/formulae/skhd"
     "zsh-completions"
     "neofetch"
+    "gradle"
     "libqalculate"
     "octave"
     "fish"
