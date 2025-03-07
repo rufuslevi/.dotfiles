@@ -47,6 +47,7 @@ if [[ $(uname) == "Darwin" ]]; then
     export PATH=$PATH:"/Users/rufuslevi/Library/Application Support/JetBrains/Toolbox/scripts"
     export PATH=$PATH:"/Users/rufuslevi/.luarocks/share/lua/5.4"
     export PATH=$PATH:"/opt/homebrew/share/lua/5.4/luarocks"
+    export PATH=$PATH:"/Users/rufuslevi/Applications/flutter/bin"
 
 elif command -v apt > /dev/null; then
     # echo "Running Debian based Linux!"
