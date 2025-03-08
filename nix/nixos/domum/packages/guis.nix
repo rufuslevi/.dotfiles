@@ -60,6 +60,7 @@
     onedrive
     waypaper
     vscodium
+    ghostty
     gimp
     qpwgraph
     helvum
