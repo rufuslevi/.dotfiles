@@ -37,6 +37,7 @@
       font-awesome
       helvetica-neue-lt-std
       noto-fonts-emoji-blob-bin
+      maple-mono-NF
     ];
   };
 
