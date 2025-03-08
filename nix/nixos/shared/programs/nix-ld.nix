@@ -39,26 +39,10 @@
       nss
       openssl
       pango
-      pipewire
       stdenv.cc.cc
       systemd
       time
       vulkan-loader
-      xorg.libX11
-      xorg.libXScrnSaver
-      xorg.libXcomposite
-      xorg.libXcursor
-      xorg.libXdamage
-      xorg.libXext
-      xorg.libXfixes
-      xorg.libXi
-      xorg.libXinerama
-      xorg.libXrandr
-      xorg.libXrender
-      xorg.libXtst
-      xorg.libxcb
-      xorg.libxkbfile
-      xorg.libxshmfence
       zlib
     ];
   };
