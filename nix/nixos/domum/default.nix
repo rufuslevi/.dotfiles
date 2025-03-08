@@ -25,7 +25,6 @@
         base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
         targets = {
           hyprland.enable = true;
-          firefox.enable = true;
           kitty.enable = true;
         };
       };
@@ -43,7 +42,6 @@
       wayland.windowManager.hyprland = {
         enable = true;
         extraConfig = "source = $HOME/.config/hypr/hypr.conf";
-        xwayland.enable = true;
         package = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
         portalPackage = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
       };
