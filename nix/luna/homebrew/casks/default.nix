@@ -10,5 +10,6 @@
     "temurin"
     "aerospace"
     "easy-move-plus-resize"
+    "swipeaerospace"
   ];
 }
