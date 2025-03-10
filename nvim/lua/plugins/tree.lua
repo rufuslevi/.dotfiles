@@ -5,7 +5,21 @@ return {
     "nvim-neo-tree/neo-tree.nvim",
     keys = {
       {
-        "<leader>e",
+        "<leader>fE",
+        function()
+          require("neo-tree.command").execute({ toggle = true, dir = LazyVim.root() })
+        end,
+        desc = "Explorer NeoTree (Root Dir)",
+      },
+      {
+        "<leader>fe",
+        function()
+          require("neo-tree.command").execute({ toggle = true, dir = vim.uv.cwd() })
+        end,
+        desc = "Explorer NeoTree (cwd)",
+      },
+      {
+        "<leader>E",
         function()
           require("neo-tree.command").execute({ toggle = false, dir = LazyVim.root() })
         end,
@@ -13,7 +27,7 @@ return {
         remap = true,
       },
       {
-        "<leader>E",
+        "<leader>e",
         function()
           require("neo-tree.command").execute({ toggle = false, dir = vim.uv.cwd() })
         end,
