@@ -29,6 +29,7 @@
     "betterdisplay"
     "key-codes"
     "kitty"
+    "ghostty"
     "microsoft-word"
     "microsoft-excel"
     "microsoft-powerpoint"
