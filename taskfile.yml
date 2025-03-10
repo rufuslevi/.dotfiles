@@ -7,6 +7,7 @@ tasks:
   shared:
     cmds:
       - task btop
+      - task ghostty
       - task nvim
       - task tmux
       - task kitty
@@ -33,6 +34,10 @@ tasks:
   cargo:install:
     cmds:
       - cargo install krabby
+  ghostty:
+    cmds:
+      - mkdir -p ~/.config/ghostty
+      - stow -v -t ~/.config/ghostty ghostty
   kitty:
     cmds:
       - mkdir -p ~/.config/kitty
