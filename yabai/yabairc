@@ -31,3 +31,7 @@ yabai -m rule --add app="Unity" manage=off
 yabai -m rule --add app="^Arc$" title="^$" mouse_follows_focus=off
 yabai -m rule --add app="^OpenRGB$" title="^$" mouse_follows_focus=off
 
+# Ghostty fixes
+yabai -m signal --add app='^Ghostty$' event=window_created action='yabai -m space --layout bsp'
+yabai -m signal --add app='^Ghostty$' event=window_destroyed action='yabai -m space --layout bsp'
+
