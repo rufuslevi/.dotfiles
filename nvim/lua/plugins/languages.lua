@@ -25,48 +25,6 @@ return {
     "jbyuki/nabla.nvim",
   },
   {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        lua_ls = {
-          mason = false,
-        },
-      },
-    },
-  },
-  {
-    "williamboman/mason.nvim",
-    cmd = "Mason",
-    build = ":MasonUpdate",
-    opts_extend = { "ensure_installed" },
-    opts = {
-      ensure_installed = {
-        "clang-format",
-        "clangd",
-        "cmakelang",
-        "cmakelint",
-        "codelldb",
-        "eslint-lsp",
-        "java-debug-adapter",
-        "java-test",
-        "jdtls",
-        "js-debug-adapter",
-        "json-lsp",
-        "matlab-language-server",
-        "ruff",
-        "ruff-lsp",
-        "rust-analyzer",
-        "shellcheck",
-        "shfmt",
-        "taplo",
-        "texlab",
-        "typescript-language-server",
-        "vtsls",
-        "yaml-language-server",
-      },
-    },
-  },
-  {
     "stevearc/conform.nvim",
     dependencies = { "mason.nvim" },
     lazy = true,

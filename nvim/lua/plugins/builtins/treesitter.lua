@@ -1,13 +1,10 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = function(_, opts)
-      vim.list_extend(opts.indent, {
-        enable = true,
-      })
-      vim.list_extend(opts.ensure_installed, {
-        "bash",
+    opts = {
+      ensure_installed = {
         "css",
+        "dart",
         "gdscript",
         "godot_resource",
         "gdshader",
@@ -15,7 +12,6 @@ return {
         "javascript",
         "json",
         "latex",
-        "lua",
         "markdown",
         "markdown_inline",
         "matlab",
@@ -28,7 +24,7 @@ return {
         "typescript",
         "vim",
         "yaml",
-      })
-    end,
+      },
+    },
   },
 }
