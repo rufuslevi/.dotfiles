@@ -60,6 +60,17 @@ return {
       },
       border = "rounded",
     },
+    keys = {
+      {
+        "<leader>ch",
+        function()
+          require("pretty_hover").hover()
+          require("pretty_hover").hover()
+        end,
+        desc = "Hover",
+        remap = true,
+      },
+    },
     config = function()
       require("pretty_hover").setup({})
     end,
