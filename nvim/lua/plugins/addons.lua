@@ -28,13 +28,6 @@ return {
     end,
   },
   {
-    "kdheepak/lazygit.nvim",
-    -- optional for floating window border decoration
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
-  },
-  {
     "tpope/vim-fugitive",
     config = function()
       vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
@@ -44,22 +37,15 @@ return {
     "mbbill/undotree",
   },
   {
-    "jbyuki/instant.nvim",
-  },
-  {
     "marioortizmanero/adoc-pdf-live.nvim",
+    lazy = true,
+    ft = { "pdf" },
     config = function()
       require("adoc_pdf_live").setup()
     end,
   },
   {
-    "rcarriga/nvim-notify",
-    opts = {
-      background_colour = "#00000000",
-      render = "compact",
-    },
-  },
-  {
+    -- WebSearch from neovim
     "aliqyan-21/wit.nvim",
     config = function()
       require("wit").setup()

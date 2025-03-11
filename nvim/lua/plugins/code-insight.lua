@@ -21,34 +21,7 @@ return {
     },
   },
   {
-    "windwp/nvim-autopairs",
-    config = function()
-      require("nvim-autopairs").setup({})
-    end,
-  },
-  {
-    "folke/trouble.nvim",
-    opts = { use_diagnostic_signs = true },
-  },
-  {
-    "mfussenegger/nvim-lint",
-    opts = {
-      linters = {
-        ["markdownlint-cli2"] = {
-          args = { "--config", "~/.config/nvim/.markdownlint-cli2.yaml", "--" },
-        },
-      },
-    },
-  },
-  {
     "jubnzv/virtual-types.nvim",
-  },
-  {
-    "folke/todo-comments.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    config = function()
-      require("todo-comments").setup()
-    end,
   },
   {
     "ray-x/lsp_signature.nvim",
