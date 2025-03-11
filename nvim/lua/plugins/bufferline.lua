@@ -3,15 +3,11 @@
 
 return {
   {
-    "famiu/bufdelete.nvim",
-  },
-  {
     "akinsho/bufferline.nvim",
     priority = 1100,
     version = "*",
     dependencies = {
       "nvim-tree/nvim-web-devicons",
-      "famiu/bufdelete.nvim",
     },
     config = function()
       local bufferline = require("bufferline")
@@ -49,8 +45,8 @@ return {
             delay = 2,
             reveal = { "close" },
           },
-          close_command = function(bufnum)
-            require("bufdelete").bufdelete(bufnum, true)
+          close_command = function()
+            vim.cmd.bd()
           end,
           show_tab_indicators = false,
           -- custom_areas = {
