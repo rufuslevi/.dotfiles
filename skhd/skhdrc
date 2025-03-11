@@ -50,7 +50,7 @@ ctrl + shift + alt - a : sudo bash ~/.config/scripts/razer-keymapping.sh
 ctrl + shift - d : bash ~/.config/scripts/.toggle_dark_mode.sh
 
 # Vim keybind for arrows
-alt - h : skhd -k "0x7B"
-alt - j : skhd -k "0x7D"
-alt - k : skhd -k "0x7E"
-alt - l : skhd -k "0x7C"
+# alt - h : skhd -k "0x7B"
+# alt - j : skhd -k "0x7D"
+# alt - k : skhd -k "0x7E"
+# alt - l : skhd -k "0x7C"
