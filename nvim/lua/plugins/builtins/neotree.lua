@@ -40,13 +40,7 @@ return {
     opts = {
       source_selector = {
         winbar = true,
-        statusline = true,
-        sources = {
-          { source = "filesystem" },
-          -- { source = "buffers" },
-          { source = "git_status" },
-          { source = "document_symbols" },
-        },
+        statusline = false,
         content_layout = "center",
         tabs_layout = "equal",
       },
