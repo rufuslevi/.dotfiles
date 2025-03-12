@@ -12,13 +12,6 @@ return {
     end,
   },
   {
-    "karb94/neoscroll.nvim",
-    enable = true,
-    config = function()
-      require("neoscroll").setup()
-    end,
-  },
-  {
     "NvChad/nvim-colorizer.lua",
     config = function()
       require("colorizer").setup({})
