@@ -16,6 +16,17 @@ return {
       },
     },
     setups = {
+      dartls = function()
+        require("lspconfig").dartls.setup({
+          init_options = {
+            closingLabels = true,
+            flutterOutline = true,
+            onlyAnalyzeProjectsWithOpenFiles = true,
+            outline = true,
+            suggestFromUnimportedLibraries = true,
+          },
+        })
+      end,
       gdscript = function()
         require("lspconfig").gdscript.setup({
           cmd = {
