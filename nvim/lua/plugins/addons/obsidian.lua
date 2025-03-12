@@ -19,12 +19,12 @@ return {
   opts = {
     workspaces = {
       {
-        name = "personal",
-        path = "~/vaults/personal",
+        name = "Poly",
+        path = "~/Obsidian/Poly",
       },
       {
-        name = "work",
-        path = "~/vaults/work",
+        name = "PolyShow",
+        path = "~/Obsidian/PolyShow",
       },
     },
     completion = {
