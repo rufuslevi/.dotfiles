@@ -13,6 +13,15 @@ return {
   },
   {
     "loctvl842/monokai-pro.nvim",
+    config = function()
+      require("monokai-pro").setup({
+        day_night = {
+          enable = true, -- turn off by default
+          day_filter = "light", -- classic | octagon | pro | machine | ristretto | spectrum
+          night_filter = "octagon", -- classic | octagon | pro | machine | ristretto | spectrum
+        },
+      })
+    end,
   },
   {
     "sainnhe/sonokai",
@@ -142,33 +151,35 @@ return {
   {
     "f-person/auto-dark-mode.nvim",
     enabled = true,
-    config = function()
-      local set_dark_mode = function()
-        vim.cmd("colorscheme catppuccin")
+    opts = {
+      set_dark_mode = function()
+        vim.cmd("colorscheme monokai-pro-octagon")
         require("lualine").setup({
           options = {
             theme = "auto",
           },
         })
-      end
-      local set_light_mode = function()
+      end,
+      set_light_mode = function()
         vim.cmd("colorscheme rose-pine-dawn")
         require("lualine").setup({
           options = {
             theme = "rose-pine",
           },
         })
-      end
-      if vim.fn.hostname() == "luna" then
-        require("auto-dark-mode").setup({
-          update_interval = 1000,
-          -- set_dark_mode = set_dark_mode,
-          set_light_mode = set_light_mode,
-        })
-        require("auto-dark-mode").init()
-      else
-        set_dark_mode()
-      end
-    end,
+      end,
+      update_interval = 1000,
+      fallback = "dark",
+      -- if vim.fn.hostname() == "luna" then
+      --   require("auto-dark-mode").setup({
+      --     update_interval = 1000,
+      --     -- set_dark_mode = set_dark_mode,
+      --     set_light_mode = set_light_mode,
+      --   })
+      --   require("auto-dark-mode").init()
+      -- else
+      --   set_dark_mode()
+      -- end
+    },
   },
 }
