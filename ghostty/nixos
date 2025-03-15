@@ -1,0 +1,19 @@
+theme = "Monokai Pro"
+font-size = 12
+
+keybind = performable:ctrl+c=copy_to_clipboard
+keybind = performable:ctrl+v=paste_from_clipboard
+
+keybind = alt+w=close_tab
+keybind = alt+t=new_tab
+#keybind = atl+n=goto_split:next
+
+keybind = alt+h=new_split:left
+keybind = alt+l=new_split:right
+keybind = alt+k=new_split:up
+keybind = alt+j=new_split:down
+
+keybind = alt+super+h=resize_split:left,20
+keybind = alt+super+l=resize_split:right,20
+keybind = alt+super+k=resize_split:up,20
+keybind = alt+super+j=resize_split:down,20

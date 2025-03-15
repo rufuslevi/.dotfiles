@@ -1,5 +1,7 @@
+config-file = ?/home/rufuslevi/.config/ghostty/nixos
+config-file = ?/Users/rufuslevi/.config/ghostty/macos
+
 font-family = "Maple Mono NF"
-font-size = 14.5
 font-thicken = true
 font-thicken-strength = 60
 font-feature = "ss01"
@@ -22,17 +24,3 @@ macos-titlebar-style = "tabs"
 macos-icon = "blueprint"
 
 confirm-close-surface = false
-
-theme = light:rose-pine-dawn, dark:catppuccin-mocha
-
-keybind = super+ctrl+\=goto_split:next
-
-keybind = super+h=new_split:left
-keybind = super+l=new_split:right
-keybind = super+k=new_split:up
-keybind = super+j=new_split:down
-
-keybind = ctrl+super+h=resize_split:left,20
-keybind = ctrl+super+l=resize_split:right,20
-keybind = ctrl+super+k=resize_split:up,20
-keybind = ctrl+super+j=resize_split:down,20
