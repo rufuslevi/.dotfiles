@@ -22,7 +22,6 @@
     bitmagnet
     github-desktop
     openrgb-with-all-plugins
-    pkgs-stable.swaylock-effects
     dconf-editor
     guake
     flameshot
