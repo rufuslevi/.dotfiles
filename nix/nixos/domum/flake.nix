@@ -10,7 +10,7 @@
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland";
 
-    stylix.url = "github:danth/stylix";
+    stylix.url = "github:danth/stylix/release-24.11";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
     anyrun = {
@@ -51,6 +51,7 @@
         modules = [
           home-manager.nixosModules.home-manager
           stylix.nixosModules.stylix
+          # stylix.homeManagerModules.stylix
           ./default.nix
           ../shared
         ];

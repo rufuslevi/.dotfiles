@@ -19,13 +19,20 @@
       home.stateVersion = "24.11";
       stylix = {
         enable = true;
-        image = ../../../waypaper/assets/DSCF4379.JPEG;
-        # base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
-        # base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
+        autoEnable = false;
+        image = ../../../waypaper/assets/dark_souls_bonfire_dark_souls_night_ruin_warrior_hd_games.jpg;
         base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
+        cursor = {
+          name = "Volantes";
+          package = pkgs.volantes-cursors;
+          size = 24;
+        };
         targets = {
           hyprland.enable = true;
           kitty.enable = true;
+          ghostty.enable = true;
+          gnome.enable = true;
+          gtk.enable = true;
         };
       };
       gtk = {
