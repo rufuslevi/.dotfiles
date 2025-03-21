@@ -1,12 +1,15 @@
 theme = "Monokai Pro"
 font-size = 12
 
+gtk-titlebar = true
+adw-toolbar-style = raised-border
+gtk-tabs-location = top
+
 keybind = performable:ctrl+c=copy_to_clipboard
 keybind = performable:ctrl+v=paste_from_clipboard
 
 keybind = alt+w=close_tab
 keybind = alt+t=new_tab
-#keybind = atl+n=goto_split:next
 
 keybind = alt+h=new_split:left
 keybind = alt+l=new_split:right
