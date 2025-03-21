@@ -33,6 +33,7 @@
     rust-analyzer
     pkgs-stable.php
     python3
+    python312Packages.pip
     python311
     pyenv
     pyright
