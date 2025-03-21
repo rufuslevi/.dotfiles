@@ -51,7 +51,6 @@
         modules = [
           home-manager.nixosModules.home-manager
           stylix.nixosModules.stylix
-          # stylix.homeManagerModules.stylix
           ./default.nix
           ../shared
         ];

@@ -23,6 +23,7 @@
         hyprland = {
           default = [
             "hyprland"
+            "gtk"
           ];
           "org.freedesktop.impl.portal.ScreenCast" = [
             "wlr"
