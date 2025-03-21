@@ -29,7 +29,19 @@
 
   fonts = {
     enableDefaultPackages = true;
+    fontconfig = {
+      enable = true;
+      useEmbeddedBitmaps = true;
+      defaultFonts = {
+        serif = [ "Linux Libertine Display" ];
+        sansSerif = [ "Atkinson Hyperlegible" ];
+        monospace = [ "Maple Mono NF" ];
+        emoji = [ "Noto Color Emoji" ];
+      };
+    };
     packages = with pkgs; [
+      libertine
+      nerd-fonts.dejavu-sans-mono
       nerd-fonts.monaspace
       nerd-fonts.sauce-code-pro
       nerd-fonts.caskaydia-mono
@@ -37,6 +49,7 @@
       font-awesome
       helvetica-neue-lt-std
       noto-fonts-emoji-blob-bin
+      noto-fonts-color-emoji
       maple-mono-NF
     ];
   };
