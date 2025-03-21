@@ -21,11 +21,35 @@
         enable = true;
         autoEnable = false;
         image = ../../../waypaper/assets/dark_souls_bonfire_dark_souls_night_ruin_warrior_hd_games.jpg;
-        base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
+        base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
         cursor = {
-          name = "Volantes";
+          name = "Volantes Cursors";
           package = pkgs.volantes-cursors;
           size = 24;
+        };
+        fonts = {
+          sizes = {
+            applications = 11;
+            desktop = 13;
+            popups = 11;
+            terminal = 11;
+          };
+          serif = {
+            name = "Source Code Pro";
+            package = pkgs.source-code-pro;
+          };
+          sansSerif = {
+            name = "MonaspiceNe Nerd Font Regular";
+            package = pkgs.nerd-fonts.monaspace;
+          };
+          monospace = {
+            name = "Maple Mono NF";
+            package = pkgs.maple-mono-NF;
+          };
+          emoji = {
+            name = "Noto Color Emoji";
+            package = pkgs.noto-fonts-color-emoji;
+          };
         };
         targets = {
           hyprland.enable = true;
@@ -33,6 +57,10 @@
           ghostty.enable = true;
           gnome.enable = true;
           gtk.enable = true;
+          waybar = {
+            enable = true;
+            addCss = false;
+          };
         };
       };
       gtk = {
@@ -48,9 +76,16 @@
       };
       wayland.windowManager.hyprland = {
         enable = true;
+        systemd.enable = false;
         extraConfig = "source = $HOME/.config/hypr/hypr.conf";
         package = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
         portalPackage = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+      };
+      programs = {
+        waybar = {
+          enable = true;
+          style = "@import \"styling.css\";";
+        };
       };
     };
   };
