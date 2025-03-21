@@ -1,5 +1,5 @@
 install:
-	nix run nix-darwin -- switch --flake .#domum --show-trace
+	sudo nixos-install --flake .#domum --show-trace
 
 rebuild:
 	sudo nixos-rebuild switch --flake .#domum --show-trace
