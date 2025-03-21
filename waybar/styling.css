@@ -1,5 +1,3 @@
-@import "colors/macchiato.css";
-
 * {
   font-size: 14;
   font-family: "MonaspiceKr Nerd Font Mono";
@@ -50,9 +48,9 @@ window#waybar.hidden {
   border-style: solid;
   border-width: 2px;
   transition: none;
-  border-color: @teal;
-  color: @text;
-  background: @base;
+  border-color: @base01;
+  color: @base04;
+  background: @base00;
 }
 
 #window {
@@ -66,20 +64,20 @@ window#waybar.hidden {
   padding-right: 6px;
   margin-left: 6px;
   margin-right: 6px;
-  color: @surface1;
+  color: @base04;
 }
 
 #workspaces button.active {
-  color: @text;
+  color: @base04;
 }
 #workspaces button.empty {
-  color: @subtext0;
+  color: @base04;
 }
 #workspaces button.persistent {
-  color: @surface0;
+  color: @base04;
 }
 #workspaces button.visible {
-  color: @subtext1;
+  color: @base03;
 }
 #workspaces button.urgent {
   color: @red;
@@ -129,34 +127,35 @@ window#waybar.hidden {
   margin-left: 12px;
   margin-bottom: 0px;
   border-radius: 10px;
-  background: @base;
+  background: @base01;
 }
 
 #tags button {
-  color: @text;
-  background: transparent;
+  color: @base04;
+  background: @base01;
   font-size: 16px;
   border-radius: 2px;
 }
 
 #tags button.occupied {
-  color: @base;
+  color: @base04;
   background: transparent;
   font-size: 4px;
 }
 
 #tags button.focused {
-  color: @subtext1;
+  color: @base02;
 }
 
 #tags button:hover {
   /* color: @subtext1; */
   /* border-color: @overlay0; */
-  background: @base;
+  background: @base01;
   box-shadow: inherit;
   text-shadow: inherit;
 }
 
 #tags button.focused:hover {
-  color: @overlay2;
+  color: @base01;
+  background: @base01;
 }
