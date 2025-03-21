@@ -14,6 +14,7 @@ return {
       gopls = {
         mason = false,
       },
+      ruff = {},
     },
     setups = {
       dartls = function()

@@ -15,7 +15,6 @@ return {
       "json-lsp",
       "matlab-language-server",
       "ruff",
-      "ruff-lsp",
       "rust-analyzer",
       "shellcheck",
       "shfmt",
