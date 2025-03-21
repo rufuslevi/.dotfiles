@@ -153,7 +153,7 @@ return {
     enabled = true,
     opts = {
       set_dark_mode = function()
-        vim.cmd("colorscheme monokai-pro-octagon")
+        vim.cmd("colorscheme monokai-pro-machine")
         require("lualine").setup({
           options = {
             theme = "auto",
@@ -170,16 +170,6 @@ return {
       end,
       update_interval = 1000,
       fallback = "dark",
-      -- if vim.fn.hostname() == "luna" then
-      --   require("auto-dark-mode").setup({
-      --     update_interval = 1000,
-      --     -- set_dark_mode = set_dark_mode,
-      --     set_light_mode = set_light_mode,
-      --   })
-      --   require("auto-dark-mode").init()
-      -- else
-      --   set_dark_mode()
-      -- end
     },
   },
 }
