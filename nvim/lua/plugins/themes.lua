@@ -13,15 +13,44 @@ return {
   },
   {
     "loctvl842/monokai-pro.nvim",
-    config = function()
-      require("monokai-pro").setup({
-        day_night = {
-          enable = true, -- turn off by default
-          day_filter = "light", -- classic | octagon | pro | machine | ristretto | spectrum
-          night_filter = "octagon", -- classic | octagon | pro | machine | ristretto | spectrum
+    opts = {
+      transparent_background = false,
+      terminal_colors = true,
+      devicons = true,
+      styles = {
+        comment = { italic = true },
+        keyword = { italic = false }, -- any other keyword
+        type = { italic = false }, -- (preferred) int, long, char, etc
+        storageclass = { italic = true }, -- static, register, volatile, etc
+        structure = { italic = false }, -- struct, union, enum, etc
+        parameter = { italic = false }, -- parameter pass in function
+        annotation = { italic = false },
+        tag_attribute = { italic = true }, -- attribute of tag in reactjs
+      },
+      day_night = {
+        enable = false, -- turn off by default
+        day_filter = "light", -- classic | octagon | pro | machine | ristretto | spectrum
+        night_filter = "machine", -- classic | octagon | pro | machine | ristretto | spectrum
+      },
+      inc_search = "background", -- underline | background
+      background_clear = {
+        "lazygit",
+        -- "float_win",
+        "toggleterm",
+        "telescope",
+        "which-key",
+        "renamer",
+        "notify",
+        "neo-tree",
+        -- "bufferline", -- better used if background of `neo-tree` or `nvim-tree` is cleared
+      }, -- "float_win", "toggleterm", "telescope", "which-key", "renamer", "neo-tree", "nvim-tree", "bufferline"
+      plugins = {
+        bufferline = {
+          underline_selected = false,
+          underline_visible = false,
         },
-      })
-    end,
+      },
+    },
   },
   {
     "sainnhe/sonokai",
