@@ -9,6 +9,7 @@
 {
   environment.systemPackages = with pkgs; [
     anyrun.packages.${system}.anyrun
+    blender
     waybar
     vesktop
     notion-app-enhanced
