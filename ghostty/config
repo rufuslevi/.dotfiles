@@ -1,5 +1,5 @@
 config-file = ?/home/rufuslevi/.config/ghostty/nixos
-config-file = ?/Users/rufuslevi/.config/ghostty/macos
+config-file = ?/Users/rufuslevi/.config/ghostty/darwin
 
 font-family = "Maple Mono NF"
 font-thicken = true
