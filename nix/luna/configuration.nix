@@ -40,7 +40,6 @@
       nerd-fonts.sauce-code-pro
       nerd-fonts.caskaydia-mono
       atkinson-hyperlegible
-      maple-mono-NF
-    ];
+    ]++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.maple-mono);
   };
 }
