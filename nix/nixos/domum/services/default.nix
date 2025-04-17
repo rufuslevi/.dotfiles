@@ -4,6 +4,7 @@
   imports = [
     ./libinput.nix
     ./mpd.nix
+    ./samba.nix
     ./ssh.nix
     ./syncthing.nix
     ./pipewire.nix
