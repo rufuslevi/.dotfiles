@@ -28,11 +28,14 @@
   ];
   boot.extraModulePackages = [ ];
   boot.loader = {
-    systemd-boot.enable = false;
+    systemd-boot = {
+      enable = true;
+
+    };
     efi.canTouchEfiVariables = false;
     efi.efiSysMountPoint = "/boot/EFI";
     grub = {
-      enable = true;
+      enable = false;
       device = "nodev";
       useOSProber = true;
       efiSupport = true;
