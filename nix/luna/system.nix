@@ -2,6 +2,7 @@
 
 {
   system = {
+    primaryUser = "rufuslevi";
     stateVersion = 5;
     defaults = {
       NSGlobalDomain.InitialKeyRepeat = 15;

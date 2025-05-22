@@ -1,8 +1,8 @@
 install:
-	nix run nix-darwin -- switch --flake .#luna --show-trace
+	nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake .#luna --show-trace
 
 rebuild:
-	darwin-rebuild switch --flake .#luna --show-trace
+	sudo darwin-rebuild switch --flake .#luna --show-trace
 
 update:
 	nix flake update
