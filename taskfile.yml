@@ -31,10 +31,6 @@ tasks:
     cmds:
       - mkdir -p ~/.config/btop
       - stow -v -t ~/.config/btop btop
-  cargo:install:
-    cmds:
-      - cargo install krabby
-      - cargo install taplo-cli
   ghostty:
     cmds:
       - mkdir -p ~/.config/ghostty
