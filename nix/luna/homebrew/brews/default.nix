@@ -6,6 +6,7 @@
   homebrew.brews = [
     # "borders"
     "cmatrix"
+    "evil-helix"
     # "koekeishiya/formulae/yabai"
     "koekeishiya/formulae/skhd"
     "zsh-completions"
