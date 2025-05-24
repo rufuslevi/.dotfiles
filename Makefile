@@ -1,5 +1,7 @@
 HOST = $(shell uname -n)
 
+default: init
+
 install:
 ifeq ($(HOST), domum)
 	cd nix/nixos/domum; make install; make copy-grub-theme
