@@ -1,11 +1,11 @@
 install:
-	nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake .#luna --show-trace
+	sudo nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake .#luna --show-trace
 
 rebuild:
 	sudo darwin-rebuild switch --flake .#luna --show-trace
 
 update:
-	nix flake update
+	sudo nix flake update
 
 clear-cache:
 	nix-store --gc
