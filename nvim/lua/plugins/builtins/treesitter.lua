@@ -12,6 +12,7 @@ return {
         "html",
         "javascript",
         "json",
+        "just",
         "latex",
         "markdown",
         "markdown_inline",
