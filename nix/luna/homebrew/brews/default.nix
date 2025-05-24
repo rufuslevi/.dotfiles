@@ -4,9 +4,9 @@
   imports = [ ./languages.nix ];
 
   homebrew.brews = [
-    "borders"
+    # "borders"
     "cmatrix"
-    "koekeishiya/formulae/yabai"
+    # "koekeishiya/formulae/yabai"
     "koekeishiya/formulae/skhd"
     "zsh-completions"
     "neofetch"

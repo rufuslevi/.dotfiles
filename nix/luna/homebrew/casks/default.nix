@@ -8,8 +8,8 @@
     "homebrew/cask-fonts/font-monaspace-nerd-font"
     "font-maple-mono-nf"
     "temurin"
-    "aerospace"
+    # "aerospace"
+    # "swipeaerospace"
     "easy-move-plus-resize"
-    "swipeaerospace"
   ];
 }
