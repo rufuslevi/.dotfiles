@@ -35,6 +35,9 @@ endif
 
 upgrade: update rebuild
 
+init:
+	cargo install just
+
 clear-cache:
 	nix-store --gc
 
