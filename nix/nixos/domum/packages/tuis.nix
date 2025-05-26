@@ -2,10 +2,10 @@
 
 {
   environment.systemPackages = with pkgs; [
-    evil-helix
-    youtube-tui
-    mpv
     bluetuith
     ckan
+    evil-helix
+    mpv
+    youtube-tui
   ];
 }
