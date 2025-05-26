@@ -1,7 +1,9 @@
 { ... }:
 
 {
-  # services.libinput = { enable = true; };
+  services.libinput = {
+    enable = true;
+  };
 
   environment.etc."libinput/local-overrides.quirks".text = ''
     [Logitech MX Master 3]

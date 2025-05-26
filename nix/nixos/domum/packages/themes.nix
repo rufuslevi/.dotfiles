@@ -2,8 +2,8 @@
 
 {
   environment.systemPackages = with pkgs; [
+    darkman
     volantes-cursors
-
     kdePackages.qtwayland
   ];
 }

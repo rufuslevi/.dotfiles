@@ -6,6 +6,7 @@
     openrazer-daemon
     gdb
     glib
+    gradle
     jansson
     logiops
     libinput
