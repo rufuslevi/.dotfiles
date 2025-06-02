@@ -19,20 +19,20 @@ return {
       devicons = true,
       styles = {
         comment = { italic = true },
-        keyword = { italic = false }, -- any other keyword
-        type = { italic = false }, -- (preferred) int, long, char, etc
-        storageclass = { italic = true }, -- static, register, volatile, etc
-        structure = { italic = false }, -- struct, union, enum, etc
-        parameter = { italic = false }, -- parameter pass in function
+        keyword = { italic = false },      -- any other keyword
+        type = { italic = false },         -- (preferred) int, long, char, etc
+        storageclass = { italic = true },  -- static, register, volatile, etc
+        structure = { italic = false },    -- struct, union, enum, etc
+        parameter = { italic = false },    -- parameter pass in function
         annotation = { italic = false },
         tag_attribute = { italic = true }, -- attribute of tag in reactjs
       },
       day_night = {
-        enable = false, -- turn off by default
-        day_filter = "light", -- classic | octagon | pro | machine | ristretto | spectrum
+        enable = false,           -- turn off by default
+        day_filter = "light",     -- classic | octagon | pro | machine | ristretto | spectrum
         night_filter = "machine", -- classic | octagon | pro | machine | ristretto | spectrum
       },
-      inc_search = "background", -- underline | background
+      inc_search = "background",  -- underline | background
       background_clear = {
         "lazygit",
         -- "float_win",
@@ -97,7 +97,7 @@ return {
           percentage = 0.15,
         },
         no_italic = false, -- Force no italic
-        no_bold = false, -- Force no bold
+        no_bold = false,   -- Force no bold
         styles = {
           comments = { "italic" },
           conditionals = {},
@@ -165,7 +165,7 @@ return {
         invert_tabline = false,
         invert_intend_guides = false,
         inverse = true, -- invert background for search, diffs, statuslines and errors
-        contrast = "", -- can be "hard", "soft" or empty string
+        contrast = "",  -- can be "hard", "soft" or empty string
         palette_overrides = {},
         overrides = {},
         dim_inactive = false,
@@ -183,19 +183,19 @@ return {
     opts = {
       set_dark_mode = function()
         vim.cmd("colorscheme monokai-pro-machine")
-        require("lualine").setup({
-          options = {
-            theme = "auto",
-          },
-        })
+        -- require("lualine").setup({
+        --   options = {
+        --     theme = "auto",
+        --   },
+        -- })
       end,
       set_light_mode = function()
         vim.cmd("colorscheme rose-pine-dawn")
-        require("lualine").setup({
-          options = {
-            theme = "rose-pine",
-          },
-        })
+        -- require("lualine").setup({
+        --   options = {
+        --     theme = "rose-pine",
+        --   },
+        -- })
       end,
       update_interval = 1000,
       fallback = "dark",
