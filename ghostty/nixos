@@ -5,6 +5,10 @@ gtk-titlebar = true
 adw-toolbar-style = raised-border
 gtk-tabs-location = top
 
+
+background-opacity = 1
+background-blur = false
+
 keybind = performable:ctrl+c=copy_to_clipboard
 keybind = performable:ctrl+v=paste_from_clipboard
 

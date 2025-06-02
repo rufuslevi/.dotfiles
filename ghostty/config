@@ -19,6 +19,7 @@ cursor-style = bar
 
 background-opacity = 0.85
 background-blur = true
+background-blur-radius = 40 
 
 macos-titlebar-style = "tabs"
 macos-icon = "blueprint"
