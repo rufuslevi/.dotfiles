@@ -27,6 +27,14 @@
     wineWowPackages.stable
     winetricks
     xorg.libxcb
+    xorg.libXcursor
+    xorg.libXext
+    xorg.libXi
+    xorg.libXrandr
+    xorg.libXrender
+    xorg.libXxf86vm
+    xorg.libXtst
+    xorg.libX11
     xz
     zlib
   ];
