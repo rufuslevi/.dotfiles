@@ -33,5 +33,6 @@
     "tree-sitter"
     "scons"
     "pngquant"
+    "netcat"
   ];
 }
