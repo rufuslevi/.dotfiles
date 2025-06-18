@@ -1,7 +1,0 @@
-{ ... }:
-
-{
-  services.jankyborders = {
-    enable = false;
-  };
-}

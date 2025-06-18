@@ -6,7 +6,7 @@
     "openvpn-connect"
     "vivaldi"
     "firefox@developer-edition"
-    "zen-browser"
+    # "zen-browser"
     "blender"
     "openrgb"
     "tomatobar"

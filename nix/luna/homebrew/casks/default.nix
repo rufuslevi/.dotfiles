@@ -5,11 +5,14 @@
 
   homebrew.casks = [
     "android-platform-tools"
-    "homebrew/cask-fonts/font-monaspace-nerd-font"
+    "font-monaspace-nerd-font"
+    "font-sauce-code-pro-nerd-font"
+    "font-caskaydia-cove-nerd-font"
+    "font-caskaydia-mono-nerd-font"
+    "font-atkinson-hyperlegible"
+    "font-atkynson-mono-nerd-font"
     "font-maple-mono-nf"
     "temurin"
-    # "aerospace"
-    # "swipeaerospace"
     "easy-move-plus-resize"
   ];
 }

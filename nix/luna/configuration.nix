@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   nix = {
@@ -6,7 +6,7 @@
       experimental-features = "nix-command flakes";
     };
     extraOptions = ''
-      auto-optimise-store = true
+      auto-optimise-store = false
       experimental-features = nix-command flakes
     '';
   };
@@ -18,28 +18,14 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [
-    nil
-    nixfmt-rfc-style
-  ];
-
   networking = {
     hostName = "luna";
   };
 
   users.users.rufuslevi = {
     name = "rufuslevi";
-    home = "/Users/rufuslevi/";
+    home = "/Users/rufuslevi";
     isHidden = false;
-    shell = "/bin/zsh";
-  };
-
-  fonts = {
-    packages = with pkgs; [
-      nerd-fonts.monaspace
-      nerd-fonts.sauce-code-pro
-      nerd-fonts.caskaydia-mono
-      atkinson-hyperlegible
-    ]++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.maple-mono);
+    # shell = "/bin/zsh";
   };
 }
