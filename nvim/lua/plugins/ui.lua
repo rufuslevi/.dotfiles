@@ -18,6 +18,7 @@ return {
       require("colorizer").setup({})
     end,
   },
+  { 'echasnovski/mini.bufremove', version = '*' },
   {
     "Fildo7525/pretty_hover",
     event = "LspAttach",

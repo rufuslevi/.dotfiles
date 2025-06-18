@@ -1,8 +1,7 @@
 -- This is where the keymaps to move in the ui are to be put
+local snacks = require("snacks")
 
-vim.keymap.set("n", "<leader>bd", function()
-  vim.api.nvim_buf_delete(0, { force = false })
-end, { desc = "Delete buffer" })
+vim.keymap.set("n", "<leader>bd", snacks.bufdelete.delete, { desc = "Delete buffer" })
 vim.keymap.set("n", "<leader>bn", vim.cmd.bnext, { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>bb", vim.cmd.bprevious, { desc = "Buffer before" })
 vim.keymap.set("n", "<leader>1", "<Cmd>BufferLineGoToBuffer 1<CR>", { desc = "Goto buffer 1" })

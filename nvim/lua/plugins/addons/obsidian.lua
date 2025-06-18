@@ -26,10 +26,6 @@ return {
         path = "~/Obsidian/PolyShow",
       },
     },
-    completion = {
-      nvim_cmp = true,
-      min_chars = 2,
-    },
     picker = {
       name = "fzf-lua",
       note_mappings = {
