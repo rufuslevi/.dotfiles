@@ -10,6 +10,7 @@
   environment.systemPackages = with pkgs; [
     anyrun.packages.${system}.anyrun
     blender
+    godot
     waybar
     vesktop
     notion-app-enhanced

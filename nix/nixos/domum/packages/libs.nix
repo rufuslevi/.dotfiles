@@ -3,10 +3,14 @@
 {
   environment.systemPackages = with pkgs; [
     bzip3
-    openrazer-daemon
+    corefonts
+    freetype
     gdb
+    ghostscript
+    ghostscriptX
     glib
     gradle
+    helvetica-neue-lt-std
     jansson
     logiops
     libinput
@@ -15,6 +19,8 @@
     libvdpau-va-gl
     mesa
     mesa-demos
+    netcat-gnu
+    openrazer-daemon
     steam-devices-udev-rules
     tk
     vaapiVdpau
