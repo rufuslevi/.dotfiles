@@ -3,6 +3,7 @@
 require("config.options.themes")
 require("config.options.ui")
 require("config.options.lsp")
+require("config.options.godot")
 
 -- Consistency settings
 vim.opt.swapfile = false
