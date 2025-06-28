@@ -10,7 +10,12 @@
           pkgs.kdePackages.qt5compat
         ];
       };
+      gdm = {
+        enable = true;
+        wayland = true;
+      };
     };
+    desktopManager.gnome.enable = true;
     xserver = {
       enable = true;
       videoDrivers = [ "amdgpu" ];
@@ -18,11 +23,6 @@
         Option "TearFree" "False"
         Option "VariableRefresh" "True"
       '';
-      displayManager.gdm = {
-        enable = true;
-        wayland = true;
-      };
-      desktopManager.gnome.enable = true;
       xkb = {
         layout = "ca";
         variant = "multix";

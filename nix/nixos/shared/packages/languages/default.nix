@@ -1,14 +1,13 @@
 { pkgs, pkgs-stable, ... }:
 
 {
-  imports = [ ./go.nix ];
+  imports = [ ./go.nix ./java.nix ];
 
   environment.systemPackages = with pkgs; [
     cargo
     delve
     dotnet-sdk
     fish
-    jdk8
     julia
     gcc
     gdtoolkit_4
@@ -29,7 +28,6 @@
     nixfmt-rfc-style
     nixpkgs-fmt
     nixpkgs-lint
-    openjdk8-bootstrap
     reftools
     ruby
     rust-analyzer

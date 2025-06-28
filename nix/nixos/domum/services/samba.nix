@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  services.samba.shares = {
+  services.samba.settings = {
     transfer = {
       path = "/home/rufuslevi/transfer/";
       browseable = "yes";

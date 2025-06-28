@@ -8,6 +8,15 @@
 
 {
   environment.systemPackages = with pkgs; [
+    pkgs-stable.bitwarden-desktop
+    pkgs-stable.gammastep
+    pkgs-stable.jetbrains.clion
+    pkgs-stable.jetbrains.pycharm-professional
+    pkgs-stable.jetbrains.idea-ultimate
+    pkgs-stable.jetbrains.rider
+    pkgs-stable.m32edit
+    pkgs-stable.protonup-qt
+    pkgs-stable.unityhub
     anyrun.packages.${system}.anyrun
     blender
     godot
@@ -17,7 +26,6 @@
     audacity
     vivaldi
     vivaldi-ffmpeg-codecs
-    zen-browser.packages."${system}".default
     brave
     blueman
     nautilus
@@ -34,18 +42,11 @@
     obsidian
     cider
     caprine-bin
-    pkgs-stable.bitwarden-desktop
     prismlauncher
-    pkgs-stable.protonup-qt
     kdePackages.dolphin
     kdePackages.ark
-    pkgs-stable.jetbrains.clion
-    pkgs-stable.jetbrains.pycharm-professional
-    pkgs-stable.jetbrains.idea-ultimate
-    pkgs-stable.jetbrains.rider
     kdePackages.filelight
     kdePackages.okular
-    unityhub
     dunst
     themechanger
     pavucontrol
@@ -77,7 +78,6 @@
     furmark
     phoronix-test-suite
     sysbench
-    m32edit
-    pkgs-stable.gammastep
+    zen-browser.packages."${system}".default
   ];
 }
