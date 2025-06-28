@@ -12,9 +12,9 @@
     gradle
     helvetica-neue-lt-std
     jansson
+    libcamera
     logiops
     libinput
-    libcamera
     libva-utils
     libvdpau-va-gl
     mesa
