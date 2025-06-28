@@ -14,7 +14,7 @@
     pkgs-stable.jetbrains.pycharm-professional
     pkgs-stable.jetbrains.idea-ultimate
     pkgs-stable.jetbrains.rider
-    pkgs-stable.m32edit
+    # pkgs-stable.m32edit
     pkgs-stable.protonup-qt
     pkgs-stable.unityhub
     anyrun.packages.${system}.anyrun
@@ -22,7 +22,6 @@
     godot
     waybar
     vesktop
-    notion-app-enhanced
     audacity
     vivaldi
     vivaldi-ffmpeg-codecs
