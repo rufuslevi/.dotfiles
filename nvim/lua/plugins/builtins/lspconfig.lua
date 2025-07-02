@@ -39,6 +39,11 @@ return {
           end
         })
       end,
+      qmlls = function()
+        require("lspconfig").qmlls.setup({
+          cmd = { "qmlls", "-E" }
+        })
+      end,
     },
   },
 }
