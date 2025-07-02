@@ -39,7 +39,6 @@
     pyright
     poetry
     prettierd
-    qmlls
     shfmt
     sqlite
     stylua

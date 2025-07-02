@@ -12,6 +12,7 @@ alias yeet="git push $@"
 alias yoink="git pull"
 alias cat="bat"
 alias gdnvim="uwsm app -- nvim --listen ~/.tmp/godot.pipe"
+alias nixgodot="LD_LIBRARY_PATH=$NIX_LD_LIBRARY_PATH godot"
 
 HISTSIZE=1000
 SAVEHIST=1000

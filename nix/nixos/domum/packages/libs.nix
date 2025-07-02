@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-stable, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -21,9 +21,11 @@
     mesa-demos
     netcat-gnu
     openrazer-daemon
+    qt5.full
+    qtcreator
     redlib
     steam-devices-udev-rules
-    tbb_2021
+    tbb
     tk
     vaapiVdpau
     vkbasalt
