@@ -20,6 +20,7 @@ return {
         "matlab",
         "nix",
         "python",
+        "qmljs",
         "query",
         "regex",
         "toml",
