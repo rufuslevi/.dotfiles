@@ -2,9 +2,8 @@ theme = "Monokai Pro"
 font-size = 11
 
 gtk-titlebar = true
-adw-toolbar-style = raised-border
-gtk-tabs-location = top
-
+adw-toolbar-style = flat
+gtk-tabs-location = bottom
 
 background-opacity = 1
 background-blur = false
