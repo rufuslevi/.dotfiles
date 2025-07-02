@@ -39,6 +39,7 @@
     pyright
     poetry
     prettierd
+    qmlls
     shfmt
     sqlite
     stylua
@@ -48,6 +49,5 @@
     typescript-language-server
     rustc
     tree-sitter
-    temurin-bin-21
   ];
 }

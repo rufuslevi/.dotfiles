@@ -1,5 +1,6 @@
 {
   anyrun,
+  quickshell,
   zen-browser,
   pkgs,
   pkgs-stable,
@@ -18,65 +19,61 @@
     pkgs-stable.protonup-qt
     pkgs-stable.unityhub
     anyrun.packages.${system}.anyrun
-    blender
-    godot
-    waybar
-    vesktop
     audacity
-    vivaldi
-    vivaldi-ffmpeg-codecs
-    brave
-    blueman
-    nautilus
     bitmagnet
-    github-desktop
-    openrgb-with-all-plugins
+    blender
+    blueman
+    brave
     dconf-editor
-    guake
-    flameshot
-    satty
-    thunderbird
-    gnome-calendar
-    gnome-online-accounts-gtk
-    obsidian
-    cider
-    caprine-bin
-    prismlauncher
-    kdePackages.dolphin
-    kdePackages.ark
-    kdePackages.filelight
-    kdePackages.okular
     dunst
-    themechanger
-    pavucontrol
-    lxqt.pavucontrol-qt
-    vlc
-    gparted
-    librewolf
-    redlib
-    tofi
-    wofi
-    kdePackages.kate
-    qbittorrent
-    onedrive
-    waypaper
-    vscodium
+    flameshot
+    furmark
     ghostty
     gimp
-    qpwgraph
+    github-desktop
+    gnome-online-accounts-gtk
+    godot
+    gparted
+    guake
     helvum
-    selectdefaultapplication
-    lutris
     heroic
-    scarab
-    slurp
+    kdePackages.ark
+    kdePackages.dolphin
+    kdePackages.filelight
+    kdePackages.kate
+    kdePackages.okular
+    libreoffice-qt6-fresh
+    lutris
+    lxqt.pavucontrol-qt
+    nautilus
     obs-studio
     obs-studio-plugins.wlrobs
-    libreoffice-qt6-fresh
+    obsidian
     octaveFull
-    furmark
+    onedrive
+    openrgb-with-all-plugins
+    pavucontrol
     phoronix-test-suite
+    prismlauncher
+    qbittorrent
+    qpwgraph
+    quickshell.packages.${system}.default
+    satty
+    scarab
+    selectdefaultapplication
+    slurp
     sysbench
+    themechanger
+    thunderbird
+    tofi
+    waypaper
+    wofi
+    vesktop
+    vivaldi
+    vivaldi-ffmpeg-codecs
+    vlc
+    vscodium
+    waybar
     zen-browser.packages."${system}".default
   ];
 }

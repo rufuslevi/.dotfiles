@@ -17,4 +17,6 @@
   services.ddccontrol.enable = true;
   services.hardware.openrgb.enable = true;
   services.blueman.enable = true;
+  services.speechd.enable = false;
+  services.orca.enable = false;
 }

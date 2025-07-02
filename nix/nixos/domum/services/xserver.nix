@@ -4,14 +4,11 @@
   services = {
     displayManager = {
       sddm = {
-        enable = false;
-        wayland.enable = false;
-        extraPackages = [
-          pkgs.kdePackages.qt5compat
-        ];
+        enable = true;
+        wayland.enable = true;
       };
       gdm = {
-        enable = true;
+        enable = false;
         wayland = true;
       };
     };

@@ -13,6 +13,11 @@
     stylix.url = "github:danth/stylix/release-24.11";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
+    quickshell = {
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+      inputs.nixpkgs.follows = "nixos-unstable";
+    };
+
     anyrun = {
       url = "github:anyrun-org/anyrun";
       inputs.nixpkgs.follows = "nixos-stable";
@@ -25,16 +30,18 @@
       nixos-unstable,
       home-manager,
       hyprland,
+      anyrun,
+      quickshell,
       stylix,
       zen-browser,
-      anyrun,
       ...
     }:
     let
       system = "x86_64-linux";
 
-      attrs.hyprland = hyprland;
       attrs.anyrun = anyrun;
+      attrs.hyprland = hyprland;
+      attrs.quickshell = quickshell;
       attrs.zen-browser = zen-browser;
 
       attrs.pkgs-stable = import nixos-stable {

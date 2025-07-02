@@ -21,7 +21,9 @@
     mesa-demos
     netcat-gnu
     openrazer-daemon
+    redlib
     steam-devices-udev-rules
+    tbb_2021
     tk
     vaapiVdpau
     vkbasalt

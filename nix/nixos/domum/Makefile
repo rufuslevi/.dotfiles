@@ -5,7 +5,7 @@ rebuild:
 	sudo nixos-rebuild switch --flake .#domum --show-trace
 
 update:
-	nix flake update
+	sudo nix flake update
 
 clear-cache:
 	nix-store --gc

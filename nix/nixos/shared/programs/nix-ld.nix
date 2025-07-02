@@ -33,7 +33,9 @@
       libuuid
       libxkbcommon
       libxml2
+      libllvm
       llvm
+      llvmPackages_12.libllvm
       mesa
       nspr
       nss
