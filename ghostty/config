@@ -21,7 +21,11 @@ background-opacity = 0.85
 background-blur = true
 background-blur-radius = 40 
 
-macos-titlebar-style = "tabs"
+macos-titlebar-style = "transparent"
 macos-icon = "blueprint"
+macos-window-shadow = false
+
+window-title-font-family = "MonaspiceAr Nerd Font"
+window-subtitle = working-directory
 
 confirm-close-surface = false
