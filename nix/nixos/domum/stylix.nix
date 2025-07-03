@@ -6,7 +6,7 @@
     autoEnable = false;
     homeManagerIntegration.autoImport = true;
     homeManagerIntegration.followSystem = false;
-    image = ../../../waypaper/assets/dark_souls_bonfire_dark_souls_night_ruin_warrior_hd_games.jpg;
+    image = ../../../backgrounds/dark_souls_bonfire_dark_souls_night_ruin_warrior_hd_games.jpg;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
     cursor = {
       name = "Volantes Cursors";
