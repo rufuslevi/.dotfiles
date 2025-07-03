@@ -183,7 +183,7 @@ return {
     enabled = true,
     opts = {
       set_dark_mode = function()
-        vim.cmd("colorscheme monokai-pro-machine")
+        vim.cmd("colorscheme monokai-pro-spectrum")
       end,
       set_light_mode = function()
         vim.cmd("colorscheme rose-pine-dawn")
