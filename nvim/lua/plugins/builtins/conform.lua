@@ -23,9 +23,9 @@ return {
       },
       formatters = {
         qmlformat = {
-          inherit = false,
-          command = "qmlformat",
-          args = { "$FILENAME" },
+          -- inherit = false,
+          -- command = "qmlformat",
+          -- args = { "-i", "-n", "$FILENAME" },
         },
       },
     },

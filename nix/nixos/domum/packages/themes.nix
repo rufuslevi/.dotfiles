@@ -5,5 +5,6 @@
     darkman
     volantes-cursors
     kdePackages.qtwayland
+    material-symbols
   ];
 }

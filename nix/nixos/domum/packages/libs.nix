@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    brotli
     bzip3
     corefonts
     freetype
@@ -21,8 +22,9 @@
     mesa-demos
     netcat-gnu
     openrazer-daemon
-    qt5.full
     qtcreator
+    qt5.full
+    kdePackages.qtdeclarative
     redlib
     steam-devices-udev-rules
     tbb
