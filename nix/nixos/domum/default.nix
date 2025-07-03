@@ -20,7 +20,7 @@
       stylix = {
         enable = true;
         autoEnable = false;
-        image = ../../../waypaper/assets/dark_souls_bonfire_dark_souls_night_ruin_warrior_hd_games.jpg;
+        image = ../../../backgrounds/dark_souls_bonfire_dark_souls_night_ruin_warrior_hd_games.jpg;
         base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
         cursor = {
           name = "Volantes Cursors";
@@ -76,10 +76,42 @@
       };
       wayland.windowManager.hyprland = {
         enable = true;
-        systemd.enable = false;
         extraConfig = "source = $HOME/.config/hypr/hypr.conf";
         package = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
         portalPackage = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+      };
+      xdg.portal = {
+        enable = true;
+        xdgOpenUsePortal = false;
+        # wlr = {
+        #   enable = true;
+        # };
+        config = {
+          common = {
+            default = [
+              "gtk"
+            ];
+          };
+          hyprland = {
+            default = [
+              "hyprland"
+              "gtk"
+            ];
+            "org.freedesktop.impl.portal.ScreenCast" = [
+              "wlr"
+            ];
+          };
+          gnome = {
+            default = [
+              "gnome"
+            ];
+          };
+          kde = {
+            default = [
+              "kde"
+            ];
+          };
+        };
       };
       programs = {
         waybar = {
