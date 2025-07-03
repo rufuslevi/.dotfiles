@@ -14,5 +14,6 @@
     "font-maple-mono-nf"
     "temurin"
     "easy-move-plus-resize"
+    "nikitabobko/tap/aerospace"
   ];
 }
