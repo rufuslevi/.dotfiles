@@ -56,12 +56,6 @@
       ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.maple-mono);
   };
 
-  # environment = {
-  #   sessionVariables = {
-  #     LD_LIBRARY_PATH = lib.mkForce "${pkgs.stdenv.cc.cc.lib}/lib";
-  #   };
-  # };
-
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
