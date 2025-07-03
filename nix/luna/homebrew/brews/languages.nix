@@ -21,5 +21,7 @@
     "go-task"
     "sdl2"
     "pyenv"
+    "rust"
+    "rustup"
   ];
 }
