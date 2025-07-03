@@ -11,8 +11,13 @@ alias rizz="git commit -m $@"
 alias yeet="git push $@"
 alias yoink="git pull"
 alias cat="bat"
-alias gdnvim="uwsm app -- nvim --listen ~/.tmp/godot.pipe"
 alias nixgodot="LD_LIBRARY_PATH=$NIX_LD_LIBRARY_PATH godot"
+
+if [[ $(uname) == "Darwin" ]]; then
+    alias gdnvim="nvim --listen ~/.tmp/godot.pipe"
+elif command -v nix > /dev/null; then
+    alias gdnvim="uwsm app -- nvim --listen ~/.tmp/godot.pipe"
+fi
 
 HISTSIZE=1000
 SAVEHIST=1000
