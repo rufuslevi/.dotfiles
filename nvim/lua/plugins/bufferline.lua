@@ -15,7 +15,7 @@ return {
       bufferline.setup({
         options = {
           mode = "buffers",
-          themable = true,
+          themable = false,
           indicator = { style = "none" },
           numbers = function(opts)
             return string.format("%s·", opts.ordinal)
@@ -38,11 +38,11 @@ return {
               separator = true,
             },
           },
-          color_icons = true,
+          color_icons = false,
           separator_style = "thin",
           hover = {
             enabled = true,
-            delay = 2,
+            delay = 1,
             reveal = { "close" },
           },
           show_tab_indicators = false,
