@@ -61,16 +61,6 @@
           };
         };
       };
-      gtk = {
-        theme = {
-          name = "Dracula";
-          package = pkgs.dracula-theme;
-        };
-        iconTheme = {
-          name = "oomox-gruvbox-dark";
-          package = pkgs.gruvbox-dark-icons-gtk;
-        };
-      };
       dconf.settings = {
         "org/gnome/desktop/wm/preferences" = {
           button-layout = "";
@@ -80,6 +70,9 @@
         };
         "org/gnome/desktop/wm/preferences" = {
           theme = "Dracula";
+        };
+        "org/gnome/desktop/interface" = {
+          icon-theme = "Dracula";
         };
       };
       wayland.windowManager.hyprland = {
