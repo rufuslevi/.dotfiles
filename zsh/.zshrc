@@ -39,6 +39,6 @@ source ~/.config/zsh/.condarc.sh
 source ~/.config/zsh/.nvmrc.sh
 
 source ~/.config/zsh/.zprofile
-for file in ~/.config/scripts/.*.sh; do
+for file in ~/.config/scripts/global/*; do
     source "$file"
 done
