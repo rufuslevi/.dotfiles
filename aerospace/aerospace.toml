@@ -64,7 +64,7 @@ ctrl-shift-9 = 'move-node-to-workspace 9'
 
 ctrl-slash = 'layout tiles horizontal vertical'
 ctrl-comma = 'layout accordion horizontal vertical'
-cmd-ctrl-v = 'layout floating tiling'
+ctrl-shift-v = 'layout floating tiling'
 
 alt-shift-h = 'move left'
 alt-shift-j = 'move down'
