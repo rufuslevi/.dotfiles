@@ -13,4 +13,3 @@ vim.keymap.set("n", "<leader>6", "<Cmd>BufferLineGoToBuffer 6<CR>", { desc = "Go
 vim.keymap.set("n", "<leader>7", "<Cmd>BufferLineGoToBuffer 7<CR>", { desc = "Goto buffer 7" })
 vim.keymap.set("n", "<leader>8", "<Cmd>BufferLineGoToBuffer 8<CR>", { desc = "Goto buffer 8" })
 vim.keymap.set("n", "<leader>9", "<Cmd>BufferLineGoToBuffer 9<CR>", { desc = "Goto buffer 9" })
--- vim.keymap.set("n", "<leader>ch", signature.toggle_float_win, { desc = "Lsp signature" })

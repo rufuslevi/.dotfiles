@@ -26,20 +26,7 @@ return {
     "jubnzv/virtual-types.nvim",
   },
   {
-    "ray-x/lsp_signature.nvim",
-    event = "VeryLazy",
-    enabled = true,
-    opts = {
-      bind = true, -- This is mandatory, otherwise border config won't get registered.
-      handler_opts = {
-        border = "rounded",
-      },
-    },
-    config = function(_, opts)
-      require("lsp_signature").setup(opts)
-    end,
-  },
-  {
+    -- Detects and applies the detected wrapping mode
     "andrewferrier/wrapping.nvim",
     opts = {
       notify_on_switch = true,

@@ -57,9 +57,8 @@ return {
     },
     keys = {
       {
-        "<leader>ch",
+        "<leader>h",
         function()
-          require("pretty_hover").hover()
           require("pretty_hover").hover()
         end,
         desc = "Hover",
