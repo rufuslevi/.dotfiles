@@ -55,8 +55,6 @@
           hyprland.enable = true;
           kitty.enable = true;
           ghostty.enable = true;
-          gnome.enable = true;
-          gtk.enable = true;
           waybar = {
             enable = true;
             addCss = false;
@@ -64,6 +62,10 @@
         };
       };
       gtk = {
+        theme = {
+          name = "Dracula";
+          package = pkgs.dracula-theme;
+        };
         iconTheme = {
           name = "oomox-gruvbox-dark";
           package = pkgs.gruvbox-dark-icons-gtk;
@@ -72,6 +74,12 @@
       dconf.settings = {
         "org/gnome/desktop/wm/preferences" = {
           button-layout = "";
+        };
+        "org/gnome/desktop/interface" = {
+          gtk-theme = "Dracula";
+        };
+        "org/gnome/desktop/wm/preferences" = {
+          theme = "Dracula";
         };
       };
       wayland.windowManager.hyprland = {

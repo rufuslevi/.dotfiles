@@ -1,14 +1,14 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   services = {
     displayManager = {
       sddm = {
-        enable = true;
+        enable = false;
         wayland.enable = true;
       };
       gdm = {
-        enable = false;
+        enable = true;
         wayland = true;
       };
     };
