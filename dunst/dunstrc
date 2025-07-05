@@ -1,16 +1,20 @@
 [global]
     origin = top-right
-    offset = 8x8
-    padding = 16
-    horizontal_padding = 16
+    offset = 4x4
+    padding = 8
+    horizontal_padding = 8
     min_icon_size = 64
     text_icon_padding = 32
     icon_corner_radius = 8
     gap_size = 8
-    corner_radius = 8
+    corners = bottom-left, top-right
+    corner_radius = 12
     line_height = 4
-    font = MonaspiceKr Nerd Font 10
-    separator_color= frame
+    font = MonaspiceAr Nerd Font 12
+    separator_color = frame
+    progress_bar = true
+    progress_bar_height = 32
+    layer = overlay
 
 # tokyonight-storm
 #[frame]
