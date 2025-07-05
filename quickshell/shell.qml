@@ -1,16 +1,18 @@
 import QtQuick
 import QtQuick.Effects
+import QtQuick.Controls
+import QtQuick.Layouts
 import Quickshell
 import Quickshell.Io
 import Quickshell.Wayland
+import Quickshell.Hyprland
 import Quickshell.Widgets
+import Quickshell.Services.Pipewire
 import "root:/widgets"
 import "root:/singletons"
 
 Scope {
     // TopBar {}
-
-    property int barHeight: 24
 
     Scope {
         // MenuBar
@@ -19,7 +21,7 @@ Scope {
             WlrLayershell.layer: WlrLayer.Top
 
             color: "transparent"
-            implicitHeight: barHeight
+            implicitHeight: Config.menuBar.height
 
             anchors {
                 left: true
@@ -30,13 +32,56 @@ Scope {
             Rectangle {
                 id: menuBar
                 anchors.fill: parent
-                implicitHeight: barHeight
+                implicitHeight: Config.menuBar.height
                 color: "transparent"
                 z: 1
+                anchors {
+                    leftMargin: 4
+                    rightMargin: 4
+                }
+
+                RowLayout {
+                    id: indicators
+                    readonly property var workspaces: Hyprland.workspaces.values
+
+                    spacing: 10
+                    anchors {
+                        top: parent.top
+                    }
+
+                    Repeater {
+                        model: indicators.workspaces
+                        delegate: Component {
+                            Rectangle {
+                                id: workspace
+                                required property var modelData
+                                Layout.fillWidth: true
+                                width: workspace_number.contentWidth
+
+                                Text {
+                                    id: workspace_number
+                                    property HyprlandWorkspace data: workspace.modelData
+
+                                    fontSizeMode: Text.Fit
+                                    font.pixelSize: 15
+                                    topPadding: 2
+                                    verticalAlignment: Text.AlignVCenter
+
+                                    font {
+                                        family: Config.text.font
+                                    }
+
+                                    text: data.id + "~" + data.name
+                                    color: data.focused ? "white" : Config.colors.text
+                                }
+                            }
+                        }
+                    }
+                }
 
                 ClockWidget {
                     anchors {
-                        horizontalCenter: parent.horizontalCenter
+                        horizontalCenter: menuBar.horizontalCenter
                     }
                 }
             }
@@ -119,4 +164,61 @@ Scope {
             }
         }
     }
+
+    Connections {
+        target: Hyprland
+
+        function onRawEvent(event: HyprlandEvent): void {
+            if (event.name.endsWith("v2"))
+                return;
+
+            if (event.name.includes("mon"))
+                Hyprland.refreshMonitors();
+            else if (event.name.includes("workspace"))
+                Hyprland.refreshWorkspaces();
+            else
+                Hyprland.refreshToplevels();
+        }
+    }
+    // FloatingWindow {
+    //     // match the system theme background color
+    //     color: contentItem.palette.active.window
+    //
+    //     ScrollView {
+    //         anchors.fill: parent
+    //         contentWidth: availableWidth
+    //
+    //         ColumnLayout {
+    //             anchors.fill: parent
+    //             anchors.margins: 10
+    //
+    //             // get a list of nodes that output to the default sink
+    //             PwNodeLinkTracker {
+    //                 id: linkTracker
+    //                 node: Pipewire.defaultAudioSink
+    //             }
+    //
+    //             MixerEntry {
+    //                 node: Pipewire.defaultAudioSink
+    //             }
+    //
+    //             Rectangle {
+    //                 Layout.fillWidth: true
+    //                 color: palette.active.text
+    //                 implicitHeight: 1
+    //             }
+    //
+    //             Repeater {
+    //                 model: linkTracker.linkGroups
+    //
+    //                 MixerEntry {
+    //                     required property PwLinkGroup modelData
+    //                     // Each link group contains a source and a target.
+    //                     // Since the target is the default sink, we want the source.
+    //                     node: modelData.source
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }
