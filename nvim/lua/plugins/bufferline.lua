@@ -46,6 +46,9 @@ return {
             reveal = { "close" },
           },
           show_tab_indicators = false,
+          close_command = function(bufnum)
+            require("snacks").bufdelete.delete(bufnum)
+          end,
         },
       })
     end,
