@@ -2,11 +2,6 @@
 
 return {
   {
-    "nvim-lualine/lualine.nvim",
-    enabled = false,
-    event = "VeryLazy",
-  },
-  {
     "xiyaowong/transparent.nvim",
     config = function()
       require("transparent").setup({})
