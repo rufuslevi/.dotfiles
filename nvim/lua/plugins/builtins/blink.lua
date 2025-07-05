@@ -7,8 +7,11 @@ return {
       },
       signature = {
         enabled = true,
-        window = { border = "rounded" },
-        show_documentation = false,
+        window = {
+          border = "rounded",
+          show_documentation = false,
+          direction_priority = { "s", "n" },
+        },
       },
     },
   },
