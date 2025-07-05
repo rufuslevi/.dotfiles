@@ -79,8 +79,11 @@ Scope {
 
                 Image {
                     id: img
-                    source: "root:../backgrounds/dark_souls_bonfire_dark_souls_night_ruin_warrior_hd_games.jpg"
+                    source: "root:../backgrounds/163_cropped.jpg"
                     visible: false
+                    height: 1440.0
+                    width: 2560.0
+                    fillMode: Image.PreserveAspectCrop
                 }
 
                 MultiEffect {
