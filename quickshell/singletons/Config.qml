@@ -11,7 +11,8 @@ Singleton {
     readonly property Text text: Text {}
 
     component Text: QtObject {
-        readonly property string font: "MonaspiceAr NF"
+        readonly property string family: "MonaspiceAr NF"
+        readonly property int size: 15
     }
 
     component Colors: QtObject {
