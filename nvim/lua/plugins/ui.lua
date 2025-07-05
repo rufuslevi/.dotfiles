@@ -1,55 +1,16 @@
 -- This contains all the specs to load the extensions modifying the UI
 
 return {
+  { "xiyaowong/transparent.nvim" },
   {
-    "xiyaowong/transparent.nvim",
-    config = function()
-      require("transparent").setup({})
-    end,
-  },
-  {
+    -- Colors colors codes in editor
     "NvChad/nvim-colorizer.lua",
-    config = function()
-      require("colorizer").setup({})
-    end,
   },
-  { "echasnovski/mini.bufremove", version = "*" },
+  { "echasnovski/mini.bufremove" },
   {
+    -- To read about an element quickly
     "Fildo7525/pretty_hover",
     event = "LspAttach",
-    opts = {
-      header = {
-        detect = { "[\\@]class" },
-        styler = "###",
-      },
-      line = {
-        detect = { "[\\@]brief" },
-        styler = "**",
-      },
-      listing = {
-        detect = { "[\\@]li" },
-        styler = " - ",
-      },
-      references = {
-        detect = { "[\\@]ref", "[\\@]c", "[\\@]name" },
-        styler = { "**", "`" },
-      },
-      word = {
-        detect = { "[\\@]param", "[\\@]tparam", "[\\@]see", "[\\@]*param*" },
-        styler = "`",
-      },
-
-      -- Tables used for cleaner identification of hover segments.
-      code = {
-        start = { "[\\@]code" },
-        ending = { "[\\@]endcode" },
-      },
-      return_statement = {
-        "[\\@]return",
-        "[\\@]*return*",
-      },
-      border = "rounded",
-    },
     keys = {
       {
         "<leader>h",
@@ -60,9 +21,6 @@ return {
         remap = true,
       },
     },
-    config = function()
-      require("pretty_hover").setup({})
-    end,
   },
   {
     "tamton-aquib/duck.nvim",
