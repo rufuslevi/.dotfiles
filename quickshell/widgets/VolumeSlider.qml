@@ -20,23 +20,28 @@ PopupWindow {
         }
     }
     anchor.window: window
-    implicitWidth: 266
-    implicitHeight: control.height + 16
+    implicitWidth: 324
+    implicitHeight: (control.height + 16) * (1 + link.linkGroups.length)
     color: "transparent"
+
+    PwNodeLinkTracker {
+        id: link
+        node: popup.node
+    }
 
     Component.onCompleted: {
         visible = Qt.binding(function () {
             if (!node)
                 return false;
             if (condition) {
-                timer.start();
+                close_timer.start();
                 return true;
             }
             if (mouse.hovered) {
-                timer.stop();
+                close_timer.start();
                 return true;
             }
-            if (timer.running) {
+            if (close_timer.running) {
                 return true;
             }
 
@@ -45,17 +50,14 @@ PopupWindow {
     }
 
     Timer {
-        id: timer
-        interval: 250
+        id: close_timer
+        interval: 1000
         running: false
         repeat: false
     }
 
     HoverHandler {
         id: mouse
-        onHoveredChanged: {
-            console.log("CHANGED");
-        }
     }
 
     Rectangle {
@@ -64,48 +66,144 @@ PopupWindow {
         bottomLeftRadius: Config.menuBar.radius
         bottomRightRadius: Config.menuBar.radius
 
-        RowLayout {
+        ColumnLayout {
             anchors.fill: parent
-            StatusBarText {
-                id: text
-                text: popup.node.audio.muted ? "0%" : Math.round(popup.node.audio.volume * 100) + "%"
-                Layout.alignment: Qt.AlignVCenter
-                Layout.fillHeight: true
-                Layout.leftMargin: 8
-                Layout.topMargin: 4
-                color: "transparent"
-                implicitWidth: 32
+
+            RowLayout {
+                Layout.alignment: Qt.AlignTop
+                implicitHeight: 32
+                StatusBarText {
+                    id: input_name
+                    text: "system"
+                    Layout.alignment: Qt.AlignVCenter
+                    Layout.fillHeight: true
+                    Layout.leftMargin: 16 + (48 - childrenRect.width) / 2
+                    Layout.rightMargin: (48 - childrenRect.width) / 2
+                    Layout.topMargin: 4
+                    color: "transparent"
+                }
+
+                StatusBarText {
+                    id: text
+                    text: popup.node.audio.muted ? "0%" : Math.round(popup.node.audio.volume * 100) + "%"
+                    Layout.alignment: Qt.AlignVCenter
+                    Layout.fillHeight: true
+                    Layout.leftMargin: 8
+                    Layout.topMargin: 4
+                    color: "transparent"
+                    implicitWidth: 32
+                }
+
+                Slider {
+                    id: control
+
+                    from: 0.0
+                    to: 1.0
+                    stepSize: 0.05
+                    value: popup.node.audio.volume
+                    onValueChanged: popup.node.audio.volume = value
+                    implicitWidth: 192
+                    snapMode: Slider.SnapAlways
+
+                    Layout.topMargin: 4
+                    Layout.leftMargin: text.width - 24
+                    Layout.rightMargin: 8
+                    Layout.alignment: Qt.AlignVCenter
+
+                    handle: Rectangle {
+                        x: control.leftPadding + control.visualPosition * (control.availableWidth - width)
+                        y: control.topPadding + control.availableHeight / 2 - height / 2 - 2.5
+
+                        implicitWidth: 16
+                        implicitHeight: 16
+                        radius: 8
+                        color: Config.colors.text
+                        border.color: "transparent"
+                    }
+                    background: Rectangle {
+                        color: Config.colors.surface0
+                        radius: 32
+                        height: 10
+                    }
+                }
             }
 
-            Slider {
-                id: control
+            Repeater {
+                model: link.linkGroups
+                delegate: RowLayout {
+                    id: row
+                    required property var modelData
+                    property PwNode node: modelData.source
 
-                from: 0.0
-                to: 1.0
-                stepSize: 0.05
-                value: popup.node.audio.volume
-                onValueChanged: popup.node.audio.volume = value
-                implicitWidth: 200
-                snapMode: Slider.SnapAlways
+                    Layout.alignment: Qt.Top
+                    implicitHeight: 32
 
-                Layout.topMargin: 4
-                Layout.leftMargin: text.width - 24
-                Layout.rightMargin: 8
+                    PwObjectTracker {
+                        objects: [row.node]
+                    }
 
-                handle: Rectangle {
-                    x: control.leftPadding + control.visualPosition * (control.availableWidth - width)
-                    y: control.topPadding + control.availableHeight / 2 - height / 2 - 2.5
+                    Component.onCompleted: {
+                        console.log(row.node.name);
+                    }
 
-                    implicitWidth: 16
-                    implicitHeight: 16
-                    radius: 8
-                    color: Config.colors.text
-                    border.color: "transparent"
-                }
-                background: Rectangle {
-                    color: Config.colors.surface0
-                    radius: 32
-                    height: 10
+                    StatusBarText {
+                        id: row_input_name
+                        text: row.node.name.substring(0, 6)
+                        Layout.alignment: Qt.AlignVCenter
+                        Layout.fillHeight: true
+                        Layout.leftMargin: 16 + (48 - childrenRect.width) / 2
+                        Layout.rightMargin: (48 - childrenRect.width) / 2
+                        Layout.topMargin: 4
+                        Component.onCompleted: {
+                            console.log(childrenRect.width);
+                        }
+
+                        color: "transparent"
+                    }
+
+                    StatusBarText {
+                        id: rowText
+                        text: row.node.audio.muted ? "0%" : Math.round(row.node.audio.volume * 100) + "%"
+                        Layout.alignment: Qt.AlignVCenter
+                        Layout.fillHeight: true
+                        Layout.leftMargin: 8
+                        Layout.topMargin: 4
+                        color: "transparent"
+                        implicitWidth: 32
+                    }
+
+                    Slider {
+                        id: rowControl
+
+                        from: 0.0
+                        to: 1.0
+                        stepSize: 0.05
+                        value: row.node.audio.volume
+                        onValueChanged: row.node.audio.volume = value
+                        implicitWidth: 192
+                        snapMode: Slider.SnapAlways
+
+                        Layout.topMargin: 4
+                        Layout.leftMargin: rowText.width - 24
+                        Layout.rightMargin: 8
+                        Layout.alignment: Qt.AlignVCenter
+
+                        handle: Rectangle {
+                            x: rowControl.leftPadding + rowControl.visualPosition * (rowControl.availableWidth - width)
+                            y: rowControl.topPadding + rowControl.availableHeight / 2 - height / 2 - 2.5
+
+                            implicitWidth: 16
+                            implicitHeight: 16
+                            radius: 8
+                            color: Config.colors.text
+                            border.color: "transparent"
+                        }
+                        background: Rectangle {
+                            color: Config.colors.surface0
+                            radius: 32
+                            height: 10
+                        }
+                    }
                 }
             }
         }

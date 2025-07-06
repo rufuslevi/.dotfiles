@@ -5,7 +5,11 @@ Rectangle {
     id: parent
     property string text
 
-    width: content.contentWidth
+    implicitWidth: content.contentWidth
+    anchors {
+        leftMargin: (parent.width - implicitWidth) / 2
+        rightMargin: (parent.width - implicitWidth) / 2
+    }
 
     Text {
         id: content
