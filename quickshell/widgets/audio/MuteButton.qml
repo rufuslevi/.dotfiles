@@ -27,6 +27,6 @@ Button {
     }
 
     StatusBarText {
-        text: mute_button.node.audio.muted ? "  " : "  "
+        text: audio.node == null ? " 󰓄" : mute_button.node.audio.muted ? "  " : "  "
     }
 }

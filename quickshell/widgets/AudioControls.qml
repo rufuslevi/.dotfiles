@@ -10,7 +10,7 @@ import "root:/singletons"
 Rectangle {
     id: audio
     required property QtObject window
-    property PwNode node: Pipewire.defaultAudioSink
+    property PwNode node: Pipewire.defaultAudioSink.name == "auto_null" ? null : Pipewire.defaultAudioSink
     property bool condition
 
     width: childrenRect.width
@@ -22,11 +22,5 @@ Rectangle {
     MuteButton {
         window: audio.window
         node: audio.node
-        visible: audio.node != null
-    }
-
-    StatusBarText {
-        text: "󰓄"
-        visible: audio.node == null
     }
 }

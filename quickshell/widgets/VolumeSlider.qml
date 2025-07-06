@@ -20,12 +20,14 @@ PopupWindow {
         }
     }
     anchor.window: window
-    implicitWidth: 250
+    implicitWidth: 266
     implicitHeight: control.height + 16
     color: "transparent"
 
     Component.onCompleted: {
         visible = Qt.binding(function () {
+            if (!node)
+                return false;
             if (condition) {
                 timer.start();
                 return true;
@@ -72,6 +74,7 @@ PopupWindow {
                 Layout.leftMargin: 8
                 Layout.topMargin: 4
                 color: "transparent"
+                implicitWidth: 32
             }
 
             Slider {
@@ -82,11 +85,11 @@ PopupWindow {
                 stepSize: 0.05
                 value: popup.node.audio.volume
                 onValueChanged: popup.node.audio.volume = value
-                implicitWidth: popup.width - text.width - 32
+                implicitWidth: 200
                 snapMode: Slider.SnapAlways
 
                 Layout.topMargin: 4
-                Layout.leftMargin: 6
+                Layout.leftMargin: text.width - 24
                 Layout.rightMargin: 8
 
                 handle: Rectangle {
