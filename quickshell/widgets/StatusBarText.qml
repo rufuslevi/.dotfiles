@@ -6,7 +6,6 @@ Rectangle {
     property string text
 
     width: content.contentWidth
-    anchors {}
 
     Text {
         id: content
@@ -14,7 +13,7 @@ Rectangle {
         fontSizeMode: Text.Fit
         font.pixelSize: Config.text.size
         topPadding: 2
-        font.family: Config.text.family
+        font.family: Config.text.font
         color: Config.colors.text
         verticalAlignment: Text.AlignVCenter
 

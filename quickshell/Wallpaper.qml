@@ -16,8 +16,15 @@ PanelWindow {
         bottom: true
     }
 
+    Image {
+        source: "root:../backgrounds/163_cropped.jpg"
+        height: 1440.0
+        width: 2560.0
+        fillMode: Image.PreserveAspectCrop
+    }
+
     Rectangle {
-        color: Config.colors.bar
+        color: Config.addTransparency(Config.colors.base)
 
         anchors {
             fill: parent
@@ -52,13 +59,15 @@ PanelWindow {
                 Rectangle {
                     anchors.fill: parent
                     anchors.topMargin: 24
-                    topLeftRadius: 16
-                    topRightRadius: 16
+                    topLeftRadius: Config.menuBar.radius
+                    topRightRadius: Config.menuBar.radius
+                    color: "white"
                 }
                 Rectangle {
                     anchors.left: parent.left
                     anchors.right: parent.right
                     implicitHeight: 24
+                    color: "white"
                 }
             }
         }

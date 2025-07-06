@@ -38,13 +38,6 @@ PanelWindow {
     Rectangle {
         id: barBackground
         anchors.fill: parent
-        color: Qt.rgba(Config.colors.bar.r, Config.colors.bar.g, Config.colors.bar.b, 0.9)
-    }
-    MultiEffect {
-        source: barBackground
-        anchors.fill: barBackground
-        autoPaddingEnabled: true
-        blurEnabled: true
-        blur: 1.0
+        color: Config.addTransparency(Config.colors.base)
     }
 }
