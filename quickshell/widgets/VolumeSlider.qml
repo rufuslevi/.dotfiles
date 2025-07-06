@@ -142,10 +142,6 @@ PopupWindow {
                         objects: [row.node]
                     }
 
-                    Component.onCompleted: {
-                        console.log(row.node.name);
-                    }
-
                     StatusBarText {
                         id: row_input_name
                         text: row.node.name.substring(0, 6)
@@ -154,10 +150,6 @@ PopupWindow {
                         Layout.leftMargin: 16 + (48 - childrenRect.width) / 2
                         Layout.rightMargin: (48 - childrenRect.width) / 2
                         Layout.topMargin: 4
-                        Component.onCompleted: {
-                            console.log(childrenRect.width);
-                        }
-
                         color: "transparent"
                     }
 
