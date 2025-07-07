@@ -34,6 +34,7 @@
     gnome-online-accounts-gtk
     godot
     gparted
+    grim
     guake
     helvum
     heroic

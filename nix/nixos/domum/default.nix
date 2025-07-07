@@ -13,6 +13,11 @@
     ./networking.nix
   ];
 
+  environment.pathsToLink = [
+    "/share/xdg-desktop-portal"
+    "/share/applications"
+  ];
+
   home-manager = {
     backupFileExtension = "backup";
     users.rufuslevi = {
@@ -52,7 +57,6 @@
           };
         };
         targets = {
-          hyprland.enable = true;
           kitty.enable = true;
           ghostty.enable = true;
           waybar = {
@@ -74,45 +78,16 @@
         "org/gnome/desktop/interface" = {
           icon-theme = "Dracula";
         };
+        "org/gnome/desktop/interface" = {
+          color-scheme = "prefer-dark";
+        };
       };
       wayland.windowManager.hyprland = {
         enable = true;
         extraConfig = "source = $HOME/.config/hypr/hypr.conf";
-        package = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-        portalPackage = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
-      };
-      xdg.portal = {
-        enable = true;
-        xdgOpenUsePortal = false;
-        # wlr = {
-        #   enable = true;
-        # };
-        config = {
-          common = {
-            default = [
-              "gtk"
-            ];
-          };
-          hyprland = {
-            default = [
-              "hyprland"
-              "gtk"
-            ];
-            "org.freedesktop.impl.portal.ScreenCast" = [
-              "wlr"
-            ];
-          };
-          gnome = {
-            default = [
-              "gnome"
-            ];
-          };
-          kde = {
-            default = [
-              "kde"
-            ];
-          };
-        };
+        package = null;
+        portalPackage = null;
+        systemd.variables = [ "--all" ];
       };
       programs = {
         waybar = {

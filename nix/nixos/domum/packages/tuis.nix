@@ -6,6 +6,7 @@
     ckan
     evil-helix
     mpv
+    nix-tree
     youtube-tui
   ];
 }

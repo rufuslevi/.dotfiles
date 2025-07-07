@@ -1,4 +1,9 @@
-{ pkgs, pkgs-stable, ... }:
+{
+  pkgs,
+  pkgs-stable,
+  hyprland,
+  ...
+}:
 
 {
   environment.systemPackages = with pkgs; [
