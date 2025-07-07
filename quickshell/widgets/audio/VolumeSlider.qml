@@ -3,6 +3,7 @@ import QtQuick.Controls
 import QtQuick.Layouts
 import Quickshell
 import Quickshell.Services.Pipewire
+import "root:/widgets"
 import "root:/singletons"
 
 PopupWindow {
@@ -85,7 +86,7 @@ PopupWindow {
 
                 StatusBarText {
                     id: text
-                    text: popup.node.audio.muted ? "0%" : Math.round(popup.node.audio.volume * 100) + "%"
+                    text: popup.node.audio.muted ? " " : Math.round(popup.node.audio.volume * 100) + "%"
                     Layout.alignment: Qt.AlignVCenter
                     Layout.fillHeight: true
                     Layout.leftMargin: 8
@@ -161,7 +162,7 @@ PopupWindow {
 
                     StatusBarText {
                         id: rowText
-                        text: row.node.audio.muted ? "  " : Math.round(row.node.audio.volume * 100) + "%"
+                        text: popup.node.audio.muted || row.node.audio.muted ? "  " : Math.round(row.node.audio.volume * 100) + "%"
                         Layout.alignment: Qt.AlignVCenter
                         Layout.fillHeight: true
                         Layout.leftMargin: 8
