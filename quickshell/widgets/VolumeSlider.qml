@@ -151,17 +151,30 @@ PopupWindow {
                         Layout.rightMargin: (48 - childrenRect.width) / 2
                         Layout.topMargin: 4
                         color: "transparent"
+                        AbstractButton {
+                            anchors.fill: parent
+                            onClicked: {
+                                row.node.audio.muted = !row.node.audio.muted;
+                            }
+                        }
                     }
 
                     StatusBarText {
                         id: rowText
-                        text: row.node.audio.muted ? "0%" : Math.round(row.node.audio.volume * 100) + "%"
+                        text: row.node.audio.muted ? "  " : Math.round(row.node.audio.volume * 100) + "%"
                         Layout.alignment: Qt.AlignVCenter
                         Layout.fillHeight: true
                         Layout.leftMargin: 8
                         Layout.topMargin: 4
                         color: "transparent"
                         implicitWidth: 32
+
+                        AbstractButton {
+                            anchors.fill: parent
+                            onClicked: {
+                                row.node.audio.muted = !row.node.audio.muted;
+                            }
+                        }
                     }
 
                     Slider {
