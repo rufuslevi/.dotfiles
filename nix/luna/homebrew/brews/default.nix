@@ -9,6 +9,7 @@
     "evil-helix"
     # "koekeishiya/formulae/yabai"
     "koekeishiya/formulae/skhd"
+    "felixkratz/formulae/sketchybar"
     "zsh-completions"
     "neofetch"
     "gradle"
