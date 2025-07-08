@@ -136,7 +136,7 @@ PopupWindow {
                     required property var modelData
                     property PwNode node: modelData.source
 
-                    Layout.alignment: Qt.Top
+                    Layout.alignment: Qt.AlignTop
                     implicitHeight: 32
 
                     PwObjectTracker {

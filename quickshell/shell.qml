@@ -9,6 +9,7 @@ Scope {
         id: statusBar
 
         StatusBarEntry {
+            id: workspaces
             anchors {
                 left: parent.left
             }
@@ -23,6 +24,8 @@ Scope {
         }
 
         StatusBarEntry {
+            id: audioControls
+
             anchors {
                 right: parent.right
             }

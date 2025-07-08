@@ -19,6 +19,7 @@ Singleton {
         readonly property color text: "#cad3f5"
         readonly property color subtext1: "#b8c0e0"
         readonly property color subtext0: "#a5adcb"
+        readonly property color overlay0: "#363a4f"
         readonly property color surface0: "#363a4f"
         readonly property color base: "#24273a"
     }

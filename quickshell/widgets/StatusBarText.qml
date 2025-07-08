@@ -6,6 +6,8 @@ Rectangle {
     property string text
 
     implicitWidth: content.contentWidth
+    implicitHeight: Config.bar.height
+
     anchors {
         leftMargin: (parent.width - implicitWidth) / 2
         rightMargin: (parent.width - implicitWidth) / 2
