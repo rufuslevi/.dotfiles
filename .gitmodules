@@ -5,7 +5,7 @@
 	path = kitty-themes
 	url = https://github.com/rufuslevi/kitty-themes
 [submodule "gtk/themes/Dracula"]
-	path = gtk/themes
+	path = gtk/themes/Dracula
 	url = git@github.com:dracula/gtk.git
 	ignore = dirty
 [submodule "gtk/icons/Dracula"]
