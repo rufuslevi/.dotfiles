@@ -4,9 +4,11 @@
 [submodule "kitty-themes"]
 	path = kitty-themes
 	url = https://github.com/rufuslevi/kitty-themes
-[submodule "gtk/themes"]
+[submodule "gtk/themes/Dracula"]
 	path = gtk/themes
 	url = git@github.com:dracula/gtk.git
+	ignore = dirty
 [submodule "gtk/icons/Dracula"]
 	path = gtk/icons/Dracula
 	url = git@github.com:m4thewz/dracula-icons.git
+	ignore = dirty
