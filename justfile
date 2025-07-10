@@ -33,12 +33,12 @@ quickshell:
     mkdir -p ~/.config/quickshell
     stow -v -t ~/.config/quickshell quickshell
 
+scripts:
+    mkdir -p ~/.config/scripts
+    stow -v -t ~/.config/scripts scripts
+
 sketchybar:
     @echo 'Linking sketchybar configs'
     mkdir -p ~/.config/sketchybar
     stow -v -t ~/.config/sketchybar sketchybar
     
-    
-
-
-
