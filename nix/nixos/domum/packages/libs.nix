@@ -16,6 +16,7 @@
     ghostscriptX
     glib
     gradle
+    gvfs
     helvetica-neue-lt-std
     jansson
     libcamera
