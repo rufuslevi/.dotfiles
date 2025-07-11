@@ -129,6 +129,77 @@ PopupWindow {
                 }
             }
 
+            RowLayout {
+                id: balanceRow
+                property real balance: 0
+
+                Layout.alignment: Qt.AlignTop
+                implicitHeight: 32
+
+                StatusBarText {
+                    text: "balance"
+                    Layout.alignment: Qt.AlignVCenter
+                    Layout.fillHeight: true
+                    Layout.leftMargin: 16 + (48 - childrenRect.width) / 2
+                    Layout.rightMargin: (48 - childrenRect.width) / 2
+                    Layout.topMargin: 4
+                    color: "transparent"
+                }
+
+                StatusBarText {
+                    text: Math.round(100 * balanceRow.balance) + "%"
+                    Layout.alignment: Qt.AlignVCenter
+                    Layout.fillHeight: true
+                    Layout.leftMargin: 8
+                    Layout.topMargin: 4
+                    color: "transparent"
+                    implicitWidth: 32
+                }
+
+                Slider {
+                    id: balanceSlider
+
+                    from: -1.0
+                    to: 1.0
+                    stepSize: 0.05
+                    value: balanceRow.balance
+                    onValueChanged: {
+                        balanceRow.balance = value;
+                        if (balanceRow.balance == 0) {
+                            popup.node.audio.volumes[0] = popup.node.audio.volume;
+                            popup.node.audio.volumes[1] = popup.node.audio.volume;
+                            return;
+                        }
+
+                        popup.node.audio.volumes[0] = Math.max(0, Math.min(1, popup.node.audio.volume - balanceRow.balance));
+                        popup.node.audio.volumes[1] = Math.max(0, Math.min(1, popup.node.audio.volume + balanceRow.balance));
+                    }
+                    implicitWidth: 192
+                    snapMode: Slider.SnapAlways
+
+                    Layout.topMargin: 4
+                    Layout.leftMargin: text.width - 24
+                    Layout.rightMargin: 8
+                    Layout.alignment: Qt.AlignVCenter
+
+                    handle: Rectangle {
+                        x: balanceSlider.leftPadding + balanceSlider.visualPosition * (balanceSlider.availableWidth - width)
+                        y: balanceSlider.topPadding + balanceSlider.availableHeight / 2 - height / 2 - 2.5
+
+                        implicitWidth: 16
+                        implicitHeight: 16
+                        radius: 8
+                        color: Config.colors.text
+                        border.color: "transparent"
+                    }
+                    background: Rectangle {
+                        color: Config.colors.surface0
+                        radius: 32
+                        height: 10
+                    }
+                }
+            }
+
             Repeater {
                 model: link.linkGroups
                 delegate: RowLayout {
