@@ -7,6 +7,7 @@ Rectangle {
 
     implicitWidth: content.contentWidth
     implicitHeight: Config.bar.height
+    color: "transparent"
 
     anchors {
         leftMargin: (parent.width - implicitWidth) / 2
