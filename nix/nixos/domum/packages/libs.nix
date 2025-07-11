@@ -1,7 +1,5 @@
 {
   pkgs,
-  pkgs-stable,
-  hyprland,
   ...
 }:
 
