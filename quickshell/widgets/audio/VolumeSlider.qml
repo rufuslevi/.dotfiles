@@ -22,7 +22,7 @@ PopupWindow {
     }
     anchor.window: window
     implicitWidth: 324
-    implicitHeight: (control.height + 16) * (1 + link.linkGroups.length)
+    implicitHeight: (control.height + 16) * (2 + link.linkGroups.length)
     color: "transparent"
 
     PwNodeLinkTracker {

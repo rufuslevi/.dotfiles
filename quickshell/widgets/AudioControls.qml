@@ -36,13 +36,7 @@ Rectangle {
 
                 Layout.alignment: Qt.AlignTop
                 implicitWidth: 2 * 32
-                implicitHeight: Config.bar.height
-
-                Component.onCompleted: {
-                    console.log(implicitWidth);
-                    console.log("control");
-                    console.log(player.canControl);
-                }
+                Layout.fillHeight: true
 
                 StatusBarText {
                     id: name
