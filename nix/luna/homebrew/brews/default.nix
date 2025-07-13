@@ -14,6 +14,7 @@
     "zsh-completions"
     "cava"
     "neofetch"
+    "nmap"
     "gradle"
     "libqalculate"
     "octave"
