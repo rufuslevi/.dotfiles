@@ -10,5 +10,6 @@
     mpv
     nix-tree
     youtube-tui
+    zellij
   ];
 }
