@@ -63,6 +63,7 @@
     scarab
     selectdefaultapplication
     slurp
+    solaar
     sysbench
     themechanger
     thunderbird

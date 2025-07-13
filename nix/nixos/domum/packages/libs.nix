@@ -29,6 +29,7 @@
     qtcreator
     qt5.full
     kdePackages.qtdeclarative
+    kdePackages.kstatusnotifieritem
     redlib
     steam-devices-udev-rules
     tbb
