@@ -15,5 +15,7 @@
     "temurin"
     "easy-move-plus-resize"
     "nikitabobko/tap/aerospace"
+    "background-music"
+    "sf-symbols"
   ];
 }
