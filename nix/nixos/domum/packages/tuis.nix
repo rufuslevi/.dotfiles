@@ -6,6 +6,7 @@
     android-udev-rules
     bluetuith
     ckan
+    clipse
     evil-helix
     mpv
     nix-tree

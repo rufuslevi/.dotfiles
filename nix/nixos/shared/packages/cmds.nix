@@ -14,7 +14,6 @@
     swww
     hyprpaper
     wlogout
-    pkgs-stable.cliphist
     exfat
     gnome.gvfs
     man-pages
