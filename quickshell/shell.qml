@@ -14,22 +14,13 @@ Scope {
         id: statusBar
 
         StatusBarEntry {
-            id: systemTray
-            anchors {
-                left: statusBar.left
-            }
-
-            SystemTray {}
-        }
-
-        StatusBarEntry {
             id: workspaces
+
             anchors {
-                left: systemTray.right
+                left: parent.left
             }
-            Workspaces {
-                anchors.leftMargin: 8
-            }
+
+            Workspaces {}
         }
 
         StatusBarEntry {
@@ -43,12 +34,21 @@ Scope {
             id: audioControls
 
             anchors {
-                right: parent.right
+                right: systemTray.left
             }
 
             AudioControls {
                 window: statusBar
             }
+        }
+        StatusBarEntry {
+            id: systemTray
+
+            anchors {
+                right: parent.right
+            }
+
+            SystemTray {}
         }
     }
 }

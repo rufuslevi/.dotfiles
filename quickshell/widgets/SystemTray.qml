@@ -6,6 +6,7 @@ import "root:/widgets"
 import "root:/singletons"
 
 RowLayout {
+    anchors.rightMargin: 4
     Repeater {
         model: SystemTray.items.values
         delegate: MouseArea {
@@ -14,8 +15,8 @@ RowLayout {
             property var item: modelData
 
             Layout.alignment: Qt.AlignTop
-            Layout.fillWidth: true
-            implicitWidth: 16
+            Layout.rightMargin: 2
+
             implicitHeight: 24
 
             acceptedButtons: Qt.LeftButton | Qt.RightButton
@@ -34,7 +35,6 @@ RowLayout {
             }
 
             StatusBarText {
-                implicitWidth: 24
                 implicitHeight: 24
 
                 text: {
@@ -48,6 +48,6 @@ RowLayout {
         }
     }
     Rectangle {
-        implicitWidth: 8
+        implicitWidth: 16
     }
 }
