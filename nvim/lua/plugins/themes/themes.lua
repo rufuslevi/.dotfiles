@@ -11,6 +11,7 @@ return {
   {
     -- Syncs the background of the terminal with nvim theme
     "typicode/bg.nvim",
+    enabled = false,
     lazy = false,
   },
   {

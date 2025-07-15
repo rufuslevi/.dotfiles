@@ -1,7 +1,10 @@
 -- This contains all the specs to load the extensions modifying the UI
 
 return {
-  { "xiyaowong/transparent.nvim" },
+  {
+    -- Remove all background colors to make nvim transparent.
+    "xiyaowong/transparent.nvim",
+  },
   {
     -- Colors colors codes in editor
     "NvChad/nvim-colorizer.lua",
