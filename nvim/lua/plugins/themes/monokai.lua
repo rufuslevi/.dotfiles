@@ -28,15 +28,12 @@ return {
       inc_search = "background", -- underline | background
       background_clear = {
         "lazygit",
-        -- "float_win",
         "toggleterm",
-        "telescope",
         "which-key",
         "renamer",
         "notify",
         "neo-tree",
-        -- "bufferline", -- better used if background of `neo-tree` or `nvim-tree` is cleared
-      }, -- "float_win", "toggleterm", "telescope", "which-key", "renamer", "neo-tree", "nvim-tree", "bufferline"
+      },
       plugins = {
         bufferline = {
           underline_selected = false,

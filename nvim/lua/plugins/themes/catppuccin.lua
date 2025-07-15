@@ -34,15 +34,21 @@ return {
         color_overrides = {},
         custom_highlights = {},
         integrations = {
-          cmp = true,
+          blink_cmp = {
+            style = "bordered",
+          },
+          cmp = false,
+          dap = true,
+          dap_ui = true,
           gitsigns = true,
           nvimtree = true,
-          telescope = true,
+          telescope = false,
           notify = true,
           mini = true,
           mason = true,
           treesitter = true,
           treesitter_context = true,
+          which_key = true,
         },
       })
     end,
