@@ -32,7 +32,7 @@
       };
     in
     {
-      nixosConfigurations.domum = nixos-unstable.lib.nixosSystem {
+      nixosConfigurations.milkyway = nixos-unstable.lib.nixosSystem {
         system = system;
         specialArgs = attrs;
         modules = [

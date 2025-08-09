@@ -30,7 +30,6 @@
   boot.loader = {
     systemd-boot = {
       enable = true;
-
     };
     efi.canTouchEfiVariables = false;
     efi.efiSysMountPoint = "/boot/EFI";

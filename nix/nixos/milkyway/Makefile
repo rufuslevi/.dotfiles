@@ -1,11 +1,11 @@
 install:
-	nix run nix-darwin -- switch --flake .#milkyway --show-trace
+	sudo nixos-install --flake .#milkyway --show-trace
 
 rebuild:
 	sudo nixos-rebuild switch --flake .#milkyway --show-trace
 
 update:
-	nix flake update
+	sudo nix flake update
 
 clear-cache:
 	nix-store --gc

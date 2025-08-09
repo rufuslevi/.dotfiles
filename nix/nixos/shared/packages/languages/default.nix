@@ -1,7 +1,10 @@
 { pkgs, pkgs-stable, ... }:
 
 {
-  imports = [ ./go.nix ./java.nix ];
+  imports = [
+    ./go.nix
+    ./java.nix
+  ];
 
   environment.systemPackages = with pkgs; [
     cargo
@@ -43,7 +46,7 @@
     sqlite
     stylua
     taplo
-    texliveFull
+    pkgs-stable.texliveFull
     tcl
     typescript-language-server
     rustc
