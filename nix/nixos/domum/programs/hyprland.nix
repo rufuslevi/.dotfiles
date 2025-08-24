@@ -14,7 +14,7 @@
     xwayland.enable = true;
     # package = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     # portalPackage = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
-    package = pkgs-stable.hyprland;
-    portalPackage = pkgs-stable.xdg-desktop-portal-hyprland;
+    package = pkgs.hyprland;
+    portalPackage = pkgs.xdg-desktop-portal-hyprland;
   };
 }
