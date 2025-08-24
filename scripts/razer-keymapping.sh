@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Razer Huntsman V2 Menu to Right Option
 /usr/bin/hidutil property \
