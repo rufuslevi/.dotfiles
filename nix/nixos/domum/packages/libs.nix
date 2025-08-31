@@ -27,7 +27,6 @@
     netcat-gnu
     openrazer-daemon
     qtcreator
-    qt5.full
     kdePackages.qtdeclarative
     kdePackages.kstatusnotifieritem
     redlib
