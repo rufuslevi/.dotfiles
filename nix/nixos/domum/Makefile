@@ -4,6 +4,9 @@ install:
 rebuild:
 	sudo nixos-rebuild switch --flake .#domum --show-trace
 
+rebuild-bootloader:
+	sudo nixos-rebuild --install-bootloader boot --flake .#domum --show-trace
+
 update:
 	sudo nix flake update
 

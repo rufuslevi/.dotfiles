@@ -13,6 +13,11 @@ ifeq ($(HOST), luna)
 	cd nix/luna; make install
 endif
 
+rebuild-bootloader:
+ifeq ($(HOST), domum)
+	cd nix/nixos/domum; make rebuild-bootloader
+endif
+
 rebuild:
 ifeq ($(HOST), domum)
 	cd nix/nixos/domum; make rebuild

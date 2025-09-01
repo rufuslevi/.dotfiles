@@ -12,7 +12,6 @@
     clipman
     eww
     swww
-    hyprpaper
     wlogout
     exfat
     gnome.gvfs
