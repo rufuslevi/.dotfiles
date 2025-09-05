@@ -13,17 +13,5 @@
       };
     };
     desktopManager.gnome.enable = true;
-    xserver = {
-      enable = true;
-      videoDrivers = [ "amdgpu" ];
-      deviceSection = ''
-        Option "TearFree" "False"
-        Option "VariableRefresh" "True"
-      '';
-      xkb = {
-        layout = "ca";
-        variant = "multix";
-      };
-    };
   };
 }

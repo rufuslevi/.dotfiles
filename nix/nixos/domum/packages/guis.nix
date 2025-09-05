@@ -24,6 +24,7 @@
     blender
     blueman
     brave
+    davinci-resolve
     dconf-editor
     dunst
     flameshot
@@ -32,10 +33,12 @@
     gimp
     github-desktop
     gnome-online-accounts-gtk
+    gnome-tweaks
     godot
     gparted
     grim
     guake
+    handbrake
     helvum
     heroic
     kdePackages.ark

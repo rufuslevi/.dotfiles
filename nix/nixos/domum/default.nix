@@ -21,6 +21,9 @@
   home-manager = {
     backupFileExtension = "backup";
     users.rufuslevi = {
+      home.file.".config/uwsm/env-hyprland" = {
+        text = "export AQ_DRM_DEVICES=\"/dev/dri/card0:/dev/dri/card1\"";
+      };
       home.stateVersion = "24.11";
       stylix = {
         enable = true;
@@ -84,6 +87,7 @@
       };
       wayland.windowManager.hyprland = {
         enable = true;
+        systemd.enable = false;
         extraConfig = "source = $HOME/.config/hypr/hypr.conf";
         package = null;
         portalPackage = null;

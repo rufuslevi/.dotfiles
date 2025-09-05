@@ -16,7 +16,7 @@ alias nixgodot="LD_LIBRARY_PATH=$NIX_LD_LIBRARY_PATH godot"
 if [[ $(uname) == "Darwin" ]]; then
     alias gdnvim="nvim --listen ~/.tmp/godot.pipe"
 elif command -v nix > /dev/null; then
-    alias gdnvim="uwsm app -- nvim --listen ~/.tmp/godot.pipe"
+    alias gdnvim="nvim --listen ~/.tmp/godot.pipe"
 fi
 
 HISTSIZE=1000

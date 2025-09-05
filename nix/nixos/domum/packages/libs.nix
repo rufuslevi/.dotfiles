@@ -22,8 +22,6 @@
     libinput
     libva-utils
     libvdpau-va-gl
-    mesa
-    mesa-demos
     netcat-gnu
     openrazer-daemon
     qtcreator
@@ -39,6 +37,7 @@
     vulkan-tools
     vulkan-validation-layers
     wayland-scanner
+    wlprop
     wine
     wineWowPackages.stable
     winetricks
@@ -51,6 +50,7 @@
     xorg.libXxf86vm
     xorg.libXtst
     xorg.libX11
+    xorg.xprop
     xz
     zlib
   ];

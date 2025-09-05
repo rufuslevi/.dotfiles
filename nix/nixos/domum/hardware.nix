@@ -22,8 +22,9 @@
     "sr_mod"
   ];
   boot.initrd.kernelModules = [ ];
+
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelModules = [
-    "kvm-intel"
     "amdgpu"
   ];
   boot.extraModulePackages = [ ];
