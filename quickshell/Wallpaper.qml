@@ -58,15 +58,9 @@ PanelWindow {
                 color: "transparent"
                 Rectangle {
                     anchors.fill: parent
-                    anchors.topMargin: 24
+                    anchors.topMargin: 0
                     topLeftRadius: Config.menuBar.radius
                     topRightRadius: Config.menuBar.radius
-                    color: "white"
-                }
-                Rectangle {
-                    anchors.left: parent.left
-                    anchors.right: parent.right
-                    implicitHeight: 24
                     color: "white"
                 }
             }
