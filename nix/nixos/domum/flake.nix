@@ -17,11 +17,6 @@
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
       inputs.nixpkgs.follows = "nixos-unstable";
     };
-
-    anyrun = {
-      url = "github:anyrun-org/anyrun";
-      inputs.nixpkgs.follows = "nixos-stable";
-    };
   };
 
   outputs =
@@ -30,7 +25,6 @@
       nixos-unstable,
       home-manager,
       hyprland,
-      anyrun,
       quickshell,
       stylix,
       zen-browser,
@@ -39,7 +33,6 @@
     let
       system = "x86_64-linux";
 
-      attrs.anyrun = anyrun;
       attrs.hyprland = hyprland;
       attrs.quickshell = quickshell;
       attrs.zen-browser = zen-browser;

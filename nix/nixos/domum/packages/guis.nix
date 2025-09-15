@@ -1,5 +1,4 @@
 {
-  anyrun,
   quickshell,
   zen-browser,
   pkgs,
@@ -18,7 +17,7 @@
     # pkgs-stable.m32edit
     pkgs-stable.protonup-qt
     pkgs-stable.unityhub
-    anyrun.packages.${system}.anyrun
+    anyrun
     audacity
     bitmagnet
     blender
@@ -29,6 +28,7 @@
     dunst
     flameshot
     furmark
+    fuzzel
     ghostty
     gimp
     github-desktop

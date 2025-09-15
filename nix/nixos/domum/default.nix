@@ -95,7 +95,7 @@
       };
       programs = {
         waybar = {
-          enable = true;
+          enable = false;
           style = "@import \"styling.css\";";
         };
       };
