@@ -8,5 +8,6 @@
     hyprpolkitagent
     imagemagick
     pngquant
+    powershell
   ];
 }
