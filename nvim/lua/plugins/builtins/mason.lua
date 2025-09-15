@@ -3,6 +3,7 @@ return {
   opts = {
     ensure_installed = {
       "shellcheck",
+      "powershell-editor-services",
     },
   },
 }
