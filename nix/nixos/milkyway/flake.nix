@@ -9,10 +9,13 @@
     };
 
     zen-browser.url = "github:MarceColl/zen-browser-flake";
+
+    inputs.agenix.url = "github:ryantm/agenix";
   };
 
   outputs =
     attrs@{
+      agenix,
       nixos-stable,
       nixos-unstable,
       home-manager,
@@ -22,6 +25,7 @@
     let
       system = "x86_64-linux";
 
+      attrs.agenix = agenix;
       attrs.zen-browser = zen-browser;
 
       attrs.pkgs-stable = import nixos-stable {
@@ -37,6 +41,7 @@
         specialArgs = attrs;
         modules = [
           home-manager.nixosModules.home-manager
+          agenix.nixosModules.default
           ./default.nix
           ../shared
         ];

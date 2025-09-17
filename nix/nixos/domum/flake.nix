@@ -17,10 +17,13 @@
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
       inputs.nixpkgs.follows = "nixos-unstable";
     };
+
+    agenix.url = "github:ryantm/agenix";
   };
 
   outputs =
     attrs@{
+      agenix,
       nixos-stable,
       nixos-unstable,
       home-manager,
@@ -33,6 +36,7 @@
     let
       system = "x86_64-linux";
 
+      attrs.agenix = agenix;
       attrs.hyprland = hyprland;
       attrs.quickshell = quickshell;
       attrs.zen-browser = zen-browser;
@@ -51,6 +55,7 @@
         modules = [
           home-manager.nixosModules.home-manager
           stylix.nixosModules.stylix
+          agenix.nixosModules.default
           ./default.nix
           ../shared
         ];

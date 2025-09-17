@@ -4,6 +4,7 @@
   imports = [
     ./displayManager.nix
     ./jellyfin.nix
+    ./nextcloud.nix
     ./samba.nix
     ./ssh.nix
     ./syncthing.nix
