@@ -23,7 +23,7 @@ background-blur-radius = 40
 
 macos-titlebar-style = "transparent"
 macos-icon = "blueprint"
-macos-window-shadow = false
+macos-window-shadow = true
 
 window-title-font-family = "MonaspiceAr Nerd Font"
 window-subtitle = working-directory
