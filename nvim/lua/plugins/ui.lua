@@ -9,7 +9,7 @@ return {
     -- Colors colors codes in editor
     "NvChad/nvim-colorizer.lua",
   },
-  { "echasnovski/mini.bufremove" },
+  { "nvim-mini/mini.bufremove" },
   {
     -- To read about an element quickly
     "Fildo7525/pretty_hover",
