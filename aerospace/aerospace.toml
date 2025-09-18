@@ -82,7 +82,7 @@ ctrl-minus = 'resize smart -50'
 ctrl-equal = 'resize smart +50'
 
 alt-tab = 'workspace-back-and-forth'
-shift-tab = ['focus-back-and-forth']
+ctrl-tab = ['focus-back-and-forth']
 
 [[on-window-detected]]
 if.app-id = "app.zen-browser.zen"
