@@ -3,10 +3,7 @@
 {
   homebrew.casks = [
     "the-unarchiver"
-    "openvpn-connect"
     "vivaldi"
-    "firefox@developer-edition"
-    # "zen-browser"
     "blender"
     "openrgb"
     "tomatobar"
@@ -58,7 +55,9 @@
     "unnaturalscrollwheels"
     "unity-hub"
     "zed"
+    "zen"
     "audacity"
     "raycast"
+    "powershell"
   ];
 }
