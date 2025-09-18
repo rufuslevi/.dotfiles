@@ -23,7 +23,7 @@ ifeq ($(HOST), domum)
 	cd nix/nixos/domum; make rebuild
 endif
 ifeq ($(HOST), milkyway)
-	sudo nixos-rebuild switch --flake .#milkyway --show-trace
+	cd nix/nixos/milkyway; make rebuild
 endif
 ifeq ($(HOST), luna)
 	cd nix/luna; make rebuild

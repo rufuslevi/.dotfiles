@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    unixtools.netstat
     efibootmgr
     fan2go
     lm_sensors

@@ -1,10 +1,68 @@
-{ config, pkgs, ... }:
+{ config, pkgs-stable, ... }:
 
 {
+  users = {
+    users.nextcloud = {
+      uid = 1001;
+      isSystemUser = true;
+      extraGroups = [ "users" ];
+    };
+    groups = {
+      nextcloud = {
+        gid = 997;
+        members = [ "nextcloud" ];
+      };
+    };
+  };
+
   services.nextcloud = {
     enable = true;
-    package = pkgs.nextcloud31;
+    package = pkgs-stable.nextcloud31;
     hostName = "localhost";
-    config.adminpassFile = config.age.secrets.nextcloud.path;
+    database.createLocally = true;
+    config = {
+      dbtype = "mysql";
+      dbname = "nextcloud";
+      adminuser = "admin";
+      adminpassFile = config.age.secrets.nextcloud.path;
+    };
+    settings =
+      let
+        prot = "http";
+        host = "rufuslevi.dev";
+      in
+      {
+        overwriteprotocol = prot;
+        overwritehost = host;
+        overwrite.cli.url = "${prot}://${host}/";
+        default_phone_region = "CA";
+        mysql.utf8mb4 = true;
+        trusted_domains = [
+          "localhost"
+          "192.168.0.*"
+        ];
+        trusted_proxies = [
+          "localhost"
+          "192.168.0.*"
+        ];
+        enabledPreviewProviders = [
+          "OC\\Preview\\BMP"
+          "OC\\Preview\\GIF"
+          "OC\\Preview\\JPEG"
+          "OC\\Preview\\Krita"
+          "OC\\Preview\\MarkDown"
+          "OC\\Preview\\MP3"
+          "OC\\Preview\\OpenDocument"
+          "OC\\Preview\\PNG"
+          "OC\\Preview\\TXT"
+          "OC\\Preview\\XBitmap"
+          "OC\\Preview\\HEIC"
+        ];
+      };
+  };
+
+  systemd.services."nextcloud-setup" = {
+    requires = [ "mysql.service" ];
+    after = [ "mysql.service" ];
   };
 }

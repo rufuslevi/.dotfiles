@@ -10,7 +10,7 @@
 
     zen-browser.url = "github:MarceColl/zen-browser-flake";
 
-    inputs.agenix.url = "github:ryantm/agenix";
+    agenix.url = "github:ryantm/agenix";
   };
 
   outputs =
