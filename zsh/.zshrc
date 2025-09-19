@@ -1,5 +1,7 @@
 # zmodload zsh/zprof
 
+[[ $- == *i* ]] || return
+
 source ~/.config/zsh/.zshenv
 if [ -z "$PS1" ]; then
 else
