@@ -18,6 +18,7 @@
   services.nextcloud = {
     enable = true;
     package = pkgs-stable.nextcloud31;
+    https = true;
     hostName = "localhost";
     database.createLocally = true;
     config = {
@@ -28,7 +29,7 @@
     };
     settings =
       let
-        prot = "http";
+        prot = "https";
         host = "rufuslevi.dev";
       in
       {
@@ -44,6 +45,7 @@
         trusted_proxies = [
           "localhost"
           "192.168.0.*"
+          "rufuslevi.dev"
         ];
         enabledPreviewProviders = [
           "OC\\Preview\\BMP"
