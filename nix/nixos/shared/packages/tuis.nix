@@ -2,12 +2,13 @@
 
 {
   environment.systemPackages = with pkgs; [
+    btop
+    cmatrix
     libqalculate
     neofetch
-    vim
-    btop
-    yazi
-    cmatrix
     tmux
+    vim
+    yazi
+    zellij
   ];
 }

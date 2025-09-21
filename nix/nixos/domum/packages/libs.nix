@@ -5,6 +5,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    apfs-fuse
     brotli
     bzip3
     corefonts
