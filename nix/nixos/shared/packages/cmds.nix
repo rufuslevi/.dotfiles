@@ -44,5 +44,6 @@
     xdg-utils
     xdg-ninja
     polonium
+    iperf
   ];
 }
