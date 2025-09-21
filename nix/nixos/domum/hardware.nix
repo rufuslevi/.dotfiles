@@ -5,6 +5,7 @@
   config,
   lib,
   pkgs,
+  pkgs-stable,
   modulesPath,
   ...
 }:
@@ -12,35 +13,40 @@
 {
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
-  boot.initrd.availableKernelModules = [
-    "xhci_pci"
-    "ahci"
-    "nvme"
-    "usbhid"
-    "usb_storage"
-    "sd_mod"
-    "sr_mod"
-  ];
-  boot.initrd.kernelModules = [ ];
+  boot = {
+    initrd.availableKernelModules = [
+      "xhci_pci"
+      "ahci"
+      "nvme"
+      "usbhid"
+      "usb_storage"
+      "sd_mod"
+      "sr_mod"
+    ];
+    initrd.kernelModules = [ ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.kernelModules = [
-    "amdgpu"
-  ];
-  boot.extraModulePackages = [ ];
-  boot.loader = {
-    systemd-boot = {
-      enable = true;
-    };
-    efi.canTouchEfiVariables = false;
-    efi.efiSysMountPoint = "/boot/EFI";
-    grub = {
-      enable = false;
-      device = "nodev";
-      useOSProber = true;
-      efiSupport = true;
-      efiInstallAsRemovable = true;
-      # theme = "/boot/grub/themes/hyperfluent";
+    kernelPackages = pkgs.linuxPackages_latest;
+    kernelModules = [
+      "amdgpu"
+    ];
+    extraModulePackages = with config.boot.kernelPackages; [
+      # apfs
+    ];
+
+    loader = {
+      systemd-boot = {
+        enable = true;
+      };
+      efi.canTouchEfiVariables = false;
+      efi.efiSysMountPoint = "/boot/EFI";
+      grub = {
+        enable = false;
+        device = "nodev";
+        useOSProber = true;
+        efiSupport = true;
+        efiInstallAsRemovable = true;
+        # theme = "/boot/grub/themes/hyperfluent";
+      };
     };
   };
 
