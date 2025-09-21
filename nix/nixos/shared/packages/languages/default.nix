@@ -17,7 +17,7 @@
     iferr
     impl
     jdt-language-server
-    llvmPackages_17.clang-unwrapped
+    llvmPackages_21.clang-unwrapped
     # lua
     lua-language-server
     lua51Packages.lua

@@ -35,7 +35,7 @@
       libxml2
       libllvm
       llvm
-      llvmPackages_12.libllvm
+      llvmPackages_21.libllvm
       mesa
       nspr
       nss
