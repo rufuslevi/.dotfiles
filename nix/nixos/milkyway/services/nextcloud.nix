@@ -21,6 +21,7 @@
     https = true;
     hostName = "localhost";
     database.createLocally = true;
+    maxUploadSize = "5G";
     config = {
       dbtype = "mysql";
       dbname = "nextcloud";
@@ -61,6 +62,10 @@
           "OC\\Preview\\HEIC"
         ];
       };
+    phpOptions = {
+      max_input_time = 3600;
+      max_execution_time = 3600;
+    };
   };
 
   systemd.services."nextcloud-setup" = {
