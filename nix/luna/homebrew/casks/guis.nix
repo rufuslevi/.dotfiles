@@ -59,5 +59,7 @@
     "audacity"
     "raycast"
     "powershell"
+    "pinta"
+    "nextcloud"
   ];
 }
