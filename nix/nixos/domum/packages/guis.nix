@@ -34,7 +34,7 @@
     github-desktop
     gnome-online-accounts-gtk
     gnome-tweaks
-    godot
+    godotPackages_4_4.godot
     gparted
     grim
     guake
@@ -58,6 +58,7 @@
     openrgb-with-all-plugins
     pavucontrol
     phoronix-test-suite
+    pinta
     prismlauncher
     qbittorrent
     qpwgraph

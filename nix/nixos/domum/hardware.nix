@@ -30,6 +30,7 @@
       "amdgpu"
     ];
     extraModulePackages = with config.boot.kernelPackages; [
+      xpadneo
       # apfs
     ];
 
