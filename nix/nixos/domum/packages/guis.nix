@@ -59,7 +59,16 @@
     pavucontrol
     phoronix-test-suite
     pinta
-    prismlauncher
+    (prismlauncher.override {
+      jdks = [
+        jdk8
+        jdk17
+        jdk24
+        temurin-bin-8
+        temurin-bin-21
+        temurin-bin-17
+      ];
+    })
     qbittorrent
     qpwgraph
     quickshell.packages.${system}.default
