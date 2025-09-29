@@ -6,7 +6,6 @@ tasks:
       - task os:anyrun
       - task os:dunst
       - task os:gammastep
-      - task os:hyprland
       - task os:nushell
       - task os:pulse
       - task os:sublime
@@ -29,10 +28,6 @@ tasks:
     cmds:
       - mkdir -p ~/.config/gammastep
       - stow -v -t ~/.config/gammastep gammastep
-  hyprland:
-    cmds:
-      - mkdir -p ~/.config/hypr
-      - stow -v -t ~/.config/hypr hypr
   kvantum:
     cmds:
       - mkdir -p ~/.config/Kvantum

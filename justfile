@@ -28,6 +28,11 @@ helix:
     mkdir -p ~/.config/helix
     stow -v -t ~/.config/helix helix
 
+hyprland:
+    @echo 'Linking Hyprland configs'
+    mkdir -p ~/.config/hypr
+    stow -v -t ~/.config/hypr hypr
+
 quickshell:
     @echo 'Linking quickshell configs'
     mkdir -p ~/.config/quickshell

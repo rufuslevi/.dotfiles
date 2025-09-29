@@ -9,7 +9,6 @@
 {
   environment.systemPackages = with pkgs; [
     pkgs-stable.bitwarden-desktop
-    pkgs-stable.gammastep
     pkgs-stable.jetbrains.clion
     pkgs-stable.jetbrains.pycharm-professional
     pkgs-stable.jetbrains.idea-ultimate
@@ -29,6 +28,7 @@
     flameshot
     furmark
     fuzzel
+    gammastep
     ghostty
     gimp
     github-desktop
