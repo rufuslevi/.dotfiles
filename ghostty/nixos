@@ -1,7 +1,6 @@
 theme = "Dracula"
 font-size = 11
 
-gtk-adwaita = true
 gtk-titlebar = true
 adw-toolbar-style = flat
 gtk-tabs-location = bottom
