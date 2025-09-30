@@ -6,6 +6,7 @@ return {
         "css",
         "dart",
         "gdscript",
+        "glsl",
         "go",
         "godot_resource",
         "gdscript",
