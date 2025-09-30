@@ -24,6 +24,7 @@
     libva-utils
     libvdpau-va-gl
     netcat-gnu
+    ninja
     openrazer-daemon
     qtcreator
     kdePackages.qtdeclarative
