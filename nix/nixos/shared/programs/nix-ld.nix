@@ -27,7 +27,6 @@
       libgcc
       libglvnd
       libnotify
-      libpulseaudio
       libunwind
       libusb1
       libuuid
