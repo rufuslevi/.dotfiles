@@ -2,7 +2,7 @@
 
 {
   services.samba = {
-    enable = true;
+    enable = false;
     openFirewall = true;
     settings = {
       global = {
@@ -19,7 +19,7 @@
     };
   };
   services.samba-wsdd = {
-    enable = true;
+    enable = false;
     openFirewall = true;
   };
 }
