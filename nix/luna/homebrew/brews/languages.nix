@@ -8,6 +8,7 @@
     "gcc"
     "llvm"
     "java"
+    "openjdk@17"
     "openjdk@21"
     "rust"
     "rust-analyzer"
