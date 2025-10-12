@@ -2,9 +2,9 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
-      dartls = {
-        mason = false,
-      },
+      -- dartls = {
+      --   mason = false,
+      -- },
       lua_ls = {
         mason = false,
       },
@@ -20,17 +20,17 @@ return {
       },
     },
     setups = {
-      dartls = function()
-        require("lspconfig").dartls.setup({
-          init_options = {
-            closingLabels = true,
-            flutterOutline = true,
-            onlyAnalyzeProjectsWithOpenFiles = true,
-            outline = true,
-            suggestFromUnimportedLibraries = true,
-          },
-        })
-      end,
+      -- dartls = function()
+      --   require("lspconfig").dartls.setup({
+      --     init_options = {
+      --       closingLabels = true,
+      --       flutterOutline = true,
+      --       onlyAnalyzeProjectsWithOpenFiles = true,
+      --       outline = true,
+      --       suggestFromUnimportedLibraries = true,
+      --     },
+      --   })
+      -- end,
       gdscript = function()
         require("lspconfig").gdscript.setup({
           name = "Godot",

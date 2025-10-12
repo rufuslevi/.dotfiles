@@ -4,5 +4,15 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
 })
 vim.g.lazyvim_python_ruff = "ruff"
 
-vim.treesitter.language.register("glsl", "fsh")
-vim.treesitter.language.register("glsl", "v")
+vim.filetype.add({
+  extension = {
+    vert = "glsl",
+    tesc = "glsl",
+    tese = "glsl",
+    frag = "glsl",
+    geom = "glsl",
+    comp = "glsl",
+    fsh = "glsl",
+    vsh = "glsl",
+  },
+})
