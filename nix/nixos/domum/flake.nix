@@ -11,7 +11,10 @@
     hyprland.url = "git+https://github.com/hyprwm/Hyprland";
 
     stylix.url = "github:danth/stylix/release-24.11";
-    zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixos-stable";
+    };
 
     quickshell = {
       url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";

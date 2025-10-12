@@ -3,7 +3,6 @@
 {
   services.xserver = {
     enable = true;
-    videoDrivers = [ "amdgpu" ];
     xkb = {
       layout = "ca";
       variant = "multix";

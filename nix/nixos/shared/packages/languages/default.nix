@@ -11,7 +11,6 @@
     delve
     dotnet-sdk
     fish
-    julia
     gcc
     gdtoolkit_4
     iferr

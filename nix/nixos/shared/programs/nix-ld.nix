@@ -35,7 +35,6 @@
       libllvm
       llvm
       llvmPackages_21.libllvm
-      mesa
       nspr
       nss
       openssl
@@ -43,7 +42,6 @@
       stdenv.cc.cc
       systemd
       time
-      vulkan-loader
       zlib
     ];
   };

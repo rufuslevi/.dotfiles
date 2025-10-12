@@ -34,7 +34,6 @@
     github-desktop
     gnome-online-accounts-gtk
     gnome-tweaks
-    godotPackages_4_4.godot
     gparted
     grim
     guake
@@ -91,6 +90,6 @@
     vlc
     vscodium
     waybar
-    zen-browser.packages."${system}".default
+    zen-browser.packages."${system}".beta
   ];
 }

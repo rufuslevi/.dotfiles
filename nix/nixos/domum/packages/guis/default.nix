@@ -2,6 +2,6 @@
 
 {
   imports = [
-    ./agenix.nix
+    ./godot.nix
   ];
 }

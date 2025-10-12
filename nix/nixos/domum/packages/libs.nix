@@ -1,11 +1,12 @@
 {
   pkgs,
+  pkgs-stable,
   ...
 }:
 
 {
   environment.systemPackages = with pkgs; [
-    apfs-fuse
+    pkgs-stable.apfs-fuse
     brotli
     bzip3
     corefonts
@@ -17,12 +18,11 @@
     gradle
     gvfs
     helvetica-neue-lt-std
+    hyprprop
     jansson
     libcamera
     logiops
     libinput
-    libva-utils
-    libvdpau-va-gl
     netcat-gnu
     ninja
     openrazer-daemon
@@ -31,29 +31,15 @@
     kdePackages.kstatusnotifieritem
     redlib
     steam-devices-udev-rules
-    tbb
     tk
-    vaapiVdpau
     vkbasalt
-    vulkan-loader
-    vulkan-tools
-    vulkan-validation-layers
     wayland-scanner
     wlprop
     wine
     wineWowPackages.stable
     winetricks
-    xorg.libxcb
-    xorg.libXcursor
-    xorg.libXext
-    xorg.libXi
-    xorg.libXrandr
-    xorg.libXrender
-    xorg.libXxf86vm
-    xorg.libXtst
-    xorg.libX11
-    xorg.xprop
     xz
+    wlprop
     zlib
   ];
 }

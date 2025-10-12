@@ -22,11 +22,10 @@
     "sr_mod"
 
   ];
-  boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [
-    "kvm-intel"
+  boot.initrd.kernelModules = [
     "amdgpu"
   ];
+  boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
   boot.loader = {
     systemd-boot.enable = false;

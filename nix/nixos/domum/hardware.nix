@@ -23,15 +23,15 @@
       "sd_mod"
       "sr_mod"
     ];
-    initrd.kernelModules = [ ];
-
-    kernelPackages = pkgs.linuxPackages_latest;
-    kernelModules = [
+    initrd.kernelModules = [
       "amdgpu"
     ];
+
+    kernelPackages = pkgs.linuxPackages_zen;
+    kernelModules = [ ];
     extraModulePackages = with config.boot.kernelPackages; [
       xpadneo
-      # apfs
+      apfs
     ];
 
     loader = {
