@@ -10,6 +10,7 @@
     hyprpolkitagent
     hyprsunset
     imagemagick
+    openconnect
     pngquant
     powershell
     wlr-randr
