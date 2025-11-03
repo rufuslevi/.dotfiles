@@ -31,7 +31,6 @@
     kernelModules = [ ];
     extraModulePackages = with config.boot.kernelPackages; [
       xpadneo
-      apfs
     ];
 
     loader = {

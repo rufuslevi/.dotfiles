@@ -36,7 +36,7 @@
       enable32Bit = true;
       extraPackages = with pkgs; [
         rocmPackages.clr.icd
-        vaapiVdpau
+        libva-vdpau-driver
         vulkan-loader
         vulkan-validation-layers
         vulkan-extension-layer
