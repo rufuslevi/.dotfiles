@@ -49,6 +49,7 @@
     lutris
     lxqt.pavucontrol-qt
     nautilus
+    nextcloud-client
     obs-studio
     obs-studio-plugins.wlrobs
     obsidian
