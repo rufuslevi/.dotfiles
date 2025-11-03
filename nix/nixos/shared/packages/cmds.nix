@@ -19,6 +19,7 @@
     gnome.gvfs
     man-pages
     man-pages-posix
+    memtester
     udiskie
     cmake
     gnumake
