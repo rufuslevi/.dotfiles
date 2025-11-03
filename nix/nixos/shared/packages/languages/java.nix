@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    jdk24
+    jdk21
     temurin-bin
   ];
 }

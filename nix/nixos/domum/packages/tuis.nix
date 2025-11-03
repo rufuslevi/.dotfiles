@@ -3,7 +3,6 @@
 {
   environment.systemPackages = with pkgs; [
     android-tools
-    android-udev-rules
     amdgpu_top
     bluetuith
     ckan
