@@ -1,8 +1,13 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   networking = {
     hostName = "domum";
+    networkmanager = {
+      plugins = [
+        pkgs.networkmanager-openconnect
+      ];
+    };
     firewall = {
       enable = true;
       allowedTCPPorts = [
