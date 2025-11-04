@@ -1,5 +1,4 @@
 {
-  quickshell,
   zen-browser,
   pkgs,
   pkgs-stable,
@@ -72,7 +71,7 @@
     })
     qbittorrent
     qpwgraph
-    quickshell.packages.${system}.default
+    quickshell
     satty
     scarab
     selectdefaultapplication

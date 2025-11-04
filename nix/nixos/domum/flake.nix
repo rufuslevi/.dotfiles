@@ -16,11 +16,6 @@
       inputs.nixpkgs.follows = "nixos-stable";
     };
 
-    quickshell = {
-      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
-      inputs.nixpkgs.follows = "nixos-unstable";
-    };
-
     agenix.url = "github:ryantm/agenix";
   };
 
@@ -31,7 +26,6 @@
       nixos-unstable,
       home-manager,
       hyprland,
-      quickshell,
       stylix,
       zen-browser,
       ...
@@ -41,7 +35,6 @@
 
       attrs.agenix = agenix;
       attrs.hyprland = hyprland;
-      attrs.quickshell = quickshell;
       attrs.zen-browser = zen-browser;
 
       attrs.pkgs-stable = import nixos-stable {
