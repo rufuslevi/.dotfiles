@@ -2,8 +2,8 @@ import QtQuick
 import QtQuick.Effects
 import Quickshell
 import Quickshell.Wayland
-import "root:/widgets"
-import "root:/singletons"
+import qs.widgets
+import qs.singletons
 
 PanelWindow {
     id: menuBar

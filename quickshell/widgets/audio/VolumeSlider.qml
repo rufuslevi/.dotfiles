@@ -3,8 +3,8 @@ import QtQuick.Controls
 import QtQuick.Layouts
 import Quickshell
 import Quickshell.Services.Pipewire
-import "root:/widgets"
-import "root:/singletons"
+import qs.widgets
+import qs.singletons
 
 PopupWindow {
     id: popup

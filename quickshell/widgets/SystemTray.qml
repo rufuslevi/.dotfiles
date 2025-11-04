@@ -2,8 +2,8 @@ import QtQuick
 import QtQuick.Layouts
 import Quickshell
 import Quickshell.Services.SystemTray
-import "root:/widgets"
-import "root:/singletons"
+import qs.widgets
+import qs.singletons
 
 RowLayout {
     anchors.rightMargin: 4

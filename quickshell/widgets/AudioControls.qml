@@ -4,9 +4,9 @@ import QtQuick.Layouts
 import Quickshell
 import Quickshell.Services.Mpris
 import Quickshell.Services.Pipewire
-import "root:/widgets"
-import "root:/widgets/audio"
-import "root:/singletons"
+import qs.widgets
+import qs.widgets.audio
+import qs.singletons
 
 Rectangle {
     id: audio

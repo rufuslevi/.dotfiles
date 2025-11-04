@@ -1,9 +1,9 @@
 import QtQuick
 import QtQuick.Controls
 import Quickshell.Services.Pipewire
-import "root:/widgets"
-import "root:/widgets/audio"
-import "root:/singletons"
+import qs.widgets
+import qs.widgets.audio
+import qs.singletons
 
 Button {
     id: mute_button

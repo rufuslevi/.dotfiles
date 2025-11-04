@@ -1,5 +1,5 @@
 import QtQuick
-import "root:/singletons"
+import qs.singletons
 
 Rectangle {
     id: parent

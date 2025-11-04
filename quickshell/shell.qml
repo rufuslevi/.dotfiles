@@ -5,8 +5,9 @@ import QtQuick.Layouts
 import Quickshell
 import Quickshell.Widgets
 import Quickshell.Services.SystemTray
-import "root:/widgets"
-import "root:/singletons"
+import qs
+import qs.widgets
+import qs.singletons
 
 Scope {
     Wallpaper {}

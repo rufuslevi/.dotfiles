@@ -1,7 +1,7 @@
 import QtQuick
 import QtQuick.Layouts
 import Quickshell.Hyprland
-import "root:/singletons"
+import "singletons"
 
 RowLayout {
     id: indicators

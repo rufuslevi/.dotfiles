@@ -1,6 +1,6 @@
 import QtQuick
 import QtQuick.Layouts
-import "root:/singletons"
+import qs.singletons
 
 StatusBarText {
     text: Time.time
