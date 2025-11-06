@@ -37,6 +37,7 @@
     grim
     guake
     handbrake
+    haruna
     helvum
     heroic
     kdePackages.ark
@@ -75,7 +76,9 @@
     satty
     scarab
     selectdefaultapplication
+    shotcut
     slurp
+    smplayer
     solaar
     sysbench
     themechanger
