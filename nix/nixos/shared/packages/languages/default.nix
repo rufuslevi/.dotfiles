@@ -42,6 +42,7 @@
     poetry
     prettierd
     shfmt
+    simple-completion-language-server
     sqlite
     stylua
     taplo

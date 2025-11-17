@@ -7,6 +7,7 @@
     clinfo
     colord
     ddcutil
+    gdscript-formatter
     hyprpolkitagent
     hyprsunset
     imagemagick
