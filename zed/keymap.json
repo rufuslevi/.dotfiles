@@ -1,0 +1,92 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "Workspace && !Terminal",
+    "bindings": {
+      "space space": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "((FileFinder || FileFinder) > Picker > Editor) && !Terminal",
+    "bindings": {
+      "space space": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Workspace && !Terminal",
+    "bindings": {
+      "space /": "pane::DeploySearch"
+    }
+  },
+  {
+    "context": "Workspace && !Terminal",
+    "bindings": {
+      "space b n": "window::ShowNextWindowTab"
+    }
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "space b n": "vim::GoToTab"
+    }
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "space b p": "vim::GoToPreviousTab"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "space h": "editor::Hover"
+    }
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "space b d": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "vim_mode == literal",
+    "bindings": {
+      "ctrl-j": null
+    }
+  },
+  {
+    "context": "((FileFinder || FileFinder > Picker > Editor) || FileFinder > Picker > menu)",
+    "bindings": {
+      "ctrl-j": null
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-j": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "alt-w": "pane::CloseActiveItem"
+    }
+  }
+]

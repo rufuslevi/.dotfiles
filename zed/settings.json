@@ -1,0 +1,49 @@
+{
+  "disable_ai": true,
+  "ui_font_size": 15.0,
+  "buffer_font_size": 14.0,
+  "agent_ui_font_size": 15.0,
+  "ui_font_weight": 400.0,
+  "buffer_line_height": "comfortable",
+  "buffer_font_weight": 325.0,
+  "ui_font_family": "MonaspiceAr Nerd Font",
+  "buffer_font_family": "Maple Mono",
+  "ui_font_features": {
+    "ss01": true,
+    "ss02": true,
+    "ss03": true,
+    "ss04": true,
+    "ss05": true,
+    "ss06": true,
+    "ss07": true,
+    "ss08": true,
+    "ss09": true,
+    "ss10": true
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Macchiato",
+    "dark": "Catppuccin Macchiato"
+  },
+  "telemetry": {
+    "metrics": false
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "show_whitespaces": "selection",
+  "vim_mode": true,
+  "relative_line_numbers": true,
+  "current_line_highlight": "gutter",
+  "theme": {
+    "mode": "system",
+    "light": "Perf Warm",
+    "dark": "Sonokai"
+  },
+  "multi_cursor_modifier": "cmd_or_ctrl",
+  "file_types": {
+    "GLSL": ["vsh", "fsh"]
+  }
+}

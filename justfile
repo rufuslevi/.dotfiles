@@ -20,8 +20,8 @@ gtk:
     stow -v -t ~/.themes/Dracula Dracula; \
     cd Dracula; \
     stow -v -t ~/.config/assets assets
-    ln -s -f ~/.dotfiles/gtk/themes/Dracula/gtk-4.0/gtk.css ~/.config/gtk-4.0/gtk.css 
-    ln -s -f ~/.dotfiles/gtk/themes/Dracula/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/gtk-dark.css 
+    ln -s -f ~/.dotfiles/gtk/themes/Dracula/gtk-4.0/gtk.css ~/.config/gtk-4.0/gtk.css
+    ln -s -f ~/.dotfiles/gtk/themes/Dracula/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/gtk-dark.css
 
 helix:
     @echo 'Linking helix configs'
@@ -48,4 +48,8 @@ sketchybar:
     mkdir -p ~/.config/dynamic-island-sketchybar
     stow -v -t ~/.config/sketchybar sketchybar
     ln -s -f ~/.dotfiles/sketchybar/dynamic-island-sketchybar/mbp2021_14.sh ~/.config/dynamic-island-sketchybar/userconfig.sh
-    
+
+zed:
+    @echo 'Linking sketchybar configs'
+    mkdir -p ~/.config/zed
+    stow -v -t ~/.config/zed zed
