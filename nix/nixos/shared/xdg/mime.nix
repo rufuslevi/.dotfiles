@@ -2,7 +2,7 @@
 
 let
   browser = "zen.desktop";
-  file-explorer = "org.gnome.Nautilus.desktop";
+  file-explorer = "org.kde.dolphin.desktop";
   video-player = "vlc.desktop";
   text-editor = "dev.zed.Zed.desktop";
   archiver = "org.kde.ark.desktop";
