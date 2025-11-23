@@ -8,10 +8,6 @@
 {
   environment.systemPackages = with pkgs; [
     pkgs-stable.bitwarden-desktop
-    pkgs-stable.jetbrains.clion
-    pkgs-stable.jetbrains.pycharm-professional
-    pkgs-stable.jetbrains.idea-ultimate
-    pkgs-stable.jetbrains.rider
     # pkgs-stable.m32edit
     pkgs-stable.protonup-qt
     pkgs-stable.unityhub
@@ -21,6 +17,7 @@
     blender
     blueman
     brave
+    cider-2
     davinci-resolve
     dconf-editor
     dunst
