@@ -28,7 +28,6 @@
     ghostty
     gimp
     github-desktop
-    gnome-online-accounts-gtk
     gnome-tweaks
     gparted
     grim
