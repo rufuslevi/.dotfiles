@@ -3,10 +3,6 @@
 {
   services = {
     displayManager = {
-      sddm = {
-        enable = false;
-        wayland.enable = true;
-      };
       gdm = {
         enable = true;
         wayland = true;
