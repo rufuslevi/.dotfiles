@@ -4,6 +4,7 @@
   imports = [
     ./go.nix
     ./java.nix
+    ./nix.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -26,10 +27,6 @@
     matlab-language-server
     mockgen
     nodejs_22
-    nil
-    nixfmt-rfc-style
-    nixpkgs-fmt
-    nixpkgs-lint
     reftools
     ruby
     rust-analyzer
