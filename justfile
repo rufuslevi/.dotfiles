@@ -5,6 +5,12 @@ cargo:
     cargo install oxipng
     cargo install taplo-cli
 
+fuzzel:
+    @echo 'Linking fuzzel configs'
+    mkdir -p ~/.config/fuzzel
+    stow -v -t ~/.config/fuzzel fuzzel
+
+
 gtk:
     @echo 'Linking all gtk dependencies'
     mkdir -p ~/.config/gtk-4.0
