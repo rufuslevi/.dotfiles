@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 
 {
   services = {
@@ -12,6 +12,6 @@
         wayland = true;
       };
     };
-    desktopManager.gnome.enable = true;
+    desktopManager.gnome.enable = config.options.gnomeEnabled;
   };
 }

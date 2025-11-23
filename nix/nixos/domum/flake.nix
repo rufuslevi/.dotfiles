@@ -52,6 +52,7 @@
           home-manager.nixosModules.home-manager
           stylix.nixosModules.stylix
           agenix.nixosModules.default
+          ./vars.nix
           ./default.nix
           ../shared
         ];

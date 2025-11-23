@@ -1,29 +1,27 @@
 {
+  lib,
+  config,
   pkgs,
   ...
 }:
 
 {
   xdg = {
-    menus = {
-      enable = true;
-    };
-    icons = {
-      enable = true;
-    };
+    menus.enable = true;
+    icons.enable = true;
     portal = {
       enable = true;
       xdgOpenUsePortal = true;
-      extraPortals = [
+      extraPortals = lib.mkIf (config.options.gnomeEnabled) [
         pkgs.xdg-desktop-portal-gtk
       ];
       config = {
-        hyprland = {
+        hyprland = lib.mkIf (config.options.gnomeEnabled) {
           default = [
             "hyprland"
           ];
         };
-        gnome = {
+        gnome = lib.mkIf (config.options.gnomeEnabled) {
           default = [
             "gnome"
           ];
