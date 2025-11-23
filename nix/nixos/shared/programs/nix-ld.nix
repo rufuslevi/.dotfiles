@@ -16,7 +16,6 @@
       fontconfig
       freetype
       fuse3
-      gdk-pixbuf
       glib
       gtk3
       icu
