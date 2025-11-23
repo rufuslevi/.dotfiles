@@ -89,6 +89,6 @@
     vlc
     vscodium
     waybar
-    zen-browser.packages."${system}".beta
+    zen-browser.packages."${stdenv.hostPlatform.system}".beta
   ];
 }

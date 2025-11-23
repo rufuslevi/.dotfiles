@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    agenix.packages.${system}.default
+    agenix.packages.${stdenv.hostPlatform.system}.default
     alsa-utils
     clinfo
     colord

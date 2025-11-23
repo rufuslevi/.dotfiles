@@ -38,7 +38,7 @@
       attrs.zen-browser = zen-browser;
 
       attrs.pkgs-stable = import nixos-stable {
-        inherit system;
+        system = system;
         config = {
           allowUnfree = true;
         };
