@@ -23,6 +23,7 @@ Rectangle {
         font.family: Config.text.font
         color: Config.colors.text
         verticalAlignment: Text.AlignVCenter
+        horizontalAlignment: Text.AlignHCenter
 
         text: parent.text
     }

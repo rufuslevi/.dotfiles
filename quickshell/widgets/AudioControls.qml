@@ -11,115 +11,43 @@ import qs.singletons
 Rectangle {
     id: audio
     required property QtObject window
-    property PwNode node: Pipewire.defaultAudioSink.name == "auto_null" ? null : Pipewire.defaultAudioSink
+    property PwNode node: Pipewire.defaultAudioSink == null ? null : Pipewire.defaultAudioSink.name == "auto_null" ? null : Pipewire.defaultAudioSink
     property bool condition
 
-    implicitWidth: childrenRect.width
+    implicitWidth: 100
 
     PwObjectTracker {
         objects: [audio.node]
     }
 
-    Rectangle {
-        anchors {
-            right: mute.left
-            rightMargin: 12
-        }
-        width: childrenRect.width
+    Players {
+        window: audio.window
+        node: audio.node
+        mute: mute
 
-        Repeater {
-            model: Mpris.players
-            delegate: RowLayout {
-                id: player_handle
-                required property var modelData
-                property var player: modelData
-
-                Layout.alignment: Qt.AlignTop
-                implicitWidth: 2 * 32
-                Layout.fillHeight: true
-
-                StatusBarText {
-                    id: name
-                    text: {
-                        console.log(player_handle.player.canPlay);
-                        var identifier = "";
-                        if (player_handle.player.desktopEntry.length > 6)
-                            identifier += player_handle.player.desktopEntry.substring(0, 6) + "...";
-                        else
-                            identifier += player_handle.player.desktopEntry;
-
-                        identifier += " : ";
-
-                        if (player_handle.player.trackTitle.length > 12)
-                            identifier += player_handle.player.trackTitle.substring(0, 12) + "...";
-                        else
-                            identifier += player_handle.player.trackTitle;
-
-                        return identifier;
-                    }
-                }
-
-                StatusBarText {
-                    id: previous
-                    Layout.alignment: Qt.AlignVCenter
-                    Layout.fillHeight: true
-
-                    text: " 󰒮"
-                    color: player_handle.player.canGoPrevious ? "" : Config.colors.overlay0
-
-                    AbstractButton {
-                        implicitHeight: 24
-                        implicitWidth: 24
-                        onClicked: {
-                            player_handle.player.previous();
-                        }
-                    }
-                }
-
-                StatusBarText {
-                    id: play_pause
-                    Layout.alignment: Qt.AlignVCenter
-                    Layout.fillHeight: true
-                    Layout.fillWidth: true
-
-                    text: " 󰐎"
-                    color: player_handle.player.canPlay ? "" : Config.colors.overlay0
-
-                    AbstractButton {
-                        implicitHeight: 24
-                        implicitWidth: 24
-                        onClicked: {
-                            player_handle.player.togglePlaying();
-                        }
-                    }
-                }
-
-                StatusBarText {
-                    id: next
-                    Layout.alignment: Qt.AlignVCenter
-                    Layout.fillHeight: true
-
-                    text: " 󰒭"
-                    color: player_handle.player.canGoNext ? "" : "black"
-
-                    AbstractButton {
-                        implicitHeight: 24
-                        implicitWidth: 24
-                        onClicked: {
-                            player_handle.player.next();
-                        }
-                    }
-                }
-            }
-        }
+        implicitWidth: 324
     }
 
-    MuteButton {
+    CustomPopup {
         id: mute
         anchors {
             right: audio.right
         }
+
         window: audio.window
         node: audio.node
+        popupSize: Qt.rect(0, 0, 328, 200)
+        popupContent: Sliders {
+            id: sliders
+            node: audio.node
+        }
+
+        onClicked: {
+            node == null ? null : node.audio.muted = !node.audio.muted;
+        }
+
+        StatusBarText {
+            text: audio.node == null ? " 󰓄" : mute.node == null ? "  " : mute.node.audio.muted ? "  " : "  "
+        }
     }
 }

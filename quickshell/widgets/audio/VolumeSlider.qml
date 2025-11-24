@@ -11,7 +11,7 @@ PopupWindow {
     required property QtObject window
     required property PwNode node
     property real deltaX
-    property bool condition
+    property bool opening_condition
 
     anchor {
         adjustment: PopupAdjustment.SlideX
@@ -34,7 +34,7 @@ PopupWindow {
         visible = Qt.binding(function () {
             if (!node)
                 return false;
-            if (condition) {
+            if (opening_condition) {
                 close_timer.start();
                 return true;
             }
