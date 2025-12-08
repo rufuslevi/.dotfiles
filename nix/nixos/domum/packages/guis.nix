@@ -1,4 +1,5 @@
 {
+  noctalia,
   zen-browser,
   pkgs,
   pkgs-stable,
@@ -46,6 +47,7 @@
     lxqt.pavucontrol-qt
     nautilus
     nextcloud-client
+    noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
     obs-studio
     obs-studio-plugins.wlrobs
     obsidian
@@ -66,9 +68,11 @@
         pkgs.zulu25
       ];
     })
+    pkgs-stable.qemu_full
     qbittorrent
     qpwgraph
     quickshell
+    pkgs-stable.qtemu
     satty
     scarab
     selectdefaultapplication

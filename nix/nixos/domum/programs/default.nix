@@ -11,5 +11,6 @@
   ];
 
   programs.adb.enable = true;
+  programs.coolercontrol.enable = true;
   users.users.rufuslevi.extraGroups = [ "adbusers" ];
 }

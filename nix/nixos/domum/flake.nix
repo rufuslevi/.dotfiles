@@ -17,6 +17,11 @@
     };
 
     agenix.url = "github:ryantm/agenix";
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixos-unstable";
+    };
   };
 
   outputs =
@@ -24,6 +29,7 @@
       agenix,
       nixos-stable,
       nixos-unstable,
+      noctalia,
       home-manager,
       hyprland,
       stylix,
@@ -36,6 +42,7 @@
       attrs.agenix = agenix;
       attrs.hyprland = hyprland;
       attrs.zen-browser = zen-browser;
+      attrs.noctalia = noctalia;
 
       attrs.pkgs-stable = import nixos-stable {
         system = system;
@@ -52,6 +59,7 @@
           home-manager.nixosModules.home-manager
           stylix.nixosModules.stylix
           agenix.nixosModules.default
+          noctalia.nixosModules.default
           ./vars.nix
           ./default.nix
           ../shared

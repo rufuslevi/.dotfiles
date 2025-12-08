@@ -768,6 +768,26 @@
         "type": "github"
       }
     },
+    "noctalia": {
+      "inputs": {
+        "nixpkgs": [
+          "nixos-unstable"
+        ]
+      },
+      "locked": {
+        "lastModified": 1763943957,
+        "narHash": "sha256-O69zXL2CUMqXJdCNxC9QddymHGOvYynsL+qFJ675Qi4=",
+        "owner": "noctalia-dev",
+        "repo": "noctalia-shell",
+        "rev": "e61a073f57d4e3aed8f0e74b7b9edb07c29c0b85",
+        "type": "github"
+      },
+      "original": {
+        "owner": "noctalia-dev",
+        "repo": "noctalia-shell",
+        "type": "github"
+      }
+    },
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -798,6 +818,7 @@
         "hyprland": "hyprland",
         "nixos-stable": "nixos-stable",
         "nixos-unstable": "nixos-unstable",
+        "noctalia": "noctalia",
         "stylix": "stylix",
         "zen-browser": "zen-browser"
       }
