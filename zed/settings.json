@@ -1,4 +1,11 @@
 {
+  "preferred_line_length": 80,
+  "show_wrap_guides": true,
+  "wrap_guides": [80],
+  "soft_wrap": "prefer_line",
+  "minimap": {
+    "current_line_highlight": "gutter"
+  },
   "vim_mode": true,
   "disable_ai": true,
   "ui_font_size": 15.0,
