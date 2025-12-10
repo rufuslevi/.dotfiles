@@ -31,6 +31,7 @@
     kdePackages.kstatusnotifieritem
     redlib
     steam-devices-udev-rules
+    tbb
     tk
     vkbasalt
     wayland-scanner

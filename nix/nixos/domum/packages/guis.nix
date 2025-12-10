@@ -19,7 +19,7 @@
     blueman
     brave
     cider-2
-    davinci-resolve
+    pkgs-stable.davinci-resolve
     dconf-editor
     dunst
     flameshot
@@ -45,6 +45,7 @@
     libreoffice-qt6-fresh
     lutris
     lxqt.pavucontrol-qt
+    sunshine
     nautilus
     nextcloud-client
     noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
