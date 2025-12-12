@@ -17,20 +17,18 @@
     initrd.availableKernelModules = [
       "xhci_pci"
       "ahci"
+      "coretemp"
       "nvme"
       "usbhid"
       "usb_storage"
       "sd_mod"
       "sr_mod"
     ];
-    initrd.kernelModules = [
-      "amdgpu"
-    ];
 
-    kernelPackages = pkgs.linuxPackages_zen;
+    kernelPackages = pkgs.linuxPackages_6_18;
     kernelModules = [ ];
-    extraModulePackages = with config.boot.kernelPackages; [
-      xpadneo
+    kernelParams = [
+      "amd_pstate=guided"
     ];
 
     loader = {
@@ -51,9 +49,7 @@
   };
 
   hardware.cpu.amd.updateMicrocode = true;
-  hardware.steam-hardware.enable = true;
-  hardware.xpadneo.enable = true;
-  hardware.enableAllFirmware = true;
+  # hardware.xpadneo.enable = true;
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/86b42cb3-f9e4-4fa5-a4d1-9d6a8699c367";
@@ -96,5 +92,4 @@
   # networking.interfaces.wlo1.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }

@@ -7,40 +7,46 @@
 {
   environment.variables.AMD_VULKAN_ICD = "RADV";
 
-  systemd.tmpfiles.rules = [
-    "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
-  ];
-
   environment.systemPackages = with pkgs; [
     glfw
-    freetype
     gpu-viewer
-    mesa-demos
-    renderdoc
     shaderc
+    mesa-demos
     tracy
-    vulkan-headers
-    vulkan-loader
     pkgs-stable.vulkan-tools
     vulkan-tools-lunarg
-    vulkan-validation-layers
   ];
 
   hardware = {
-    # amdgpu = {
-    #   initrd.enable = true;
-    #   opencl.enable = true;
-    # };
+    amdgpu = {
+      opencl.enable = true;
+      initrd.enable = true;
+    };
     graphics = {
       enable = true;
       enable32Bit = true;
-      extraPackages = with pkgs; [
-        rocmPackages.clr.icd
-        libva-vdpau-driver
+      extraPackages = with pkgs-stable; [
         vulkan-loader
         vulkan-validation-layers
         vulkan-extension-layer
+        blender-hip
       ];
     };
   };
+
+  # HIP work around
+  systemd.tmpfiles.rules =
+    let
+      rocmEnv = pkgs.symlinkJoin {
+        name = "rocm-combined";
+        paths = with pkgs.rocmPackages; [
+          rocblas
+          hipblas
+          clr
+        ];
+      };
+    in
+    [
+      "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
+    ];
 }
