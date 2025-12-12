@@ -42,10 +42,13 @@
     kdePackages.filelight
     kdePackages.kate
     kdePackages.okular
+    legcord
     libreoffice-qt6-fresh
+    librewolf
     lutris
     lxqt.pavucontrol-qt
     sunshine
+    mangohud
     nautilus
     nextcloud-client
     noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
@@ -93,6 +96,6 @@
     vlc
     vscodium
     waybar
-    zen-browser.packages."${stdenv.hostPlatform.system}".beta
+    zen-browser.packages."${stdenv.hostPlatform.system}".default
   ];
 }

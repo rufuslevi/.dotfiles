@@ -8,12 +8,16 @@
       inputs.nixpkgs.follows = "nixos-stable";
     };
 
-    hyprland.url = "git+https://github.com/hyprwm/Hyprland";
+    hyprland = {
+      url = "git+https://github.com/hyprwm/Hyprland";
+      inputs.nixpkgs.follows = "nixos-unstable";
+    };
 
     stylix.url = "github:danth/stylix/release-24.11";
+
     zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixos-stable";
+      url = "github:youwen5/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixos-unstable";
     };
 
     agenix.url = "github:ryantm/agenix";
