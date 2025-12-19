@@ -5,7 +5,7 @@
     ./godot.nix
   ];
 
-  environment.systemPackages = with pkgs; [
-    (callPackage ./helium.nix { })
-  ];
+  # environment.systemPackages = with pkgs; [
+  #   (callPackage ./helium.nix { })
+  # ];
 }
