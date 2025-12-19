@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./darkman.nix
     ./libinput.nix
     ./mpd.nix
     ./noctalia.nix
