@@ -11,7 +11,7 @@
     icons.enable = true;
     portal = {
       enable = true;
-      xdgOpenUsePortal = true;
+      xdgOpenUsePortal = false;
       extraPortals = lib.mkIf (config.options.gnomeEnabled) [
         pkgs.xdg-desktop-portal-gtk
       ];
