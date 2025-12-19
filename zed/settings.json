@@ -1,4 +1,8 @@
 {
+  "centered_layout": {
+    "right_padding": 0.25,
+    "left_padding": 0.25
+  },
   "project_panel": {
     "starts_open": false,
     "folder_icons": true,
