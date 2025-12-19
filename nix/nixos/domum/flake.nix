@@ -8,12 +8,19 @@
       inputs.nixpkgs.follows = "nixos-stable";
     };
 
-    hyprland = {
-      url = "git+https://github.com/hyprwm/Hyprland";
+    helium = {
+      url = "github:mkuritsu/helium-flake";
       inputs.nixpkgs.follows = "nixos-unstable";
     };
 
-    stylix.url = "github:danth/stylix/release-24.11";
+    hyprland = {
+      url = "github:hyprwm/Hyprland";
+    };
+
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixos-unstable";
+    };
 
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";
@@ -34,6 +41,7 @@
       nixos-stable,
       nixos-unstable,
       noctalia,
+      helium,
       home-manager,
       hyprland,
       stylix,
@@ -44,6 +52,7 @@
       system = "x86_64-linux";
 
       attrs.agenix = agenix;
+      attrs.helium = helium;
       attrs.hyprland = hyprland;
       attrs.zen-browser = zen-browser;
       attrs.noctalia = noctalia;
