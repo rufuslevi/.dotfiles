@@ -15,6 +15,7 @@
     tracy
     pkgs-stable.vulkan-tools
     vulkan-tools-lunarg
+    vulkan-headers
   ];
 
   hardware = {
@@ -26,6 +27,7 @@
       enable = true;
       enable32Bit = true;
       extraPackages = with pkgs-stable; [
+        vulkan-headers
         vulkan-loader
         vulkan-validation-layers
         vulkan-extension-layer
@@ -34,19 +36,19 @@
     };
   };
 
-  # HIP work around
-  systemd.tmpfiles.rules =
-    let
-      rocmEnv = pkgs.symlinkJoin {
-        name = "rocm-combined";
-        paths = with pkgs.rocmPackages; [
-          rocblas
-          hipblas
-          clr
-        ];
-      };
-    in
-    [
-      "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
-    ];
+  # # HIP work around
+  # systemd.tmpfiles.rules =
+  #   let
+  #     rocmEnv = pkgs.symlinkJoin {
+  #       name = "rocm-combined";
+  #       paths = with pkgs.rocmPackages; [
+  #         rocblas
+  #         hipblas
+  #         clr
+  #       ];
+  #     };
+  #   in
+  #   [
+  #     "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
+  #   ];
 }

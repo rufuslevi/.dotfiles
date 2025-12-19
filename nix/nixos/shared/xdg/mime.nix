@@ -1,15 +1,16 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 let
-  browser = "zen.desktop";
+  browser = "Helium.desktop";
   file-explorer = "org.kde.dolphin.desktop";
-  video-player = "vlc.desktop";
+  video-player = "org.kde.haruna.desktop";
   text-editor = "dev.zed.Zed.desktop";
   archiver = "org.kde.ark.desktop";
   git-client = "github-desktop.desktop";
+  okular = "org.kde.okular.desktop";
 
   applications = {
-    "application/pdf" = [ "okularApplication_pdf.desktop" ];
+    "application/pdf" = [ okular ];
     "application/zip" = [ archiver ];
     "application/json" = [ text-editor ];
     "application/x-docbook+xml" = [ text-editor ];
@@ -21,26 +22,26 @@ let
     "application/x-extension-xhtml" = [ browser ];
     "application/x-extension-xht" = [ browser ];
     "application/xhtml+xml" = [ browser ];
-    "image/x-tga" = [ "org.kde.gwenview.desktop" ];
-    "image/x-xcf" = [ "org.kde.gwenview.desktop" ];
-    "image/webp" = [ "org.kde.gwenview.desktop" ];
-    "image/vnd.adobe.photoshop" = [ "org.kde.gwenview.desktop" ];
-    "image/tiff" = [ "org.kde.gwenview.desktop" ];
-    "image/x-xpixmap" = [ "org.kde.gwenview.desktop" ];
-    "image/x-xbitmap" = [ "org.kde.gwenview.desktop" ];
-    "image/x-portable-pixmap" = [ "org.kde.gwenview.desktop" ];
-    "image/x-portable-graymap" = [ "org.kde.gwenview.desktop" ];
-    "image/x-portable-bitmap" = [ "org.kde.gwenview.desktop" ];
-    "image/vnd.microsoft.icon" = [ "org.kde.gwenview.desktop" ];
-    "image/x-icns" = [ "org.kde.gwenview.desktop" ];
-    "image/x-eps" = [ "org.kde.gwenview.desktop" ];
-    "image/bmp" = [ "org.kde.gwenview.desktop" ];
-    "image/png" = [ "org.kde.gwenview.desktop" ];
-    "image/jxl" = [ "org.kde.gwenview.desktop" ];
-    "image/jpeg" = [ "org.kde.gwenview.desktop" ];
-    "image/heif" = [ "org.kde.gwenview.desktop" ];
-    "image/gif" = [ "org.kde.gwenview.desktop" ];
-    "image/avif" = [ "org.kde.gwenview.desktop" ];
+    "image/x-tga" = [ okular ];
+    "image/x-xcf" = [ okular ];
+    "image/webp" = [ okular ];
+    "image/vnd.adobe.photoshop" = [ okular ];
+    "image/tiff" = [ okular ];
+    "image/x-xpixmap" = [ okular ];
+    "image/x-xbitmap" = [ okular ];
+    "image/x-portable-pixmap" = [ okular ];
+    "image/x-portable-graymap" = [ okular ];
+    "image/x-portable-bitmap" = [ okular ];
+    "image/vnd.microsoft.icon" = [ okular ];
+    "image/x-icns" = [ okular ];
+    "image/x-eps" = [ okular ];
+    "image/bmp" = [ okular ];
+    "image/png" = [ okular ];
+    "image/jxl" = [ okular ];
+    "image/jpeg" = [ okular ];
+    "image/heif" = [ okular ];
+    "image/gif" = [ okular ];
+    "image/avif" = [ okular ];
     "inode/directory" = [ file-explorer ];
     "text/html" = [ browser ];
     "text/plain" = [ text-editor ];
@@ -55,13 +56,13 @@ let
     "video/3gpp2" = [ video-player ];
     "video/3gpp" = [ video-player ];
     "video/webm" = [ video-player ];
-    "video/x-matroska" = [ video-player ];
     "video/quicktime" = [ video-player ];
     "video/mp4" = [ video-player ];
     "video/mpeg" = [ video-player ];
     "video/mp2t" = [ video-player ];
     "video/vnd.rn-realvideo" = [ video-player ];
     "video/vnd.avi" = [ video-player ];
+    "video/x-matroska" = [ video-player ];
     "video/x-ms-wmv" = [ video-player ];
     "video/x-theora+ogg" = [ video-player ];
     "video/x-ogm+ogg" = [ video-player ];
@@ -80,20 +81,26 @@ let
   };
 in
 {
-  xdg.userDirs = {
-    enable = true;
-    desktop = "${config.home.homeDirectory}/Bureau";
-    documents = "${config.home.homeDirectory}/Documents";
-    download = "${config.home.homeDirectory}/Téléchargements";
-    music = "${config.home.homeDirectory}/Musique";
-    pictures = "${config.home.homeDirectory}/Images";
-    publicShare = "${config.home.homeDirectory}/Public";
-    templates = "${config.home.homeDirectory}/Modèles";
-    videos = "${config.home.homeDirectory}/Vidéos";
-  };
-  xdg.mimeApps = {
-    enable = true;
-    associations.added = applications;
-    defaultApplications = applications;
+  home-manager = {
+    users.rufuslevi = {
+      xdg = {
+        userDirs = {
+          enable = true;
+          desktop = "$HOME/Bureau";
+          documents = "$HOME/Documents";
+          download = "$HOME/Téléchargements";
+          music = "$HOME/Musique";
+          pictures = "$HOME/Images";
+          publicShare = "$HOME/Public";
+          templates = "$HOME/Modèles";
+          videos = "$HOME/Vidéos";
+        };
+        mimeApps = {
+          enable = true;
+          associations.added = applications;
+          defaultApplications = applications;
+        };
+      };
+    };
   };
 }
