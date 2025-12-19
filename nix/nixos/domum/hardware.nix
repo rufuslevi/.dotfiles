@@ -48,6 +48,7 @@
     };
   };
 
+  hardware.firmware = [ pkgs.linux-firmware ];
   hardware.cpu.amd.updateMicrocode = true;
   # hardware.xpadneo.enable = true;
 
