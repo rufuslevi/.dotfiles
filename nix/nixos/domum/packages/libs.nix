@@ -29,8 +29,8 @@
     qtcreator
     kdePackages.qtdeclarative
     kdePackages.kstatusnotifieritem
+    kdePackages.kservice
     redlib
-    steam-devices-udev-rules
     tbb
     tk
     vkbasalt

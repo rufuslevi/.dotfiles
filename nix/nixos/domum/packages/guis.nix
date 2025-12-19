@@ -1,4 +1,5 @@
 {
+  helium,
   noctalia,
   zen-browser,
   pkgs,
@@ -14,10 +15,10 @@
     pkgs-stable.unityhub
     anyrun
     audacity
+    bemoji
     bitmagnet
     blender
     blueman
-    brave
     cider-2
     pkgs-stable.davinci-resolve
     dconf-editor
@@ -35,6 +36,7 @@
     guake
     handbrake
     haruna
+    helium.packages.${pkgs.stdenv.hostPlatform.system}.default
     helvum
     heroic
     kdePackages.ark
