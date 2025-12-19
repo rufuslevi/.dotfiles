@@ -5,6 +5,11 @@ cargo:
     cargo install oxipng
     cargo install taplo-cli
 
+darkman:
+    @echo 'Linking darkman configs'
+    mkdir -p ~/.config/darkman
+    stow -v -t ~/.config/darkman darkman
+
 fuzzel:
     @echo 'Linking fuzzel configs'
     mkdir -p ~/.config/fuzzel
@@ -54,6 +59,11 @@ sketchybar:
     mkdir -p ~/.config/dynamic-island-sketchybar
     stow -v -t ~/.config/sketchybar sketchybar
     ln -s -f ~/.dotfiles/sketchybar/dynamic-island-sketchybar/mbp2021_14.sh ~/.config/dynamic-island-sketchybar/userconfig.sh
+
+yazi:
+    @echo 'Linking yazi configs'
+    mkdir -p ~/.config/yazi
+    stow -v -t ~/.config/yazi yazi
 
 zed:
     @echo 'Linking sketchybar configs'

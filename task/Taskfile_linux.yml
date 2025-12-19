@@ -16,10 +16,6 @@ tasks:
     cmds:
       - mkdir -p ~/.config/anyrun
       - stow -v -t ~/.config/anyrun anyrun
-  darkman:
-    cmds:
-      - mkdir -p ~/.config/darkman
-      - stow -v -t ~/.config/darkman darkman
   dunst:
     cmds:
       - mkdir -p ~/.config/dunst
