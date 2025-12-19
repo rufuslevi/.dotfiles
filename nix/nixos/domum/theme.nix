@@ -3,7 +3,7 @@
 {
   qt = {
     enable = true;
-    platformTheme = "kde";
+    platformTheme = "qt5ct";
     style = "breeze";
   };
 }
