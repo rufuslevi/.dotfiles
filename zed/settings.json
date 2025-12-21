@@ -39,9 +39,14 @@
     "ss09": true,
     "ss10": true
   },
+  "theme": {
+    "mode": "system",
+    "light": "Gruvbox Light Hard",
+    "dark": "Gruvbox Dark"
+  },
   "icon_theme": {
     "mode": "system",
-    "light": "Catppuccin Macchiato",
+    "light": "Catppuccin Latte",
     "dark": "Catppuccin Macchiato"
   },
   "telemetry": {
@@ -55,11 +60,6 @@
   "show_whitespaces": "selection",
   "relative_line_numbers": "enabled",
   "current_line_highlight": "gutter",
-  "theme": {
-    "mode": "system",
-    "light": "Perf Warm",
-    "dark": "Gruvbox Dark"
-  },
   "multi_cursor_modifier": "cmd_or_ctrl",
   "file_types": {
     "GLSL": ["vsh", "fsh"]
