@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./firefox.nix
     ./gamescope.nix
     ./hyprland.nix
     ./nix-ld.nix

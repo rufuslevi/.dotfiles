@@ -1,7 +1,7 @@
 { pkgs-stable, ... }:
 {
   programs.firefox = {
-    enable = true;
+    enable = false;
     package = pkgs-stable.firefox-devedition;
     preferences = {
       "browser.tabs.inTitlebar" = 0;
