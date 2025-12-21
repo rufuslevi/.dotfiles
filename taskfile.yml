@@ -47,16 +47,6 @@ tasks:
     cmds:
       - mkdir -p ~/.config/OpenRGB
       - stow -v -t ~/.config/OpenRGB openrgb
-  wezterm:
-    cmds:
-      - mkdir -p ~/.config/wezterm
-      - stow -v -t ~/.config/wezterm wezterm
-      - touch ~/.config/wezterm/theme.bin
-      - echo "dark" > ~/.config/wezterm/theme.bin
-  tmux:
-    cmds:
-      - mkdir -p ~/.config/tmux
-      - stow -v -t ~/.config/tmux tmux
   zsh:
     cmds:
       - mkdir -p ~/.config/zsh
