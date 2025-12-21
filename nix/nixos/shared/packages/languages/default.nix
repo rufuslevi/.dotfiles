@@ -8,7 +8,6 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    cargo
     delve
     dotnet-sdk
     fish
@@ -18,7 +17,6 @@
     impl
     jdt-language-server
     llvmPackages_21.clang-unwrapped
-    # lua
     lua-language-server
     lua51Packages.lua
     lua54Packages.jsregexp
@@ -29,7 +27,6 @@
     nodejs_22
     reftools
     ruby
-    rust-analyzer
     pkgs-stable.php
     python3
     python312Packages.pip
@@ -46,7 +43,6 @@
     pkgs-stable.texliveFull
     tcl
     typescript-language-server
-    rustc
     tree-sitter
   ];
 }
