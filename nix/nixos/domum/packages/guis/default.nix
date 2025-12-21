@@ -10,6 +10,7 @@
 {
   imports = [
     ./godot.nix
+    ./prism.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -66,17 +67,6 @@
     pavucontrol
     phoronix-test-suite
     pinta
-    (prismlauncher.override {
-      jdks = [
-        jdk8
-        jdk17
-        jdk21
-        temurin-bin-8
-        temurin-bin-17
-        temurin-bin-21
-        pkgs.zulu25
-      ];
-    })
     pkgs-stable.qemu_full
     qbittorrent
     qpwgraph
