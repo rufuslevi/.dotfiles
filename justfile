@@ -1,6 +1,9 @@
 import 'just/aerospace.just'
 import 'just/borders.just'
+import 'just/dunst.just'
 import 'just/gammastep.just'
+import 'just/tofi.just'
+import 'just/wlogout.just'
 import 'just/yabai.just'
 
 bat:
