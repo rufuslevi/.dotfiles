@@ -35,7 +35,6 @@
     gimp
     github-desktop
     gnome-tweaks
-    gparted
     grim
     guake
     handbrake
