@@ -1,5 +1,5 @@
 [linux]
-gammastep:
+pulse:
     @echo 'Linking pulse config'
     mkdir -p ~/.pulse
     stow -v -t ~/.pulse pulse
