@@ -1,3 +1,8 @@
+import 'just/aerospace.just'
+import 'just/borders.just'
+import 'just/gammastep.just'
+import 'just/yabai.just'
+
 bat:
     @echo 'Linking bat config'
     mkdir -p ~/.config/bat
