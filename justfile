@@ -2,10 +2,12 @@ import 'just/aerospace.just'
 import 'just/borders.just'
 import 'just/dunst.just'
 import 'just/gammastep.just'
+import 'just/nvim.just'
 import 'just/pulse.just'
 import 'just/tofi.just'
 import 'just/wlogout.just'
 import 'just/yabai.just'
+import 'just/zsh.just'
 
 bat:
     @echo 'Linking bat config'
@@ -72,11 +74,6 @@ kitty:
     mkdir -p ~/.config/kitty
     stow -v -t ~/.config/kitty kitty
 
-nvim:
-    @echo 'Linking nvim configs'
-    mkdir -p ~/.config/nvim
-    stow -v -t ~/.config/nvim nvim
-
 openrgb:
     @echo 'Linking openrgb config'
     mkdir -p ~/.config/OpenRGB
@@ -107,8 +104,3 @@ zed:
     @echo 'Linking sketchybar configs'
     mkdir -p ~/.config/zed
     stow -v -t ~/.config/zed zed
-
-zsh:
-    @echo 'Linking zsh configs'
-    mkdir -p ~/.config/zsh
-    stow -v -t ~/.config/zsh zsh
