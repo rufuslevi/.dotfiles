@@ -8,7 +8,6 @@
     ./noctalia.nix
     ./samba.nix
     ./syncthing.nix
-    ./pipewire.nix
     ./xserver.nix
   ];
 

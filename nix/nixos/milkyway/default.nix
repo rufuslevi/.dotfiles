@@ -3,7 +3,6 @@
 {
   imports = [
     ../shared
-    ./hardware
     ./programs
     ./services
     ./packages

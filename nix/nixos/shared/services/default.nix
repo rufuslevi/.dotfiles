@@ -5,6 +5,7 @@
     ./cachix.nix
     ./dbus.nix
     ./drives.nix
+    ./pipewire.nix
     ./samba.nix
     ./ssh.nix
   ];
