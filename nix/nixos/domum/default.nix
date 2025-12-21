@@ -19,9 +19,7 @@
   ];
 
   home-manager = {
-    backupFileExtension = "backup";
     users.rufuslevi = {
-      home.stateVersion = "24.11";
       dconf.settings = {
         "org/gnome/desktop/wm/preferences" = {
           button-layout = "";

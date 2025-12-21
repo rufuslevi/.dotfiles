@@ -27,6 +27,13 @@
 
   console.keyMap = "cf";
 
+  home-manager = {
+    backupFileExtension = "backup";
+    users.rufuslevi = {
+      home.stateVersion = "24.11";
+    };
+  };
+
   fonts = {
     enableDefaultPackages = true;
     fontconfig = {
