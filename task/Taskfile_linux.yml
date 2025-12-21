@@ -15,10 +15,6 @@ tasks:
     cmds:
       - mkdir -p ~/.config/dunst
       - stow -v -t ~/.config/dunst dunst
-  gammastep:
-    cmds:
-      - mkdir -p ~/.config/gammastep
-      - stow -v -t ~/.config/gammastep gammastep
   kvantum:
     cmds:
       - mkdir -p ~/.config/Kvantum
