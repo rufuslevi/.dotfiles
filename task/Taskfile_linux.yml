@@ -3,7 +3,6 @@ version: "3"
 tasks:
   all:
     cmds:
-      - task os:anyrun
       - task os:dunst
       - task os:gammastep
       - task os:nushell
@@ -12,10 +11,6 @@ tasks:
       - task os:tofi
       - task os:waybar
       - task os:waypaper
-  anyrun:
-    cmds:
-      - mkdir -p ~/.config/anyrun
-      - stow -v -t ~/.config/anyrun anyrun
   dunst:
     cmds:
       - mkdir -p ~/.config/dunst

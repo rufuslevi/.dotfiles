@@ -17,7 +17,6 @@
     pkgs-stable.bitwarden-desktop
     pkgs-stable.protonup-qt
     pkgs-stable.unityhub
-    anyrun
     audacity
     bemoji
     bitmagnet
