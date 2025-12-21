@@ -1,3 +1,13 @@
+bat:
+    @echo 'Linking bat config'
+    mkdir -p ~/.config/bat
+    stow -v -t ~/.config/bat bat
+
+btop:
+    @echo 'Linking btop config'
+    mkdir -p ~/.config/btop
+    stow -v -t ~/.config/btop btop
+
 cargo:
     @echo 'Running cargo for the system...'
     cargo install just
@@ -15,6 +25,10 @@ fuzzel:
     mkdir -p ~/.config/fuzzel
     stow -v -t ~/.config/fuzzel fuzzel
 
+ghostty:
+    @echo 'Linking ghostty configs'
+    mkdir -p ~/.config/ghostty
+    stow -v -t ~/.config/ghostty ghostty
 
 gtk:
     @echo 'Linking all gtk dependencies'
@@ -44,6 +58,21 @@ hyprland:
     mkdir -p ~/.config/hypr
     stow -v -t ~/.config/hypr hypr
 
+kitty:
+    @echo 'Linking kitty config'
+    mkdir -p ~/.config/kitty
+    stow -v -t ~/.config/kitty kitty
+
+nvim:
+    @echo 'Linking nvim configs'
+    mkdir -p ~/.config/nvim
+    stow -v -t ~/.config/nvim nvim
+
+openrgb:
+    @echo 'Linking openrgb config'
+    mkdir -p ~/.config/OpenRGB
+    stow -v -t ~/.config/OpenRGB openrgb
+
 quickshell:
     @echo 'Linking quickshell configs'
     mkdir -p ~/.config/quickshell
@@ -69,3 +98,8 @@ zed:
     @echo 'Linking sketchybar configs'
     mkdir -p ~/.config/zed
     stow -v -t ~/.config/zed zed
+
+zsh:
+    @echo 'Linking zsh configs'
+    mkdir -p ~/.config/zsh
+    stow -v -t ~/.config/zsh zsh
