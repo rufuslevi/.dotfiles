@@ -26,15 +26,3 @@ tasks:
     cmds:
       - mkdir -p ~/.config/borders
       - stow -v -t ~/.config/borders borders
-  nushell:
-    cmds:
-      - mkdir -p ~/Library/"Application Support"/nushell
-      - stow -v -t ~/Library/"Application Support"/nushell nushell
-  skhd:
-    cmds:
-      - mkdir -p ~/.config/skhd
-      - stow -v -t ~/.config/skhd skhd
-  sublime:
-    cmds:
-      - mkdir -p ~/Library/"Application Support"/"Sublime Text"
-      - stow -v -t ~/Library/"Application Support"/"Sublime Text" sublime
