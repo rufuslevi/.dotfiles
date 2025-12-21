@@ -1,5 +1,8 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [ gitui lazygit gh ];
+  environment.systemPackages = with pkgs; [
+    lazygit
+    gh
+  ];
 }
