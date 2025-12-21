@@ -4,7 +4,9 @@
   imports = [
     ./go.nix
     ./java.nix
+    ./lua.nix
     ./nix.nix
+    ./rust.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -17,10 +19,6 @@
     impl
     jdt-language-server
     llvmPackages_21.clang-unwrapped
-    lua-language-server
-    lua51Packages.lua
-    lua54Packages.jsregexp
-    luarocks
     marksman
     matlab-language-server
     mockgen
