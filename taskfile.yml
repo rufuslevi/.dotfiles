@@ -47,9 +47,6 @@ tasks:
     cmds:
       - mkdir -p ~/.config/OpenRGB
       - stow -v -t ~/.config/OpenRGB openrgb
-  starship:
-    cmds:
-      - stow -v -t ~/.config starship
   wezterm:
     cmds:
       - mkdir -p ~/.config/wezterm
