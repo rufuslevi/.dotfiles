@@ -48,7 +48,6 @@
     kdePackages.filelight
     kdePackages.kate
     kdePackages.okular
-    legcord
     libreoffice-qt6-fresh
     librewolf
     lutris
