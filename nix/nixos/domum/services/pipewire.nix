@@ -13,5 +13,12 @@
     wireplumber = {
       enable = true;
     };
+    extraConfig.pipewire = {
+      "10-clock-rate" = {
+        "context.properties" = {
+          "default.clock.rate" = 44100;
+        };
+      };
+    };
   };
 }
