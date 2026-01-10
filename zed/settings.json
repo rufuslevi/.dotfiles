@@ -1,4 +1,5 @@
 {
+  "window_decorations": "server",
   "centered_layout": {
     "right_padding": 0.25,
     "left_padding": 0.25
@@ -26,7 +27,7 @@
   "buffer_line_height": "standard",
   "buffer_font_weight": 350.0,
   "ui_font_family": "MonaspiceAr Nerd Font",
-  "buffer_font_family": "MonaspiceNe Nerd Font",
+  "buffer_font_family": "Maple Mono CN",
   "ui_font_features": {
     "ss01": true,
     "ss02": true,
@@ -41,8 +42,8 @@
   },
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Light Hard",
-    "dark": "Gruvbox Dark"
+    "light": "Dawnfox - opaque",
+    "dark": "Sonokai Shusia"
   },
   "icon_theme": {
     "mode": "system",
