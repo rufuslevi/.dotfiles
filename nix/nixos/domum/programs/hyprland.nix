@@ -14,6 +14,7 @@
         enable = true;
         systemd.enable = true;
         extraConfig = "source = $HOME/.config/hypr/hypr.conf";
+        settings.misc.disable_watchdog_warning = true;
         package = null;
         portalPackage = null;
         systemd.variables = [ "--all" ];
