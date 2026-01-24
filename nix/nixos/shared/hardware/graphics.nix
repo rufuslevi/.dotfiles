@@ -13,7 +13,7 @@
     shaderc
     mesa-demos
     tracy
-    pkgs-stable.vulkan-tools
+    vulkan-tools
     vulkan-tools-lunarg
     vulkan-headers
   ];
