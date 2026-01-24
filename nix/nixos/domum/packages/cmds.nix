@@ -1,4 +1,9 @@
-{ agenix, pkgs, ... }:
+{
+  agenix,
+  pkgs,
+  pkgs-stable,
+  ...
+}:
 
 {
   environment.systemPackages = with pkgs; [
@@ -7,7 +12,7 @@
     clinfo
     colord
     ddcutil
-    gdscript-formatter
+    # pkgs-stable.gdscript-formatter
     hyprpolkitagent
     hyprsunset
     imagemagick

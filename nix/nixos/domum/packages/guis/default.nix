@@ -2,6 +2,7 @@
   helium,
   noctalia,
   zen-browser,
+  zed,
   pkgs,
   pkgs-stable,
   ...
@@ -47,7 +48,7 @@
     kdePackages.kate
     kdePackages.okular
     libreoffice-qt6-fresh
-    librewolf
+    pkgs-stable.librewolf
     lutris
     lxqt.pavucontrol-qt
     sunshine
@@ -89,5 +90,7 @@
     vscodium
     waybar
     zen-browser.packages."${stdenv.hostPlatform.system}".default
+    # zed.packages.${stdenv.hostPlatform.system}.default
+    zed-editor
   ];
 }

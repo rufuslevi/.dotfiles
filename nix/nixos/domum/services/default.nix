@@ -19,4 +19,5 @@
   services.blueman.enable = true;
   services.speechd.enable = false;
   services.orca.enable = false;
+  services.flatpak.enable = true;
 }

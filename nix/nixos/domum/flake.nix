@@ -33,6 +33,8 @@
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixos-unstable";
     };
+
+    zed.url = "github:zed-industries/zed";
   };
 
   outputs =
@@ -46,6 +48,7 @@
       hyprland,
       stylix,
       zen-browser,
+      zed,
       ...
     }:
     let
@@ -56,6 +59,7 @@
       attrs.hyprland = hyprland;
       attrs.zen-browser = zen-browser;
       attrs.noctalia = noctalia;
+      attrs.zed = zed;
 
       attrs.pkgs-stable = import nixos-stable {
         system = system;

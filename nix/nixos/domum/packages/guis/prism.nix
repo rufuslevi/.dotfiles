@@ -5,12 +5,10 @@
     (prismlauncher.override {
       jdks = [
         jdk8
-        jdk17
-        jdk21
-        temurin-bin-8
-        temurin-bin-17
-        temurin-bin-21
+        javaPackages.compiler.temurin-bin.jre-8
         pkgs.zulu25
+        javaPackages.compiler.openjdk25
+        javaPackages.compiler.temurin-bin.jdk-25
       ];
     })
   ];
