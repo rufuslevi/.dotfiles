@@ -1,9 +1,8 @@
-{ pkgs, pkgs-stable, ... }:
+{ pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
     gparted
     meld
-    pkgs-stable.zed-editor
   ];
 }

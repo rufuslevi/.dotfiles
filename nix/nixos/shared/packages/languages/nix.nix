@@ -4,7 +4,7 @@
   environment.systemPackages = with pkgs; [
     nil
     nixd
-    nixfmt-rfc-style
+    nixfmt
     nixpkgs-fmt
     nixpkgs-lint
   ];
