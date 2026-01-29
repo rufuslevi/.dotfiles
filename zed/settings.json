@@ -2,21 +2,21 @@
   "window_decorations": "server",
   "centered_layout": {
     "right_padding": 0.25,
-    "left_padding": 0.25
+    "left_padding": 0.25,
   },
   "project_panel": {
     "starts_open": false,
     "folder_icons": true,
     "file_icons": true,
     "entry_spacing": "comfortable",
-    "dock": "left"
+    "dock": "left",
   },
   "preferred_line_length": 80,
   "show_wrap_guides": true,
   "wrap_guides": [80],
   "soft_wrap": "prefer_line",
   "minimap": {
-    "current_line_highlight": "gutter"
+    "current_line_highlight": "gutter",
   },
   "vim_mode": true,
   "disable_ai": true,
@@ -27,7 +27,7 @@
   "buffer_line_height": "standard",
   "buffer_font_weight": 350.0,
   "ui_font_family": "MonaspiceAr Nerd Font",
-  "buffer_font_family": "Maple Mono CN",
+  "buffer_font_family": "Maple Mono NF",
   "ui_font_features": {
     "ss01": true,
     "ss02": true,
@@ -38,31 +38,31 @@
     "ss07": true,
     "ss08": true,
     "ss09": true,
-    "ss10": true
+    "ss10": true,
   },
   "theme": {
     "mode": "system",
     "light": "Dawnfox - opaque",
-    "dark": "Sonokai Shusia"
+    "dark": "Sonokai Shusia",
   },
   "icon_theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Macchiato"
+    "dark": "Catppuccin Macchiato",
   },
   "telemetry": {
-    "metrics": false
+    "metrics": false,
   },
   "git": {
     "inline_blame": {
-      "enabled": false
-    }
+      "enabled": false,
+    },
   },
   "show_whitespaces": "selection",
   "relative_line_numbers": "enabled",
   "current_line_highlight": "gutter",
   "multi_cursor_modifier": "cmd_or_ctrl",
   "file_types": {
-    "GLSL": ["vsh", "fsh"]
-  }
+    "GLSL": ["vsh", "fsh"],
+  },
 }

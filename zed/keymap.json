@@ -15,30 +15,31 @@
       "space b n": "vim::GoToTab",
       "space b p": "vim::GoToPreviousTab",
       "space h": "editor::Hover",
-      "space b d": "pane::CloseActiveItem"
-    }
+      "space b d": "pane::CloseActiveItem",
+    },
   },
   {
     "context": "vim_mode == literal",
     "bindings": {
-      "ctrl-j": null
-    }
+      "ctrl-j": null,
+    },
   },
   {
     "context": "((FileFinder || FileFinder > Picker > Editor) || FileFinder > Picker > menu)",
     "bindings": {
-      "ctrl-j": null
-    }
+      "ctrl-j": null,
+    },
   },
   {
     "bindings": {
-      "ctrl-j": "workspace::ToggleBottomDock"
-    }
+      "ctrl-shift-c": "workspace::ToggleCenteredLayout",
+      "ctrl-j": "workspace::ToggleBottomDock",
+    },
   },
   {
     "context": "((VimControl && !menu) || (!Editor && !Terminal))",
     "bindings": {
-      "alt-w": "pane::CloseActiveItem"
-    }
-  }
+      "alt-w": "pane::CloseActiveItem",
+    },
+  },
 ]
