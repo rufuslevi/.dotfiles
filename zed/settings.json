@@ -20,6 +20,7 @@
   },
   "vim_mode": true,
   "disable_ai": true,
+  "text_rendering_mode": "grayscale",
   "ui_font_size": 15.0,
   "buffer_font_size": 15.0,
   "agent_ui_font_size": 15.0,
@@ -41,9 +42,9 @@
     "ss10": true,
   },
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "Dawnfox - opaque",
-    "dark": "Sonokai Shusia",
+    "dark": "Sonokai",
   },
   "icon_theme": {
     "mode": "system",
