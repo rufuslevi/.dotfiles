@@ -8,12 +8,13 @@
   programs.nix-ld = {
     enable = true;
     libraries = [
-      pkgs-stable.tbb_2022_0
+      pkgs.onetbb
     ];
   };
 
   environment.systemPackages = with pkgs; [
     godot
+    pkgs-stable.godotPackages_4_6.godot
     godotPackages.export-template
     xorg.xprop
   ];
