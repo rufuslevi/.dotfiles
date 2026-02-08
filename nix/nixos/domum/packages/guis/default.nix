@@ -37,11 +37,12 @@
     gnome-tweaks
     grim
     guake
-    handbrake
+    pkgs-stable.handbrake
     haruna
     helium.packages.${pkgs.stdenv.hostPlatform.system}.default
     helvum
     heroic
+    pkgs-stable.jetbrains.rider
     kdePackages.ark
     kdePackages.dolphin
     kdePackages.filelight
