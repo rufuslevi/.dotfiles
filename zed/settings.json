@@ -26,7 +26,6 @@
   "agent_ui_font_size": 15.0,
   "ui_font_weight": 400.0,
   "buffer_line_height": "standard",
-  "buffer_font_weight": 350.0,
   "ui_font_family": "MonaspiceAr Nerd Font",
   "buffer_font_family": "Maple Mono NF",
   "ui_font_features": {
@@ -42,8 +41,8 @@
     "ss10": true,
   },
   "theme": {
-    "mode": "dark",
-    "light": "Dawnfox - opaque",
+    "mode": "light",
+    "light": "Maple Light",
     "dark": "Sonokai",
   },
   "icon_theme": {
