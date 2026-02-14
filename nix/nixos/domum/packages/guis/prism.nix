@@ -3,6 +3,9 @@
 {
   environment.systemPackages = with pkgs; [
     (prismlauncher.override {
+      additionalLibs = [
+        glfw3-minecraft
+      ];
       jdks = [
         jdk8
         javaPackages.compiler.temurin-bin.jre-8
