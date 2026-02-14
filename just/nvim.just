@@ -1,6 +1,3 @@
-prompt:
-    @echo 'Linking nvim configs'
-
 [unix]
 nvim: prompt
     mkdir -p ~/.config/nvim
