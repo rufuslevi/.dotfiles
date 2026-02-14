@@ -27,6 +27,7 @@
     pkgs-stable.davinci-resolve
     dconf-editor
     dunst
+    element-desktop
     flameshot
     furmark
     fuzzel
