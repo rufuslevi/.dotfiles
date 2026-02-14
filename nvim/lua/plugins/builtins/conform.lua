@@ -17,7 +17,7 @@ return {
         lua = { "stylua" },
         sh = { "shfmt" },
         css = { "stylelint" },
-        gdscript = { "gdformat" },
+        gdscript = { "gdscript-formatter" },
         py = { "black" },
         qml = { "qmlformat" },
       },
