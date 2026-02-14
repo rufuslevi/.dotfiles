@@ -5,6 +5,7 @@
     ./firefox.nix
     ./gamescope.nix
     ./hyprland.nix
+    ./niri.nix
     ./nix-ld.nix
     ./obs.nix
     ./partitionmanager.nix

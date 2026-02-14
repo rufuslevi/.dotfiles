@@ -23,10 +23,10 @@
   };
 
   programs.uwsm = {
-    enable = true;
+    enable = config.options.hyprlandEnabled;
   };
 
-  programs.xwayland.enable = true;
+  programs.xwayland.enable = config.options.hyprlandEnabled;
   programs.hyprland = {
     enable = config.options.hyprlandEnabled;
     withUWSM = true;
@@ -34,4 +34,5 @@
     package = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     portalPackage = hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
+  security.pam.services.hyprland.enableGnomeKeyring = config.options.hyprlandEnabled;
 }

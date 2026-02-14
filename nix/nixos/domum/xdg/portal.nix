@@ -12,11 +12,11 @@
     portal = {
       enable = true;
       xdgOpenUsePortal = false;
-      extraPortals = lib.mkIf (config.options.gnomeEnabled) [
-        pkgs.xdg-desktop-portal-gtk
-      ];
       config = {
-        hyprland = lib.mkIf (config.options.gnomeEnabled) {
+        common = {
+          default = [ "gtk" ];
+        };
+        hyprland = lib.mkIf (config.options.hyprlandEnabled) {
           default = [
             "hyprland"
           ];
@@ -24,6 +24,11 @@
         gnome = lib.mkIf (config.options.gnomeEnabled) {
           default = [
             "gnome"
+          ];
+        };
+        niri = lib.mkIf (config.options.niriEnabled) {
+          "org.freedesktop.impl.portal.Secret" = [
+            "gnome-keyring"
           ];
         };
       };

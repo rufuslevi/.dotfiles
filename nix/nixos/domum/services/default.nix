@@ -20,4 +20,5 @@
   services.speechd.enable = false;
   services.orca.enable = false;
   services.flatpak.enable = true;
+  services.gnome.gnome-keyring.enable = true;
 }

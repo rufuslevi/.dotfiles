@@ -20,5 +20,6 @@
     pngquant
     powershell
     wlr-randr
+    xwayland-satellite
   ];
 }
