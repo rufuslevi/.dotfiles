@@ -55,6 +55,7 @@ elif command -v apt > /dev/null; then
 
 elif command -v nix > /dev/null; then
     # echo "Running NixOS based Linux!"
+    export PATH=$PATH:"/home/rufuslevi/Applications/gdscript-formatter"
 
 else
     # echo "Running Windows!"
