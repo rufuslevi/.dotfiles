@@ -11,8 +11,12 @@
   ];
 
   nixpkgs.config.nvidia.acceptLicense = true;
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
+  nix = {
+    gc.dates = [ "weekly" ];
+    optimise.dates = [ "weekly" ];
+    settings.experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
+  };
 }
