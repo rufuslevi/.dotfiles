@@ -43,7 +43,7 @@
   "theme": {
     "mode": "light",
     "light": "Maple Light",
-    "dark": "Sonokai",
+    "dark": "Monokai Vibrant Amped",
   },
   "icon_theme": {
     "mode": "system",
