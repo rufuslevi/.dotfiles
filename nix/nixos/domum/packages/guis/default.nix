@@ -1,8 +1,6 @@
 {
-  helium,
   noctalia,
   zen-browser,
-  zed,
   pkgs,
   pkgs-stable,
   ...
@@ -40,9 +38,10 @@
     guake
     pkgs-stable.handbrake
     haruna
-    helium.packages.${pkgs.stdenv.hostPlatform.system}.default
+    pkgs.nur.repos.Ev357.helium
     helvum
     heroic
+    houdini
     pkgs-stable.jetbrains.rider
     kdePackages.ark
     kdePackages.dolphin
@@ -92,7 +91,6 @@
     vscodium
     waybar
     zen-browser.packages."${stdenv.hostPlatform.system}".default
-    # zed.packages.${stdenv.hostPlatform.system}.default
     zed-editor
   ];
 }

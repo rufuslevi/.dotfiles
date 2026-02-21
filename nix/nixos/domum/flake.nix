@@ -8,9 +8,9 @@
       inputs.nixpkgs.follows = "nixos-stable";
     };
 
-    helium = {
-      url = "github:mkuritsu/helium-flake";
-      inputs.nixpkgs.follows = "nixos-unstable";
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixos-stable";
     };
 
     hyprland = {
@@ -43,6 +43,7 @@
       nixos-stable,
       nixos-unstable,
       noctalia,
+      nur,
       helium,
       home-manager,
       hyprland,
@@ -59,6 +60,7 @@
       attrs.hyprland = hyprland;
       attrs.zen-browser = zen-browser;
       attrs.noctalia = noctalia;
+      attrs.nur = nur;
       attrs.zed = zed;
 
       attrs.pkgs-stable = import nixos-stable {
@@ -74,6 +76,7 @@
         specialArgs = attrs;
         modules = [
           home-manager.nixosModules.home-manager
+          nur.modules.nixos.default
           stylix.nixosModules.stylix
           agenix.nixosModules.default
           noctalia.nixosModules.default
