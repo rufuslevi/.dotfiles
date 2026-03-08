@@ -1,4 +1,7 @@
 {
+  "terminal": {
+    "dock": "bottom",
+  },
   "window_decorations": "server",
   "centered_layout": {
     "right_padding": 0.25,
@@ -13,7 +16,7 @@
   },
   "preferred_line_length": 80,
   "show_wrap_guides": true,
-  "wrap_guides": [80],
+  "wrap_guides": [80, 100],
   "soft_wrap": "prefer_line",
   "minimap": {
     "current_line_highlight": "gutter",
@@ -64,5 +67,31 @@
   "multi_cursor_modifier": "cmd_or_ctrl",
   "file_types": {
     "GLSL": ["vsh", "fsh"],
+  },
+  "completions": {
+    "words": "enabled",
+    "words_min_length": 1,
+  },
+  "diagnostics": {
+    "button": true,
+    "include_warnings": true,
+    "inline": {
+      "enabled": true,
+    },
+    "lsp_pull_diagnostics": {
+      "enabled": true,
+    },
+  },
+  "languages": {
+    "GDScript": {
+      "formatter": [
+        {
+          "external": {
+            "command": "/home/rufuslevi/Applications/gdscript-formatter/gdscript-formatter",
+            "arguments": ["--reorder-code"],
+          },
+        },
+      ],
+    },
   },
 }
