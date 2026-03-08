@@ -44,7 +44,6 @@
       nixos-unstable,
       noctalia,
       nur,
-      helium,
       home-manager,
       hyprland,
       stylix,
@@ -56,7 +55,6 @@
       system = "x86_64-linux";
 
       attrs.agenix = agenix;
-      attrs.helium = helium;
       attrs.hyprland = hyprland;
       attrs.zen-browser = zen-browser;
       attrs.noctalia = noctalia;

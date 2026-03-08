@@ -308,26 +308,6 @@
         "type": "gitlab"
       }
     },
-    "helium": {
-      "inputs": {
-        "nixpkgs": [
-          "nixos-unstable"
-        ]
-      },
-      "locked": {
-        "lastModified": 1766275907,
-        "narHash": "sha256-Z6fNDBRZRh1oAiTpf/xY1hyV3hpACfEohpo3JOt4rBc=",
-        "owner": "mkuritsu",
-        "repo": "helium-flake",
-        "rev": "45a166be65617989fb0bd69047095e19267221d4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "mkuritsu",
-        "repo": "helium-flake",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -875,7 +855,6 @@
     "root": {
       "inputs": {
         "agenix": "agenix",
-        "helium": "helium",
         "home-manager": "home-manager_2",
         "hyprland": "hyprland",
         "nixos-stable": "nixos-stable",
